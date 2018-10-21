@@ -21,7 +21,7 @@ class ProductCollection extends ResourceCollection
                 'effectivePrice' => round($product->price * (1 - ($product->discount/100)), 2),
                 'rating' => $product->reviews->count() > 0 ? round($product->reviews->sum('star') / $product->reviews->count(), 2) : 'No Ratings Yet',
                 'href' => [
-                    'link' => route('products.show', $product->id)
+                    'product_link' => route('products.show', $product->id)
                 ]
              ]);
 
