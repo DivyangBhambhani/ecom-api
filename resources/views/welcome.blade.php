@@ -64,7 +64,7 @@
         </style>
     </head>
     <body>
-        <div class="flex-center position-ref full-height">
+        <div class="flex-center">
             @if (Route::has('login'))
                 <div class="top-right links">
                     @auth
@@ -81,18 +81,22 @@
 
             <div class="content">
                 <div class="title m-b-md">
-                    Laravel
+                    Laravel & React App
                 </div>
 
-                <div class="links">
+                <!-- <div class="links">
                     <a href="https://laravel.com/docs">Documentation</a>
                     <a href="https://laracasts.com">Laracasts</a>
                     <a href="https://laravel-news.com">News</a>
                     <a href="https://nova.laravel.com">Nova</a>
                     <a href="https://forge.laravel.com">Forge</a>
                     <a href="https://github.com/laravel/laravel">GitHub</a>
-                </div>
+                </div> -->
             </div>
         </div>
+        <div class="container">
+            <div id="main"></div>        
+        </div>
+        <script src="{{mix('js/app.js')}}" ></script>
     </body>
 </html>
