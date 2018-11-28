@@ -11,10 +11,13 @@
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
+Route::group(['prefix' => 'ajax'], function() {
+    // all routes that don't need to go to react-router
 });
 
-Auth::routes();
+Route::get('/{path?}', function () {
+    return view('index');
+});
+// Auth::routes();
 
-Route::get('/home', 'HomeController@index')->name('home');
+// Route::get('/home', 'HomeController@index')->name('home');

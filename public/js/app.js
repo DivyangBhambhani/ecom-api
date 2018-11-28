@@ -15523,7 +15523,30 @@ __webpack_require__(34);
  * or customize the JavaScript scaffolding to fit your unique needs.
  */
 
-__webpack_require__(58);
+var React = __webpack_require__(0);
+var ReactDOM = __webpack_require__(60);
+
+var Router = __webpack_require__(7).BrowserRouter;
+var Route = __webpack_require__(7).Route;
+var Switch = __webpack_require__(7).Switch;
+
+// var Nav = require('./Nav');
+var Home = __webpack_require__(91);
+var About = __webpack_require__(93);
+var Nav = __webpack_require__(92);
+
+ReactDOM.render(React.createElement(
+  Router,
+  null,
+  React.createElement(
+    'div',
+    { className: 'container' },
+    React.createElement(Nav, null),
+    React.createElement(Route, { path: '/', exact: true, component: Home }),
+    React.createElement(Route, { path: '/home', component: Home }),
+    React.createElement(Route, { path: '/about', component: About })
+  )
+), document.getElementById('main'));
 
 /***/ }),
 /* 34 */
@@ -37758,75 +37781,7 @@ module.exports = function spread(callback) {
 
 
 /***/ }),
-/* 58 */
-/***/ (function(module, exports, __webpack_require__) {
-
-var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
-
-function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
-
-function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
-
-function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
-
-var React = __webpack_require__(0);
-var ReactDOM = __webpack_require__(60);
-
-var Router = __webpack_require__(7).BrowserRouter;
-var Route = __webpack_require__(7).Route;
-var Switch = __webpack_require__(7).Switch;
-
-// var Nav = require('./Nav');
-var Home = __webpack_require__(91);
-var About = __webpack_require__(93);
-
-var Main = function (_React$Component) {
-    _inherits(Main, _React$Component);
-
-    function Main() {
-        _classCallCheck(this, Main);
-
-        return _possibleConstructorReturn(this, (Main.__proto__ || Object.getPrototypeOf(Main)).apply(this, arguments));
-    }
-
-    _createClass(Main, [{
-        key: 'render',
-        value: function render() {
-            return React.createElement(
-                Router,
-                null,
-                React.createElement(
-                    'div',
-                    null,
-                    React.createElement(
-                        Switch,
-                        null,
-                        React.createElement(Route, { exact: true, path: '/', component: Home }),
-                        React.createElement(Route, { exact: true, path: '/home', component: Home }),
-                        React.createElement(Route, { path: '/about', component: About }),
-                        React.createElement(Route, { render: function render() {
-                                return React.createElement(
-                                    'p',
-                                    null,
-                                    'Not Found'
-                                );
-                            } })
-                    )
-                )
-            );
-        }
-    }]);
-
-    return Main;
-}(React.Component);
-
-if (document.getElementById('main')) {
-    ReactDOM.render(React.createElement(Main, null), document.getElementById('main'));
-}
-
-module.exports = Main;
-
-/***/ }),
+/* 58 */,
 /* 59 */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -63023,7 +62978,6 @@ function _possibleConstructorReturn(self, call) { if (!self) { throw new Referen
 function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
 
 var React = __webpack_require__(0);
-var Nav = __webpack_require__(92);
 
 var Home = function (_React$Component) {
 	_inherits(Home, _React$Component);
@@ -63035,19 +62989,18 @@ var Home = function (_React$Component) {
 	}
 
 	_createClass(Home, [{
-		key: 'render',
+		key: "render",
 		value: function render() {
 			return React.createElement(
-				'div',
-				{ className: 'container' },
-				React.createElement(Nav, null),
+				"div",
+				{ className: "container" },
 				React.createElement(
-					'div',
-					{ className: 'col-md-12 text-center' },
+					"div",
+					{ className: "col-md-12 text-center" },
 					React.createElement(
-						'h3',
-						{ className: 'title' },
-						'Home Page'
+						"h3",
+						{ className: "title" },
+						"Home Page"
 					)
 				)
 			);
@@ -63088,39 +63041,30 @@ var Nav = function (_React$Component) {
 		value: function render() {
 			return React.createElement(
 				'div',
-				null,
+				{ className: 'navbar navbar-inverse' },
 				React.createElement(
-					'nav',
-					{ className: 'navbar ' },
+					'div',
+					{ className: 'navbar-inner' },
 					React.createElement(
-						'div',
-						{ className: 'collapse navbar-collapse', id: 'navbarNavDropdown' },
+						'ul',
+						{ className: 'nav' },
 						React.createElement(
-							'ul',
-							{ className: 'navbar-nav' },
+							'li',
+							{ className: 'active' },
 							React.createElement(
-								'li',
-								{ className: 'nav-item active' },
-								React.createElement(
-									Link,
-									{ className: 'nav-link', to: '/' },
-									'Home '
-								)
-							),
-							React.createElement(
-								'li',
-								{ className: 'nav-item' },
-								React.createElement(
-									Link,
-									{ className: 'nav-link', to: '/about' },
-									'About'
-								)
+								Link,
+								{ className: 'nav-link', to: '/' },
+								'Home '
 							)
 						),
 						React.createElement(
-							'div',
+							'li',
 							null,
-							'Hello'
+							React.createElement(
+								Link,
+								{ className: 'nav-link', to: '/about' },
+								'About'
+							)
 						)
 					)
 				)
