@@ -1,22 +1,27 @@
-import React, { Component } from 'react';
-import ReactDOM from 'react-dom';
+var React = require('react');
+var ReactDOM = require('react-dom');
 
-export default class Main extends Component {
+const Router = require('react-router-dom').BrowserRouter;
+const Route = require('react-router-dom').Route;
+const Switch = require('react-router-dom').Switch;
+
+// var Nav = require('./Nav');
+var Home = require('./Home');
+var About = require('./About');
+
+class Main extends React.Component {
     render() {
         return (
-            <div className="container">
-                <div className="row justify-content-center">
-                    <div className="col-md-8">
-                        <div className="card">
-                            <div className="card-header">Example Component</div>
-
-                            <div className="card-body">
-                                I'm an example component!
-                            </div>
-                        </div>
-                    </div>
+            <Router>
+                <div>                    
+                    <Switch>
+                        <Route exact path="/" component={Home} />
+                        <Route exact path="/home" component={Home} />
+                        <Route path="/about" component={About} />
+                        <Route render = {() => (<p>Not Found</p>)}  />
+                    </Switch>
                 </div>
-            </div>
+            </Router>
         );
     }
 }
@@ -24,3 +29,5 @@ export default class Main extends Component {
 if (document.getElementById('main')) {
     ReactDOM.render(<Main />, document.getElementById('main'));
 }
+
+module.exports = Main;
