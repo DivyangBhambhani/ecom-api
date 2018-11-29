@@ -2,6 +2,8 @@ var React = require('react');
 var Link = require('react-router-dom').Link;
 var baseURL = 'http://localhost:8000/';
 var Header = require('./common/Header');
+var Footer = require('./common/Footer');
+var OurProducts = require('./OurProducts');
 
 class Home extends React.Component {
 	render() {
@@ -82,7 +84,10 @@ class Home extends React.Component {
 							</div>
 						</div>
 					</div>
+
+					<OurProducts />
 				</div>
+				<Footer />
 			</div>
 		)
 	}
