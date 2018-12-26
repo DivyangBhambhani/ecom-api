@@ -59,13 +59,13 @@ class OurProducts extends React.Component {
 								<div className="products owl-theme owl-carousel">
 									<div className="product-item">
 										<div className="product-image">
-											<Link to="product-detail-left-sidebar.html">
+											<Link to="/productDetails">
 												<img src="img/product/4.jpg" alt="Product Image" />
 											</Link>
 										</div>
 										
 										<div className="product-title">
-											<Link to="product-detail-left-sidebar.html">
+											<Link to="/productDetails">
 												Organic Strawberry Fruits
 											</Link>
 										</div>
@@ -79,8 +79,8 @@ class OurProducts extends React.Component {
 										</div>
 										
 										<div className="product-price">
-											<span className="sale-price">$80.00</span>
-											<span className="base-price">$90.00</span>
+											<span className="sale-price">₹80.00</span>
+											<span className="base-price">₹90.00</span>
 										</div>
 										
 										<div className="product-buttons">
@@ -100,13 +100,13 @@ class OurProducts extends React.Component {
 									
 									<div className="product-item">
 										<div className="product-image">
-											<Link to="product-detail-left-sidebar.html">
+											<Link to="/productDetails">
 												<img src="img/product/14.jpg" alt="Product Image" />
 											</Link>
 										</div>
 										
 										<div className="product-title">
-											<Link to="product-detail-left-sidebar.html">
+											<Link to="/productDetails">
 												Organic Strawberry Fruits
 											</Link>
 										</div>
@@ -120,8 +120,8 @@ class OurProducts extends React.Component {
 										</div>
 										
 										<div className="product-price">
-											<span className="sale-price">$80.00</span>
-											<span className="base-price">$90.00</span>
+											<span className="sale-price">₹80.00</span>
+											<span className="base-price">₹90.00</span>
 										</div>
 										
 										<div className="product-buttons">
@@ -141,13 +141,13 @@ class OurProducts extends React.Component {
 									
 									<div className="product-item">
 										<div className="product-image">
-											<Link to="product-detail-left-sidebar.html">
+											<Link to="/productDetails">
 												<img src="img/product/17.jpg" alt="Product Image" />
 											</Link>
 										</div>
 										
 										<div className="product-title">
-											<Link to="product-detail-left-sidebar.html">
+											<Link to="/productDetails">
 												Organic Strawberry Fruits
 											</Link>
 										</div>
@@ -161,8 +161,8 @@ class OurProducts extends React.Component {
 										</div>
 										
 										<div className="product-price">
-											<span className="sale-price">$80.00</span>
-											<span className="base-price">$90.00</span>
+											<span className="sale-price">₹80.00</span>
+											<span className="base-price">₹90.00</span>
 										</div>
 										
 										<div className="product-buttons">
@@ -182,13 +182,13 @@ class OurProducts extends React.Component {
 								
 									<div className="product-item">
 										<div className="product-image">
-											<Link to="product-detail-left-sidebar.html">
+											<Link to="/productDetails">
 												<img src="img/product/8.jpg" alt="Product Image" />
 											</Link>
 										</div>
 										
 										<div className="product-title">
-											<Link to="product-detail-left-sidebar.html">
+											<Link to="/productDetails">
 												Organic Strawberry Fruits
 											</Link>
 										</div>
@@ -202,7 +202,7 @@ class OurProducts extends React.Component {
 										</div>
 										
 										<div className="product-price">
-											<span className="sale-price">$120.00</span>
+											<span className="sale-price">₹120.00</span>
 										</div>
 										
 										<div className="product-buttons">
@@ -222,13 +222,13 @@ class OurProducts extends React.Component {
 									
 									<div className="product-item">
 										<div className="product-image">
-											<Link to="product-detail-left-sidebar.html">
+											<Link to="/productDetails">
 												<img src="img/product/9.jpg" alt="Product Image" />
 											</Link>
 										</div>
 										
 										<div className="product-title">
-											<Link to="product-detail-left-sidebar.html">
+											<Link to="/productDetails">
 												Organic Strawberry Fruits
 											</Link>
 										</div>
@@ -242,8 +242,8 @@ class OurProducts extends React.Component {
 										</div>
 										
 										<div className="product-price">
-											<span className="sale-price">$80.00</span>
-											<span className="base-price">$90.00</span>
+											<span className="sale-price">₹80.00</span>
+											<span className="base-price">₹90.00</span>
 										</div>
 										
 										<div className="product-buttons">
@@ -263,13 +263,13 @@ class OurProducts extends React.Component {
 									
 									<div className="product-item">
 										<div className="product-image">
-											<Link to="product-detail-left-sidebar.html">
+											<Link to="/productDetails">
 												<img src="img/product/15.jpg" alt="Product Image" />
 											</Link>
 										</div>
 										
 										<div className="product-title">
-											<Link to="product-detail-left-sidebar.html">
+											<Link to="/productDetails">
 												Organic Strawberry Fruits
 											</Link>
 										</div>
@@ -283,8 +283,8 @@ class OurProducts extends React.Component {
 										</div>
 										
 										<div className="product-price">
-											<span className="sale-price">$80.00</span>
-											<span className="base-price">$90.00</span>
+											<span className="sale-price">₹80.00</span>
+											<span className="base-price">₹90.00</span>
 										</div>
 										
 										<div className="product-buttons">
@@ -304,13 +304,13 @@ class OurProducts extends React.Component {
 								
 									<div className="product-item">
 										<div className="product-image">
-											<Link to="product-detail-left-sidebar.html">
+											<Link to="/productDetails">
 												<img src="img/product/10.jpg" alt="Product Image" />
 											</Link>
 										</div>
 										
 										<div className="product-title">
-											<Link to="product-detail-left-sidebar.html">
+											<Link to="/productDetails">
 												Organic Strawberry Fruits
 											</Link>
 										</div>
@@ -324,7 +324,7 @@ class OurProducts extends React.Component {
 										</div>
 										
 										<div className="product-price">
-											<span className="sale-price">$96.00</span>
+											<span className="sale-price">₹96.00</span>
 										</div>
 										
 										<div className="product-buttons">
@@ -344,13 +344,13 @@ class OurProducts extends React.Component {
 									
 									<div className="product-item">
 										<div className="product-image">
-											<Link to="product-detail-left-sidebar.html">
+											<Link to="/productDetails">
 												<img src="img/product/33.jpg" alt="Product Image" />
 											</Link>
 										</div>
 										
 										<div className="product-title">
-											<Link to="product-detail-left-sidebar.html">
+											<Link to="/productDetails">
 												Organic Strawberry Fruits
 											</Link>
 										</div>
@@ -364,8 +364,8 @@ class OurProducts extends React.Component {
 										</div>
 										
 										<div className="product-price">
-											<span className="sale-price">$80.00</span>
-											<span className="base-price">$90.00</span>
+											<span className="sale-price">₹80.00</span>
+											<span className="base-price">₹90.00</span>
 										</div>
 										
 										<div className="product-buttons">
@@ -385,13 +385,13 @@ class OurProducts extends React.Component {
 									
 									<div className="product-item">
 										<div className="product-image">
-											<Link to="product-detail-left-sidebar.html">
+											<Link to="/productDetails">
 												<img src="img/product/22.jpg" alt="Product Image" />
 											</Link>
 										</div>
 										
 										<div className="product-title">
-											<Link to="product-detail-left-sidebar.html">
+											<Link to="/productDetails">
 												Organic Strawberry Fruits
 											</Link>
 										</div>
@@ -405,8 +405,8 @@ class OurProducts extends React.Component {
 										</div>
 										
 										<div className="product-price">
-											<span className="sale-price">$80.00</span>
-											<span className="base-price">$90.00</span>
+											<span className="sale-price">₹80.00</span>
+											<span className="base-price">₹90.00</span>
 										</div>
 										
 										<div className="product-buttons">
@@ -426,13 +426,13 @@ class OurProducts extends React.Component {
 								
 									<div className="product-item">
 										<div className="product-image">
-											<Link to="product-detail-left-sidebar.html">
+											<Link to="/productDetails">
 												<img src="img/product/20.jpg" alt="Product Image" />
 											</Link>
 										</div>
 										
 										<div className="product-title">
-											<Link to="product-detail-left-sidebar.html">
+											<Link to="/productDetails">
 												Organic Strawberry Fruits
 											</Link>
 										</div>
@@ -446,7 +446,7 @@ class OurProducts extends React.Component {
 										</div>
 										
 										<div className="product-price">
-											<span className="sale-price">$96.00</span>
+											<span className="sale-price">₹96.00</span>
 										</div>
 										
 										<div className="product-buttons">
@@ -466,13 +466,13 @@ class OurProducts extends React.Component {
 									
 									<div className="product-item">
 										<div className="product-image">
-											<Link to="product-detail-left-sidebar.html">
+											<Link to="/productDetails">
 												<img src="img/product/23.jpg" alt="Product Image" />
 											</Link>
 										</div>
 										
 										<div className="product-title">
-											<Link to="product-detail-left-sidebar.html">
+											<Link to="/productDetails">
 												Organic Strawberry Fruits
 											</Link>
 										</div>
@@ -486,8 +486,8 @@ class OurProducts extends React.Component {
 										</div>
 										
 										<div className="product-price">
-											<span className="sale-price">$80.00</span>
-											<span className="base-price">$90.00</span>
+											<span className="sale-price">₹80.00</span>
+											<span className="base-price">₹90.00</span>
 										</div>
 										
 										<div className="product-buttons">
@@ -507,13 +507,13 @@ class OurProducts extends React.Component {
 									
 									<div className="product-item">
 										<div className="product-image">
-											<Link to="product-detail-left-sidebar.html">
+											<Link to="/productDetails">
 												<img src="img/product/30.jpg" alt="Product Image" />
 											</Link>
 										</div>
 										
 										<div className="product-title">
-											<Link to="product-detail-left-sidebar.html">
+											<Link to="/productDetails">
 												Organic Strawberry Fruits
 											</Link>
 										</div>
@@ -527,8 +527,8 @@ class OurProducts extends React.Component {
 										</div>
 										
 										<div className="product-price">
-											<span className="sale-price">$80.00</span>
-											<span className="base-price">$90.00</span>
+											<span className="sale-price">₹80.00</span>
+											<span className="base-price">₹90.00</span>
 										</div>
 										
 										<div className="product-buttons">
@@ -548,13 +548,13 @@ class OurProducts extends React.Component {
 								
 									<div className="product-item">
 										<div className="product-image">
-											<Link to="product-detail-left-sidebar.html">
+											<Link to="/productDetails">
 												<img src="img/product/21.jpg" alt="Product Image" />
 											</Link>
 										</div>
 										
 										<div className="product-title">
-											<Link to="product-detail-left-sidebar.html">
+											<Link to="/productDetails">
 												Organic Strawberry Fruits
 											</Link>
 										</div>
@@ -568,7 +568,7 @@ class OurProducts extends React.Component {
 										</div>
 										
 										<div className="product-price">
-											<span className="sale-price">$96.00</span>
+											<span className="sale-price">₹96.00</span>
 										</div>
 										
 										<div className="product-buttons">
@@ -588,13 +588,13 @@ class OurProducts extends React.Component {
 									
 									<div className="product-item">
 										<div className="product-image">
-											<Link to="product-detail-left-sidebar.html">
+											<Link to="/productDetails">
 												<img src="img/product/6.jpg" alt="Product Image" />
 											</Link>
 										</div>
 										
 										<div className="product-title">
-											<Link to="product-detail-left-sidebar.html">
+											<Link to="/productDetails">
 												Organic Strawberry Fruits
 											</Link>
 										</div>
@@ -608,8 +608,8 @@ class OurProducts extends React.Component {
 										</div>
 										
 										<div className="product-price">
-											<span className="sale-price">$80.00</span>
-											<span className="base-price">$90.00</span>
+											<span className="sale-price">₹80.00</span>
+											<span className="base-price">₹90.00</span>
 										</div>
 										
 										<div className="product-buttons">
@@ -629,13 +629,13 @@ class OurProducts extends React.Component {
 									
 									<div className="product-item">
 										<div className="product-image">
-											<Link to="product-detail-left-sidebar.html">
+											<Link to="/productDetails">
 												<img src="img/product/3.jpg" alt="Product Image" />
 											</Link>
 										</div>
 										
 										<div className="product-title">
-											<Link to="product-detail-left-sidebar.html">
+											<Link to="/productDetails">
 												Organic Strawberry Fruits
 											</Link>
 										</div>
@@ -649,8 +649,8 @@ class OurProducts extends React.Component {
 										</div>
 										
 										<div className="product-price">
-											<span className="sale-price">$80.00</span>
-											<span className="base-price">$90.00</span>
+											<span className="sale-price">₹80.00</span>
+											<span className="base-price">₹90.00</span>
 										</div>
 										
 										<div className="product-buttons">
@@ -674,13 +674,13 @@ class OurProducts extends React.Component {
 								<div className="products owl-theme owl-carousel">
 									<div className="product-item">
 										<div className="product-image">
-											<Link to="product-detail-left-sidebar.html">
+											<Link to="/productDetails">
 												<img src="img/product/4.jpg" alt="Product Image" />
 											</Link>
 										</div>
 										
 										<div className="product-title">
-											<Link to="product-detail-left-sidebar.html">
+											<Link to="/productDetails">
 												Organic Strawberry Fruits
 											</Link>
 										</div>
@@ -694,8 +694,8 @@ class OurProducts extends React.Component {
 										</div>
 										
 										<div className="product-price">
-											<span className="sale-price">$80.00</span>
-											<span className="base-price">$90.00</span>
+											<span className="sale-price">₹80.00</span>
+											<span className="base-price">₹90.00</span>
 										</div>
 										
 										<div className="product-buttons">
@@ -715,13 +715,13 @@ class OurProducts extends React.Component {
 									
 									<div className="product-item">
 										<div className="product-image">
-											<Link to="product-detail-left-sidebar.html">
+											<Link to="/productDetails">
 												<img src="img/product/14.jpg" alt="Product Image" />
 											</Link>
 										</div>
 										
 										<div className="product-title">
-											<Link to="product-detail-left-sidebar.html">
+											<Link to="/productDetails">
 												Organic Strawberry Fruits
 											</Link>
 										</div>
@@ -735,8 +735,8 @@ class OurProducts extends React.Component {
 										</div>
 										
 										<div className="product-price">
-											<span className="sale-price">$80.00</span>
-											<span className="base-price">$90.00</span>
+											<span className="sale-price">₹80.00</span>
+											<span className="base-price">₹90.00</span>
 										</div>
 										
 										<div className="product-buttons">
@@ -756,13 +756,13 @@ class OurProducts extends React.Component {
 									
 									<div className="product-item">
 										<div className="product-image">
-											<Link to="product-detail-left-sidebar.html">
+											<Link to="/productDetails">
 												<img src="img/product/26.jpg" alt="Product Image" />
 											</Link>
 										</div>
 										
 										<div className="product-title">
-											<Link to="product-detail-left-sidebar.html">
+											<Link to="/productDetails">
 												Organic Strawberry Fruits
 											</Link>
 										</div>
@@ -776,8 +776,8 @@ class OurProducts extends React.Component {
 										</div>
 										
 										<div className="product-price">
-											<span className="sale-price">$80.00</span>
-											<span className="base-price">$90.00</span>
+											<span className="sale-price">₹80.00</span>
+											<span className="base-price">₹90.00</span>
 										</div>
 										
 										<div className="product-buttons">
@@ -797,13 +797,13 @@ class OurProducts extends React.Component {
 								
 									<div className="product-item">
 										<div className="product-image">
-											<Link to="product-detail-left-sidebar.html">
+											<Link to="/productDetails">
 												<img src="img/product/8.jpg" alt="Product Image" />
 											</Link>
 										</div>
 										
 										<div className="product-title">
-											<Link to="product-detail-left-sidebar.html">
+											<Link to="/productDetails">
 												Organic Strawberry Fruits
 											</Link>
 										</div>
@@ -817,7 +817,7 @@ class OurProducts extends React.Component {
 										</div>
 										
 										<div className="product-price">
-											<span className="sale-price">$120.00</span>
+											<span className="sale-price">₹120.00</span>
 										</div>
 										
 										<div className="product-buttons">
@@ -837,13 +837,13 @@ class OurProducts extends React.Component {
 									
 									<div className="product-item">
 										<div className="product-image">
-											<Link to="product-detail-left-sidebar.html">
+											<Link to="/productDetails">
 												<img src="img/product/9.jpg" alt="Product Image" />
 											</Link>
 										</div>
 										
 										<div className="product-title">
-											<Link to="product-detail-left-sidebar.html">
+											<Link to="/productDetails">
 												Organic Strawberry Fruits
 											</Link>
 										</div>
@@ -857,8 +857,8 @@ class OurProducts extends React.Component {
 										</div>
 										
 										<div className="product-price">
-											<span className="sale-price">$80.00</span>
-											<span className="base-price">$90.00</span>
+											<span className="sale-price">₹80.00</span>
+											<span className="base-price">₹90.00</span>
 										</div>
 										
 										<div className="product-buttons">
@@ -878,13 +878,13 @@ class OurProducts extends React.Component {
 									
 									<div className="product-item">
 										<div className="product-image">
-											<Link to="product-detail-left-sidebar.html">
+											<Link to="/productDetails">
 												<img src="img/product/31.jpg" alt="Product Image" />
 											</Link>
 										</div>
 										
 										<div className="product-title">
-											<Link to="product-detail-left-sidebar.html">
+											<Link to="/productDetails">
 												Organic Strawberry Fruits
 											</Link>
 										</div>
@@ -898,8 +898,8 @@ class OurProducts extends React.Component {
 										</div>
 										
 										<div className="product-price">
-											<span className="sale-price">$80.00</span>
-											<span className="base-price">$90.00</span>
+											<span className="sale-price">₹80.00</span>
+											<span className="base-price">₹90.00</span>
 										</div>
 										
 										<div className="product-buttons">
@@ -919,13 +919,13 @@ class OurProducts extends React.Component {
 								
 									<div className="product-item">
 										<div className="product-image">
-											<Link to="product-detail-left-sidebar.html">
+											<Link to="/productDetails">
 												<img src="img/product/10.jpg" alt="Product Image" />
 											</Link>
 										</div>
 										
 										<div className="product-title">
-											<Link to="product-detail-left-sidebar.html">
+											<Link to="/productDetails">
 												Organic Strawberry Fruits
 											</Link>
 										</div>
@@ -939,7 +939,7 @@ class OurProducts extends React.Component {
 										</div>
 										
 										<div className="product-price">
-											<span className="sale-price">$96.00</span>
+											<span className="sale-price">₹96.00</span>
 										</div>
 										
 										<div className="product-buttons">
@@ -959,13 +959,13 @@ class OurProducts extends React.Component {
 									
 									<div className="product-item">
 										<div className="product-image">
-											<Link to="product-detail-left-sidebar.html">
+											<Link to="/productDetails">
 												<img src="img/product/33.jpg" alt="Product Image" />
 											</Link>
 										</div>
 										
 										<div className="product-title">
-											<Link to="product-detail-left-sidebar.html">
+											<Link to="/productDetails">
 												Organic Strawberry Fruits
 											</Link>
 										</div>
@@ -979,8 +979,8 @@ class OurProducts extends React.Component {
 										</div>
 										
 										<div className="product-price">
-											<span className="sale-price">$80.00</span>
-											<span className="base-price">$90.00</span>
+											<span className="sale-price">₹80.00</span>
+											<span className="base-price">₹90.00</span>
 										</div>
 										
 										<div className="product-buttons">
@@ -1000,13 +1000,13 @@ class OurProducts extends React.Component {
 									
 									<div className="product-item">
 										<div className="product-image">
-											<Link to="product-detail-left-sidebar.html">
+											<Link to="/productDetails">
 												<img src="img/product/38.jpg" alt="Product Image" />
 											</Link>
 										</div>
 										
 										<div className="product-title">
-											<Link to="product-detail-left-sidebar.html">
+											<Link to="/productDetails">
 												Organic Strawberry Fruits
 											</Link>
 										</div>
@@ -1020,8 +1020,8 @@ class OurProducts extends React.Component {
 										</div>
 										
 										<div className="product-price">
-											<span className="sale-price">$80.00</span>
-											<span className="base-price">$90.00</span>
+											<span className="sale-price">₹80.00</span>
+											<span className="base-price">₹90.00</span>
 										</div>
 										
 										<div className="product-buttons">
@@ -1041,13 +1041,13 @@ class OurProducts extends React.Component {
 								
 									<div className="product-item">
 										<div className="product-image">
-											<Link to="product-detail-left-sidebar.html">
+											<Link to="/productDetails">
 												<img src="img/product/21.jpg" alt="Product Image" />
 											</Link>
 										</div>
 										
 										<div className="product-title">
-											<Link to="product-detail-left-sidebar.html">
+											<Link to="/productDetails">
 												Organic Strawberry Fruits
 											</Link>
 										</div>
@@ -1061,7 +1061,7 @@ class OurProducts extends React.Component {
 										</div>
 										
 										<div className="product-price">
-											<span className="sale-price">$96.00</span>
+											<span className="sale-price">₹96.00</span>
 										</div>
 										
 										<div className="product-buttons">
@@ -1081,13 +1081,13 @@ class OurProducts extends React.Component {
 									
 									<div className="product-item">
 										<div className="product-image">
-											<Link to="product-detail-left-sidebar.html">
+											<Link to="/productDetails">
 												<img src="img/product/6.jpg" alt="Product Image" />
 											</Link>
 										</div>
 										
 										<div className="product-title">
-											<Link to="product-detail-left-sidebar.html">
+											<Link to="/productDetails">
 												Organic Strawberry Fruits
 											</Link>
 										</div>
@@ -1101,8 +1101,8 @@ class OurProducts extends React.Component {
 										</div>
 										
 										<div className="product-price">
-											<span className="sale-price">$80.00</span>
-											<span className="base-price">$90.00</span>
+											<span className="sale-price">₹80.00</span>
+											<span className="base-price">₹90.00</span>
 										</div>
 										
 										<div className="product-buttons">
@@ -1122,13 +1122,13 @@ class OurProducts extends React.Component {
 									
 									<div className="product-item">
 										<div className="product-image">
-											<Link to="product-detail-left-sidebar.html">
+											<Link to="/productDetails">
 												<img src="img/product/3.jpg" alt="Product Image" />
 											</Link>
 										</div>
 										
 										<div className="product-title">
-											<Link to="product-detail-left-sidebar.html">
+											<Link to="/productDetails">
 												Organic Strawberry Fruits
 											</Link>
 										</div>
@@ -1142,8 +1142,8 @@ class OurProducts extends React.Component {
 										</div>
 										
 										<div className="product-price">
-											<span className="sale-price">$80.00</span>
-											<span className="base-price">$90.00</span>
+											<span className="sale-price">₹80.00</span>
+											<span className="base-price">₹90.00</span>
 										</div>
 										
 										<div className="product-buttons">
@@ -1163,13 +1163,13 @@ class OurProducts extends React.Component {
 								
 									<div className="product-item">
 										<div className="product-image">
-											<Link to="product-detail-left-sidebar.html">
+											<Link to="/productDetails">
 												<img src="img/product/20.jpg" alt="Product Image" />
 											</Link>
 										</div>
 										
 										<div className="product-title">
-											<Link to="product-detail-left-sidebar.html">
+											<Link to="/productDetails">
 												Organic Strawberry Fruits
 											</Link>
 										</div>
@@ -1183,7 +1183,7 @@ class OurProducts extends React.Component {
 										</div>
 										
 										<div className="product-price">
-											<span className="sale-price">$96.00</span>
+											<span className="sale-price">₹96.00</span>
 										</div>
 										
 										<div className="product-buttons">
@@ -1203,13 +1203,13 @@ class OurProducts extends React.Component {
 									
 									<div className="product-item">
 										<div className="product-image">
-											<Link to="product-detail-left-sidebar.html">
+											<Link to="/productDetails">
 												<img src="img/product/23.jpg" alt="Product Image" />
 											</Link>
 										</div>
 										
 										<div className="product-title">
-											<Link to="product-detail-left-sidebar.html">
+											<Link to="/productDetails">
 												Organic Strawberry Fruits
 											</Link>
 										</div>
@@ -1223,8 +1223,8 @@ class OurProducts extends React.Component {
 										</div>
 										
 										<div className="product-price">
-											<span className="sale-price">$80.00</span>
-											<span className="base-price">$90.00</span>
+											<span className="sale-price">₹80.00</span>
+											<span className="base-price">₹90.00</span>
 										</div>
 										
 										<div className="product-buttons">
@@ -1244,13 +1244,13 @@ class OurProducts extends React.Component {
 									
 									<div className="product-item">
 										<div className="product-image">
-											<Link to="product-detail-left-sidebar.html">
+											<Link to="/productDetails">
 												<img src="img/product/15.jpg" alt="Product Image" />
 											</Link>
 										</div>
 										
 										<div className="product-title">
-											<Link to="product-detail-left-sidebar.html">
+											<Link to="/productDetails">
 												Organic Strawberry Fruits
 											</Link>
 										</div>
@@ -1264,8 +1264,8 @@ class OurProducts extends React.Component {
 										</div>
 										
 										<div className="product-price">
-											<span className="sale-price">$80.00</span>
-											<span className="base-price">$90.00</span>
+											<span className="sale-price">₹80.00</span>
+											<span className="base-price">₹90.00</span>
 										</div>
 										
 										<div className="product-buttons">
@@ -1289,13 +1289,13 @@ class OurProducts extends React.Component {
 								<div className="products owl-theme owl-carousel">
 									<div className="product-item">
 										<div className="product-image">
-											<Link to="product-detail-left-sidebar.html">
+											<Link to="/productDetails">
 												<img src="img/product/4.jpg" alt="Product Image" />
 											</Link>
 										</div>
 										
 										<div className="product-title">
-											<Link to="product-detail-left-sidebar.html">
+											<Link to="/productDetails">
 												Organic Strawberry Fruits
 											</Link>
 										</div>
@@ -1309,8 +1309,8 @@ class OurProducts extends React.Component {
 										</div>
 										
 										<div className="product-price">
-											<span className="sale-price">$80.00</span>
-											<span className="base-price">$90.00</span>
+											<span className="sale-price">₹80.00</span>
+											<span className="base-price">₹90.00</span>
 										</div>
 										
 										<div className="product-buttons">
@@ -1330,13 +1330,13 @@ class OurProducts extends React.Component {
 									
 									<div className="product-item">
 										<div className="product-image">
-											<Link to="product-detail-left-sidebar.html">
+											<Link to="/productDetails">
 												<img src="img/product/14.jpg" alt="Product Image" />
 											</Link>
 										</div>
 										
 										<div className="product-title">
-											<Link to="product-detail-left-sidebar.html">
+											<Link to="/productDetails">
 												Organic Strawberry Fruits
 											</Link>
 										</div>
@@ -1350,8 +1350,8 @@ class OurProducts extends React.Component {
 										</div>
 										
 										<div className="product-price">
-											<span className="sale-price">$80.00</span>
-											<span className="base-price">$90.00</span>
+											<span className="sale-price">₹80.00</span>
+											<span className="base-price">₹90.00</span>
 										</div>
 										
 										<div className="product-buttons">
@@ -1371,13 +1371,13 @@ class OurProducts extends React.Component {
 									
 									<div className="product-item">
 										<div className="product-image">
-											<Link to="product-detail-left-sidebar.html">
+											<Link to="/productDetails">
 												<img src="img/product/17.jpg" alt="Product Image" />
 											</Link>
 										</div>
 										
 										<div className="product-title">
-											<Link to="product-detail-left-sidebar.html">
+											<Link to="/productDetails">
 												Organic Strawberry Fruits
 											</Link>
 										</div>
@@ -1391,8 +1391,8 @@ class OurProducts extends React.Component {
 										</div>
 										
 										<div className="product-price">
-											<span className="sale-price">$80.00</span>
-											<span className="base-price">$90.00</span>
+											<span className="sale-price">₹80.00</span>
+											<span className="base-price">₹90.00</span>
 										</div>
 										
 										<div className="product-buttons">
@@ -1412,13 +1412,13 @@ class OurProducts extends React.Component {
 								
 									<div className="product-item">
 										<div className="product-image">
-											<Link to="product-detail-left-sidebar.html">
+											<Link to="/productDetails">
 												<img src="img/product/8.jpg" alt="Product Image" />
 											</Link>
 										</div>
 										
 										<div className="product-title">
-											<Link to="product-detail-left-sidebar.html">
+											<Link to="/productDetails">
 												Organic Strawberry Fruits
 											</Link>
 										</div>
@@ -1432,7 +1432,7 @@ class OurProducts extends React.Component {
 										</div>
 										
 										<div className="product-price">
-											<span className="sale-price">$120.00</span>
+											<span className="sale-price">₹120.00</span>
 										</div>
 										
 										<div className="product-buttons">
@@ -1452,13 +1452,13 @@ class OurProducts extends React.Component {
 									
 									<div className="product-item">
 										<div className="product-image">
-											<Link to="product-detail-left-sidebar.html">
+											<Link to="/productDetails">
 												<img src="img/product/9.jpg" alt="Product Image" />
 											</Link>
 										</div>
 										
 										<div className="product-title">
-											<Link to="product-detail-left-sidebar.html">
+											<Link to="/productDetails">
 												Organic Strawberry Fruits
 											</Link>
 										</div>
@@ -1472,8 +1472,8 @@ class OurProducts extends React.Component {
 										</div>
 										
 										<div className="product-price">
-											<span className="sale-price">$80.00</span>
-											<span className="base-price">$90.00</span>
+											<span className="sale-price">₹80.00</span>
+											<span className="base-price">₹90.00</span>
 										</div>
 										
 										<div className="product-buttons">
@@ -1493,13 +1493,13 @@ class OurProducts extends React.Component {
 									
 									<div className="product-item">
 										<div className="product-image">
-											<Link to="product-detail-left-sidebar.html">
+											<Link to="/productDetails">
 												<img src="img/product/15.jpg" alt="Product Image" />
 											</Link>
 										</div>
 										
 										<div className="product-title">
-											<Link to="product-detail-left-sidebar.html">
+											<Link to="/productDetails">
 												Organic Strawberry Fruits
 											</Link>
 										</div>
@@ -1513,8 +1513,8 @@ class OurProducts extends React.Component {
 										</div>
 										
 										<div className="product-price">
-											<span className="sale-price">$80.00</span>
-											<span className="base-price">$90.00</span>
+											<span className="sale-price">₹80.00</span>
+											<span className="base-price">₹90.00</span>
 										</div>
 										
 										<div className="product-buttons">
@@ -1534,13 +1534,13 @@ class OurProducts extends React.Component {
 								
 									<div className="product-item">
 										<div className="product-image">
-											<Link to="product-detail-left-sidebar.html">
+											<Link to="/productDetails">
 												<img src="img/product/10.jpg" alt="Product Image" />
 											</Link>
 										</div>
 										
 										<div className="product-title">
-											<Link to="product-detail-left-sidebar.html">
+											<Link to="/productDetails">
 												Organic Strawberry Fruits
 											</Link>
 										</div>
@@ -1554,7 +1554,7 @@ class OurProducts extends React.Component {
 										</div>
 										
 										<div className="product-price">
-											<span className="sale-price">$96.00</span>
+											<span className="sale-price">₹96.00</span>
 										</div>
 										
 										<div className="product-buttons">
@@ -1574,13 +1574,13 @@ class OurProducts extends React.Component {
 									
 									<div className="product-item">
 										<div className="product-image">
-											<Link to="product-detail-left-sidebar.html">
+											<Link to="/productDetails">
 												<img src="img/product/33.jpg" alt="Product Image" />
 											</Link>
 										</div>
 										
 										<div className="product-title">
-											<Link to="product-detail-left-sidebar.html">
+											<Link to="/productDetails">
 												Organic Strawberry Fruits
 											</Link>
 										</div>
@@ -1594,8 +1594,8 @@ class OurProducts extends React.Component {
 										</div>
 										
 										<div className="product-price">
-											<span className="sale-price">$80.00</span>
-											<span className="base-price">$90.00</span>
+											<span className="sale-price">₹80.00</span>
+											<span className="base-price">₹90.00</span>
 										</div>
 										
 										<div className="product-buttons">
@@ -1615,13 +1615,13 @@ class OurProducts extends React.Component {
 									
 									<div className="product-item">
 										<div className="product-image">
-											<Link to="product-detail-left-sidebar.html">
+											<Link to="/productDetails">
 												<img src="img/product/22.jpg" alt="Product Image" />
 											</Link>
 										</div>
 										
 										<div className="product-title">
-											<Link to="product-detail-left-sidebar.html">
+											<Link to="/productDetails">
 												Organic Strawberry Fruits
 											</Link>
 										</div>
@@ -1635,8 +1635,8 @@ class OurProducts extends React.Component {
 										</div>
 										
 										<div className="product-price">
-											<span className="sale-price">$80.00</span>
-											<span className="base-price">$90.00</span>
+											<span className="sale-price">₹80.00</span>
+											<span className="base-price">₹90.00</span>
 										</div>
 										
 										<div className="product-buttons">
@@ -1656,13 +1656,13 @@ class OurProducts extends React.Component {
 								
 									<div className="product-item">
 										<div className="product-image">
-											<Link to="product-detail-left-sidebar.html">
+											<Link to="/productDetails">
 												<img src="img/product/20.jpg" alt="Product Image" />
 											</Link>
 										</div>
 										
 										<div className="product-title">
-											<Link to="product-detail-left-sidebar.html">
+											<Link to="/productDetails">
 												Organic Strawberry Fruits
 											</Link>
 										</div>
@@ -1676,7 +1676,7 @@ class OurProducts extends React.Component {
 										</div>
 										
 										<div className="product-price">
-											<span className="sale-price">$96.00</span>
+											<span className="sale-price">₹96.00</span>
 										</div>
 										
 										<div className="product-buttons">
@@ -1696,13 +1696,13 @@ class OurProducts extends React.Component {
 									
 									<div className="product-item">
 										<div className="product-image">
-											<Link to="product-detail-left-sidebar.html">
+											<Link to="/productDetails">
 												<img src="img/product/23.jpg" alt="Product Image" />
 											</Link>
 										</div>
 										
 										<div className="product-title">
-											<Link to="product-detail-left-sidebar.html">
+											<Link to="/productDetails">
 												Organic Strawberry Fruits
 											</Link>
 										</div>
@@ -1716,8 +1716,8 @@ class OurProducts extends React.Component {
 										</div>
 										
 										<div className="product-price">
-											<span className="sale-price">$80.00</span>
-											<span className="base-price">$90.00</span>
+											<span className="sale-price">₹80.00</span>
+											<span className="base-price">₹90.00</span>
 										</div>
 										
 										<div className="product-buttons">
@@ -1737,13 +1737,13 @@ class OurProducts extends React.Component {
 									
 									<div className="product-item">
 										<div className="product-image">
-											<Link to="product-detail-left-sidebar.html">
+											<Link to="/productDetails">
 												<img src="img/product/30.jpg" alt="Product Image" />
 											</Link>
 										</div>
 										
 										<div className="product-title">
-											<Link to="product-detail-left-sidebar.html">
+											<Link to="/productDetails">
 												Organic Strawberry Fruits
 											</Link>
 										</div>
@@ -1757,8 +1757,8 @@ class OurProducts extends React.Component {
 										</div>
 										
 										<div className="product-price">
-											<span className="sale-price">$80.00</span>
-											<span className="base-price">$90.00</span>
+											<span className="sale-price">₹80.00</span>
+											<span className="base-price">₹90.00</span>
 										</div>
 										
 										<div className="product-buttons">
@@ -1778,13 +1778,13 @@ class OurProducts extends React.Component {
 								
 									<div className="product-item">
 										<div className="product-image">
-											<Link to="product-detail-left-sidebar.html">
+											<Link to="/productDetails">
 												<img src="img/product/21.jpg" alt="Product Image" />
 											</Link>
 										</div>
 										
 										<div className="product-title">
-											<Link to="product-detail-left-sidebar.html">
+											<Link to="/productDetails">
 												Organic Strawberry Fruits
 											</Link>
 										</div>
@@ -1798,7 +1798,7 @@ class OurProducts extends React.Component {
 										</div>
 										
 										<div className="product-price">
-											<span className="sale-price">$96.00</span>
+											<span className="sale-price">₹96.00</span>
 										</div>
 										
 										<div className="product-buttons">
@@ -1818,13 +1818,13 @@ class OurProducts extends React.Component {
 									
 									<div className="product-item">
 										<div className="product-image">
-											<Link to="product-detail-left-sidebar.html">
+											<Link to="/productDetails">
 												<img src="img/product/6.jpg" alt="Product Image" />
 											</Link>
 										</div>
 										
 										<div className="product-title">
-											<Link to="product-detail-left-sidebar.html">
+											<Link to="/productDetails">
 												Organic Strawberry Fruits
 											</Link>
 										</div>
@@ -1838,8 +1838,8 @@ class OurProducts extends React.Component {
 										</div>
 										
 										<div className="product-price">
-											<span className="sale-price">$80.00</span>
-											<span className="base-price">$90.00</span>
+											<span className="sale-price">₹80.00</span>
+											<span className="base-price">₹90.00</span>
 										</div>
 										
 										<div className="product-buttons">
@@ -1859,13 +1859,13 @@ class OurProducts extends React.Component {
 									
 									<div className="product-item">
 										<div className="product-image">
-											<Link to="product-detail-left-sidebar.html">
+											<Link to="/productDetails">
 												<img src="img/product/3.jpg" alt="Product Image" />
 											</Link>
 										</div>
 										
 										<div className="product-title">
-											<Link to="product-detail-left-sidebar.html">
+											<Link to="/productDetails">
 												Organic Strawberry Fruits
 											</Link>
 										</div>
@@ -1879,8 +1879,8 @@ class OurProducts extends React.Component {
 										</div>
 										
 										<div className="product-price">
-											<span className="sale-price">$80.00</span>
-											<span className="base-price">$90.00</span>
+											<span className="sale-price">₹80.00</span>
+											<span className="base-price">₹90.00</span>
 										</div>
 										
 										<div className="product-buttons">
@@ -1904,13 +1904,13 @@ class OurProducts extends React.Component {
 								<div className="products owl-theme owl-carousel">
 									<div className="product-item">
 										<div className="product-image">
-											<Link to="product-detail-left-sidebar.html">
+											<Link to="/productDetails">
 												<img src="img/product/4.jpg" alt="Product Image" />
 											</Link>
 										</div>
 										
 										<div className="product-title">
-											<Link to="product-detail-left-sidebar.html">
+											<Link to="/productDetails">
 												Organic Strawberry Fruits
 											</Link>
 										</div>
@@ -1924,8 +1924,8 @@ class OurProducts extends React.Component {
 										</div>
 										
 										<div className="product-price">
-											<span className="sale-price">$80.00</span>
-											<span className="base-price">$90.00</span>
+											<span className="sale-price">₹80.00</span>
+											<span className="base-price">₹90.00</span>
 										</div>
 										
 										<div className="product-buttons">
@@ -1945,13 +1945,13 @@ class OurProducts extends React.Component {
 									
 									<div className="product-item">
 										<div className="product-image">
-											<Link to="product-detail-left-sidebar.html">
+											<Link to="/productDetails">
 												<img src="img/product/14.jpg" alt="Product Image" />
 											</Link>
 										</div>
 										
 										<div className="product-title">
-											<Link to="product-detail-left-sidebar.html">
+											<Link to="/productDetails">
 												Organic Strawberry Fruits
 											</Link>
 										</div>
@@ -1965,8 +1965,8 @@ class OurProducts extends React.Component {
 										</div>
 										
 										<div className="product-price">
-											<span className="sale-price">$80.00</span>
-											<span className="base-price">$90.00</span>
+											<span className="sale-price">₹80.00</span>
+											<span className="base-price">₹90.00</span>
 										</div>
 										
 										<div className="product-buttons">
@@ -1986,13 +1986,13 @@ class OurProducts extends React.Component {
 									
 									<div className="product-item">
 										<div className="product-image">
-											<Link to="product-detail-left-sidebar.html">
+											<Link to="/productDetails">
 												<img src="img/product/17.jpg" alt="Product Image" />
 											</Link>
 										</div>
 										
 										<div className="product-title">
-											<Link to="product-detail-left-sidebar.html">
+											<Link to="/productDetails">
 												Organic Strawberry Fruits
 											</Link>
 										</div>
@@ -2006,8 +2006,8 @@ class OurProducts extends React.Component {
 										</div>
 										
 										<div className="product-price">
-											<span className="sale-price">$80.00</span>
-											<span className="base-price">$90.00</span>
+											<span className="sale-price">₹80.00</span>
+											<span className="base-price">₹90.00</span>
 										</div>
 										
 										<div className="product-buttons">
@@ -2027,13 +2027,13 @@ class OurProducts extends React.Component {
 								
 									<div className="product-item">
 										<div className="product-image">
-											<Link to="product-detail-left-sidebar.html">
+											<Link to="/productDetails">
 												<img src="img/product/8.jpg" alt="Product Image" />
 											</Link>
 										</div>
 										
 										<div className="product-title">
-											<Link to="product-detail-left-sidebar.html">
+											<Link to="/productDetails">
 												Organic Strawberry Fruits
 											</Link>
 										</div>
@@ -2047,7 +2047,7 @@ class OurProducts extends React.Component {
 										</div>
 										
 										<div className="product-price">
-											<span className="sale-price">$120.00</span>
+											<span className="sale-price">₹120.00</span>
 										</div>
 										
 										<div className="product-buttons">
@@ -2067,13 +2067,13 @@ class OurProducts extends React.Component {
 									
 									<div className="product-item">
 										<div className="product-image">
-											<Link to="product-detail-left-sidebar.html">
+											<Link to="/productDetails">
 												<img src="img/product/9.jpg" alt="Product Image" />
 											</Link>
 										</div>
 										
 										<div className="product-title">
-											<Link to="product-detail-left-sidebar.html">
+											<Link to="/productDetails">
 												Organic Strawberry Fruits
 											</Link>
 										</div>
@@ -2087,8 +2087,8 @@ class OurProducts extends React.Component {
 										</div>
 										
 										<div className="product-price">
-											<span className="sale-price">$80.00</span>
-											<span className="base-price">$90.00</span>
+											<span className="sale-price">₹80.00</span>
+											<span className="base-price">₹90.00</span>
 										</div>
 										
 										<div className="product-buttons">
@@ -2108,13 +2108,13 @@ class OurProducts extends React.Component {
 									
 									<div className="product-item">
 										<div className="product-image">
-											<Link to="product-detail-left-sidebar.html">
+											<Link to="/productDetails">
 												<img src="img/product/15.jpg" alt="Product Image" />
 											</Link>
 										</div>
 										
 										<div className="product-title">
-											<Link to="product-detail-left-sidebar.html">
+											<Link to="/productDetails">
 												Organic Strawberry Fruits
 											</Link>
 										</div>
@@ -2128,8 +2128,8 @@ class OurProducts extends React.Component {
 										</div>
 										
 										<div className="product-price">
-											<span className="sale-price">$80.00</span>
-											<span className="base-price">$90.00</span>
+											<span className="sale-price">₹80.00</span>
+											<span className="base-price">₹90.00</span>
 										</div>
 										
 										<div className="product-buttons">
@@ -2149,13 +2149,13 @@ class OurProducts extends React.Component {
 								
 									<div className="product-item">
 										<div className="product-image">
-											<Link to="product-detail-left-sidebar.html">
+											<Link to="/productDetails">
 												<img src="img/product/10.jpg" alt="Product Image" />
 											</Link>
 										</div>
 										
 										<div className="product-title">
-											<Link to="product-detail-left-sidebar.html">
+											<Link to="/productDetails">
 												Organic Strawberry Fruits
 											</Link>
 										</div>
@@ -2169,7 +2169,7 @@ class OurProducts extends React.Component {
 										</div>
 										
 										<div className="product-price">
-											<span className="sale-price">$96.00</span>
+											<span className="sale-price">₹96.00</span>
 										</div>
 										
 										<div className="product-buttons">
@@ -2189,13 +2189,13 @@ class OurProducts extends React.Component {
 									
 									<div className="product-item">
 										<div className="product-image">
-											<Link to="product-detail-left-sidebar.html">
+											<Link to="/productDetails">
 												<img src="img/product/33.jpg" alt="Product Image" />
 											</Link>
 										</div>
 										
 										<div className="product-title">
-											<Link to="product-detail-left-sidebar.html">
+											<Link to="/productDetails">
 												Organic Strawberry Fruits
 											</Link>
 										</div>
@@ -2209,8 +2209,8 @@ class OurProducts extends React.Component {
 										</div>
 										
 										<div className="product-price">
-											<span className="sale-price">$80.00</span>
-											<span className="base-price">$90.00</span>
+											<span className="sale-price">₹80.00</span>
+											<span className="base-price">₹90.00</span>
 										</div>
 										
 										<div className="product-buttons">
@@ -2230,13 +2230,13 @@ class OurProducts extends React.Component {
 									
 									<div className="product-item">
 										<div className="product-image">
-											<Link to="product-detail-left-sidebar.html">
+											<Link to="/productDetails">
 												<img src="img/product/22.jpg" alt="Product Image" />
 											</Link>
 										</div>
 										
 										<div className="product-title">
-											<Link to="product-detail-left-sidebar.html">
+											<Link to="/productDetails">
 												Organic Strawberry Fruits
 											</Link>
 										</div>
@@ -2250,8 +2250,8 @@ class OurProducts extends React.Component {
 										</div>
 										
 										<div className="product-price">
-											<span className="sale-price">$80.00</span>
-											<span className="base-price">$90.00</span>
+											<span className="sale-price">₹80.00</span>
+											<span className="base-price">₹90.00</span>
 										</div>
 										
 										<div className="product-buttons">
@@ -2271,13 +2271,13 @@ class OurProducts extends React.Component {
 								
 									<div className="product-item">
 										<div className="product-image">
-											<Link to="product-detail-left-sidebar.html">
+											<Link to="/productDetails">
 												<img src="img/product/20.jpg" alt="Product Image" />
 											</Link>
 										</div>
 										
 										<div className="product-title">
-											<Link to="product-detail-left-sidebar.html">
+											<Link to="/productDetails">
 												Organic Strawberry Fruits
 											</Link>
 										</div>
@@ -2291,7 +2291,7 @@ class OurProducts extends React.Component {
 										</div>
 										
 										<div className="product-price">
-											<span className="sale-price">$96.00</span>
+											<span className="sale-price">₹96.00</span>
 										</div>
 										
 										<div className="product-buttons">
@@ -2311,13 +2311,13 @@ class OurProducts extends React.Component {
 									
 									<div className="product-item">
 										<div className="product-image">
-											<Link to="product-detail-left-sidebar.html">
+											<Link to="/productDetails">
 												<img src="img/product/23.jpg" alt="Product Image" />
 											</Link>
 										</div>
 										
 										<div className="product-title">
-											<Link to="product-detail-left-sidebar.html">
+											<Link to="/productDetails">
 												Organic Strawberry Fruits
 											</Link>
 										</div>
@@ -2331,8 +2331,8 @@ class OurProducts extends React.Component {
 										</div>
 										
 										<div className="product-price">
-											<span className="sale-price">$80.00</span>
-											<span className="base-price">$90.00</span>
+											<span className="sale-price">₹80.00</span>
+											<span className="base-price">₹90.00</span>
 										</div>
 										
 										<div className="product-buttons">
@@ -2352,13 +2352,13 @@ class OurProducts extends React.Component {
 									
 									<div className="product-item">
 										<div className="product-image">
-											<Link to="product-detail-left-sidebar.html">
+											<Link to="/productDetails">
 												<img src="img/product/30.jpg" alt="Product Image" />
 											</Link>
 										</div>
 										
 										<div className="product-title">
-											<Link to="product-detail-left-sidebar.html">
+											<Link to="/productDetails">
 												Organic Strawberry Fruits
 											</Link>
 										</div>
@@ -2372,8 +2372,8 @@ class OurProducts extends React.Component {
 										</div>
 										
 										<div className="product-price">
-											<span className="sale-price">$80.00</span>
-											<span className="base-price">$90.00</span>
+											<span className="sale-price">₹80.00</span>
+											<span className="base-price">₹90.00</span>
 										</div>
 										
 										<div className="product-buttons">
@@ -2393,13 +2393,13 @@ class OurProducts extends React.Component {
 								
 									<div className="product-item">
 										<div className="product-image">
-											<Link to="product-detail-left-sidebar.html">
+											<Link to="/productDetails">
 												<img src="img/product/21.jpg" alt="Product Image" />
 											</Link>
 										</div>
 										
 										<div className="product-title">
-											<Link to="product-detail-left-sidebar.html">
+											<Link to="/productDetails">
 												Organic Strawberry Fruits
 											</Link>
 										</div>
@@ -2413,7 +2413,7 @@ class OurProducts extends React.Component {
 										</div>
 										
 										<div className="product-price">
-											<span className="sale-price">$96.00</span>
+											<span className="sale-price">₹96.00</span>
 										</div>
 										
 										<div className="product-buttons">
@@ -2433,13 +2433,13 @@ class OurProducts extends React.Component {
 									
 									<div className="product-item">
 										<div className="product-image">
-											<Link to="product-detail-left-sidebar.html">
+											<Link to="/productDetails">
 												<img src="img/product/6.jpg" alt="Product Image" />
 											</Link>
 										</div>
 										
 										<div className="product-title">
-											<Link to="product-detail-left-sidebar.html">
+											<Link to="/productDetails">
 												Organic Strawberry Fruits
 											</Link>
 										</div>
@@ -2453,8 +2453,8 @@ class OurProducts extends React.Component {
 										</div>
 										
 										<div className="product-price">
-											<span className="sale-price">$80.00</span>
-											<span className="base-price">$90.00</span>
+											<span className="sale-price">₹80.00</span>
+											<span className="base-price">₹90.00</span>
 										</div>
 										
 										<div className="product-buttons">
@@ -2474,13 +2474,13 @@ class OurProducts extends React.Component {
 									
 									<div className="product-item">
 										<div className="product-image">
-											<Link to="product-detail-left-sidebar.html">
+											<Link to="/productDetails">
 												<img src="img/product/3.jpg" alt="Product Image" />
 											</Link>
 										</div>
 										
 										<div className="product-title">
-											<Link to="product-detail-left-sidebar.html">
+											<Link to="/productDetails">
 												Organic Strawberry Fruits
 											</Link>
 										</div>
@@ -2494,8 +2494,8 @@ class OurProducts extends React.Component {
 										</div>
 										
 										<div className="product-price">
-											<span className="sale-price">$80.00</span>
-											<span className="base-price">$90.00</span>
+											<span className="sale-price">₹80.00</span>
+											<span className="base-price">₹90.00</span>
 										</div>
 										
 										<div className="product-buttons">
@@ -2519,13 +2519,13 @@ class OurProducts extends React.Component {
 								<div className="products owl-theme owl-carousel">
 									<div className="product-item">
 										<div className="product-image">
-											<Link to="product-detail-left-sidebar.html">
+											<Link to="/productDetails">
 												<img src="img/product/4.jpg" alt="Product Image" />
 											</Link>
 										</div>
 										
 										<div className="product-title">
-											<Link to="product-detail-left-sidebar.html">
+											<Link to="/productDetails">
 												Organic Strawberry Fruits
 											</Link>
 										</div>
@@ -2539,8 +2539,8 @@ class OurProducts extends React.Component {
 										</div>
 										
 										<div className="product-price">
-											<span className="sale-price">$80.00</span>
-											<span className="base-price">$90.00</span>
+											<span className="sale-price">₹80.00</span>
+											<span className="base-price">₹90.00</span>
 										</div>
 										
 										<div className="product-buttons">
@@ -2560,13 +2560,13 @@ class OurProducts extends React.Component {
 									
 									<div className="product-item">
 										<div className="product-image">
-											<Link to="product-detail-left-sidebar.html">
+											<Link to="/productDetails">
 												<img src="img/product/14.jpg" alt="Product Image" />
 											</Link>
 										</div>
 										
 										<div className="product-title">
-											<Link to="product-detail-left-sidebar.html">
+											<Link to="/productDetails">
 												Organic Strawberry Fruits
 											</Link>
 										</div>
@@ -2580,8 +2580,8 @@ class OurProducts extends React.Component {
 										</div>
 										
 										<div className="product-price">
-											<span className="sale-price">$80.00</span>
-											<span className="base-price">$90.00</span>
+											<span className="sale-price">₹80.00</span>
+											<span className="base-price">₹90.00</span>
 										</div>
 										
 										<div className="product-buttons">
@@ -2601,13 +2601,13 @@ class OurProducts extends React.Component {
 									
 									<div className="product-item">
 										<div className="product-image">
-											<Link to="product-detail-left-sidebar.html">
+											<Link to="/productDetails">
 												<img src="img/product/17.jpg" alt="Product Image" />
 											</Link>
 										</div>
 										
 										<div className="product-title">
-											<Link to="product-detail-left-sidebar.html">
+											<Link to="/productDetails">
 												Organic Strawberry Fruits
 											</Link>
 										</div>
@@ -2621,8 +2621,8 @@ class OurProducts extends React.Component {
 										</div>
 										
 										<div className="product-price">
-											<span className="sale-price">$80.00</span>
-											<span className="base-price">$90.00</span>
+											<span className="sale-price">₹80.00</span>
+											<span className="base-price">₹90.00</span>
 										</div>
 										
 										<div className="product-buttons">
@@ -2642,13 +2642,13 @@ class OurProducts extends React.Component {
 								
 									<div className="product-item">
 										<div className="product-image">
-											<Link to="product-detail-left-sidebar.html">
+											<Link to="/productDetails">
 												<img src="img/product/8.jpg" alt="Product Image" />
 											</Link>
 										</div>
 										
 										<div className="product-title">
-											<Link to="product-detail-left-sidebar.html">
+											<Link to="/productDetails">
 												Organic Strawberry Fruits
 											</Link>
 										</div>
@@ -2662,7 +2662,7 @@ class OurProducts extends React.Component {
 										</div>
 										
 										<div className="product-price">
-											<span className="sale-price">$120.00</span>
+											<span className="sale-price">₹120.00</span>
 										</div>
 										
 										<div className="product-buttons">
@@ -2682,13 +2682,13 @@ class OurProducts extends React.Component {
 									
 									<div className="product-item">
 										<div className="product-image">
-											<Link to="product-detail-left-sidebar.html">
+											<Link to="/productDetails">
 												<img src="img/product/9.jpg" alt="Product Image" />
 											</Link>
 										</div>
 										
 										<div className="product-title">
-											<Link to="product-detail-left-sidebar.html">
+											<Link to="/productDetails">
 												Organic Strawberry Fruits
 											</Link>
 										</div>
@@ -2702,8 +2702,8 @@ class OurProducts extends React.Component {
 										</div>
 										
 										<div className="product-price">
-											<span className="sale-price">$80.00</span>
-											<span className="base-price">$90.00</span>
+											<span className="sale-price">₹80.00</span>
+											<span className="base-price">₹90.00</span>
 										</div>
 										
 										<div className="product-buttons">
@@ -2723,13 +2723,13 @@ class OurProducts extends React.Component {
 									
 									<div className="product-item">
 										<div className="product-image">
-											<Link to="product-detail-left-sidebar.html">
+											<Link to="/productDetails">
 												<img src="img/product/15.jpg" alt="Product Image" />
 											</Link>
 										</div>
 										
 										<div className="product-title">
-											<Link to="product-detail-left-sidebar.html">
+											<Link to="/productDetails">
 												Organic Strawberry Fruits
 											</Link>
 										</div>
@@ -2743,8 +2743,8 @@ class OurProducts extends React.Component {
 										</div>
 										
 										<div className="product-price">
-											<span className="sale-price">$80.00</span>
-											<span className="base-price">$90.00</span>
+											<span className="sale-price">₹80.00</span>
+											<span className="base-price">₹90.00</span>
 										</div>
 										
 										<div className="product-buttons">
@@ -2764,13 +2764,13 @@ class OurProducts extends React.Component {
 								
 									<div className="product-item">
 										<div className="product-image">
-											<Link to="product-detail-left-sidebar.html">
+											<Link to="/productDetails">
 												<img src="img/product/10.jpg" alt="Product Image" />
 											</Link>
 										</div>
 										
 										<div className="product-title">
-											<Link to="product-detail-left-sidebar.html">
+											<Link to="/productDetails">
 												Organic Strawberry Fruits
 											</Link>
 										</div>
@@ -2784,7 +2784,7 @@ class OurProducts extends React.Component {
 										</div>
 										
 										<div className="product-price">
-											<span className="sale-price">$96.00</span>
+											<span className="sale-price">₹96.00</span>
 										</div>
 										
 										<div className="product-buttons">
@@ -2804,13 +2804,13 @@ class OurProducts extends React.Component {
 									
 									<div className="product-item">
 										<div className="product-image">
-											<Link to="product-detail-left-sidebar.html">
+											<Link to="/productDetails">
 												<img src="img/product/33.jpg" alt="Product Image" />
 											</Link>
 										</div>
 										
 										<div className="product-title">
-											<Link to="product-detail-left-sidebar.html">
+											<Link to="/productDetails">
 												Organic Strawberry Fruits
 											</Link>
 										</div>
@@ -2824,8 +2824,8 @@ class OurProducts extends React.Component {
 										</div>
 										
 										<div className="product-price">
-											<span className="sale-price">$80.00</span>
-											<span className="base-price">$90.00</span>
+											<span className="sale-price">₹80.00</span>
+											<span className="base-price">₹90.00</span>
 										</div>
 										
 										<div className="product-buttons">
@@ -2845,13 +2845,13 @@ class OurProducts extends React.Component {
 									
 									<div className="product-item">
 										<div className="product-image">
-											<Link to="product-detail-left-sidebar.html">
+											<Link to="/productDetails">
 												<img src="img/product/22.jpg" alt="Product Image" />
 											</Link>
 										</div>
 										
 										<div className="product-title">
-											<Link to="product-detail-left-sidebar.html">
+											<Link to="/productDetails">
 												Organic Strawberry Fruits
 											</Link>
 										</div>
@@ -2865,8 +2865,8 @@ class OurProducts extends React.Component {
 										</div>
 										
 										<div className="product-price">
-											<span className="sale-price">$80.00</span>
-											<span className="base-price">$90.00</span>
+											<span className="sale-price">₹80.00</span>
+											<span className="base-price">₹90.00</span>
 										</div>
 										
 										<div className="product-buttons">
@@ -2886,13 +2886,13 @@ class OurProducts extends React.Component {
 								
 									<div className="product-item">
 										<div className="product-image">
-											<Link to="product-detail-left-sidebar.html">
+											<Link to="/productDetails">
 												<img src="img/product/20.jpg" alt="Product Image" />
 											</Link>
 										</div>
 										
 										<div className="product-title">
-											<Link to="product-detail-left-sidebar.html">
+											<Link to="/productDetails">
 												Organic Strawberry Fruits
 											</Link>
 										</div>
@@ -2906,7 +2906,7 @@ class OurProducts extends React.Component {
 										</div>
 										
 										<div className="product-price">
-											<span className="sale-price">$96.00</span>
+											<span className="sale-price">₹96.00</span>
 										</div>
 										
 										<div className="product-buttons">
@@ -2926,13 +2926,13 @@ class OurProducts extends React.Component {
 									
 									<div className="product-item">
 										<div className="product-image">
-											<Link to="product-detail-left-sidebar.html">
+											<Link to="/productDetails">
 												<img src="img/product/23.jpg" alt="Product Image" />
 											</Link>
 										</div>
 										
 										<div className="product-title">
-											<Link to="product-detail-left-sidebar.html">
+											<Link to="/productDetails">
 												Organic Strawberry Fruits
 											</Link>
 										</div>
@@ -2946,8 +2946,8 @@ class OurProducts extends React.Component {
 										</div>
 										
 										<div className="product-price">
-											<span className="sale-price">$80.00</span>
-											<span className="base-price">$90.00</span>
+											<span className="sale-price">₹80.00</span>
+											<span className="base-price">₹90.00</span>
 										</div>
 										
 										<div className="product-buttons">
@@ -2967,13 +2967,13 @@ class OurProducts extends React.Component {
 									
 									<div className="product-item">
 										<div className="product-image">
-											<Link to="product-detail-left-sidebar.html">
+											<Link to="/productDetails">
 												<img src="img/product/30.jpg" alt="Product Image" />
 											</Link>
 										</div>
 										
 										<div className="product-title">
-											<Link to="product-detail-left-sidebar.html">
+											<Link to="/productDetails">
 												Organic Strawberry Fruits
 											</Link>
 										</div>
@@ -2987,8 +2987,8 @@ class OurProducts extends React.Component {
 										</div>
 										
 										<div className="product-price">
-											<span className="sale-price">$80.00</span>
-											<span className="base-price">$90.00</span>
+											<span className="sale-price">₹80.00</span>
+											<span className="base-price">₹90.00</span>
 										</div>
 										
 										<div className="product-buttons">
@@ -3008,13 +3008,13 @@ class OurProducts extends React.Component {
 								
 									<div className="product-item">
 										<div className="product-image">
-											<Link to="product-detail-left-sidebar.html">
+											<Link to="/productDetails">
 												<img src="img/product/21.jpg" alt="Product Image" />
 											</Link>
 										</div>
 										
 										<div className="product-title">
-											<Link to="product-detail-left-sidebar.html">
+											<Link to="/productDetails">
 												Organic Strawberry Fruits
 											</Link>
 										</div>
@@ -3028,7 +3028,7 @@ class OurProducts extends React.Component {
 										</div>
 										
 										<div className="product-price">
-											<span className="sale-price">$96.00</span>
+											<span className="sale-price">₹96.00</span>
 										</div>
 										
 										<div className="product-buttons">
@@ -3048,13 +3048,13 @@ class OurProducts extends React.Component {
 									
 									<div className="product-item">
 										<div className="product-image">
-											<Link to="product-detail-left-sidebar.html">
+											<Link to="/productDetails">
 												<img src="img/product/6.jpg" alt="Product Image" />
 											</Link>
 										</div>
 										
 										<div className="product-title">
-											<Link to="product-detail-left-sidebar.html">
+											<Link to="/productDetails">
 												Organic Strawberry Fruits
 											</Link>
 										</div>
@@ -3068,8 +3068,8 @@ class OurProducts extends React.Component {
 										</div>
 										
 										<div className="product-price">
-											<span className="sale-price">$80.00</span>
-											<span className="base-price">$90.00</span>
+											<span className="sale-price">₹80.00</span>
+											<span className="base-price">₹90.00</span>
 										</div>
 										
 										<div className="product-buttons">
@@ -3089,13 +3089,13 @@ class OurProducts extends React.Component {
 									
 									<div className="product-item">
 										<div className="product-image">
-											<Link to="product-detail-left-sidebar.html">
+											<Link to="/productDetails">
 												<img src="img/product/3.jpg" alt="Product Image" />
 											</Link>
 										</div>
 										
 										<div className="product-title">
-											<Link to="product-detail-left-sidebar.html">
+											<Link to="/productDetails">
 												Organic Strawberry Fruits
 											</Link>
 										</div>
@@ -3109,8 +3109,8 @@ class OurProducts extends React.Component {
 										</div>
 										
 										<div className="product-price">
-											<span className="sale-price">$80.00</span>
-											<span className="base-price">$90.00</span>
+											<span className="sale-price">₹80.00</span>
+											<span className="base-price">₹90.00</span>
 										</div>
 										
 										<div className="product-buttons">

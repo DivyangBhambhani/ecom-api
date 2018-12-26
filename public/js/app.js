@@ -60,7 +60,7 @@
 /******/ 	__webpack_require__.p = "/";
 /******/
 /******/ 	// Load entry module and return exports
-/******/ 	return __webpack_require__(__webpack_require__.s = 30);
+/******/ 	return __webpack_require__(__webpack_require__.s = 33);
 /******/ })
 /************************************************************************/
 /******/ ([
@@ -73,19 +73,82 @@
 if (false) {
   module.exports = require('./cjs/react.production.min.js');
 } else {
-  module.exports = __webpack_require__(56);
+  module.exports = __webpack_require__(59);
 }
 
 
 /***/ }),
 /* 1 */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__BrowserRouter__ = __webpack_require__(66);
+/* harmony reexport (binding) */ __webpack_require__.d(__webpack_exports__, "BrowserRouter", function() { return __WEBPACK_IMPORTED_MODULE_0__BrowserRouter__["a"]; });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__HashRouter__ = __webpack_require__(73);
+/* harmony reexport (binding) */ __webpack_require__.d(__webpack_exports__, "HashRouter", function() { return __WEBPACK_IMPORTED_MODULE_1__HashRouter__["a"]; });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__Link__ = __webpack_require__(28);
+/* harmony reexport (binding) */ __webpack_require__.d(__webpack_exports__, "Link", function() { return __WEBPACK_IMPORTED_MODULE_2__Link__["a"]; });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__MemoryRouter__ = __webpack_require__(74);
+/* harmony reexport (binding) */ __webpack_require__.d(__webpack_exports__, "MemoryRouter", function() { return __WEBPACK_IMPORTED_MODULE_3__MemoryRouter__["a"]; });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__NavLink__ = __webpack_require__(76);
+/* harmony reexport (binding) */ __webpack_require__.d(__webpack_exports__, "NavLink", function() { return __WEBPACK_IMPORTED_MODULE_4__NavLink__["a"]; });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__Prompt__ = __webpack_require__(78);
+/* harmony reexport (binding) */ __webpack_require__.d(__webpack_exports__, "Prompt", function() { return __WEBPACK_IMPORTED_MODULE_5__Prompt__["a"]; });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__Redirect__ = __webpack_require__(80);
+/* harmony reexport (binding) */ __webpack_require__.d(__webpack_exports__, "Redirect", function() { return __WEBPACK_IMPORTED_MODULE_6__Redirect__["a"]; });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__Route__ = __webpack_require__(29);
+/* harmony reexport (binding) */ __webpack_require__.d(__webpack_exports__, "Route", function() { return __WEBPACK_IMPORTED_MODULE_7__Route__["a"]; });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_8__Router__ = __webpack_require__(16);
+/* harmony reexport (binding) */ __webpack_require__.d(__webpack_exports__, "Router", function() { return __WEBPACK_IMPORTED_MODULE_8__Router__["a"]; });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_9__StaticRouter__ = __webpack_require__(82);
+/* harmony reexport (binding) */ __webpack_require__.d(__webpack_exports__, "StaticRouter", function() { return __WEBPACK_IMPORTED_MODULE_9__StaticRouter__["a"]; });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_10__Switch__ = __webpack_require__(84);
+/* harmony reexport (binding) */ __webpack_require__.d(__webpack_exports__, "Switch", function() { return __WEBPACK_IMPORTED_MODULE_10__Switch__["a"]; });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_11__generatePath__ = __webpack_require__(86);
+/* harmony reexport (binding) */ __webpack_require__.d(__webpack_exports__, "generatePath", function() { return __WEBPACK_IMPORTED_MODULE_11__generatePath__["a"]; });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_12__matchPath__ = __webpack_require__(87);
+/* harmony reexport (binding) */ __webpack_require__.d(__webpack_exports__, "matchPath", function() { return __WEBPACK_IMPORTED_MODULE_12__matchPath__["a"]; });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_13__withRouter__ = __webpack_require__(88);
+/* harmony reexport (binding) */ __webpack_require__.d(__webpack_exports__, "withRouter", function() { return __WEBPACK_IMPORTED_MODULE_13__withRouter__["a"]; });
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/***/ }),
+/* 2 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
 
 
-var bind = __webpack_require__(18);
-var isBuffer = __webpack_require__(38);
+var bind = __webpack_require__(21);
+var isBuffer = __webpack_require__(41);
 
 /*global toString:true*/
 
@@ -388,7 +451,7 @@ module.exports = {
 
 
 /***/ }),
-/* 2 */
+/* 3 */
 /***/ (function(module, exports, __webpack_require__) {
 
 /**
@@ -413,7 +476,7 @@ if (true) {
   // By explicitly using `prop-types` you are opting into new development behavior.
   // http://fb.me/prop-types-in-prod
   var throwOnDirectAccess = true;
-  module.exports = __webpack_require__(64)(isValidElement, throwOnDirectAccess);
+  module.exports = __webpack_require__(67)(isValidElement, throwOnDirectAccess);
 } else {
   // By explicitly using `prop-types` you are opting into new production behavior.
   // http://fb.me/prop-types-in-prod
@@ -422,7 +485,7 @@ if (true) {
 
 
 /***/ }),
-/* 3 */
+/* 4 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -478,7 +541,7 @@ module.exports = invariant;
 
 
 /***/ }),
-/* 4 */
+/* 5 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -547,83 +610,612 @@ module.exports = warning;
 
 
 /***/ }),
-/* 5 */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
+/* 6 */
+/***/ (function(module, exports, __webpack_require__) {
 
-"use strict";
-Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__BrowserRouter__ = __webpack_require__(63);
-/* harmony reexport (binding) */ __webpack_require__.d(__webpack_exports__, "BrowserRouter", function() { return __WEBPACK_IMPORTED_MODULE_0__BrowserRouter__["a"]; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__HashRouter__ = __webpack_require__(70);
-/* harmony reexport (binding) */ __webpack_require__.d(__webpack_exports__, "HashRouter", function() { return __WEBPACK_IMPORTED_MODULE_1__HashRouter__["a"]; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__Link__ = __webpack_require__(25);
-/* harmony reexport (binding) */ __webpack_require__.d(__webpack_exports__, "Link", function() { return __WEBPACK_IMPORTED_MODULE_2__Link__["a"]; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__MemoryRouter__ = __webpack_require__(71);
-/* harmony reexport (binding) */ __webpack_require__.d(__webpack_exports__, "MemoryRouter", function() { return __WEBPACK_IMPORTED_MODULE_3__MemoryRouter__["a"]; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__NavLink__ = __webpack_require__(73);
-/* harmony reexport (binding) */ __webpack_require__.d(__webpack_exports__, "NavLink", function() { return __WEBPACK_IMPORTED_MODULE_4__NavLink__["a"]; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__Prompt__ = __webpack_require__(75);
-/* harmony reexport (binding) */ __webpack_require__.d(__webpack_exports__, "Prompt", function() { return __WEBPACK_IMPORTED_MODULE_5__Prompt__["a"]; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__Redirect__ = __webpack_require__(77);
-/* harmony reexport (binding) */ __webpack_require__.d(__webpack_exports__, "Redirect", function() { return __WEBPACK_IMPORTED_MODULE_6__Redirect__["a"]; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__Route__ = __webpack_require__(26);
-/* harmony reexport (binding) */ __webpack_require__.d(__webpack_exports__, "Route", function() { return __WEBPACK_IMPORTED_MODULE_7__Route__["a"]; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_8__Router__ = __webpack_require__(14);
-/* harmony reexport (binding) */ __webpack_require__.d(__webpack_exports__, "Router", function() { return __WEBPACK_IMPORTED_MODULE_8__Router__["a"]; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_9__StaticRouter__ = __webpack_require__(79);
-/* harmony reexport (binding) */ __webpack_require__.d(__webpack_exports__, "StaticRouter", function() { return __WEBPACK_IMPORTED_MODULE_9__StaticRouter__["a"]; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_10__Switch__ = __webpack_require__(81);
-/* harmony reexport (binding) */ __webpack_require__.d(__webpack_exports__, "Switch", function() { return __WEBPACK_IMPORTED_MODULE_10__Switch__["a"]; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_11__generatePath__ = __webpack_require__(83);
-/* harmony reexport (binding) */ __webpack_require__.d(__webpack_exports__, "generatePath", function() { return __WEBPACK_IMPORTED_MODULE_11__generatePath__["a"]; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_12__matchPath__ = __webpack_require__(84);
-/* harmony reexport (binding) */ __webpack_require__.d(__webpack_exports__, "matchPath", function() { return __WEBPACK_IMPORTED_MODULE_12__matchPath__["a"]; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_13__withRouter__ = __webpack_require__(85);
-/* harmony reexport (binding) */ __webpack_require__.d(__webpack_exports__, "withRouter", function() { return __WEBPACK_IMPORTED_MODULE_13__withRouter__["a"]; });
+var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
 
+function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
 
+function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
 
+function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
 
+var React = __webpack_require__(0);
+var Link = __webpack_require__(1).Link;
+var NavLink = __webpack_require__(1).NavLink;
+var baseURL = 'http://localhost:8000/';
 
+var Header = function (_React$Component) {
+	_inherits(Header, _React$Component);
 
+	function Header() {
+		_classCallCheck(this, Header);
 
+		return _possibleConstructorReturn(this, (Header.__proto__ || Object.getPrototypeOf(Header)).apply(this, arguments));
+	}
 
+	_createClass(Header, [{
+		key: 'render',
+		value: function render() {
+			return React.createElement(
+				'header',
+				{ id: 'header' },
+				React.createElement(
+					'div',
+					{ className: 'container' },
+					React.createElement(
+						'div',
+						{ className: 'header-top' },
+						React.createElement(
+							'div',
+							{ className: 'row align-items-center' },
+							React.createElement(
+								'div',
+								{ className: 'col-lg-5 col-md-5 col-sm-12' },
+								React.createElement(
+									'div',
+									{ id: 'main-menu' },
+									React.createElement(
+										'ul',
+										{ className: 'menu' },
+										React.createElement(
+											'li',
+											null,
+											React.createElement(
+												NavLink,
+												{ activeClassName: 'activeNav', exact: true, to: '/' },
+												'Home'
+											)
+										),
+										React.createElement(
+											'li',
+											{ className: 'dropdown' },
+											React.createElement(
+												NavLink,
+												{ activeClassName: 'activeNav', to: '/glutten_free_products' },
+												'Glutten Free Products'
+											),
+											React.createElement(
+												'div',
+												{ className: 'dropdown-menu' },
+												React.createElement(
+													'ul',
+													null,
+													React.createElement(
+														'li',
+														{ className: 'has-image' },
+														React.createElement('img', { src: baseURL + "img/product/product-category-1.png", alt: 'Product Category Image' }),
+														React.createElement(
+															Link,
+															{ to: '/glutten_free_products/flour' },
+															'Cooking & Baking Flour'
+														)
+													),
+													React.createElement(
+														'li',
+														{ className: 'has-image' },
+														React.createElement('img', { src: baseURL + "img/product/product-category-2.png", alt: 'Product Category Image' }),
+														React.createElement(
+															Link,
+															{ to: '/glutten_free_products/cookies' },
+															'Biscuits & Cookies'
+														)
+													),
+													React.createElement(
+														'li',
+														{ className: 'has-image' },
+														React.createElement('img', { src: baseURL + "img/product/product-category-3.png", alt: 'Product Category Image' }),
+														React.createElement(
+															Link,
+															{ to: '/glutten_free_products/namkeens' },
+															'Namkeens'
+														)
+													),
+													React.createElement(
+														'li',
+														{ className: 'has-image' },
+														React.createElement('img', { src: baseURL + "img/product/product-category-4.png", alt: 'Product Category Image' }),
+														React.createElement(
+															Link,
+															{ to: '/glutten_free_products/snacks' },
+															'Snacks'
+														)
+													),
+													React.createElement(
+														'li',
+														{ className: 'has-image' },
+														React.createElement('img', { src: baseURL + "img/product/product-category-0.png", alt: 'Product Category Image' }),
+														React.createElement(
+															Link,
+															{ to: '/glutten_free_products/desserts' },
+															'Desserts & Confectionaries'
+														)
+													)
+												)
+											)
+										),
+										React.createElement(
+											'li',
+											null,
+											React.createElement(
+												NavLink,
+												{ activeClassName: 'activeNav', to: '//blog.drkiranshomeo.com/' },
+												'Blog'
+											)
+										),
+										React.createElement(
+											'li',
+											null,
+											React.createElement(
+												NavLink,
+												{ activeClassName: 'activeNav', to: '/about' },
+												'About Us'
+											)
+										),
+										React.createElement(
+											'li',
+											null,
+											React.createElement(
+												NavLink,
+												{ activeClassName: 'activeNav', to: '/contact' },
+												'Contact'
+											)
+										)
+									)
+								)
+							),
+							React.createElement(
+								'div',
+								{ className: 'col-lg-2 col-md-2 col-sm-12 header-center justify-content-center' },
+								React.createElement(
+									'div',
+									{ className: 'logo' },
+									React.createElement(
+										Link,
+										{ to: '' },
+										React.createElement('img', { className: 'img-responsive', src: baseURL + "img/logo.png", alt: 'Logo' })
+									)
+								),
+								React.createElement(
+									'span',
+									{ id: 'toggle-mobile-menu' },
+									React.createElement('i', { className: 'zmdi zmdi-menu' })
+								)
+							),
+							React.createElement(
+								'div',
+								{ className: 'col-lg-5 col-md-5 col-sm-12 header-right d-flex justify-content-end align-items-center' },
+								React.createElement(
+									'div',
+									{ className: 'form-search' },
+									React.createElement(
+										'form',
+										null,
+										React.createElement('input', { type: 'text', className: 'form-input', placeholder: 'Search' }),
+										React.createElement('button', { type: 'submit', className: 'fa fa-search' })
+									)
+								),
+								React.createElement(
+									'div',
+									{ className: 'block-cart dropdown' },
+									React.createElement(
+										'div',
+										{ className: 'cart-title' },
+										React.createElement('i', { className: 'fa fa-shopping-basket', 'aria-hidden': 'true' }),
+										React.createElement(
+											'span',
+											{ className: 'cart-count' },
+											'2'
+										)
+									),
+									React.createElement(
+										'div',
+										{ className: 'dropdown-content' },
+										React.createElement(
+											'div',
+											{ className: 'cart-content' },
+											React.createElement(
+												'table',
+												null,
+												React.createElement(
+													'tbody',
+													null,
+													React.createElement(
+														'tr',
+														null,
+														React.createElement(
+															'td',
+															{ className: 'product-image' },
+															React.createElement(
+																Link,
+																{ to: '#' },
+																React.createElement('img', { src: baseURL + "img/product/7.jpg", alt: 'Product' })
+															)
+														),
+														React.createElement(
+															'td',
+															null,
+															React.createElement(
+																'div',
+																{ className: 'product-name' },
+																React.createElement(
+																	Link,
+																	{ to: '#' },
+																	'Organic Strawberry Fruits'
+																)
+															),
+															React.createElement(
+																'div',
+																null,
+																'2 x ',
+																React.createElement(
+																	'span',
+																	{ className: 'product-price' },
+																	'$28.98'
+																)
+															)
+														),
+														React.createElement(
+															'td',
+															{ className: 'action' },
+															React.createElement(
+																Link,
+																{ className: 'remove', to: '#' },
+																React.createElement('i', { className: 'fa fa-trash-o', 'aria-hidden': 'true' })
+															)
+														)
+													),
+													React.createElement(
+														'tr',
+														null,
+														React.createElement(
+															'td',
+															{ className: 'product-image' },
+															React.createElement(
+																Link,
+																{ to: '#' },
+																React.createElement('img', { src: baseURL + "img/product/6.jpg", alt: 'Product' })
+															)
+														),
+														React.createElement(
+															'td',
+															null,
+															React.createElement(
+																'div',
+																{ className: 'product-name' },
+																React.createElement(
+																	Link,
+																	{ to: '#' },
+																	'Organic Strawberry'
+																)
+															),
+															React.createElement(
+																'div',
+																null,
+																'1 x ',
+																React.createElement(
+																	'span',
+																	{ className: 'product-price' },
+																	'$35.00'
+																)
+															)
+														),
+														React.createElement(
+															'td',
+															{ className: 'action' },
+															React.createElement(
+																Link,
+																{ className: 'remove', to: '#' },
+																React.createElement('i', { className: 'fa fa-trash-o', 'aria-hidden': 'true' })
+															)
+														)
+													),
+													React.createElement(
+														'tr',
+														{ className: 'total' },
+														React.createElement(
+															'td',
+															null,
+															'Total:'
+														),
+														React.createElement(
+															'td',
+															{ colSpan: '2' },
+															'$92.96'
+														)
+													),
+													React.createElement(
+														'tr',
+														null,
+														React.createElement(
+															'td',
+															{ colSpan: '3' },
+															React.createElement(
+																'div',
+																{ className: 'cart-button' },
+																React.createElement(
+																	Link,
+																	{ className: 'btn btn-primary', to: '/shoppingCart' },
+																	'View Cart'
+																),
+																React.createElement(
+																	Link,
+																	{ className: 'btn btn-primary', to: '/checkout' },
+																	'Checkout'
+																)
+															)
+														)
+													)
+												)
+											)
+										)
+									)
+								),
+								React.createElement(
+									'div',
+									{ className: 'my-account dropdown toggle-icon' },
+									React.createElement(
+										'div',
+										{ className: 'dropdown-toggle', 'data-toggle': 'dropdown' },
+										React.createElement('i', { className: 'zmdi zmdi-menu' })
+									),
+									React.createElement(
+										'div',
+										{ className: 'dropdown-menu' },
+										React.createElement(
+											'div',
+											{ className: 'item' },
+											React.createElement(
+												Link,
+												{ to: '#' },
+												React.createElement('i', { className: 'fa fa-cog' }),
+												'My Account'
+											)
+										),
+										React.createElement(
+											'div',
+											{ className: 'item' },
+											React.createElement(
+												Link,
+												{ to: '#' },
+												React.createElement('i', { className: 'fa fa-sign-in' }),
+												'Login'
+											)
+										),
+										React.createElement(
+											'div',
+											{ className: 'item' },
+											React.createElement(
+												Link,
+												{ to: '#' },
+												React.createElement('i', { className: 'fa fa-user' }),
+												'Register'
+											)
+										),
+										React.createElement(
+											'div',
+											{ className: 'item' },
+											React.createElement(
+												Link,
+												{ to: '#' },
+												React.createElement('i', { className: 'fa fa-heart' }),
+												'My Wishlists'
+											)
+										)
+									)
+								)
+							)
+						)
+					)
+				)
+			);
+		}
+	}]);
 
+	return Header;
+}(React.Component);
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+module.exports = Header;
 
 /***/ }),
-/* 6 */
+/* 7 */
+/***/ (function(module, exports, __webpack_require__) {
+
+var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+
+function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
+
+function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
+
+var React = __webpack_require__(0);
+var Link = __webpack_require__(1).Link;
+var baseURL = 'http://localhost:8000/';
+
+var Footer = function (_React$Component) {
+	_inherits(Footer, _React$Component);
+
+	function Footer() {
+		_classCallCheck(this, Footer);
+
+		return _possibleConstructorReturn(this, (Footer.__proto__ || Object.getPrototypeOf(Footer)).apply(this, arguments));
+	}
+
+	_createClass(Footer, [{
+		key: 'render',
+		value: function render() {
+			return React.createElement(
+				'footer',
+				{ id: 'footer' },
+				React.createElement(
+					'div',
+					{ className: 'footer' },
+					React.createElement(
+						'div',
+						{ className: 'footer-wrap' },
+						React.createElement(
+							'div',
+							{ className: 'container' },
+							React.createElement(
+								'div',
+								{ className: 'row' },
+								React.createElement(
+									'div',
+									{ className: 'col-lg-4 col-md-4 col-sm-12 col-xs-12 footer-col' },
+									React.createElement(
+										'div',
+										{ className: 'block newsletter' },
+										React.createElement(
+											'h2',
+											{ className: 'block-title' },
+											'Newsletter'
+										),
+										React.createElement(
+											'div',
+											{ className: 'block-content' },
+											React.createElement(
+												'p',
+												{ className: 'description' },
+												'Sign up for newsletter to receive special offers and exclusive news about FreshMart products'
+											),
+											React.createElement(
+												'form',
+												null,
+												React.createElement('input', { type: 'text', placeholder: 'Enter Your Email' }),
+												React.createElement(
+													'button',
+													{ type: 'submit', className: 'btn' },
+													'Subscribe'
+												)
+											)
+										)
+									)
+								),
+								React.createElement(
+									'div',
+									{ className: 'col-lg-4 col-md-4 col-sm-6 col-xs-12 footer-col' },
+									React.createElement(
+										'div',
+										{ className: 'block text' },
+										React.createElement(
+											Link,
+											{ to: 'home-4.html', className: 'logo-footer' },
+											React.createElement('img', { src: 'img/logo-3.png', alt: 'Logo' })
+										),
+										React.createElement(
+											'p',
+											null,
+											'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incid idunt ut labore et dolore magna aliqua. Ut enim ad minim ipsum dolor sit amet, consec tetur adipiscing elit ipsum dolor sit amet, consectetur adipiscing elit'
+										)
+									)
+								),
+								React.createElement(
+									'div',
+									{ className: 'col-lg-4 col-md-4 col-sm-6 col-xs-12 footer-col' },
+									React.createElement(
+										'div',
+										{ className: 'block text' },
+										React.createElement(
+											'h2',
+											{ className: 'block-title' },
+											'Contact Us'
+										),
+										React.createElement(
+											'div',
+											{ className: 'block-content' },
+											React.createElement(
+												'div',
+												{ className: 'contact' },
+												React.createElement(
+													'p',
+													null,
+													React.createElement(
+														'strong',
+														null,
+														'Address'
+													),
+													' : 123 Suspendis matti, VST District, NY Accums, North American'
+												),
+												React.createElement(
+													'p',
+													null,
+													React.createElement(
+														'strong',
+														null,
+														'Hotline'
+													),
+													' : 012345678910 - 098765432100'
+												),
+												React.createElement(
+													'p',
+													null,
+													React.createElement(
+														'strong',
+														null,
+														'Email'
+													),
+													' : ',
+													React.createElement(
+														Link,
+														{ to: 'mailto:support@domain.com' },
+														'support@domain.com'
+													)
+												)
+											)
+										)
+									)
+								)
+							)
+						)
+					)
+				),
+				React.createElement(
+					'div',
+					{ className: 'footer-copyright' },
+					React.createElement(
+						'div',
+						{ className: 'container' },
+						React.createElement(
+							'div',
+							{ className: 'row' },
+							React.createElement(
+								'div',
+								{ className: 'col-lg-12 col-md-12 col-sm-12 col-xs-12 text-center' },
+								React.createElement(
+									'div',
+									{ className: 'copyright' },
+									'Copyright \xA9 2018 - All rights reserved. Heilmittel Health Corporation.'
+								)
+							)
+						)
+					)
+				)
+			);
+		}
+	}]);
+
+	return Footer;
+}(React.Component);
+
+module.exports = Footer;
+
+/***/ }),
+/* 8 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__createBrowserHistory__ = __webpack_require__(65);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__createBrowserHistory__ = __webpack_require__(68);
 /* harmony reexport (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return __WEBPACK_IMPORTED_MODULE_0__createBrowserHistory__["a"]; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__createHashHistory__ = __webpack_require__(68);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__createHashHistory__ = __webpack_require__(71);
 /* harmony reexport (binding) */ __webpack_require__.d(__webpack_exports__, "b", function() { return __WEBPACK_IMPORTED_MODULE_1__createHashHistory__["a"]; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__createMemoryHistory__ = __webpack_require__(69);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__createMemoryHistory__ = __webpack_require__(72);
 /* harmony reexport (binding) */ __webpack_require__.d(__webpack_exports__, "d", function() { return __WEBPACK_IMPORTED_MODULE_2__createMemoryHistory__["a"]; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__LocationUtils__ = __webpack_require__(9);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__LocationUtils__ = __webpack_require__(11);
 /* harmony reexport (binding) */ __webpack_require__.d(__webpack_exports__, "c", function() { return __WEBPACK_IMPORTED_MODULE_3__LocationUtils__["a"]; });
 /* harmony reexport (binding) */ __webpack_require__.d(__webpack_exports__, "f", function() { return __WEBPACK_IMPORTED_MODULE_3__LocationUtils__["b"]; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__PathUtils__ = __webpack_require__(7);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__PathUtils__ = __webpack_require__(9);
 /* unused harmony reexport parsePath */
 /* harmony reexport (binding) */ __webpack_require__.d(__webpack_exports__, "e", function() { return __WEBPACK_IMPORTED_MODULE_4__PathUtils__["b"]; });
 
@@ -637,7 +1229,7 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 
 
 /***/ }),
-/* 7 */
+/* 9 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -708,7 +1300,7 @@ var createPath = function createPath(location) {
 };
 
 /***/ }),
-/* 8 */
+/* 10 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -775,15 +1367,15 @@ module.exports = warning;
 
 
 /***/ }),
-/* 9 */
+/* 11 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return createLocation; });
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "b", function() { return locationsAreEqual; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_resolve_pathname__ = __webpack_require__(66);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_value_equal__ = __webpack_require__(67);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__PathUtils__ = __webpack_require__(7);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_resolve_pathname__ = __webpack_require__(69);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_value_equal__ = __webpack_require__(70);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__PathUtils__ = __webpack_require__(9);
 var _extends = Object.assign || function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; };
 
 
@@ -851,14 +1443,14 @@ var locationsAreEqual = function locationsAreEqual(a, b) {
 };
 
 /***/ }),
-/* 10 */
+/* 12 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
 /* WEBPACK VAR INJECTION */(function(process) {
 
-var utils = __webpack_require__(1);
-var normalizeHeaderName = __webpack_require__(41);
+var utils = __webpack_require__(2);
+var normalizeHeaderName = __webpack_require__(44);
 
 var DEFAULT_CONTENT_TYPE = {
   'Content-Type': 'application/x-www-form-urlencoded'
@@ -874,10 +1466,10 @@ function getDefaultAdapter() {
   var adapter;
   if (typeof XMLHttpRequest !== 'undefined') {
     // For browsers use XHR adapter
-    adapter = __webpack_require__(19);
+    adapter = __webpack_require__(22);
   } else if (typeof process !== 'undefined') {
     // For node use HTTP adapter
-    adapter = __webpack_require__(19);
+    adapter = __webpack_require__(22);
   }
   return adapter;
 }
@@ -952,10 +1544,10 @@ utils.forEach(['post', 'put', 'patch'], function forEachMethodWithData(method) {
 
 module.exports = defaults;
 
-/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(40)))
+/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(43)))
 
 /***/ }),
-/* 11 */
+/* 13 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -1052,7 +1644,7 @@ module.exports = shouldUseNative() ? Object.assign : function (target, source) {
 
 
 /***/ }),
-/* 12 */
+/* 14 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -1068,7 +1660,7 @@ module.exports = shouldUseNative() ? Object.assign : function (target, source) {
 var printWarning = function() {};
 
 if (true) {
-  var ReactPropTypesSecret = __webpack_require__(23);
+  var ReactPropTypesSecret = __webpack_require__(26);
   var loggedTypeFailures = {};
 
   printWarning = function(text) {
@@ -1150,11 +1742,11 @@ module.exports = checkPropTypes;
 
 
 /***/ }),
-/* 13 */
+/* 15 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_warning__ = __webpack_require__(8);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_warning__ = __webpack_require__(10);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_warning___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_warning__);
 
 
@@ -1235,28 +1827,28 @@ var createTransitionManager = function createTransitionManager() {
 /* harmony default export */ __webpack_exports__["a"] = (createTransitionManager);
 
 /***/ }),
-/* 14 */
+/* 16 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_react_router_es_Router__ = __webpack_require__(15);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_react_router_es_Router__ = __webpack_require__(17);
 // Written in this round about way for babel-transform-imports
 
 
 /* harmony default export */ __webpack_exports__["a"] = (__WEBPACK_IMPORTED_MODULE_0_react_router_es_Router__["a" /* default */]);
 
 /***/ }),
-/* 15 */
+/* 17 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_warning__ = __webpack_require__(4);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_warning__ = __webpack_require__(5);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_warning___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_warning__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_invariant__ = __webpack_require__(3);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_invariant__ = __webpack_require__(4);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_invariant___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_1_invariant__);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_react__ = __webpack_require__(0);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_react___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_2_react__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_prop_types__ = __webpack_require__(2);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_prop_types__ = __webpack_require__(3);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_prop_types___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_3_prop_types__);
 var _extends = Object.assign || function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; };
 
@@ -1365,11 +1957,11 @@ Router.childContextTypes = {
 /* harmony default export */ __webpack_exports__["a"] = (Router);
 
 /***/ }),
-/* 16 */
+/* 18 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_path_to_regexp__ = __webpack_require__(28);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_path_to_regexp__ = __webpack_require__(31);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_path_to_regexp___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_path_to_regexp__);
 
 
@@ -1445,7 +2037,309 @@ var matchPath = function matchPath(pathname) {
 /* harmony default export */ __webpack_exports__["a"] = (matchPath);
 
 /***/ }),
-/* 17 */
+/* 19 */
+/***/ (function(module, exports, __webpack_require__) {
+
+var __WEBPACK_AMD_DEFINE_FACTORY__, __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_DEFINE_RESULT__;(function(root, factory) {
+  if (true) {
+    !(__WEBPACK_AMD_DEFINE_ARRAY__ = [], __WEBPACK_AMD_DEFINE_FACTORY__ = (factory),
+				__WEBPACK_AMD_DEFINE_RESULT__ = (typeof __WEBPACK_AMD_DEFINE_FACTORY__ === 'function' ?
+				(__WEBPACK_AMD_DEFINE_FACTORY__.apply(exports, __WEBPACK_AMD_DEFINE_ARRAY__)) : __WEBPACK_AMD_DEFINE_FACTORY__),
+				__WEBPACK_AMD_DEFINE_RESULT__ !== undefined && (module.exports = __WEBPACK_AMD_DEFINE_RESULT__));
+  } else if (typeof exports === 'object') {
+    module.exports = factory();
+  } else {
+    root.loadjs = factory();
+  }
+}(this, function() {
+/**
+ * Global dependencies.
+ * @global {Object} document - DOM
+ */
+
+var devnull = function() {},
+    bundleIdCache = {},
+    bundleResultCache = {},
+    bundleCallbackQueue = {};
+
+
+/**
+ * Subscribe to bundle load event.
+ * @param {string[]} bundleIds - Bundle ids
+ * @param {Function} callbackFn - The callback function
+ */
+function subscribe(bundleIds, callbackFn) {
+  // listify
+  bundleIds = bundleIds.push ? bundleIds : [bundleIds];
+
+  var depsNotFound = [],
+      i = bundleIds.length,
+      numWaiting = i,
+      fn,
+      bundleId,
+      r,
+      q;
+
+  // define callback function
+  fn = function (bundleId, pathsNotFound) {
+    if (pathsNotFound.length) depsNotFound.push(bundleId);
+
+    numWaiting--;
+    if (!numWaiting) callbackFn(depsNotFound);
+  };
+
+  // register callback
+  while (i--) {
+    bundleId = bundleIds[i];
+
+    // execute callback if in result cache
+    r = bundleResultCache[bundleId];
+    if (r) {
+      fn(bundleId, r);
+      continue;
+    }
+
+    // add to callback queue
+    q = bundleCallbackQueue[bundleId] = bundleCallbackQueue[bundleId] || [];
+    q.push(fn);
+  }
+}
+
+
+/**
+ * Publish bundle load event.
+ * @param {string} bundleId - Bundle id
+ * @param {string[]} pathsNotFound - List of files not found
+ */
+function publish(bundleId, pathsNotFound) {
+  // exit if id isn't defined
+  if (!bundleId) return;
+
+  var q = bundleCallbackQueue[bundleId];
+
+  // cache result
+  bundleResultCache[bundleId] = pathsNotFound;
+
+  // exit if queue is empty
+  if (!q) return;
+
+  // empty callback queue
+  while (q.length) {
+    q[0](bundleId, pathsNotFound);
+    q.splice(0, 1);
+  }
+}
+
+
+/**
+ * Execute callbacks.
+ * @param {Object or Function} args - The callback args
+ * @param {string[]} depsNotFound - List of dependencies not found
+ */
+function executeCallbacks(args, depsNotFound) {
+  // accept function as argument
+  if (args.call) args = {success: args};
+
+  // success and error callbacks
+  if (depsNotFound.length) (args.error || devnull)(depsNotFound);
+  else (args.success || devnull)(args);
+}
+
+
+/**
+ * Load individual file.
+ * @param {string} path - The file path
+ * @param {Function} callbackFn - The callback function
+ */
+function loadFile(path, callbackFn, args, numTries) {
+  var doc = document,
+      async = args.async,
+      maxTries = (args.numRetries || 0) + 1,
+      beforeCallbackFn = args.before || devnull,
+      pathStripped = path.replace(/^(css|img)!/, ''),
+      isCss,
+      e;
+
+  numTries = numTries || 0;
+
+  if (/(^css!|\.css$)/.test(path)) {
+    isCss = true;
+
+    // css
+    e = doc.createElement('link');
+    e.rel = 'stylesheet';
+    e.href = pathStripped; //.replace(/^css!/, '');  // remove "css!" prefix
+  } else if (/(^img!|\.(png|gif|jpg|svg)$)/.test(path)) {
+    // image
+    e = doc.createElement('img');
+    e.src = pathStripped;    
+  } else {
+    // javascript
+    e = doc.createElement('script');
+    e.src = path;
+    e.async = async === undefined ? true : async;
+  }
+
+  e.onload = e.onerror = e.onbeforeload = function (ev) {
+    var result = ev.type[0];
+
+    // Note: The following code isolates IE using `hideFocus` and treats empty
+    // stylesheets as failures to get around lack of onerror support
+    if (isCss && 'hideFocus' in e) {
+      try {
+        if (!e.sheet.cssText.length) result = 'e';
+      } catch (x) {
+        // sheets objects created from load errors don't allow access to
+        // `cssText` (unless error is Code:18 SecurityError)
+        if (x.code != 18) result = 'e';
+      }
+    }
+
+    // handle retries in case of load failure
+    if (result == 'e') {
+      // increment counter
+      numTries += 1;
+
+      // exit function and try again
+      if (numTries < maxTries) {
+        return loadFile(path, callbackFn, args, numTries);
+      }
+    }
+
+    // execute callback
+    callbackFn(path, result, ev.defaultPrevented);
+  };
+
+  // add to document (unless callback returns `false`)
+  if (beforeCallbackFn(path, e) !== false) doc.head.appendChild(e);
+}
+
+
+/**
+ * Load multiple files.
+ * @param {string[]} paths - The file paths
+ * @param {Function} callbackFn - The callback function
+ */
+function loadFiles(paths, callbackFn, args) {
+  // listify paths
+  paths = paths.push ? paths : [paths];
+
+  var numWaiting = paths.length,
+      x = numWaiting,
+      pathsNotFound = [],
+      fn,
+      i;
+
+  // define callback function
+  fn = function(path, result, defaultPrevented) {
+    // handle error
+    if (result == 'e') pathsNotFound.push(path);
+
+    // handle beforeload event. If defaultPrevented then that means the load
+    // will be blocked (ex. Ghostery/ABP on Safari)
+    if (result == 'b') {
+      if (defaultPrevented) pathsNotFound.push(path);
+      else return;
+    }
+
+    numWaiting--;
+    if (!numWaiting) callbackFn(pathsNotFound);
+  };
+
+  // load scripts
+  for (i=0; i < x; i++) loadFile(paths[i], fn, args);
+}
+
+
+/**
+ * Initiate script load and register bundle.
+ * @param {(string|string[])} paths - The file paths
+ * @param {(string|Function)} [arg1] - The bundleId or success callback
+ * @param {Function} [arg2] - The success or error callback
+ * @param {Function} [arg3] - The error callback
+ */
+function loadjs(paths, arg1, arg2) {
+  var bundleId,
+      args;
+
+  // bundleId (if string)
+  if (arg1 && arg1.trim) bundleId = arg1;
+
+  // args (default is {})
+  args = (bundleId ? arg2 : arg1) || {};
+
+  // throw error if bundle is already defined
+  if (bundleId) {
+    if (bundleId in bundleIdCache) {
+      throw "LoadJS";
+    } else {
+      bundleIdCache[bundleId] = true;
+    }
+  }
+
+  // load scripts
+  loadFiles(paths, function (pathsNotFound) {
+    // execute callbacks
+    executeCallbacks(args, pathsNotFound);
+
+    // publish bundle load event
+    publish(bundleId, pathsNotFound);
+  }, args);
+}
+
+
+/**
+ * Execute callbacks when dependencies have been satisfied.
+ * @param {(string|string[])} deps - List of bundle ids
+ * @param {Object} args - success/error arguments
+ */
+loadjs.ready = function ready(deps, args) {
+  // subscribe to bundle load event
+  subscribe(deps, function (depsNotFound) {
+    // execute callbacks
+    executeCallbacks(args, depsNotFound);
+  });
+
+  return loadjs;
+};
+
+
+/**
+ * Manually satisfy bundle dependencies.
+ * @param {string} bundleId - The bundle id
+ */
+loadjs.done = function done(bundleId) {
+  publish(bundleId, []);
+};
+
+
+/**
+ * Reset loadjs dependencies statuses
+ */
+loadjs.reset = function reset() {
+  bundleIdCache = {};
+  bundleResultCache = {};
+  bundleCallbackQueue = {};
+};
+
+
+/**
+ * Determine if bundle has already been defined
+ * @param String} bundleId - The bundle id
+ */
+loadjs.isDefined = function isDefined(bundleId) {
+  return bundleId in bundleIdCache;
+};
+
+
+// export
+return loadjs;
+
+}));
+
+
+/***/ }),
+/* 20 */
 /***/ (function(module, exports) {
 
 var g;
@@ -1472,7 +2366,7 @@ module.exports = g;
 
 
 /***/ }),
-/* 18 */
+/* 21 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -1490,19 +2384,19 @@ module.exports = function bind(fn, thisArg) {
 
 
 /***/ }),
-/* 19 */
+/* 22 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
 
 
-var utils = __webpack_require__(1);
-var settle = __webpack_require__(42);
-var buildURL = __webpack_require__(44);
-var parseHeaders = __webpack_require__(45);
-var isURLSameOrigin = __webpack_require__(46);
-var createError = __webpack_require__(20);
-var btoa = (typeof window !== 'undefined' && window.btoa && window.btoa.bind(window)) || __webpack_require__(47);
+var utils = __webpack_require__(2);
+var settle = __webpack_require__(45);
+var buildURL = __webpack_require__(47);
+var parseHeaders = __webpack_require__(48);
+var isURLSameOrigin = __webpack_require__(49);
+var createError = __webpack_require__(23);
+var btoa = (typeof window !== 'undefined' && window.btoa && window.btoa.bind(window)) || __webpack_require__(50);
 
 module.exports = function xhrAdapter(config) {
   return new Promise(function dispatchXhrRequest(resolve, reject) {
@@ -1599,7 +2493,7 @@ module.exports = function xhrAdapter(config) {
     // This is only done if running in a standard browser environment.
     // Specifically not if we're in a web worker, or react-native.
     if (utils.isStandardBrowserEnv()) {
-      var cookies = __webpack_require__(48);
+      var cookies = __webpack_require__(51);
 
       // Add xsrf header
       var xsrfValue = (config.withCredentials || isURLSameOrigin(config.url)) && config.xsrfCookieName ?
@@ -1677,13 +2571,13 @@ module.exports = function xhrAdapter(config) {
 
 
 /***/ }),
-/* 20 */
+/* 23 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
 
 
-var enhanceError = __webpack_require__(43);
+var enhanceError = __webpack_require__(46);
 
 /**
  * Create an Error with the specified message, config, error code, request and response.
@@ -1702,7 +2596,7 @@ module.exports = function createError(message, config, code, request, response) 
 
 
 /***/ }),
-/* 21 */
+/* 24 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -1714,7 +2608,7 @@ module.exports = function isCancel(value) {
 
 
 /***/ }),
-/* 22 */
+/* 25 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -1740,7 +2634,7 @@ module.exports = Cancel;
 
 
 /***/ }),
-/* 23 */
+/* 26 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -1759,7 +2653,7 @@ module.exports = ReactPropTypesSecret;
 
 
 /***/ }),
-/* 24 */
+/* 27 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -1825,17 +2719,17 @@ var isExtraneousPopstateEvent = function isExtraneousPopstateEvent(event) {
 };
 
 /***/ }),
-/* 25 */
+/* 28 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_react__ = __webpack_require__(0);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_react___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_react__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_prop_types__ = __webpack_require__(2);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_prop_types__ = __webpack_require__(3);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_prop_types___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_1_prop_types__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_invariant__ = __webpack_require__(3);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_invariant__ = __webpack_require__(4);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_invariant___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_2_invariant__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_history__ = __webpack_require__(6);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_history__ = __webpack_require__(8);
 var _extends = Object.assign || function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; };
 
 function _objectWithoutProperties(obj, keys) { var target = {}; for (var i in obj) { if (keys.indexOf(i) >= 0) continue; if (!Object.prototype.hasOwnProperty.call(obj, i)) continue; target[i] = obj[i]; } return target; }
@@ -1942,30 +2836,30 @@ Link.contextTypes = {
 /* harmony default export */ __webpack_exports__["a"] = (Link);
 
 /***/ }),
-/* 26 */
+/* 29 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_react_router_es_Route__ = __webpack_require__(27);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_react_router_es_Route__ = __webpack_require__(30);
 // Written in this round about way for babel-transform-imports
 
 
 /* harmony default export */ __webpack_exports__["a"] = (__WEBPACK_IMPORTED_MODULE_0_react_router_es_Route__["a" /* default */]);
 
 /***/ }),
-/* 27 */
+/* 30 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_warning__ = __webpack_require__(4);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_warning__ = __webpack_require__(5);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_warning___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_warning__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_invariant__ = __webpack_require__(3);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_invariant__ = __webpack_require__(4);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_invariant___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_1_invariant__);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_react__ = __webpack_require__(0);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_react___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_2_react__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_prop_types__ = __webpack_require__(2);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_prop_types__ = __webpack_require__(3);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_prop_types___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_3_prop_types__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__matchPath__ = __webpack_require__(16);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__matchPath__ = __webpack_require__(18);
 var _extends = Object.assign || function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; };
 
 function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
@@ -2107,10 +3001,10 @@ Route.childContextTypes = {
 /* harmony default export */ __webpack_exports__["a"] = (Route);
 
 /***/ }),
-/* 28 */
+/* 31 */
 /***/ (function(module, exports, __webpack_require__) {
 
-var isarray = __webpack_require__(74)
+var isarray = __webpack_require__(77)
 
 /**
  * Expose `pathToRegexp`.
@@ -2539,11 +3433,11 @@ function pathToRegexp (path, keys, options) {
 
 
 /***/ }),
-/* 29 */
+/* 32 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_path_to_regexp__ = __webpack_require__(28);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_path_to_regexp__ = __webpack_require__(31);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_path_to_regexp___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_path_to_regexp__);
 
 
@@ -2584,21 +3478,21 @@ var generatePath = function generatePath() {
 /* harmony default export */ __webpack_exports__["a"] = (generatePath);
 
 /***/ }),
-/* 30 */
+/* 33 */
 /***/ (function(module, exports, __webpack_require__) {
 
-__webpack_require__(31);
-module.exports = __webpack_require__(93);
+__webpack_require__(34);
+module.exports = __webpack_require__(100);
 
 
 /***/ }),
-/* 31 */
+/* 34 */
 /***/ (function(module, exports, __webpack_require__) {
 
 /**
 * Loading Our Dependencies
 */
-__webpack_require__(32);
+__webpack_require__(35);
 
 /**
  * Next, we will create a fresh React component instance and attach it to
@@ -2607,30 +3501,41 @@ __webpack_require__(32);
  */
 
 var React = __webpack_require__(0);
-var ReactDOM = __webpack_require__(57);
+var ReactDOM = __webpack_require__(60);
 
-var Router = __webpack_require__(5).BrowserRouter;
-var Route = __webpack_require__(5).Route;
-var Switch = __webpack_require__(5).Switch;
+var Router = __webpack_require__(1).BrowserRouter;
+var Route = __webpack_require__(1).Route;
+var Switch = __webpack_require__(1).Switch;
 
-// var Nav = require('./Nav');
-var Home = __webpack_require__(88);
-var About = __webpack_require__(92);
+var Home = __webpack_require__(91);
+var About = __webpack_require__(93);
+var Contact = __webpack_require__(94);
+var ProductsList = __webpack_require__(95);
+var GluttenFreeProducts = __webpack_require__(96);
+var ShoppingCart = __webpack_require__(97);
+var Checkout = __webpack_require__(98);
+var ProductDetails = __webpack_require__(99);
 
 ReactDOM.render(React.createElement(
-  Router,
-  null,
-  React.createElement(
-    'div',
-    { className: 'container' },
-    React.createElement(Route, { path: '/', exact: true, component: Home }),
-    React.createElement(Route, { path: '/home', component: Home }),
-    React.createElement(Route, { path: '/about', component: About })
-  )
+	Router,
+	null,
+	React.createElement(
+		'div',
+		{ className: 'row' },
+		React.createElement(Route, { path: '/', exact: true, component: Home }),
+		React.createElement(Route, { path: '/home', component: Home }),
+		React.createElement(Route, { path: '/about', component: About }),
+		React.createElement(Route, { path: '/contact', component: Contact }),
+		React.createElement(Route, { path: '/glutten_free_products', exact: true, component: GluttenFreeProducts }),
+		React.createElement(Route, { path: '/glutten_free_products/:categoryName', component: ProductsList }),
+		React.createElement(Route, { path: '/shoppingCart', component: ShoppingCart }),
+		React.createElement(Route, { path: '/checkout', component: Checkout }),
+		React.createElement(Route, { path: '/productdetails', component: ProductDetails })
+	)
 ), document.getElementById('app'));
 
 /***/ }),
-/* 32 */
+/* 35 */
 /***/ (function(module, exports, __webpack_require__) {
 
 /**
@@ -2639,8 +3544,8 @@ ReactDOM.render(React.createElement(
  * building robust, powerful web applications using React + Laravel.
  */
 
-window._ = __webpack_require__(33);
-window.Popper = __webpack_require__(35).default;
+window._ = __webpack_require__(36);
+window.Popper = __webpack_require__(38).default;
 
 /**
  * We'll load the axios HTTP library which allows us to easily issue requests
@@ -2648,7 +3553,7 @@ window.Popper = __webpack_require__(35).default;
  * CSRF token as a header based on the value of the "XSRF" token cookie.
  */
 
-window.axios = __webpack_require__(36);
+window.axios = __webpack_require__(39);
 window.axios.defaults.headers.common['X-Requested-With'] = 'XMLHttpRequest';
 
 /**
@@ -2666,7 +3571,7 @@ if (token) {
 }
 
 /***/ }),
-/* 33 */
+/* 36 */
 /***/ (function(module, exports, __webpack_require__) {
 
 /* WEBPACK VAR INJECTION */(function(global, module) {var __WEBPACK_AMD_DEFINE_RESULT__;/**
@@ -19778,10 +20683,10 @@ if (token) {
   }
 }.call(this));
 
-/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(17), __webpack_require__(34)(module)))
+/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(20), __webpack_require__(37)(module)))
 
 /***/ }),
-/* 34 */
+/* 37 */
 /***/ (function(module, exports) {
 
 module.exports = function(module) {
@@ -19809,7 +20714,7 @@ module.exports = function(module) {
 
 
 /***/ }),
-/* 35 */
+/* 38 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -22349,25 +23254,25 @@ Popper.Defaults = Defaults;
 /* harmony default export */ __webpack_exports__["default"] = (Popper);
 //# sourceMappingURL=popper.js.map
 
-/* WEBPACK VAR INJECTION */}.call(__webpack_exports__, __webpack_require__(17)))
+/* WEBPACK VAR INJECTION */}.call(__webpack_exports__, __webpack_require__(20)))
 
 /***/ }),
-/* 36 */
+/* 39 */
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = __webpack_require__(37);
+module.exports = __webpack_require__(40);
 
 /***/ }),
-/* 37 */
+/* 40 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
 
 
-var utils = __webpack_require__(1);
-var bind = __webpack_require__(18);
-var Axios = __webpack_require__(39);
-var defaults = __webpack_require__(10);
+var utils = __webpack_require__(2);
+var bind = __webpack_require__(21);
+var Axios = __webpack_require__(42);
+var defaults = __webpack_require__(12);
 
 /**
  * Create an instance of Axios
@@ -22400,15 +23305,15 @@ axios.create = function create(instanceConfig) {
 };
 
 // Expose Cancel & CancelToken
-axios.Cancel = __webpack_require__(22);
-axios.CancelToken = __webpack_require__(54);
-axios.isCancel = __webpack_require__(21);
+axios.Cancel = __webpack_require__(25);
+axios.CancelToken = __webpack_require__(57);
+axios.isCancel = __webpack_require__(24);
 
 // Expose all/spread
 axios.all = function all(promises) {
   return Promise.all(promises);
 };
-axios.spread = __webpack_require__(55);
+axios.spread = __webpack_require__(58);
 
 module.exports = axios;
 
@@ -22417,7 +23322,7 @@ module.exports.default = axios;
 
 
 /***/ }),
-/* 38 */
+/* 41 */
 /***/ (function(module, exports) {
 
 /*!
@@ -22444,16 +23349,16 @@ function isSlowBuffer (obj) {
 
 
 /***/ }),
-/* 39 */
+/* 42 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
 
 
-var defaults = __webpack_require__(10);
-var utils = __webpack_require__(1);
-var InterceptorManager = __webpack_require__(49);
-var dispatchRequest = __webpack_require__(50);
+var defaults = __webpack_require__(12);
+var utils = __webpack_require__(2);
+var InterceptorManager = __webpack_require__(52);
+var dispatchRequest = __webpack_require__(53);
 
 /**
  * Create a new instance of Axios
@@ -22530,7 +23435,7 @@ module.exports = Axios;
 
 
 /***/ }),
-/* 40 */
+/* 43 */
 /***/ (function(module, exports) {
 
 // shim for using process in browser
@@ -22720,13 +23625,13 @@ process.umask = function() { return 0; };
 
 
 /***/ }),
-/* 41 */
+/* 44 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
 
 
-var utils = __webpack_require__(1);
+var utils = __webpack_require__(2);
 
 module.exports = function normalizeHeaderName(headers, normalizedName) {
   utils.forEach(headers, function processHeader(value, name) {
@@ -22739,13 +23644,13 @@ module.exports = function normalizeHeaderName(headers, normalizedName) {
 
 
 /***/ }),
-/* 42 */
+/* 45 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
 
 
-var createError = __webpack_require__(20);
+var createError = __webpack_require__(23);
 
 /**
  * Resolve or reject a Promise based on response status.
@@ -22772,7 +23677,7 @@ module.exports = function settle(resolve, reject, response) {
 
 
 /***/ }),
-/* 43 */
+/* 46 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -22800,13 +23705,13 @@ module.exports = function enhanceError(error, config, code, request, response) {
 
 
 /***/ }),
-/* 44 */
+/* 47 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
 
 
-var utils = __webpack_require__(1);
+var utils = __webpack_require__(2);
 
 function encode(val) {
   return encodeURIComponent(val).
@@ -22873,13 +23778,13 @@ module.exports = function buildURL(url, params, paramsSerializer) {
 
 
 /***/ }),
-/* 45 */
+/* 48 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
 
 
-var utils = __webpack_require__(1);
+var utils = __webpack_require__(2);
 
 // Headers whose duplicates are ignored by node
 // c.f. https://nodejs.org/api/http.html#http_message_headers
@@ -22933,13 +23838,13 @@ module.exports = function parseHeaders(headers) {
 
 
 /***/ }),
-/* 46 */
+/* 49 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
 
 
-var utils = __webpack_require__(1);
+var utils = __webpack_require__(2);
 
 module.exports = (
   utils.isStandardBrowserEnv() ?
@@ -23008,7 +23913,7 @@ module.exports = (
 
 
 /***/ }),
-/* 47 */
+/* 50 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -23051,13 +23956,13 @@ module.exports = btoa;
 
 
 /***/ }),
-/* 48 */
+/* 51 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
 
 
-var utils = __webpack_require__(1);
+var utils = __webpack_require__(2);
 
 module.exports = (
   utils.isStandardBrowserEnv() ?
@@ -23111,13 +24016,13 @@ module.exports = (
 
 
 /***/ }),
-/* 49 */
+/* 52 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
 
 
-var utils = __webpack_require__(1);
+var utils = __webpack_require__(2);
 
 function InterceptorManager() {
   this.handlers = [];
@@ -23170,18 +24075,18 @@ module.exports = InterceptorManager;
 
 
 /***/ }),
-/* 50 */
+/* 53 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
 
 
-var utils = __webpack_require__(1);
-var transformData = __webpack_require__(51);
-var isCancel = __webpack_require__(21);
-var defaults = __webpack_require__(10);
-var isAbsoluteURL = __webpack_require__(52);
-var combineURLs = __webpack_require__(53);
+var utils = __webpack_require__(2);
+var transformData = __webpack_require__(54);
+var isCancel = __webpack_require__(24);
+var defaults = __webpack_require__(12);
+var isAbsoluteURL = __webpack_require__(55);
+var combineURLs = __webpack_require__(56);
 
 /**
  * Throws a `Cancel` if cancellation has been requested.
@@ -23263,13 +24168,13 @@ module.exports = function dispatchRequest(config) {
 
 
 /***/ }),
-/* 51 */
+/* 54 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
 
 
-var utils = __webpack_require__(1);
+var utils = __webpack_require__(2);
 
 /**
  * Transform the data for a request or a response
@@ -23290,7 +24195,7 @@ module.exports = function transformData(data, headers, fns) {
 
 
 /***/ }),
-/* 52 */
+/* 55 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -23311,7 +24216,7 @@ module.exports = function isAbsoluteURL(url) {
 
 
 /***/ }),
-/* 53 */
+/* 56 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -23332,13 +24237,13 @@ module.exports = function combineURLs(baseURL, relativeURL) {
 
 
 /***/ }),
-/* 54 */
+/* 57 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
 
 
-var Cancel = __webpack_require__(22);
+var Cancel = __webpack_require__(25);
 
 /**
  * A `CancelToken` is an object that can be used to request cancellation of an operation.
@@ -23396,7 +24301,7 @@ module.exports = CancelToken;
 
 
 /***/ }),
-/* 55 */
+/* 58 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -23430,7 +24335,7 @@ module.exports = function spread(callback) {
 
 
 /***/ }),
-/* 56 */
+/* 59 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -23451,8 +24356,8 @@ if (true) {
   (function() {
 'use strict';
 
-var _assign = __webpack_require__(11);
-var checkPropTypes = __webpack_require__(12);
+var _assign = __webpack_require__(13);
+var checkPropTypes = __webpack_require__(14);
 
 // TODO: this is special because it gets imported during build.
 
@@ -25277,7 +26182,7 @@ module.exports = react;
 
 
 /***/ }),
-/* 57 */
+/* 60 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -25317,12 +26222,12 @@ if (false) {
   checkDCE();
   module.exports = require('./cjs/react-dom.production.min.js');
 } else {
-  module.exports = __webpack_require__(58);
+  module.exports = __webpack_require__(61);
 }
 
 
 /***/ }),
-/* 58 */
+/* 61 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -25344,10 +26249,10 @@ if (true) {
 'use strict';
 
 var React = __webpack_require__(0);
-var _assign = __webpack_require__(11);
-var checkPropTypes = __webpack_require__(12);
-var scheduler = __webpack_require__(59);
-var tracing = __webpack_require__(61);
+var _assign = __webpack_require__(13);
+var checkPropTypes = __webpack_require__(14);
+var scheduler = __webpack_require__(62);
+var tracing = __webpack_require__(64);
 
 /**
  * Use invariant() to assert state which your program assumes to be true.
@@ -45056,7 +45961,7 @@ module.exports = reactDom;
 
 
 /***/ }),
-/* 59 */
+/* 62 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -45065,12 +45970,12 @@ module.exports = reactDom;
 if (false) {
   module.exports = require('./cjs/scheduler.production.min.js');
 } else {
-  module.exports = __webpack_require__(60);
+  module.exports = __webpack_require__(63);
 }
 
 
 /***/ }),
-/* 60 */
+/* 63 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -45716,7 +46621,7 @@ exports.unstable_shouldYield = unstable_shouldYield;
 
 
 /***/ }),
-/* 61 */
+/* 64 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -45725,12 +46630,12 @@ exports.unstable_shouldYield = unstable_shouldYield;
 if (false) {
   module.exports = require('./cjs/scheduler-tracing.production.min.js');
 } else {
-  module.exports = __webpack_require__(62);
+  module.exports = __webpack_require__(65);
 }
 
 
 /***/ }),
-/* 62 */
+/* 65 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -46157,18 +47062,18 @@ exports.unstable_unsubscribe = unstable_unsubscribe;
 
 
 /***/ }),
-/* 63 */
+/* 66 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_warning__ = __webpack_require__(4);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_warning__ = __webpack_require__(5);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_warning___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_warning__);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_react__ = __webpack_require__(0);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_react___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_1_react__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_prop_types__ = __webpack_require__(2);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_prop_types__ = __webpack_require__(3);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_prop_types___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_2_prop_types__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_history__ = __webpack_require__(6);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__Router__ = __webpack_require__(14);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_history__ = __webpack_require__(8);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__Router__ = __webpack_require__(16);
 function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
 
 function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
@@ -46223,7 +47128,7 @@ BrowserRouter.propTypes = {
 /* harmony default export */ __webpack_exports__["a"] = (BrowserRouter);
 
 /***/ }),
-/* 64 */
+/* 67 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -46236,10 +47141,10 @@ BrowserRouter.propTypes = {
 
 
 
-var assign = __webpack_require__(11);
+var assign = __webpack_require__(13);
 
-var ReactPropTypesSecret = __webpack_require__(23);
-var checkPropTypes = __webpack_require__(12);
+var ReactPropTypesSecret = __webpack_require__(26);
+var checkPropTypes = __webpack_require__(14);
 
 var printWarning = function() {};
 
@@ -46785,18 +47690,18 @@ module.exports = function(isValidElement, throwOnDirectAccess) {
 
 
 /***/ }),
-/* 65 */
+/* 68 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_warning__ = __webpack_require__(8);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_warning__ = __webpack_require__(10);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_warning___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_warning__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_invariant__ = __webpack_require__(3);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_invariant__ = __webpack_require__(4);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_invariant___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_1_invariant__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__LocationUtils__ = __webpack_require__(9);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__PathUtils__ = __webpack_require__(7);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__createTransitionManager__ = __webpack_require__(13);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__DOMUtils__ = __webpack_require__(24);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__LocationUtils__ = __webpack_require__(11);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__PathUtils__ = __webpack_require__(9);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__createTransitionManager__ = __webpack_require__(15);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__DOMUtils__ = __webpack_require__(27);
 var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol" ? function (obj) { return typeof obj; } : function (obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; };
 
 var _extends = Object.assign || function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; };
@@ -47089,7 +47994,7 @@ var createBrowserHistory = function createBrowserHistory() {
 /* harmony default export */ __webpack_exports__["a"] = (createBrowserHistory);
 
 /***/ }),
-/* 66 */
+/* 69 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -47165,7 +48070,7 @@ function resolvePathname(to) {
 /* harmony default export */ __webpack_exports__["a"] = (resolvePathname);
 
 /***/ }),
-/* 67 */
+/* 70 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -47209,18 +48114,18 @@ function valueEqual(a, b) {
 /* harmony default export */ __webpack_exports__["a"] = (valueEqual);
 
 /***/ }),
-/* 68 */
+/* 71 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_warning__ = __webpack_require__(8);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_warning__ = __webpack_require__(10);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_warning___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_warning__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_invariant__ = __webpack_require__(3);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_invariant__ = __webpack_require__(4);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_invariant___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_1_invariant__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__LocationUtils__ = __webpack_require__(9);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__PathUtils__ = __webpack_require__(7);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__createTransitionManager__ = __webpack_require__(13);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__DOMUtils__ = __webpack_require__(24);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__LocationUtils__ = __webpack_require__(11);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__PathUtils__ = __webpack_require__(9);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__createTransitionManager__ = __webpack_require__(15);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__DOMUtils__ = __webpack_require__(27);
 var _extends = Object.assign || function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; };
 
 
@@ -47530,15 +48435,15 @@ var createHashHistory = function createHashHistory() {
 /* harmony default export */ __webpack_exports__["a"] = (createHashHistory);
 
 /***/ }),
-/* 69 */
+/* 72 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_warning__ = __webpack_require__(8);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_warning__ = __webpack_require__(10);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_warning___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_warning__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__PathUtils__ = __webpack_require__(7);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__LocationUtils__ = __webpack_require__(9);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__createTransitionManager__ = __webpack_require__(13);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__PathUtils__ = __webpack_require__(9);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__LocationUtils__ = __webpack_require__(11);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__createTransitionManager__ = __webpack_require__(15);
 var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol" ? function (obj) { return typeof obj; } : function (obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; };
 
 var _extends = Object.assign || function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; };
@@ -47698,18 +48603,18 @@ var createMemoryHistory = function createMemoryHistory() {
 /* harmony default export */ __webpack_exports__["a"] = (createMemoryHistory);
 
 /***/ }),
-/* 70 */
+/* 73 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_warning__ = __webpack_require__(4);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_warning__ = __webpack_require__(5);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_warning___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_warning__);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_react__ = __webpack_require__(0);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_react___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_1_react__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_prop_types__ = __webpack_require__(2);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_prop_types__ = __webpack_require__(3);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_prop_types___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_2_prop_types__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_history__ = __webpack_require__(6);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__Router__ = __webpack_require__(14);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_history__ = __webpack_require__(8);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__Router__ = __webpack_require__(16);
 function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
 
 function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
@@ -47763,29 +48668,29 @@ HashRouter.propTypes = {
 /* harmony default export */ __webpack_exports__["a"] = (HashRouter);
 
 /***/ }),
-/* 71 */
+/* 74 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_react_router_es_MemoryRouter__ = __webpack_require__(72);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_react_router_es_MemoryRouter__ = __webpack_require__(75);
 // Written in this round about way for babel-transform-imports
 
 
 /* harmony default export */ __webpack_exports__["a"] = (__WEBPACK_IMPORTED_MODULE_0_react_router_es_MemoryRouter__["a" /* default */]);
 
 /***/ }),
-/* 72 */
+/* 75 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_warning__ = __webpack_require__(4);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_warning__ = __webpack_require__(5);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_warning___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_warning__);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_react__ = __webpack_require__(0);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_react___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_1_react__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_prop_types__ = __webpack_require__(2);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_prop_types__ = __webpack_require__(3);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_prop_types___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_2_prop_types__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_history__ = __webpack_require__(6);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__Router__ = __webpack_require__(15);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_history__ = __webpack_require__(8);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__Router__ = __webpack_require__(17);
 function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
 
 function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
@@ -47840,16 +48745,16 @@ MemoryRouter.propTypes = {
 /* harmony default export */ __webpack_exports__["a"] = (MemoryRouter);
 
 /***/ }),
-/* 73 */
+/* 76 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_react__ = __webpack_require__(0);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_react___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_react__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_prop_types__ = __webpack_require__(2);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_prop_types__ = __webpack_require__(3);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_prop_types___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_1_prop_types__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__Route__ = __webpack_require__(26);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__Link__ = __webpack_require__(25);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__Route__ = __webpack_require__(29);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__Link__ = __webpack_require__(28);
 var _extends = Object.assign || function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; };
 
 var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol" ? function (obj) { return typeof obj; } : function (obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; };
@@ -47926,7 +48831,7 @@ NavLink.defaultProps = {
 /* harmony default export */ __webpack_exports__["a"] = (NavLink);
 
 /***/ }),
-/* 74 */
+/* 77 */
 /***/ (function(module, exports) {
 
 module.exports = Array.isArray || function (arr) {
@@ -47935,26 +48840,26 @@ module.exports = Array.isArray || function (arr) {
 
 
 /***/ }),
-/* 75 */
+/* 78 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_react_router_es_Prompt__ = __webpack_require__(76);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_react_router_es_Prompt__ = __webpack_require__(79);
 // Written in this round about way for babel-transform-imports
 
 
 /* harmony default export */ __webpack_exports__["a"] = (__WEBPACK_IMPORTED_MODULE_0_react_router_es_Prompt__["a" /* default */]);
 
 /***/ }),
-/* 76 */
+/* 79 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_react__ = __webpack_require__(0);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_react___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_react__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_prop_types__ = __webpack_require__(2);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_prop_types__ = __webpack_require__(3);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_prop_types___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_1_prop_types__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_invariant__ = __webpack_require__(3);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_invariant__ = __webpack_require__(4);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_invariant___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_2_invariant__);
 function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
 
@@ -48037,31 +48942,31 @@ Prompt.contextTypes = {
 /* harmony default export */ __webpack_exports__["a"] = (Prompt);
 
 /***/ }),
-/* 77 */
+/* 80 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_react_router_es_Redirect__ = __webpack_require__(78);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_react_router_es_Redirect__ = __webpack_require__(81);
 // Written in this round about way for babel-transform-imports
 
 
 /* harmony default export */ __webpack_exports__["a"] = (__WEBPACK_IMPORTED_MODULE_0_react_router_es_Redirect__["a" /* default */]);
 
 /***/ }),
-/* 78 */
+/* 81 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_react__ = __webpack_require__(0);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_react___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_react__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_prop_types__ = __webpack_require__(2);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_prop_types__ = __webpack_require__(3);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_prop_types___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_1_prop_types__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_warning__ = __webpack_require__(4);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_warning__ = __webpack_require__(5);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_warning___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_2_warning__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_invariant__ = __webpack_require__(3);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_invariant__ = __webpack_require__(4);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_invariant___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_3_invariant__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4_history__ = __webpack_require__(6);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__generatePath__ = __webpack_require__(29);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4_history__ = __webpack_require__(8);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__generatePath__ = __webpack_require__(32);
 var _extends = Object.assign || function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; };
 
 function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
@@ -48177,31 +49082,31 @@ Redirect.contextTypes = {
 /* harmony default export */ __webpack_exports__["a"] = (Redirect);
 
 /***/ }),
-/* 79 */
+/* 82 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_react_router_es_StaticRouter__ = __webpack_require__(80);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_react_router_es_StaticRouter__ = __webpack_require__(83);
 // Written in this round about way for babel-transform-imports
 
 
 /* harmony default export */ __webpack_exports__["a"] = (__WEBPACK_IMPORTED_MODULE_0_react_router_es_StaticRouter__["a" /* default */]);
 
 /***/ }),
-/* 80 */
+/* 83 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_warning__ = __webpack_require__(4);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_warning__ = __webpack_require__(5);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_warning___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_warning__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_invariant__ = __webpack_require__(3);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_invariant__ = __webpack_require__(4);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_invariant___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_1_invariant__);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_react__ = __webpack_require__(0);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_react___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_2_react__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_prop_types__ = __webpack_require__(2);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_prop_types__ = __webpack_require__(3);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_prop_types___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_3_prop_types__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4_history__ = __webpack_require__(6);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__Router__ = __webpack_require__(15);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4_history__ = __webpack_require__(8);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__Router__ = __webpack_require__(17);
 var _extends = Object.assign || function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; };
 
 function _objectWithoutProperties(obj, keys) { var target = {}; for (var i in obj) { if (keys.indexOf(i) >= 0) continue; if (!Object.prototype.hasOwnProperty.call(obj, i)) continue; target[i] = obj[i]; } return target; }
@@ -48354,30 +49259,30 @@ StaticRouter.childContextTypes = {
 /* harmony default export */ __webpack_exports__["a"] = (StaticRouter);
 
 /***/ }),
-/* 81 */
+/* 84 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_react_router_es_Switch__ = __webpack_require__(82);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_react_router_es_Switch__ = __webpack_require__(85);
 // Written in this round about way for babel-transform-imports
 
 
 /* harmony default export */ __webpack_exports__["a"] = (__WEBPACK_IMPORTED_MODULE_0_react_router_es_Switch__["a" /* default */]);
 
 /***/ }),
-/* 82 */
+/* 85 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_react__ = __webpack_require__(0);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_react___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_react__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_prop_types__ = __webpack_require__(2);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_prop_types__ = __webpack_require__(3);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_prop_types___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_1_prop_types__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_warning__ = __webpack_require__(4);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_warning__ = __webpack_require__(5);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_warning___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_2_warning__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_invariant__ = __webpack_require__(3);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_invariant__ = __webpack_require__(4);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_invariant___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_3_invariant__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__matchPath__ = __webpack_require__(16);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__matchPath__ = __webpack_require__(18);
 function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
 
 function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
@@ -48457,50 +49362,50 @@ Switch.propTypes = {
 /* harmony default export */ __webpack_exports__["a"] = (Switch);
 
 /***/ }),
-/* 83 */
+/* 86 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_react_router_es_generatePath__ = __webpack_require__(29);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_react_router_es_generatePath__ = __webpack_require__(32);
 // Written in this round about way for babel-transform-imports
 
 
 /* harmony default export */ __webpack_exports__["a"] = (__WEBPACK_IMPORTED_MODULE_0_react_router_es_generatePath__["a" /* default */]);
 
 /***/ }),
-/* 84 */
+/* 87 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_react_router_es_matchPath__ = __webpack_require__(16);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_react_router_es_matchPath__ = __webpack_require__(18);
 // Written in this round about way for babel-transform-imports
 
 
 /* harmony default export */ __webpack_exports__["a"] = (__WEBPACK_IMPORTED_MODULE_0_react_router_es_matchPath__["a" /* default */]);
 
 /***/ }),
-/* 85 */
+/* 88 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_react_router_es_withRouter__ = __webpack_require__(86);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_react_router_es_withRouter__ = __webpack_require__(89);
 // Written in this round about way for babel-transform-imports
 
 
 /* harmony default export */ __webpack_exports__["a"] = (__WEBPACK_IMPORTED_MODULE_0_react_router_es_withRouter__["a" /* default */]);
 
 /***/ }),
-/* 86 */
+/* 89 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_react__ = __webpack_require__(0);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_react___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_react__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_prop_types__ = __webpack_require__(2);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_prop_types__ = __webpack_require__(3);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_prop_types___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_1_prop_types__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_hoist_non_react_statics__ = __webpack_require__(87);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_hoist_non_react_statics__ = __webpack_require__(90);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_hoist_non_react_statics___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_2_hoist_non_react_statics__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__Route__ = __webpack_require__(27);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__Route__ = __webpack_require__(30);
 var _extends = Object.assign || function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; };
 
 function _objectWithoutProperties(obj, keys) { var target = {}; for (var i in obj) { if (keys.indexOf(i) >= 0) continue; if (!Object.prototype.hasOwnProperty.call(obj, i)) continue; target[i] = obj[i]; } return target; }
@@ -48539,7 +49444,7 @@ var withRouter = function withRouter(Component) {
 /* harmony default export */ __webpack_exports__["a"] = (withRouter);
 
 /***/ }),
-/* 87 */
+/* 90 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -48614,7 +49519,7 @@ module.exports = hoistNonReactStatics;
 
 
 /***/ }),
-/* 88 */
+/* 91 */
 /***/ (function(module, exports, __webpack_require__) {
 
 var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
@@ -48626,11 +49531,12 @@ function _possibleConstructorReturn(self, call) { if (!self) { throw new Referen
 function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
 
 var React = __webpack_require__(0);
-var Link = __webpack_require__(5).Link;
+var Link = __webpack_require__(1).Link;
 var baseURL = 'http://localhost:8000/';
-var Header = __webpack_require__(89);
-var Footer = __webpack_require__(90);
-var OurProducts = __webpack_require__(91);
+var Header = __webpack_require__(6);
+var Footer = __webpack_require__(7);
+var OurProducts = __webpack_require__(92);
+var loadjs = __webpack_require__(19);
 
 var Home = function (_React$Component) {
 	_inherits(Home, _React$Component);
@@ -48642,6 +49548,11 @@ var Home = function (_React$Component) {
 	}
 
 	_createClass(Home, [{
+		key: 'componentDidMount',
+		value: function componentDidMount() {
+			loadjs('js/main.js', function () {});
+		}
+	}, {
 		key: 'render',
 		value: function render() {
 			return React.createElement(
@@ -48806,7 +49717,181 @@ var Home = function (_React$Component) {
 							)
 						)
 					),
-					React.createElement(OurProducts, null)
+					React.createElement(OurProducts, null),
+					React.createElement(
+						'div',
+						{ className: 'section intro' },
+						React.createElement(
+							'div',
+							{ className: 'block-content' },
+							React.createElement(
+								'div',
+								{ className: 'container' },
+								React.createElement(
+									'div',
+									{ className: 'intro-wrap' },
+									React.createElement(
+										'div',
+										{ className: 'row' },
+										React.createElement(
+											'div',
+											{ className: 'col-lg-12 col-md-12 text-center' },
+											React.createElement(
+												'div',
+												{ className: 'intro-header' },
+												React.createElement(
+													'h3',
+													null,
+													'Why Choose Us'
+												),
+												React.createElement(
+													'p',
+													null,
+													'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam quis nostrud'
+												)
+											),
+											React.createElement(
+												'div',
+												{ className: 'intro-social' },
+												React.createElement(
+													'ul',
+													null,
+													React.createElement(
+														'li',
+														null,
+														React.createElement(
+															Link,
+															{ to: '#' },
+															React.createElement('img', { src: 'img/intro-social-1.png', alt: 'Social Item' })
+														)
+													),
+													React.createElement(
+														'li',
+														null,
+														React.createElement(
+															Link,
+															{ to: '#' },
+															React.createElement('img', { src: 'img/intro-social-2.png', alt: 'Social Item' })
+														)
+													),
+													React.createElement(
+														'li',
+														null,
+														React.createElement(
+															Link,
+															{ to: '#' },
+															React.createElement('img', { src: 'img/intro-social-3.png', alt: 'Social Item' })
+														)
+													),
+													React.createElement(
+														'li',
+														null,
+														React.createElement(
+															Link,
+															{ to: '#' },
+															React.createElement('img', { src: 'img/intro-social-4.png', alt: 'Social Item' })
+														)
+													)
+												)
+											)
+										),
+										React.createElement(
+											'div',
+											{ className: 'col-lg-6 col-md-6 col-sm-6 top-left text-center' },
+											React.createElement(
+												'div',
+												{ className: 'intro-item' },
+												React.createElement(
+													'p',
+													null,
+													React.createElement('img', { src: 'img/intro-icon-1.png', alt: 'Intro Image' })
+												),
+												React.createElement(
+													'h4',
+													null,
+													'Always Fresh'
+												),
+												React.createElement(
+													'p',
+													null,
+													'Lorem ipsum dolor sit amet, consectetur elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.'
+												)
+											)
+										),
+										React.createElement(
+											'div',
+											{ className: 'col-lg-6 col-md-6 col-sm-6 top-right text-center' },
+											React.createElement(
+												'div',
+												{ className: 'intro-item' },
+												React.createElement(
+													'p',
+													null,
+													React.createElement('img', { src: 'img/intro-icon-2.png', alt: 'Intro Image' })
+												),
+												React.createElement(
+													'h4',
+													null,
+													'100% Natural'
+												),
+												React.createElement(
+													'p',
+													null,
+													'Lorem ipsum dolor sit amet, consectetur elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.'
+												)
+											)
+										),
+										React.createElement(
+											'div',
+											{ className: 'col-lg-6 col-md-6 col-sm-6 bottom-left text-center' },
+											React.createElement(
+												'div',
+												{ className: 'intro-item' },
+												React.createElement(
+													'p',
+													null,
+													React.createElement('img', { src: 'img/intro-icon-3.png', alt: 'Intro Image' })
+												),
+												React.createElement(
+													'h4',
+													null,
+													'Super Healthy'
+												),
+												React.createElement(
+													'p',
+													null,
+													'Lorem ipsum dolor sit amet, consectetur elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.'
+												)
+											)
+										),
+										React.createElement(
+											'div',
+											{ className: 'col-lg-6 col-md-6 col-sm-6 bottom-right text-center' },
+											React.createElement(
+												'div',
+												{ className: 'intro-item' },
+												React.createElement(
+													'p',
+													null,
+													React.createElement('img', { src: 'img/intro-icon-4.png', alt: 'Intro Image' })
+												),
+												React.createElement(
+													'h4',
+													null,
+													'Premium Quality'
+												),
+												React.createElement(
+													'p',
+													null,
+													'Lorem ipsum dolor sit amet, consectetur elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.'
+												)
+											)
+										)
+									)
+								)
+							)
+						)
+					)
 				),
 				React.createElement(Footer, null)
 			);
@@ -48819,7 +49904,7 @@ var Home = function (_React$Component) {
 module.exports = Home;
 
 /***/ }),
-/* 89 */
+/* 92 */
 /***/ (function(module, exports, __webpack_require__) {
 
 var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
@@ -48831,607 +49916,7 @@ function _possibleConstructorReturn(self, call) { if (!self) { throw new Referen
 function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
 
 var React = __webpack_require__(0);
-var Link = __webpack_require__(5).Link;
-var baseURL = 'http://localhost:8000/';
-
-var Header = function (_React$Component) {
-	_inherits(Header, _React$Component);
-
-	function Header() {
-		_classCallCheck(this, Header);
-
-		return _possibleConstructorReturn(this, (Header.__proto__ || Object.getPrototypeOf(Header)).apply(this, arguments));
-	}
-
-	_createClass(Header, [{
-		key: 'render',
-		value: function render() {
-			return React.createElement(
-				'header',
-				{ id: 'header' },
-				React.createElement(
-					'div',
-					{ className: 'container' },
-					React.createElement(
-						'div',
-						{ className: 'header-top' },
-						React.createElement(
-							'div',
-							{ className: 'row align-items-center' },
-							React.createElement(
-								'div',
-								{ className: 'col-lg-5 col-md-5 col-sm-12' },
-								React.createElement(
-									'div',
-									{ id: 'main-menu' },
-									React.createElement(
-										'ul',
-										{ className: 'menu' },
-										React.createElement(
-											'li',
-											null,
-											React.createElement(
-												Link,
-												{ to: '/home' },
-												'Home'
-											)
-										),
-										React.createElement(
-											'li',
-											{ className: 'dropdown' },
-											React.createElement(
-												Link,
-												{ to: 'product-grid-left-sidebar.html' },
-												'Glutten Free Products'
-											),
-											React.createElement(
-												'div',
-												{ className: 'dropdown-menu' },
-												React.createElement(
-													'ul',
-													null,
-													React.createElement(
-														'li',
-														{ className: 'has-image' },
-														React.createElement('img', { src: baseURL + "img/product/product-category-1.png", alt: 'Product Category Image' }),
-														React.createElement(
-															Link,
-															{ to: 'product-grid-left-sidebar.html' },
-															'Cooking & Baking Flour'
-														)
-													),
-													React.createElement(
-														'li',
-														{ className: 'has-image' },
-														React.createElement('img', { src: baseURL + "img/product/product-category-2.png", alt: 'Product Category Image' }),
-														React.createElement(
-															Link,
-															{ to: 'product-grid-left-sidebar.html' },
-															'Biscuits & Cookies'
-														)
-													),
-													React.createElement(
-														'li',
-														{ className: 'has-image' },
-														React.createElement('img', { src: baseURL + "img/product/product-category-3.png", alt: 'Product Category Image' }),
-														React.createElement(
-															Link,
-															{ to: 'product-grid-left-sidebar.html' },
-															'Namkeens'
-														)
-													),
-													React.createElement(
-														'li',
-														{ className: 'has-image' },
-														React.createElement('img', { src: baseURL + "img/product/product-category-4.png", alt: 'Product Category Image' }),
-														React.createElement(
-															Link,
-															{ to: 'product-grid-left-sidebar.html' },
-															'Snacks'
-														)
-													),
-													React.createElement(
-														'li',
-														{ className: 'has-image' },
-														React.createElement('img', { src: baseURL + "img/product/product-category-0.png", alt: 'Product Category Image' }),
-														React.createElement(
-															Link,
-															{ to: 'product-grid-left-sidebar.html' },
-															'Desserts & Confectionaries'
-														)
-													)
-												)
-											)
-										),
-										React.createElement(
-											'li',
-											null,
-											React.createElement(
-												Link,
-												{ to: '/blog' },
-												'Blog'
-											)
-										),
-										React.createElement(
-											'li',
-											null,
-											React.createElement(
-												Link,
-												{ to: '/about' },
-												'About Us'
-											)
-										),
-										React.createElement(
-											'li',
-											null,
-											React.createElement(
-												Link,
-												{ to: '/contact' },
-												'Contact'
-											)
-										)
-									)
-								)
-							),
-							React.createElement(
-								'div',
-								{ className: 'col-lg-2 col-md-2 col-sm-12 header-center justify-content-center' },
-								React.createElement(
-									'div',
-									{ className: 'logo' },
-									React.createElement(
-										Link,
-										{ to: 'home-4.html' },
-										React.createElement('img', { className: 'img-responsive', src: baseURL + "img/logo.png", alt: 'Logo' })
-									)
-								),
-								React.createElement(
-									'span',
-									{ id: 'toggle-mobile-menu' },
-									React.createElement('i', { className: 'zmdi zmdi-menu' })
-								)
-							),
-							React.createElement(
-								'div',
-								{ className: 'col-lg-5 col-md-5 col-sm-12 header-right d-flex justify-content-end align-items-center' },
-								React.createElement(
-									'div',
-									{ className: 'form-search' },
-									React.createElement(
-										'form',
-										null,
-										React.createElement('input', { type: 'text', className: 'form-input', placeholder: 'Search' }),
-										React.createElement('button', { type: 'submit', className: 'fa fa-search' })
-									)
-								),
-								React.createElement(
-									'div',
-									{ className: 'block-cart dropdown' },
-									React.createElement(
-										'div',
-										{ className: 'cart-title' },
-										React.createElement('i', { className: 'fa fa-shopping-basket', 'aria-hidden': 'true' }),
-										React.createElement(
-											'span',
-											{ className: 'cart-count' },
-											'2'
-										)
-									),
-									React.createElement(
-										'div',
-										{ className: 'dropdown-content' },
-										React.createElement(
-											'div',
-											{ className: 'cart-content' },
-											React.createElement(
-												'table',
-												null,
-												React.createElement(
-													'tbody',
-													null,
-													React.createElement(
-														'tr',
-														null,
-														React.createElement(
-															'td',
-															{ className: 'product-image' },
-															React.createElement(
-																Link,
-																{ to: '#' },
-																React.createElement('img', { src: baseURL + "img/product/7.jpg", alt: 'Product' })
-															)
-														),
-														React.createElement(
-															'td',
-															null,
-															React.createElement(
-																'div',
-																{ className: 'product-name' },
-																React.createElement(
-																	Link,
-																	{ to: '#' },
-																	'Organic Strawberry Fruits'
-																)
-															),
-															React.createElement(
-																'div',
-																null,
-																'2 x ',
-																React.createElement(
-																	'span',
-																	{ className: 'product-price' },
-																	'$28.98'
-																)
-															)
-														),
-														React.createElement(
-															'td',
-															{ className: 'action' },
-															React.createElement(
-																Link,
-																{ className: 'remove', to: '#' },
-																React.createElement('i', { className: 'fa fa-trash-o', 'aria-hidden': 'true' })
-															)
-														)
-													),
-													React.createElement(
-														'tr',
-														null,
-														React.createElement(
-															'td',
-															{ className: 'product-image' },
-															React.createElement(
-																Link,
-																{ to: '#' },
-																React.createElement('img', { src: baseURL + "img/product/6.jpg", alt: 'Product' })
-															)
-														),
-														React.createElement(
-															'td',
-															null,
-															React.createElement(
-																'div',
-																{ className: 'product-name' },
-																React.createElement(
-																	Link,
-																	{ to: '#' },
-																	'Organic Strawberry'
-																)
-															),
-															React.createElement(
-																'div',
-																null,
-																'1 x ',
-																React.createElement(
-																	'span',
-																	{ className: 'product-price' },
-																	'$35.00'
-																)
-															)
-														),
-														React.createElement(
-															'td',
-															{ className: 'action' },
-															React.createElement(
-																Link,
-																{ className: 'remove', to: '#' },
-																React.createElement('i', { className: 'fa fa-trash-o', 'aria-hidden': 'true' })
-															)
-														)
-													),
-													React.createElement(
-														'tr',
-														{ className: 'total' },
-														React.createElement(
-															'td',
-															null,
-															'Total:'
-														),
-														React.createElement(
-															'td',
-															{ colSpan: '2' },
-															'$92.96'
-														)
-													),
-													React.createElement(
-														'tr',
-														null,
-														React.createElement(
-															'td',
-															{ colSpan: '3' },
-															React.createElement(
-																'div',
-																{ className: 'cart-button' },
-																React.createElement(
-																	Link,
-																	{ className: 'btn btn-primary', to: 'product-cart.html' },
-																	'View Cart'
-																),
-																React.createElement(
-																	Link,
-																	{ className: 'btn btn-primary', to: 'product-checkout.html' },
-																	'Checkout'
-																)
-															)
-														)
-													)
-												)
-											)
-										)
-									)
-								),
-								React.createElement(
-									'div',
-									{ className: 'my-account dropdown toggle-icon' },
-									React.createElement(
-										'div',
-										{ className: 'dropdown-toggle', 'data-toggle': 'dropdown' },
-										React.createElement('i', { className: 'zmdi zmdi-menu' })
-									),
-									React.createElement(
-										'div',
-										{ className: 'dropdown-menu' },
-										React.createElement(
-											'div',
-											{ className: 'item' },
-											React.createElement(
-												Link,
-												{ to: '#' },
-												React.createElement('i', { className: 'fa fa-cog' }),
-												'My Account'
-											)
-										),
-										React.createElement(
-											'div',
-											{ className: 'item' },
-											React.createElement(
-												Link,
-												{ to: '#' },
-												React.createElement('i', { className: 'fa fa-sign-in' }),
-												'Login'
-											)
-										),
-										React.createElement(
-											'div',
-											{ className: 'item' },
-											React.createElement(
-												Link,
-												{ to: '#' },
-												React.createElement('i', { className: 'fa fa-user' }),
-												'Register'
-											)
-										),
-										React.createElement(
-											'div',
-											{ className: 'item' },
-											React.createElement(
-												Link,
-												{ to: '#' },
-												React.createElement('i', { className: 'fa fa-heart' }),
-												'My Wishlists'
-											)
-										)
-									)
-								)
-							)
-						)
-					)
-				)
-			);
-		}
-	}]);
-
-	return Header;
-}(React.Component);
-
-module.exports = Header;
-
-/***/ }),
-/* 90 */
-/***/ (function(module, exports, __webpack_require__) {
-
-var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
-
-function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
-
-function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
-
-function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
-
-var React = __webpack_require__(0);
-var Link = __webpack_require__(5).Link;
-var baseURL = 'http://localhost:8000/';
-
-var Footer = function (_React$Component) {
-	_inherits(Footer, _React$Component);
-
-	function Footer() {
-		_classCallCheck(this, Footer);
-
-		return _possibleConstructorReturn(this, (Footer.__proto__ || Object.getPrototypeOf(Footer)).apply(this, arguments));
-	}
-
-	_createClass(Footer, [{
-		key: 'render',
-		value: function render() {
-			return React.createElement(
-				'footer',
-				{ id: 'footer' },
-				React.createElement(
-					'div',
-					{ className: 'footer' },
-					React.createElement(
-						'div',
-						{ className: 'footer-wrap' },
-						React.createElement(
-							'div',
-							{ className: 'container' },
-							React.createElement(
-								'div',
-								{ className: 'row' },
-								React.createElement(
-									'div',
-									{ className: 'col-lg-4 col-md-4 col-sm-12 col-xs-12 footer-col' },
-									React.createElement(
-										'div',
-										{ className: 'block newsletter' },
-										React.createElement(
-											'h2',
-											{ className: 'block-title' },
-											'Newsletter'
-										),
-										React.createElement(
-											'div',
-											{ className: 'block-content' },
-											React.createElement(
-												'p',
-												{ className: 'description' },
-												'Sign up for newsletter to receive special offers and exclusive news about FreshMart products'
-											),
-											React.createElement(
-												'form',
-												null,
-												React.createElement('input', { type: 'text', placeholder: 'Enter Your Email' }),
-												React.createElement(
-													'button',
-													{ type: 'submit', className: 'btn' },
-													'Subscribe'
-												)
-											)
-										)
-									)
-								),
-								React.createElement(
-									'div',
-									{ className: 'col-lg-4 col-md-4 col-sm-6 col-xs-12 footer-col' },
-									React.createElement(
-										'div',
-										{ className: 'block text' },
-										React.createElement(
-											Link,
-											{ to: 'home-4.html', className: 'logo-footer' },
-											React.createElement('img', { src: 'img/logo-3.png', alt: 'Logo' })
-										),
-										React.createElement(
-											'p',
-											null,
-											'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incid idunt ut labore et dolore magna aliqua. Ut enim ad minim ipsum dolor sit amet, consec tetur adipiscing elit ipsum dolor sit amet, consectetur adipiscing elit'
-										)
-									)
-								),
-								React.createElement(
-									'div',
-									{ className: 'col-lg-4 col-md-4 col-sm-6 col-xs-12 footer-col' },
-									React.createElement(
-										'div',
-										{ className: 'block text' },
-										React.createElement(
-											'h2',
-											{ className: 'block-title' },
-											'Contact Us'
-										),
-										React.createElement(
-											'div',
-											{ className: 'block-content' },
-											React.createElement(
-												'div',
-												{ className: 'contact' },
-												React.createElement(
-													'p',
-													null,
-													React.createElement(
-														'strong',
-														null,
-														'Address'
-													),
-													' : 123 Suspendis matti, VST District, NY Accums, North American'
-												),
-												React.createElement(
-													'p',
-													null,
-													React.createElement(
-														'strong',
-														null,
-														'Hotline'
-													),
-													' : 012345678910 - 098765432100'
-												),
-												React.createElement(
-													'p',
-													null,
-													React.createElement(
-														'strong',
-														null,
-														'Email'
-													),
-													' : ',
-													React.createElement(
-														Link,
-														{ to: 'mailto:support@domain.com' },
-														'support@domain.com'
-													)
-												)
-											)
-										)
-									)
-								)
-							)
-						)
-					)
-				),
-				React.createElement(
-					'div',
-					{ className: 'footer-copyright' },
-					React.createElement(
-						'div',
-						{ className: 'container' },
-						React.createElement(
-							'div',
-							{ className: 'row' },
-							React.createElement(
-								'div',
-								{ className: 'col-lg-7 col-md-7 col-sm-12 col-xs-12' },
-								React.createElement(
-									'div',
-									{ className: 'copyright' },
-									'Copyright \xA9 2018 - All rights reserved. Powered by TivaTheme.'
-								)
-							),
-							React.createElement(
-								'div',
-								{ className: 'col-lg-5 col-md-5 col-sm-12 col-xs-12 align-right' },
-								React.createElement(
-									'div',
-									{ className: 'payment' },
-									React.createElement('img', { src: 'img/payment.png', alt: 'Payment' })
-								)
-							)
-						)
-					)
-				)
-			);
-		}
-	}]);
-
-	return Footer;
-}(React.Component);
-
-module.exports = Footer;
-
-/***/ }),
-/* 91 */
-/***/ (function(module, exports, __webpack_require__) {
-
-var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
-
-function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
-
-function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
-
-function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
-
-var React = __webpack_require__(0);
-var Link = __webpack_require__(5).Link;
+var Link = __webpack_require__(1).Link;
 var baseURL = 'http://localhost:8000/';
 
 var OurProducts = function (_React$Component) {
@@ -49583,7 +50068,7 @@ var OurProducts = function (_React$Component) {
 											{ className: 'product-image' },
 											React.createElement(
 												Link,
-												{ to: 'product-detail-left-sidebar.html' },
+												{ to: '/productDetails' },
 												React.createElement('img', { src: 'img/product/4.jpg', alt: 'Product Image' })
 											)
 										),
@@ -49592,7 +50077,7 @@ var OurProducts = function (_React$Component) {
 											{ className: 'product-title' },
 											React.createElement(
 												Link,
-												{ to: 'product-detail-left-sidebar.html' },
+												{ to: '/productDetails' },
 												'Organic Strawberry Fruits'
 											)
 										),
@@ -49611,12 +50096,12 @@ var OurProducts = function (_React$Component) {
 											React.createElement(
 												'span',
 												{ className: 'sale-price' },
-												'$80.00'
+												'\u20B980.00'
 											),
 											React.createElement(
 												'span',
 												{ className: 'base-price' },
-												'$90.00'
+												'\u20B990.00'
 											)
 										),
 										React.createElement(
@@ -49647,7 +50132,7 @@ var OurProducts = function (_React$Component) {
 											{ className: 'product-image' },
 											React.createElement(
 												Link,
-												{ to: 'product-detail-left-sidebar.html' },
+												{ to: '/productDetails' },
 												React.createElement('img', { src: 'img/product/14.jpg', alt: 'Product Image' })
 											)
 										),
@@ -49656,7 +50141,7 @@ var OurProducts = function (_React$Component) {
 											{ className: 'product-title' },
 											React.createElement(
 												Link,
-												{ to: 'product-detail-left-sidebar.html' },
+												{ to: '/productDetails' },
 												'Organic Strawberry Fruits'
 											)
 										),
@@ -49675,12 +50160,12 @@ var OurProducts = function (_React$Component) {
 											React.createElement(
 												'span',
 												{ className: 'sale-price' },
-												'$80.00'
+												'\u20B980.00'
 											),
 											React.createElement(
 												'span',
 												{ className: 'base-price' },
-												'$90.00'
+												'\u20B990.00'
 											)
 										),
 										React.createElement(
@@ -49711,7 +50196,7 @@ var OurProducts = function (_React$Component) {
 											{ className: 'product-image' },
 											React.createElement(
 												Link,
-												{ to: 'product-detail-left-sidebar.html' },
+												{ to: '/productDetails' },
 												React.createElement('img', { src: 'img/product/17.jpg', alt: 'Product Image' })
 											)
 										),
@@ -49720,7 +50205,7 @@ var OurProducts = function (_React$Component) {
 											{ className: 'product-title' },
 											React.createElement(
 												Link,
-												{ to: 'product-detail-left-sidebar.html' },
+												{ to: '/productDetails' },
 												'Organic Strawberry Fruits'
 											)
 										),
@@ -49739,12 +50224,12 @@ var OurProducts = function (_React$Component) {
 											React.createElement(
 												'span',
 												{ className: 'sale-price' },
-												'$80.00'
+												'\u20B980.00'
 											),
 											React.createElement(
 												'span',
 												{ className: 'base-price' },
-												'$90.00'
+												'\u20B990.00'
 											)
 										),
 										React.createElement(
@@ -49775,7 +50260,7 @@ var OurProducts = function (_React$Component) {
 											{ className: 'product-image' },
 											React.createElement(
 												Link,
-												{ to: 'product-detail-left-sidebar.html' },
+												{ to: '/productDetails' },
 												React.createElement('img', { src: 'img/product/8.jpg', alt: 'Product Image' })
 											)
 										),
@@ -49784,7 +50269,7 @@ var OurProducts = function (_React$Component) {
 											{ className: 'product-title' },
 											React.createElement(
 												Link,
-												{ to: 'product-detail-left-sidebar.html' },
+												{ to: '/productDetails' },
 												'Organic Strawberry Fruits'
 											)
 										),
@@ -49803,7 +50288,7 @@ var OurProducts = function (_React$Component) {
 											React.createElement(
 												'span',
 												{ className: 'sale-price' },
-												'$120.00'
+												'\u20B9120.00'
 											)
 										),
 										React.createElement(
@@ -49834,7 +50319,7 @@ var OurProducts = function (_React$Component) {
 											{ className: 'product-image' },
 											React.createElement(
 												Link,
-												{ to: 'product-detail-left-sidebar.html' },
+												{ to: '/productDetails' },
 												React.createElement('img', { src: 'img/product/9.jpg', alt: 'Product Image' })
 											)
 										),
@@ -49843,7 +50328,7 @@ var OurProducts = function (_React$Component) {
 											{ className: 'product-title' },
 											React.createElement(
 												Link,
-												{ to: 'product-detail-left-sidebar.html' },
+												{ to: '/productDetails' },
 												'Organic Strawberry Fruits'
 											)
 										),
@@ -49862,12 +50347,12 @@ var OurProducts = function (_React$Component) {
 											React.createElement(
 												'span',
 												{ className: 'sale-price' },
-												'$80.00'
+												'\u20B980.00'
 											),
 											React.createElement(
 												'span',
 												{ className: 'base-price' },
-												'$90.00'
+												'\u20B990.00'
 											)
 										),
 										React.createElement(
@@ -49898,7 +50383,7 @@ var OurProducts = function (_React$Component) {
 											{ className: 'product-image' },
 											React.createElement(
 												Link,
-												{ to: 'product-detail-left-sidebar.html' },
+												{ to: '/productDetails' },
 												React.createElement('img', { src: 'img/product/15.jpg', alt: 'Product Image' })
 											)
 										),
@@ -49907,7 +50392,7 @@ var OurProducts = function (_React$Component) {
 											{ className: 'product-title' },
 											React.createElement(
 												Link,
-												{ to: 'product-detail-left-sidebar.html' },
+												{ to: '/productDetails' },
 												'Organic Strawberry Fruits'
 											)
 										),
@@ -49926,12 +50411,12 @@ var OurProducts = function (_React$Component) {
 											React.createElement(
 												'span',
 												{ className: 'sale-price' },
-												'$80.00'
+												'\u20B980.00'
 											),
 											React.createElement(
 												'span',
 												{ className: 'base-price' },
-												'$90.00'
+												'\u20B990.00'
 											)
 										),
 										React.createElement(
@@ -49962,7 +50447,7 @@ var OurProducts = function (_React$Component) {
 											{ className: 'product-image' },
 											React.createElement(
 												Link,
-												{ to: 'product-detail-left-sidebar.html' },
+												{ to: '/productDetails' },
 												React.createElement('img', { src: 'img/product/10.jpg', alt: 'Product Image' })
 											)
 										),
@@ -49971,7 +50456,7 @@ var OurProducts = function (_React$Component) {
 											{ className: 'product-title' },
 											React.createElement(
 												Link,
-												{ to: 'product-detail-left-sidebar.html' },
+												{ to: '/productDetails' },
 												'Organic Strawberry Fruits'
 											)
 										),
@@ -49990,7 +50475,7 @@ var OurProducts = function (_React$Component) {
 											React.createElement(
 												'span',
 												{ className: 'sale-price' },
-												'$96.00'
+												'\u20B996.00'
 											)
 										),
 										React.createElement(
@@ -50021,7 +50506,7 @@ var OurProducts = function (_React$Component) {
 											{ className: 'product-image' },
 											React.createElement(
 												Link,
-												{ to: 'product-detail-left-sidebar.html' },
+												{ to: '/productDetails' },
 												React.createElement('img', { src: 'img/product/33.jpg', alt: 'Product Image' })
 											)
 										),
@@ -50030,7 +50515,7 @@ var OurProducts = function (_React$Component) {
 											{ className: 'product-title' },
 											React.createElement(
 												Link,
-												{ to: 'product-detail-left-sidebar.html' },
+												{ to: '/productDetails' },
 												'Organic Strawberry Fruits'
 											)
 										),
@@ -50049,12 +50534,12 @@ var OurProducts = function (_React$Component) {
 											React.createElement(
 												'span',
 												{ className: 'sale-price' },
-												'$80.00'
+												'\u20B980.00'
 											),
 											React.createElement(
 												'span',
 												{ className: 'base-price' },
-												'$90.00'
+												'\u20B990.00'
 											)
 										),
 										React.createElement(
@@ -50085,7 +50570,7 @@ var OurProducts = function (_React$Component) {
 											{ className: 'product-image' },
 											React.createElement(
 												Link,
-												{ to: 'product-detail-left-sidebar.html' },
+												{ to: '/productDetails' },
 												React.createElement('img', { src: 'img/product/22.jpg', alt: 'Product Image' })
 											)
 										),
@@ -50094,7 +50579,7 @@ var OurProducts = function (_React$Component) {
 											{ className: 'product-title' },
 											React.createElement(
 												Link,
-												{ to: 'product-detail-left-sidebar.html' },
+												{ to: '/productDetails' },
 												'Organic Strawberry Fruits'
 											)
 										),
@@ -50113,12 +50598,12 @@ var OurProducts = function (_React$Component) {
 											React.createElement(
 												'span',
 												{ className: 'sale-price' },
-												'$80.00'
+												'\u20B980.00'
 											),
 											React.createElement(
 												'span',
 												{ className: 'base-price' },
-												'$90.00'
+												'\u20B990.00'
 											)
 										),
 										React.createElement(
@@ -50149,7 +50634,7 @@ var OurProducts = function (_React$Component) {
 											{ className: 'product-image' },
 											React.createElement(
 												Link,
-												{ to: 'product-detail-left-sidebar.html' },
+												{ to: '/productDetails' },
 												React.createElement('img', { src: 'img/product/20.jpg', alt: 'Product Image' })
 											)
 										),
@@ -50158,7 +50643,7 @@ var OurProducts = function (_React$Component) {
 											{ className: 'product-title' },
 											React.createElement(
 												Link,
-												{ to: 'product-detail-left-sidebar.html' },
+												{ to: '/productDetails' },
 												'Organic Strawberry Fruits'
 											)
 										),
@@ -50177,7 +50662,7 @@ var OurProducts = function (_React$Component) {
 											React.createElement(
 												'span',
 												{ className: 'sale-price' },
-												'$96.00'
+												'\u20B996.00'
 											)
 										),
 										React.createElement(
@@ -50208,7 +50693,7 @@ var OurProducts = function (_React$Component) {
 											{ className: 'product-image' },
 											React.createElement(
 												Link,
-												{ to: 'product-detail-left-sidebar.html' },
+												{ to: '/productDetails' },
 												React.createElement('img', { src: 'img/product/23.jpg', alt: 'Product Image' })
 											)
 										),
@@ -50217,7 +50702,7 @@ var OurProducts = function (_React$Component) {
 											{ className: 'product-title' },
 											React.createElement(
 												Link,
-												{ to: 'product-detail-left-sidebar.html' },
+												{ to: '/productDetails' },
 												'Organic Strawberry Fruits'
 											)
 										),
@@ -50236,12 +50721,12 @@ var OurProducts = function (_React$Component) {
 											React.createElement(
 												'span',
 												{ className: 'sale-price' },
-												'$80.00'
+												'\u20B980.00'
 											),
 											React.createElement(
 												'span',
 												{ className: 'base-price' },
-												'$90.00'
+												'\u20B990.00'
 											)
 										),
 										React.createElement(
@@ -50272,7 +50757,7 @@ var OurProducts = function (_React$Component) {
 											{ className: 'product-image' },
 											React.createElement(
 												Link,
-												{ to: 'product-detail-left-sidebar.html' },
+												{ to: '/productDetails' },
 												React.createElement('img', { src: 'img/product/30.jpg', alt: 'Product Image' })
 											)
 										),
@@ -50281,7 +50766,7 @@ var OurProducts = function (_React$Component) {
 											{ className: 'product-title' },
 											React.createElement(
 												Link,
-												{ to: 'product-detail-left-sidebar.html' },
+												{ to: '/productDetails' },
 												'Organic Strawberry Fruits'
 											)
 										),
@@ -50300,12 +50785,12 @@ var OurProducts = function (_React$Component) {
 											React.createElement(
 												'span',
 												{ className: 'sale-price' },
-												'$80.00'
+												'\u20B980.00'
 											),
 											React.createElement(
 												'span',
 												{ className: 'base-price' },
-												'$90.00'
+												'\u20B990.00'
 											)
 										),
 										React.createElement(
@@ -50336,7 +50821,7 @@ var OurProducts = function (_React$Component) {
 											{ className: 'product-image' },
 											React.createElement(
 												Link,
-												{ to: 'product-detail-left-sidebar.html' },
+												{ to: '/productDetails' },
 												React.createElement('img', { src: 'img/product/21.jpg', alt: 'Product Image' })
 											)
 										),
@@ -50345,7 +50830,7 @@ var OurProducts = function (_React$Component) {
 											{ className: 'product-title' },
 											React.createElement(
 												Link,
-												{ to: 'product-detail-left-sidebar.html' },
+												{ to: '/productDetails' },
 												'Organic Strawberry Fruits'
 											)
 										),
@@ -50364,7 +50849,7 @@ var OurProducts = function (_React$Component) {
 											React.createElement(
 												'span',
 												{ className: 'sale-price' },
-												'$96.00'
+												'\u20B996.00'
 											)
 										),
 										React.createElement(
@@ -50395,7 +50880,7 @@ var OurProducts = function (_React$Component) {
 											{ className: 'product-image' },
 											React.createElement(
 												Link,
-												{ to: 'product-detail-left-sidebar.html' },
+												{ to: '/productDetails' },
 												React.createElement('img', { src: 'img/product/6.jpg', alt: 'Product Image' })
 											)
 										),
@@ -50404,7 +50889,7 @@ var OurProducts = function (_React$Component) {
 											{ className: 'product-title' },
 											React.createElement(
 												Link,
-												{ to: 'product-detail-left-sidebar.html' },
+												{ to: '/productDetails' },
 												'Organic Strawberry Fruits'
 											)
 										),
@@ -50423,12 +50908,12 @@ var OurProducts = function (_React$Component) {
 											React.createElement(
 												'span',
 												{ className: 'sale-price' },
-												'$80.00'
+												'\u20B980.00'
 											),
 											React.createElement(
 												'span',
 												{ className: 'base-price' },
-												'$90.00'
+												'\u20B990.00'
 											)
 										),
 										React.createElement(
@@ -50459,7 +50944,7 @@ var OurProducts = function (_React$Component) {
 											{ className: 'product-image' },
 											React.createElement(
 												Link,
-												{ to: 'product-detail-left-sidebar.html' },
+												{ to: '/productDetails' },
 												React.createElement('img', { src: 'img/product/3.jpg', alt: 'Product Image' })
 											)
 										),
@@ -50468,7 +50953,7 @@ var OurProducts = function (_React$Component) {
 											{ className: 'product-title' },
 											React.createElement(
 												Link,
-												{ to: 'product-detail-left-sidebar.html' },
+												{ to: '/productDetails' },
 												'Organic Strawberry Fruits'
 											)
 										),
@@ -50487,12 +50972,12 @@ var OurProducts = function (_React$Component) {
 											React.createElement(
 												'span',
 												{ className: 'sale-price' },
-												'$80.00'
+												'\u20B980.00'
 											),
 											React.createElement(
 												'span',
 												{ className: 'base-price' },
-												'$90.00'
+												'\u20B990.00'
 											)
 										),
 										React.createElement(
@@ -50531,7 +51016,7 @@ var OurProducts = function (_React$Component) {
 											{ className: 'product-image' },
 											React.createElement(
 												Link,
-												{ to: 'product-detail-left-sidebar.html' },
+												{ to: '/productDetails' },
 												React.createElement('img', { src: 'img/product/4.jpg', alt: 'Product Image' })
 											)
 										),
@@ -50540,7 +51025,7 @@ var OurProducts = function (_React$Component) {
 											{ className: 'product-title' },
 											React.createElement(
 												Link,
-												{ to: 'product-detail-left-sidebar.html' },
+												{ to: '/productDetails' },
 												'Organic Strawberry Fruits'
 											)
 										),
@@ -50559,12 +51044,12 @@ var OurProducts = function (_React$Component) {
 											React.createElement(
 												'span',
 												{ className: 'sale-price' },
-												'$80.00'
+												'\u20B980.00'
 											),
 											React.createElement(
 												'span',
 												{ className: 'base-price' },
-												'$90.00'
+												'\u20B990.00'
 											)
 										),
 										React.createElement(
@@ -50595,7 +51080,7 @@ var OurProducts = function (_React$Component) {
 											{ className: 'product-image' },
 											React.createElement(
 												Link,
-												{ to: 'product-detail-left-sidebar.html' },
+												{ to: '/productDetails' },
 												React.createElement('img', { src: 'img/product/14.jpg', alt: 'Product Image' })
 											)
 										),
@@ -50604,7 +51089,7 @@ var OurProducts = function (_React$Component) {
 											{ className: 'product-title' },
 											React.createElement(
 												Link,
-												{ to: 'product-detail-left-sidebar.html' },
+												{ to: '/productDetails' },
 												'Organic Strawberry Fruits'
 											)
 										),
@@ -50623,12 +51108,12 @@ var OurProducts = function (_React$Component) {
 											React.createElement(
 												'span',
 												{ className: 'sale-price' },
-												'$80.00'
+												'\u20B980.00'
 											),
 											React.createElement(
 												'span',
 												{ className: 'base-price' },
-												'$90.00'
+												'\u20B990.00'
 											)
 										),
 										React.createElement(
@@ -50659,7 +51144,7 @@ var OurProducts = function (_React$Component) {
 											{ className: 'product-image' },
 											React.createElement(
 												Link,
-												{ to: 'product-detail-left-sidebar.html' },
+												{ to: '/productDetails' },
 												React.createElement('img', { src: 'img/product/26.jpg', alt: 'Product Image' })
 											)
 										),
@@ -50668,7 +51153,7 @@ var OurProducts = function (_React$Component) {
 											{ className: 'product-title' },
 											React.createElement(
 												Link,
-												{ to: 'product-detail-left-sidebar.html' },
+												{ to: '/productDetails' },
 												'Organic Strawberry Fruits'
 											)
 										),
@@ -50687,12 +51172,12 @@ var OurProducts = function (_React$Component) {
 											React.createElement(
 												'span',
 												{ className: 'sale-price' },
-												'$80.00'
+												'\u20B980.00'
 											),
 											React.createElement(
 												'span',
 												{ className: 'base-price' },
-												'$90.00'
+												'\u20B990.00'
 											)
 										),
 										React.createElement(
@@ -50723,7 +51208,7 @@ var OurProducts = function (_React$Component) {
 											{ className: 'product-image' },
 											React.createElement(
 												Link,
-												{ to: 'product-detail-left-sidebar.html' },
+												{ to: '/productDetails' },
 												React.createElement('img', { src: 'img/product/8.jpg', alt: 'Product Image' })
 											)
 										),
@@ -50732,7 +51217,7 @@ var OurProducts = function (_React$Component) {
 											{ className: 'product-title' },
 											React.createElement(
 												Link,
-												{ to: 'product-detail-left-sidebar.html' },
+												{ to: '/productDetails' },
 												'Organic Strawberry Fruits'
 											)
 										),
@@ -50751,7 +51236,7 @@ var OurProducts = function (_React$Component) {
 											React.createElement(
 												'span',
 												{ className: 'sale-price' },
-												'$120.00'
+												'\u20B9120.00'
 											)
 										),
 										React.createElement(
@@ -50782,7 +51267,7 @@ var OurProducts = function (_React$Component) {
 											{ className: 'product-image' },
 											React.createElement(
 												Link,
-												{ to: 'product-detail-left-sidebar.html' },
+												{ to: '/productDetails' },
 												React.createElement('img', { src: 'img/product/9.jpg', alt: 'Product Image' })
 											)
 										),
@@ -50791,7 +51276,7 @@ var OurProducts = function (_React$Component) {
 											{ className: 'product-title' },
 											React.createElement(
 												Link,
-												{ to: 'product-detail-left-sidebar.html' },
+												{ to: '/productDetails' },
 												'Organic Strawberry Fruits'
 											)
 										),
@@ -50810,12 +51295,12 @@ var OurProducts = function (_React$Component) {
 											React.createElement(
 												'span',
 												{ className: 'sale-price' },
-												'$80.00'
+												'\u20B980.00'
 											),
 											React.createElement(
 												'span',
 												{ className: 'base-price' },
-												'$90.00'
+												'\u20B990.00'
 											)
 										),
 										React.createElement(
@@ -50846,7 +51331,7 @@ var OurProducts = function (_React$Component) {
 											{ className: 'product-image' },
 											React.createElement(
 												Link,
-												{ to: 'product-detail-left-sidebar.html' },
+												{ to: '/productDetails' },
 												React.createElement('img', { src: 'img/product/31.jpg', alt: 'Product Image' })
 											)
 										),
@@ -50855,7 +51340,7 @@ var OurProducts = function (_React$Component) {
 											{ className: 'product-title' },
 											React.createElement(
 												Link,
-												{ to: 'product-detail-left-sidebar.html' },
+												{ to: '/productDetails' },
 												'Organic Strawberry Fruits'
 											)
 										),
@@ -50874,12 +51359,12 @@ var OurProducts = function (_React$Component) {
 											React.createElement(
 												'span',
 												{ className: 'sale-price' },
-												'$80.00'
+												'\u20B980.00'
 											),
 											React.createElement(
 												'span',
 												{ className: 'base-price' },
-												'$90.00'
+												'\u20B990.00'
 											)
 										),
 										React.createElement(
@@ -50910,7 +51395,7 @@ var OurProducts = function (_React$Component) {
 											{ className: 'product-image' },
 											React.createElement(
 												Link,
-												{ to: 'product-detail-left-sidebar.html' },
+												{ to: '/productDetails' },
 												React.createElement('img', { src: 'img/product/10.jpg', alt: 'Product Image' })
 											)
 										),
@@ -50919,7 +51404,7 @@ var OurProducts = function (_React$Component) {
 											{ className: 'product-title' },
 											React.createElement(
 												Link,
-												{ to: 'product-detail-left-sidebar.html' },
+												{ to: '/productDetails' },
 												'Organic Strawberry Fruits'
 											)
 										),
@@ -50938,7 +51423,7 @@ var OurProducts = function (_React$Component) {
 											React.createElement(
 												'span',
 												{ className: 'sale-price' },
-												'$96.00'
+												'\u20B996.00'
 											)
 										),
 										React.createElement(
@@ -50969,7 +51454,7 @@ var OurProducts = function (_React$Component) {
 											{ className: 'product-image' },
 											React.createElement(
 												Link,
-												{ to: 'product-detail-left-sidebar.html' },
+												{ to: '/productDetails' },
 												React.createElement('img', { src: 'img/product/33.jpg', alt: 'Product Image' })
 											)
 										),
@@ -50978,7 +51463,7 @@ var OurProducts = function (_React$Component) {
 											{ className: 'product-title' },
 											React.createElement(
 												Link,
-												{ to: 'product-detail-left-sidebar.html' },
+												{ to: '/productDetails' },
 												'Organic Strawberry Fruits'
 											)
 										),
@@ -50997,12 +51482,12 @@ var OurProducts = function (_React$Component) {
 											React.createElement(
 												'span',
 												{ className: 'sale-price' },
-												'$80.00'
+												'\u20B980.00'
 											),
 											React.createElement(
 												'span',
 												{ className: 'base-price' },
-												'$90.00'
+												'\u20B990.00'
 											)
 										),
 										React.createElement(
@@ -51033,7 +51518,7 @@ var OurProducts = function (_React$Component) {
 											{ className: 'product-image' },
 											React.createElement(
 												Link,
-												{ to: 'product-detail-left-sidebar.html' },
+												{ to: '/productDetails' },
 												React.createElement('img', { src: 'img/product/38.jpg', alt: 'Product Image' })
 											)
 										),
@@ -51042,7 +51527,7 @@ var OurProducts = function (_React$Component) {
 											{ className: 'product-title' },
 											React.createElement(
 												Link,
-												{ to: 'product-detail-left-sidebar.html' },
+												{ to: '/productDetails' },
 												'Organic Strawberry Fruits'
 											)
 										),
@@ -51061,12 +51546,12 @@ var OurProducts = function (_React$Component) {
 											React.createElement(
 												'span',
 												{ className: 'sale-price' },
-												'$80.00'
+												'\u20B980.00'
 											),
 											React.createElement(
 												'span',
 												{ className: 'base-price' },
-												'$90.00'
+												'\u20B990.00'
 											)
 										),
 										React.createElement(
@@ -51097,7 +51582,7 @@ var OurProducts = function (_React$Component) {
 											{ className: 'product-image' },
 											React.createElement(
 												Link,
-												{ to: 'product-detail-left-sidebar.html' },
+												{ to: '/productDetails' },
 												React.createElement('img', { src: 'img/product/21.jpg', alt: 'Product Image' })
 											)
 										),
@@ -51106,7 +51591,7 @@ var OurProducts = function (_React$Component) {
 											{ className: 'product-title' },
 											React.createElement(
 												Link,
-												{ to: 'product-detail-left-sidebar.html' },
+												{ to: '/productDetails' },
 												'Organic Strawberry Fruits'
 											)
 										),
@@ -51125,7 +51610,7 @@ var OurProducts = function (_React$Component) {
 											React.createElement(
 												'span',
 												{ className: 'sale-price' },
-												'$96.00'
+												'\u20B996.00'
 											)
 										),
 										React.createElement(
@@ -51156,7 +51641,7 @@ var OurProducts = function (_React$Component) {
 											{ className: 'product-image' },
 											React.createElement(
 												Link,
-												{ to: 'product-detail-left-sidebar.html' },
+												{ to: '/productDetails' },
 												React.createElement('img', { src: 'img/product/6.jpg', alt: 'Product Image' })
 											)
 										),
@@ -51165,7 +51650,7 @@ var OurProducts = function (_React$Component) {
 											{ className: 'product-title' },
 											React.createElement(
 												Link,
-												{ to: 'product-detail-left-sidebar.html' },
+												{ to: '/productDetails' },
 												'Organic Strawberry Fruits'
 											)
 										),
@@ -51184,12 +51669,12 @@ var OurProducts = function (_React$Component) {
 											React.createElement(
 												'span',
 												{ className: 'sale-price' },
-												'$80.00'
+												'\u20B980.00'
 											),
 											React.createElement(
 												'span',
 												{ className: 'base-price' },
-												'$90.00'
+												'\u20B990.00'
 											)
 										),
 										React.createElement(
@@ -51220,7 +51705,7 @@ var OurProducts = function (_React$Component) {
 											{ className: 'product-image' },
 											React.createElement(
 												Link,
-												{ to: 'product-detail-left-sidebar.html' },
+												{ to: '/productDetails' },
 												React.createElement('img', { src: 'img/product/3.jpg', alt: 'Product Image' })
 											)
 										),
@@ -51229,7 +51714,7 @@ var OurProducts = function (_React$Component) {
 											{ className: 'product-title' },
 											React.createElement(
 												Link,
-												{ to: 'product-detail-left-sidebar.html' },
+												{ to: '/productDetails' },
 												'Organic Strawberry Fruits'
 											)
 										),
@@ -51248,12 +51733,12 @@ var OurProducts = function (_React$Component) {
 											React.createElement(
 												'span',
 												{ className: 'sale-price' },
-												'$80.00'
+												'\u20B980.00'
 											),
 											React.createElement(
 												'span',
 												{ className: 'base-price' },
-												'$90.00'
+												'\u20B990.00'
 											)
 										),
 										React.createElement(
@@ -51284,7 +51769,7 @@ var OurProducts = function (_React$Component) {
 											{ className: 'product-image' },
 											React.createElement(
 												Link,
-												{ to: 'product-detail-left-sidebar.html' },
+												{ to: '/productDetails' },
 												React.createElement('img', { src: 'img/product/20.jpg', alt: 'Product Image' })
 											)
 										),
@@ -51293,7 +51778,7 @@ var OurProducts = function (_React$Component) {
 											{ className: 'product-title' },
 											React.createElement(
 												Link,
-												{ to: 'product-detail-left-sidebar.html' },
+												{ to: '/productDetails' },
 												'Organic Strawberry Fruits'
 											)
 										),
@@ -51312,7 +51797,7 @@ var OurProducts = function (_React$Component) {
 											React.createElement(
 												'span',
 												{ className: 'sale-price' },
-												'$96.00'
+												'\u20B996.00'
 											)
 										),
 										React.createElement(
@@ -51343,7 +51828,7 @@ var OurProducts = function (_React$Component) {
 											{ className: 'product-image' },
 											React.createElement(
 												Link,
-												{ to: 'product-detail-left-sidebar.html' },
+												{ to: '/productDetails' },
 												React.createElement('img', { src: 'img/product/23.jpg', alt: 'Product Image' })
 											)
 										),
@@ -51352,7 +51837,7 @@ var OurProducts = function (_React$Component) {
 											{ className: 'product-title' },
 											React.createElement(
 												Link,
-												{ to: 'product-detail-left-sidebar.html' },
+												{ to: '/productDetails' },
 												'Organic Strawberry Fruits'
 											)
 										),
@@ -51371,12 +51856,12 @@ var OurProducts = function (_React$Component) {
 											React.createElement(
 												'span',
 												{ className: 'sale-price' },
-												'$80.00'
+												'\u20B980.00'
 											),
 											React.createElement(
 												'span',
 												{ className: 'base-price' },
-												'$90.00'
+												'\u20B990.00'
 											)
 										),
 										React.createElement(
@@ -51407,7 +51892,7 @@ var OurProducts = function (_React$Component) {
 											{ className: 'product-image' },
 											React.createElement(
 												Link,
-												{ to: 'product-detail-left-sidebar.html' },
+												{ to: '/productDetails' },
 												React.createElement('img', { src: 'img/product/15.jpg', alt: 'Product Image' })
 											)
 										),
@@ -51416,7 +51901,7 @@ var OurProducts = function (_React$Component) {
 											{ className: 'product-title' },
 											React.createElement(
 												Link,
-												{ to: 'product-detail-left-sidebar.html' },
+												{ to: '/productDetails' },
 												'Organic Strawberry Fruits'
 											)
 										),
@@ -51435,12 +51920,12 @@ var OurProducts = function (_React$Component) {
 											React.createElement(
 												'span',
 												{ className: 'sale-price' },
-												'$80.00'
+												'\u20B980.00'
 											),
 											React.createElement(
 												'span',
 												{ className: 'base-price' },
-												'$90.00'
+												'\u20B990.00'
 											)
 										),
 										React.createElement(
@@ -51479,7 +51964,7 @@ var OurProducts = function (_React$Component) {
 											{ className: 'product-image' },
 											React.createElement(
 												Link,
-												{ to: 'product-detail-left-sidebar.html' },
+												{ to: '/productDetails' },
 												React.createElement('img', { src: 'img/product/4.jpg', alt: 'Product Image' })
 											)
 										),
@@ -51488,7 +51973,7 @@ var OurProducts = function (_React$Component) {
 											{ className: 'product-title' },
 											React.createElement(
 												Link,
-												{ to: 'product-detail-left-sidebar.html' },
+												{ to: '/productDetails' },
 												'Organic Strawberry Fruits'
 											)
 										),
@@ -51507,12 +51992,12 @@ var OurProducts = function (_React$Component) {
 											React.createElement(
 												'span',
 												{ className: 'sale-price' },
-												'$80.00'
+												'\u20B980.00'
 											),
 											React.createElement(
 												'span',
 												{ className: 'base-price' },
-												'$90.00'
+												'\u20B990.00'
 											)
 										),
 										React.createElement(
@@ -51543,7 +52028,7 @@ var OurProducts = function (_React$Component) {
 											{ className: 'product-image' },
 											React.createElement(
 												Link,
-												{ to: 'product-detail-left-sidebar.html' },
+												{ to: '/productDetails' },
 												React.createElement('img', { src: 'img/product/14.jpg', alt: 'Product Image' })
 											)
 										),
@@ -51552,7 +52037,7 @@ var OurProducts = function (_React$Component) {
 											{ className: 'product-title' },
 											React.createElement(
 												Link,
-												{ to: 'product-detail-left-sidebar.html' },
+												{ to: '/productDetails' },
 												'Organic Strawberry Fruits'
 											)
 										),
@@ -51571,12 +52056,12 @@ var OurProducts = function (_React$Component) {
 											React.createElement(
 												'span',
 												{ className: 'sale-price' },
-												'$80.00'
+												'\u20B980.00'
 											),
 											React.createElement(
 												'span',
 												{ className: 'base-price' },
-												'$90.00'
+												'\u20B990.00'
 											)
 										),
 										React.createElement(
@@ -51607,7 +52092,7 @@ var OurProducts = function (_React$Component) {
 											{ className: 'product-image' },
 											React.createElement(
 												Link,
-												{ to: 'product-detail-left-sidebar.html' },
+												{ to: '/productDetails' },
 												React.createElement('img', { src: 'img/product/17.jpg', alt: 'Product Image' })
 											)
 										),
@@ -51616,7 +52101,7 @@ var OurProducts = function (_React$Component) {
 											{ className: 'product-title' },
 											React.createElement(
 												Link,
-												{ to: 'product-detail-left-sidebar.html' },
+												{ to: '/productDetails' },
 												'Organic Strawberry Fruits'
 											)
 										),
@@ -51635,12 +52120,12 @@ var OurProducts = function (_React$Component) {
 											React.createElement(
 												'span',
 												{ className: 'sale-price' },
-												'$80.00'
+												'\u20B980.00'
 											),
 											React.createElement(
 												'span',
 												{ className: 'base-price' },
-												'$90.00'
+												'\u20B990.00'
 											)
 										),
 										React.createElement(
@@ -51671,7 +52156,7 @@ var OurProducts = function (_React$Component) {
 											{ className: 'product-image' },
 											React.createElement(
 												Link,
-												{ to: 'product-detail-left-sidebar.html' },
+												{ to: '/productDetails' },
 												React.createElement('img', { src: 'img/product/8.jpg', alt: 'Product Image' })
 											)
 										),
@@ -51680,7 +52165,7 @@ var OurProducts = function (_React$Component) {
 											{ className: 'product-title' },
 											React.createElement(
 												Link,
-												{ to: 'product-detail-left-sidebar.html' },
+												{ to: '/productDetails' },
 												'Organic Strawberry Fruits'
 											)
 										),
@@ -51699,7 +52184,7 @@ var OurProducts = function (_React$Component) {
 											React.createElement(
 												'span',
 												{ className: 'sale-price' },
-												'$120.00'
+												'\u20B9120.00'
 											)
 										),
 										React.createElement(
@@ -51730,7 +52215,7 @@ var OurProducts = function (_React$Component) {
 											{ className: 'product-image' },
 											React.createElement(
 												Link,
-												{ to: 'product-detail-left-sidebar.html' },
+												{ to: '/productDetails' },
 												React.createElement('img', { src: 'img/product/9.jpg', alt: 'Product Image' })
 											)
 										),
@@ -51739,7 +52224,7 @@ var OurProducts = function (_React$Component) {
 											{ className: 'product-title' },
 											React.createElement(
 												Link,
-												{ to: 'product-detail-left-sidebar.html' },
+												{ to: '/productDetails' },
 												'Organic Strawberry Fruits'
 											)
 										),
@@ -51758,12 +52243,12 @@ var OurProducts = function (_React$Component) {
 											React.createElement(
 												'span',
 												{ className: 'sale-price' },
-												'$80.00'
+												'\u20B980.00'
 											),
 											React.createElement(
 												'span',
 												{ className: 'base-price' },
-												'$90.00'
+												'\u20B990.00'
 											)
 										),
 										React.createElement(
@@ -51794,7 +52279,7 @@ var OurProducts = function (_React$Component) {
 											{ className: 'product-image' },
 											React.createElement(
 												Link,
-												{ to: 'product-detail-left-sidebar.html' },
+												{ to: '/productDetails' },
 												React.createElement('img', { src: 'img/product/15.jpg', alt: 'Product Image' })
 											)
 										),
@@ -51803,7 +52288,7 @@ var OurProducts = function (_React$Component) {
 											{ className: 'product-title' },
 											React.createElement(
 												Link,
-												{ to: 'product-detail-left-sidebar.html' },
+												{ to: '/productDetails' },
 												'Organic Strawberry Fruits'
 											)
 										),
@@ -51822,12 +52307,12 @@ var OurProducts = function (_React$Component) {
 											React.createElement(
 												'span',
 												{ className: 'sale-price' },
-												'$80.00'
+												'\u20B980.00'
 											),
 											React.createElement(
 												'span',
 												{ className: 'base-price' },
-												'$90.00'
+												'\u20B990.00'
 											)
 										),
 										React.createElement(
@@ -51858,7 +52343,7 @@ var OurProducts = function (_React$Component) {
 											{ className: 'product-image' },
 											React.createElement(
 												Link,
-												{ to: 'product-detail-left-sidebar.html' },
+												{ to: '/productDetails' },
 												React.createElement('img', { src: 'img/product/10.jpg', alt: 'Product Image' })
 											)
 										),
@@ -51867,7 +52352,7 @@ var OurProducts = function (_React$Component) {
 											{ className: 'product-title' },
 											React.createElement(
 												Link,
-												{ to: 'product-detail-left-sidebar.html' },
+												{ to: '/productDetails' },
 												'Organic Strawberry Fruits'
 											)
 										),
@@ -51886,7 +52371,7 @@ var OurProducts = function (_React$Component) {
 											React.createElement(
 												'span',
 												{ className: 'sale-price' },
-												'$96.00'
+												'\u20B996.00'
 											)
 										),
 										React.createElement(
@@ -51917,7 +52402,7 @@ var OurProducts = function (_React$Component) {
 											{ className: 'product-image' },
 											React.createElement(
 												Link,
-												{ to: 'product-detail-left-sidebar.html' },
+												{ to: '/productDetails' },
 												React.createElement('img', { src: 'img/product/33.jpg', alt: 'Product Image' })
 											)
 										),
@@ -51926,7 +52411,7 @@ var OurProducts = function (_React$Component) {
 											{ className: 'product-title' },
 											React.createElement(
 												Link,
-												{ to: 'product-detail-left-sidebar.html' },
+												{ to: '/productDetails' },
 												'Organic Strawberry Fruits'
 											)
 										),
@@ -51945,12 +52430,12 @@ var OurProducts = function (_React$Component) {
 											React.createElement(
 												'span',
 												{ className: 'sale-price' },
-												'$80.00'
+												'\u20B980.00'
 											),
 											React.createElement(
 												'span',
 												{ className: 'base-price' },
-												'$90.00'
+												'\u20B990.00'
 											)
 										),
 										React.createElement(
@@ -51981,7 +52466,7 @@ var OurProducts = function (_React$Component) {
 											{ className: 'product-image' },
 											React.createElement(
 												Link,
-												{ to: 'product-detail-left-sidebar.html' },
+												{ to: '/productDetails' },
 												React.createElement('img', { src: 'img/product/22.jpg', alt: 'Product Image' })
 											)
 										),
@@ -51990,7 +52475,7 @@ var OurProducts = function (_React$Component) {
 											{ className: 'product-title' },
 											React.createElement(
 												Link,
-												{ to: 'product-detail-left-sidebar.html' },
+												{ to: '/productDetails' },
 												'Organic Strawberry Fruits'
 											)
 										),
@@ -52009,12 +52494,12 @@ var OurProducts = function (_React$Component) {
 											React.createElement(
 												'span',
 												{ className: 'sale-price' },
-												'$80.00'
+												'\u20B980.00'
 											),
 											React.createElement(
 												'span',
 												{ className: 'base-price' },
-												'$90.00'
+												'\u20B990.00'
 											)
 										),
 										React.createElement(
@@ -52045,7 +52530,7 @@ var OurProducts = function (_React$Component) {
 											{ className: 'product-image' },
 											React.createElement(
 												Link,
-												{ to: 'product-detail-left-sidebar.html' },
+												{ to: '/productDetails' },
 												React.createElement('img', { src: 'img/product/20.jpg', alt: 'Product Image' })
 											)
 										),
@@ -52054,7 +52539,7 @@ var OurProducts = function (_React$Component) {
 											{ className: 'product-title' },
 											React.createElement(
 												Link,
-												{ to: 'product-detail-left-sidebar.html' },
+												{ to: '/productDetails' },
 												'Organic Strawberry Fruits'
 											)
 										),
@@ -52073,7 +52558,7 @@ var OurProducts = function (_React$Component) {
 											React.createElement(
 												'span',
 												{ className: 'sale-price' },
-												'$96.00'
+												'\u20B996.00'
 											)
 										),
 										React.createElement(
@@ -52104,7 +52589,7 @@ var OurProducts = function (_React$Component) {
 											{ className: 'product-image' },
 											React.createElement(
 												Link,
-												{ to: 'product-detail-left-sidebar.html' },
+												{ to: '/productDetails' },
 												React.createElement('img', { src: 'img/product/23.jpg', alt: 'Product Image' })
 											)
 										),
@@ -52113,7 +52598,7 @@ var OurProducts = function (_React$Component) {
 											{ className: 'product-title' },
 											React.createElement(
 												Link,
-												{ to: 'product-detail-left-sidebar.html' },
+												{ to: '/productDetails' },
 												'Organic Strawberry Fruits'
 											)
 										),
@@ -52132,12 +52617,12 @@ var OurProducts = function (_React$Component) {
 											React.createElement(
 												'span',
 												{ className: 'sale-price' },
-												'$80.00'
+												'\u20B980.00'
 											),
 											React.createElement(
 												'span',
 												{ className: 'base-price' },
-												'$90.00'
+												'\u20B990.00'
 											)
 										),
 										React.createElement(
@@ -52168,7 +52653,7 @@ var OurProducts = function (_React$Component) {
 											{ className: 'product-image' },
 											React.createElement(
 												Link,
-												{ to: 'product-detail-left-sidebar.html' },
+												{ to: '/productDetails' },
 												React.createElement('img', { src: 'img/product/30.jpg', alt: 'Product Image' })
 											)
 										),
@@ -52177,7 +52662,7 @@ var OurProducts = function (_React$Component) {
 											{ className: 'product-title' },
 											React.createElement(
 												Link,
-												{ to: 'product-detail-left-sidebar.html' },
+												{ to: '/productDetails' },
 												'Organic Strawberry Fruits'
 											)
 										),
@@ -52196,12 +52681,12 @@ var OurProducts = function (_React$Component) {
 											React.createElement(
 												'span',
 												{ className: 'sale-price' },
-												'$80.00'
+												'\u20B980.00'
 											),
 											React.createElement(
 												'span',
 												{ className: 'base-price' },
-												'$90.00'
+												'\u20B990.00'
 											)
 										),
 										React.createElement(
@@ -52232,7 +52717,7 @@ var OurProducts = function (_React$Component) {
 											{ className: 'product-image' },
 											React.createElement(
 												Link,
-												{ to: 'product-detail-left-sidebar.html' },
+												{ to: '/productDetails' },
 												React.createElement('img', { src: 'img/product/21.jpg', alt: 'Product Image' })
 											)
 										),
@@ -52241,7 +52726,7 @@ var OurProducts = function (_React$Component) {
 											{ className: 'product-title' },
 											React.createElement(
 												Link,
-												{ to: 'product-detail-left-sidebar.html' },
+												{ to: '/productDetails' },
 												'Organic Strawberry Fruits'
 											)
 										),
@@ -52260,7 +52745,7 @@ var OurProducts = function (_React$Component) {
 											React.createElement(
 												'span',
 												{ className: 'sale-price' },
-												'$96.00'
+												'\u20B996.00'
 											)
 										),
 										React.createElement(
@@ -52291,7 +52776,7 @@ var OurProducts = function (_React$Component) {
 											{ className: 'product-image' },
 											React.createElement(
 												Link,
-												{ to: 'product-detail-left-sidebar.html' },
+												{ to: '/productDetails' },
 												React.createElement('img', { src: 'img/product/6.jpg', alt: 'Product Image' })
 											)
 										),
@@ -52300,7 +52785,7 @@ var OurProducts = function (_React$Component) {
 											{ className: 'product-title' },
 											React.createElement(
 												Link,
-												{ to: 'product-detail-left-sidebar.html' },
+												{ to: '/productDetails' },
 												'Organic Strawberry Fruits'
 											)
 										),
@@ -52319,12 +52804,12 @@ var OurProducts = function (_React$Component) {
 											React.createElement(
 												'span',
 												{ className: 'sale-price' },
-												'$80.00'
+												'\u20B980.00'
 											),
 											React.createElement(
 												'span',
 												{ className: 'base-price' },
-												'$90.00'
+												'\u20B990.00'
 											)
 										),
 										React.createElement(
@@ -52355,7 +52840,7 @@ var OurProducts = function (_React$Component) {
 											{ className: 'product-image' },
 											React.createElement(
 												Link,
-												{ to: 'product-detail-left-sidebar.html' },
+												{ to: '/productDetails' },
 												React.createElement('img', { src: 'img/product/3.jpg', alt: 'Product Image' })
 											)
 										),
@@ -52364,7 +52849,7 @@ var OurProducts = function (_React$Component) {
 											{ className: 'product-title' },
 											React.createElement(
 												Link,
-												{ to: 'product-detail-left-sidebar.html' },
+												{ to: '/productDetails' },
 												'Organic Strawberry Fruits'
 											)
 										),
@@ -52383,12 +52868,12 @@ var OurProducts = function (_React$Component) {
 											React.createElement(
 												'span',
 												{ className: 'sale-price' },
-												'$80.00'
+												'\u20B980.00'
 											),
 											React.createElement(
 												'span',
 												{ className: 'base-price' },
-												'$90.00'
+												'\u20B990.00'
 											)
 										),
 										React.createElement(
@@ -52427,7 +52912,7 @@ var OurProducts = function (_React$Component) {
 											{ className: 'product-image' },
 											React.createElement(
 												Link,
-												{ to: 'product-detail-left-sidebar.html' },
+												{ to: '/productDetails' },
 												React.createElement('img', { src: 'img/product/4.jpg', alt: 'Product Image' })
 											)
 										),
@@ -52436,7 +52921,7 @@ var OurProducts = function (_React$Component) {
 											{ className: 'product-title' },
 											React.createElement(
 												Link,
-												{ to: 'product-detail-left-sidebar.html' },
+												{ to: '/productDetails' },
 												'Organic Strawberry Fruits'
 											)
 										),
@@ -52455,12 +52940,12 @@ var OurProducts = function (_React$Component) {
 											React.createElement(
 												'span',
 												{ className: 'sale-price' },
-												'$80.00'
+												'\u20B980.00'
 											),
 											React.createElement(
 												'span',
 												{ className: 'base-price' },
-												'$90.00'
+												'\u20B990.00'
 											)
 										),
 										React.createElement(
@@ -52491,7 +52976,7 @@ var OurProducts = function (_React$Component) {
 											{ className: 'product-image' },
 											React.createElement(
 												Link,
-												{ to: 'product-detail-left-sidebar.html' },
+												{ to: '/productDetails' },
 												React.createElement('img', { src: 'img/product/14.jpg', alt: 'Product Image' })
 											)
 										),
@@ -52500,7 +52985,7 @@ var OurProducts = function (_React$Component) {
 											{ className: 'product-title' },
 											React.createElement(
 												Link,
-												{ to: 'product-detail-left-sidebar.html' },
+												{ to: '/productDetails' },
 												'Organic Strawberry Fruits'
 											)
 										),
@@ -52519,12 +53004,12 @@ var OurProducts = function (_React$Component) {
 											React.createElement(
 												'span',
 												{ className: 'sale-price' },
-												'$80.00'
+												'\u20B980.00'
 											),
 											React.createElement(
 												'span',
 												{ className: 'base-price' },
-												'$90.00'
+												'\u20B990.00'
 											)
 										),
 										React.createElement(
@@ -52555,7 +53040,7 @@ var OurProducts = function (_React$Component) {
 											{ className: 'product-image' },
 											React.createElement(
 												Link,
-												{ to: 'product-detail-left-sidebar.html' },
+												{ to: '/productDetails' },
 												React.createElement('img', { src: 'img/product/17.jpg', alt: 'Product Image' })
 											)
 										),
@@ -52564,7 +53049,7 @@ var OurProducts = function (_React$Component) {
 											{ className: 'product-title' },
 											React.createElement(
 												Link,
-												{ to: 'product-detail-left-sidebar.html' },
+												{ to: '/productDetails' },
 												'Organic Strawberry Fruits'
 											)
 										),
@@ -52583,12 +53068,12 @@ var OurProducts = function (_React$Component) {
 											React.createElement(
 												'span',
 												{ className: 'sale-price' },
-												'$80.00'
+												'\u20B980.00'
 											),
 											React.createElement(
 												'span',
 												{ className: 'base-price' },
-												'$90.00'
+												'\u20B990.00'
 											)
 										),
 										React.createElement(
@@ -52619,7 +53104,7 @@ var OurProducts = function (_React$Component) {
 											{ className: 'product-image' },
 											React.createElement(
 												Link,
-												{ to: 'product-detail-left-sidebar.html' },
+												{ to: '/productDetails' },
 												React.createElement('img', { src: 'img/product/8.jpg', alt: 'Product Image' })
 											)
 										),
@@ -52628,7 +53113,7 @@ var OurProducts = function (_React$Component) {
 											{ className: 'product-title' },
 											React.createElement(
 												Link,
-												{ to: 'product-detail-left-sidebar.html' },
+												{ to: '/productDetails' },
 												'Organic Strawberry Fruits'
 											)
 										),
@@ -52647,7 +53132,7 @@ var OurProducts = function (_React$Component) {
 											React.createElement(
 												'span',
 												{ className: 'sale-price' },
-												'$120.00'
+												'\u20B9120.00'
 											)
 										),
 										React.createElement(
@@ -52678,7 +53163,7 @@ var OurProducts = function (_React$Component) {
 											{ className: 'product-image' },
 											React.createElement(
 												Link,
-												{ to: 'product-detail-left-sidebar.html' },
+												{ to: '/productDetails' },
 												React.createElement('img', { src: 'img/product/9.jpg', alt: 'Product Image' })
 											)
 										),
@@ -52687,7 +53172,7 @@ var OurProducts = function (_React$Component) {
 											{ className: 'product-title' },
 											React.createElement(
 												Link,
-												{ to: 'product-detail-left-sidebar.html' },
+												{ to: '/productDetails' },
 												'Organic Strawberry Fruits'
 											)
 										),
@@ -52706,12 +53191,12 @@ var OurProducts = function (_React$Component) {
 											React.createElement(
 												'span',
 												{ className: 'sale-price' },
-												'$80.00'
+												'\u20B980.00'
 											),
 											React.createElement(
 												'span',
 												{ className: 'base-price' },
-												'$90.00'
+												'\u20B990.00'
 											)
 										),
 										React.createElement(
@@ -52742,7 +53227,7 @@ var OurProducts = function (_React$Component) {
 											{ className: 'product-image' },
 											React.createElement(
 												Link,
-												{ to: 'product-detail-left-sidebar.html' },
+												{ to: '/productDetails' },
 												React.createElement('img', { src: 'img/product/15.jpg', alt: 'Product Image' })
 											)
 										),
@@ -52751,7 +53236,7 @@ var OurProducts = function (_React$Component) {
 											{ className: 'product-title' },
 											React.createElement(
 												Link,
-												{ to: 'product-detail-left-sidebar.html' },
+												{ to: '/productDetails' },
 												'Organic Strawberry Fruits'
 											)
 										),
@@ -52770,12 +53255,12 @@ var OurProducts = function (_React$Component) {
 											React.createElement(
 												'span',
 												{ className: 'sale-price' },
-												'$80.00'
+												'\u20B980.00'
 											),
 											React.createElement(
 												'span',
 												{ className: 'base-price' },
-												'$90.00'
+												'\u20B990.00'
 											)
 										),
 										React.createElement(
@@ -52806,7 +53291,7 @@ var OurProducts = function (_React$Component) {
 											{ className: 'product-image' },
 											React.createElement(
 												Link,
-												{ to: 'product-detail-left-sidebar.html' },
+												{ to: '/productDetails' },
 												React.createElement('img', { src: 'img/product/10.jpg', alt: 'Product Image' })
 											)
 										),
@@ -52815,7 +53300,7 @@ var OurProducts = function (_React$Component) {
 											{ className: 'product-title' },
 											React.createElement(
 												Link,
-												{ to: 'product-detail-left-sidebar.html' },
+												{ to: '/productDetails' },
 												'Organic Strawberry Fruits'
 											)
 										),
@@ -52834,7 +53319,7 @@ var OurProducts = function (_React$Component) {
 											React.createElement(
 												'span',
 												{ className: 'sale-price' },
-												'$96.00'
+												'\u20B996.00'
 											)
 										),
 										React.createElement(
@@ -52865,7 +53350,7 @@ var OurProducts = function (_React$Component) {
 											{ className: 'product-image' },
 											React.createElement(
 												Link,
-												{ to: 'product-detail-left-sidebar.html' },
+												{ to: '/productDetails' },
 												React.createElement('img', { src: 'img/product/33.jpg', alt: 'Product Image' })
 											)
 										),
@@ -52874,7 +53359,7 @@ var OurProducts = function (_React$Component) {
 											{ className: 'product-title' },
 											React.createElement(
 												Link,
-												{ to: 'product-detail-left-sidebar.html' },
+												{ to: '/productDetails' },
 												'Organic Strawberry Fruits'
 											)
 										),
@@ -52893,12 +53378,12 @@ var OurProducts = function (_React$Component) {
 											React.createElement(
 												'span',
 												{ className: 'sale-price' },
-												'$80.00'
+												'\u20B980.00'
 											),
 											React.createElement(
 												'span',
 												{ className: 'base-price' },
-												'$90.00'
+												'\u20B990.00'
 											)
 										),
 										React.createElement(
@@ -52929,7 +53414,7 @@ var OurProducts = function (_React$Component) {
 											{ className: 'product-image' },
 											React.createElement(
 												Link,
-												{ to: 'product-detail-left-sidebar.html' },
+												{ to: '/productDetails' },
 												React.createElement('img', { src: 'img/product/22.jpg', alt: 'Product Image' })
 											)
 										),
@@ -52938,7 +53423,7 @@ var OurProducts = function (_React$Component) {
 											{ className: 'product-title' },
 											React.createElement(
 												Link,
-												{ to: 'product-detail-left-sidebar.html' },
+												{ to: '/productDetails' },
 												'Organic Strawberry Fruits'
 											)
 										),
@@ -52957,12 +53442,12 @@ var OurProducts = function (_React$Component) {
 											React.createElement(
 												'span',
 												{ className: 'sale-price' },
-												'$80.00'
+												'\u20B980.00'
 											),
 											React.createElement(
 												'span',
 												{ className: 'base-price' },
-												'$90.00'
+												'\u20B990.00'
 											)
 										),
 										React.createElement(
@@ -52993,7 +53478,7 @@ var OurProducts = function (_React$Component) {
 											{ className: 'product-image' },
 											React.createElement(
 												Link,
-												{ to: 'product-detail-left-sidebar.html' },
+												{ to: '/productDetails' },
 												React.createElement('img', { src: 'img/product/20.jpg', alt: 'Product Image' })
 											)
 										),
@@ -53002,7 +53487,7 @@ var OurProducts = function (_React$Component) {
 											{ className: 'product-title' },
 											React.createElement(
 												Link,
-												{ to: 'product-detail-left-sidebar.html' },
+												{ to: '/productDetails' },
 												'Organic Strawberry Fruits'
 											)
 										),
@@ -53021,7 +53506,7 @@ var OurProducts = function (_React$Component) {
 											React.createElement(
 												'span',
 												{ className: 'sale-price' },
-												'$96.00'
+												'\u20B996.00'
 											)
 										),
 										React.createElement(
@@ -53052,7 +53537,7 @@ var OurProducts = function (_React$Component) {
 											{ className: 'product-image' },
 											React.createElement(
 												Link,
-												{ to: 'product-detail-left-sidebar.html' },
+												{ to: '/productDetails' },
 												React.createElement('img', { src: 'img/product/23.jpg', alt: 'Product Image' })
 											)
 										),
@@ -53061,7 +53546,7 @@ var OurProducts = function (_React$Component) {
 											{ className: 'product-title' },
 											React.createElement(
 												Link,
-												{ to: 'product-detail-left-sidebar.html' },
+												{ to: '/productDetails' },
 												'Organic Strawberry Fruits'
 											)
 										),
@@ -53080,12 +53565,12 @@ var OurProducts = function (_React$Component) {
 											React.createElement(
 												'span',
 												{ className: 'sale-price' },
-												'$80.00'
+												'\u20B980.00'
 											),
 											React.createElement(
 												'span',
 												{ className: 'base-price' },
-												'$90.00'
+												'\u20B990.00'
 											)
 										),
 										React.createElement(
@@ -53116,7 +53601,7 @@ var OurProducts = function (_React$Component) {
 											{ className: 'product-image' },
 											React.createElement(
 												Link,
-												{ to: 'product-detail-left-sidebar.html' },
+												{ to: '/productDetails' },
 												React.createElement('img', { src: 'img/product/30.jpg', alt: 'Product Image' })
 											)
 										),
@@ -53125,7 +53610,7 @@ var OurProducts = function (_React$Component) {
 											{ className: 'product-title' },
 											React.createElement(
 												Link,
-												{ to: 'product-detail-left-sidebar.html' },
+												{ to: '/productDetails' },
 												'Organic Strawberry Fruits'
 											)
 										),
@@ -53144,12 +53629,12 @@ var OurProducts = function (_React$Component) {
 											React.createElement(
 												'span',
 												{ className: 'sale-price' },
-												'$80.00'
+												'\u20B980.00'
 											),
 											React.createElement(
 												'span',
 												{ className: 'base-price' },
-												'$90.00'
+												'\u20B990.00'
 											)
 										),
 										React.createElement(
@@ -53180,7 +53665,7 @@ var OurProducts = function (_React$Component) {
 											{ className: 'product-image' },
 											React.createElement(
 												Link,
-												{ to: 'product-detail-left-sidebar.html' },
+												{ to: '/productDetails' },
 												React.createElement('img', { src: 'img/product/21.jpg', alt: 'Product Image' })
 											)
 										),
@@ -53189,7 +53674,7 @@ var OurProducts = function (_React$Component) {
 											{ className: 'product-title' },
 											React.createElement(
 												Link,
-												{ to: 'product-detail-left-sidebar.html' },
+												{ to: '/productDetails' },
 												'Organic Strawberry Fruits'
 											)
 										),
@@ -53208,7 +53693,7 @@ var OurProducts = function (_React$Component) {
 											React.createElement(
 												'span',
 												{ className: 'sale-price' },
-												'$96.00'
+												'\u20B996.00'
 											)
 										),
 										React.createElement(
@@ -53239,7 +53724,7 @@ var OurProducts = function (_React$Component) {
 											{ className: 'product-image' },
 											React.createElement(
 												Link,
-												{ to: 'product-detail-left-sidebar.html' },
+												{ to: '/productDetails' },
 												React.createElement('img', { src: 'img/product/6.jpg', alt: 'Product Image' })
 											)
 										),
@@ -53248,7 +53733,7 @@ var OurProducts = function (_React$Component) {
 											{ className: 'product-title' },
 											React.createElement(
 												Link,
-												{ to: 'product-detail-left-sidebar.html' },
+												{ to: '/productDetails' },
 												'Organic Strawberry Fruits'
 											)
 										),
@@ -53267,12 +53752,12 @@ var OurProducts = function (_React$Component) {
 											React.createElement(
 												'span',
 												{ className: 'sale-price' },
-												'$80.00'
+												'\u20B980.00'
 											),
 											React.createElement(
 												'span',
 												{ className: 'base-price' },
-												'$90.00'
+												'\u20B990.00'
 											)
 										),
 										React.createElement(
@@ -53303,7 +53788,7 @@ var OurProducts = function (_React$Component) {
 											{ className: 'product-image' },
 											React.createElement(
 												Link,
-												{ to: 'product-detail-left-sidebar.html' },
+												{ to: '/productDetails' },
 												React.createElement('img', { src: 'img/product/3.jpg', alt: 'Product Image' })
 											)
 										),
@@ -53312,7 +53797,7 @@ var OurProducts = function (_React$Component) {
 											{ className: 'product-title' },
 											React.createElement(
 												Link,
-												{ to: 'product-detail-left-sidebar.html' },
+												{ to: '/productDetails' },
 												'Organic Strawberry Fruits'
 											)
 										),
@@ -53331,12 +53816,12 @@ var OurProducts = function (_React$Component) {
 											React.createElement(
 												'span',
 												{ className: 'sale-price' },
-												'$80.00'
+												'\u20B980.00'
 											),
 											React.createElement(
 												'span',
 												{ className: 'base-price' },
-												'$90.00'
+												'\u20B990.00'
 											)
 										),
 										React.createElement(
@@ -53375,7 +53860,7 @@ var OurProducts = function (_React$Component) {
 											{ className: 'product-image' },
 											React.createElement(
 												Link,
-												{ to: 'product-detail-left-sidebar.html' },
+												{ to: '/productDetails' },
 												React.createElement('img', { src: 'img/product/4.jpg', alt: 'Product Image' })
 											)
 										),
@@ -53384,7 +53869,7 @@ var OurProducts = function (_React$Component) {
 											{ className: 'product-title' },
 											React.createElement(
 												Link,
-												{ to: 'product-detail-left-sidebar.html' },
+												{ to: '/productDetails' },
 												'Organic Strawberry Fruits'
 											)
 										),
@@ -53403,12 +53888,12 @@ var OurProducts = function (_React$Component) {
 											React.createElement(
 												'span',
 												{ className: 'sale-price' },
-												'$80.00'
+												'\u20B980.00'
 											),
 											React.createElement(
 												'span',
 												{ className: 'base-price' },
-												'$90.00'
+												'\u20B990.00'
 											)
 										),
 										React.createElement(
@@ -53439,7 +53924,7 @@ var OurProducts = function (_React$Component) {
 											{ className: 'product-image' },
 											React.createElement(
 												Link,
-												{ to: 'product-detail-left-sidebar.html' },
+												{ to: '/productDetails' },
 												React.createElement('img', { src: 'img/product/14.jpg', alt: 'Product Image' })
 											)
 										),
@@ -53448,7 +53933,7 @@ var OurProducts = function (_React$Component) {
 											{ className: 'product-title' },
 											React.createElement(
 												Link,
-												{ to: 'product-detail-left-sidebar.html' },
+												{ to: '/productDetails' },
 												'Organic Strawberry Fruits'
 											)
 										),
@@ -53467,12 +53952,12 @@ var OurProducts = function (_React$Component) {
 											React.createElement(
 												'span',
 												{ className: 'sale-price' },
-												'$80.00'
+												'\u20B980.00'
 											),
 											React.createElement(
 												'span',
 												{ className: 'base-price' },
-												'$90.00'
+												'\u20B990.00'
 											)
 										),
 										React.createElement(
@@ -53503,7 +53988,7 @@ var OurProducts = function (_React$Component) {
 											{ className: 'product-image' },
 											React.createElement(
 												Link,
-												{ to: 'product-detail-left-sidebar.html' },
+												{ to: '/productDetails' },
 												React.createElement('img', { src: 'img/product/17.jpg', alt: 'Product Image' })
 											)
 										),
@@ -53512,7 +53997,7 @@ var OurProducts = function (_React$Component) {
 											{ className: 'product-title' },
 											React.createElement(
 												Link,
-												{ to: 'product-detail-left-sidebar.html' },
+												{ to: '/productDetails' },
 												'Organic Strawberry Fruits'
 											)
 										),
@@ -53531,12 +54016,12 @@ var OurProducts = function (_React$Component) {
 											React.createElement(
 												'span',
 												{ className: 'sale-price' },
-												'$80.00'
+												'\u20B980.00'
 											),
 											React.createElement(
 												'span',
 												{ className: 'base-price' },
-												'$90.00'
+												'\u20B990.00'
 											)
 										),
 										React.createElement(
@@ -53567,7 +54052,7 @@ var OurProducts = function (_React$Component) {
 											{ className: 'product-image' },
 											React.createElement(
 												Link,
-												{ to: 'product-detail-left-sidebar.html' },
+												{ to: '/productDetails' },
 												React.createElement('img', { src: 'img/product/8.jpg', alt: 'Product Image' })
 											)
 										),
@@ -53576,7 +54061,7 @@ var OurProducts = function (_React$Component) {
 											{ className: 'product-title' },
 											React.createElement(
 												Link,
-												{ to: 'product-detail-left-sidebar.html' },
+												{ to: '/productDetails' },
 												'Organic Strawberry Fruits'
 											)
 										),
@@ -53595,7 +54080,7 @@ var OurProducts = function (_React$Component) {
 											React.createElement(
 												'span',
 												{ className: 'sale-price' },
-												'$120.00'
+												'\u20B9120.00'
 											)
 										),
 										React.createElement(
@@ -53626,7 +54111,7 @@ var OurProducts = function (_React$Component) {
 											{ className: 'product-image' },
 											React.createElement(
 												Link,
-												{ to: 'product-detail-left-sidebar.html' },
+												{ to: '/productDetails' },
 												React.createElement('img', { src: 'img/product/9.jpg', alt: 'Product Image' })
 											)
 										),
@@ -53635,7 +54120,7 @@ var OurProducts = function (_React$Component) {
 											{ className: 'product-title' },
 											React.createElement(
 												Link,
-												{ to: 'product-detail-left-sidebar.html' },
+												{ to: '/productDetails' },
 												'Organic Strawberry Fruits'
 											)
 										),
@@ -53654,12 +54139,12 @@ var OurProducts = function (_React$Component) {
 											React.createElement(
 												'span',
 												{ className: 'sale-price' },
-												'$80.00'
+												'\u20B980.00'
 											),
 											React.createElement(
 												'span',
 												{ className: 'base-price' },
-												'$90.00'
+												'\u20B990.00'
 											)
 										),
 										React.createElement(
@@ -53690,7 +54175,7 @@ var OurProducts = function (_React$Component) {
 											{ className: 'product-image' },
 											React.createElement(
 												Link,
-												{ to: 'product-detail-left-sidebar.html' },
+												{ to: '/productDetails' },
 												React.createElement('img', { src: 'img/product/15.jpg', alt: 'Product Image' })
 											)
 										),
@@ -53699,7 +54184,7 @@ var OurProducts = function (_React$Component) {
 											{ className: 'product-title' },
 											React.createElement(
 												Link,
-												{ to: 'product-detail-left-sidebar.html' },
+												{ to: '/productDetails' },
 												'Organic Strawberry Fruits'
 											)
 										),
@@ -53718,12 +54203,12 @@ var OurProducts = function (_React$Component) {
 											React.createElement(
 												'span',
 												{ className: 'sale-price' },
-												'$80.00'
+												'\u20B980.00'
 											),
 											React.createElement(
 												'span',
 												{ className: 'base-price' },
-												'$90.00'
+												'\u20B990.00'
 											)
 										),
 										React.createElement(
@@ -53754,7 +54239,7 @@ var OurProducts = function (_React$Component) {
 											{ className: 'product-image' },
 											React.createElement(
 												Link,
-												{ to: 'product-detail-left-sidebar.html' },
+												{ to: '/productDetails' },
 												React.createElement('img', { src: 'img/product/10.jpg', alt: 'Product Image' })
 											)
 										),
@@ -53763,7 +54248,7 @@ var OurProducts = function (_React$Component) {
 											{ className: 'product-title' },
 											React.createElement(
 												Link,
-												{ to: 'product-detail-left-sidebar.html' },
+												{ to: '/productDetails' },
 												'Organic Strawberry Fruits'
 											)
 										),
@@ -53782,7 +54267,7 @@ var OurProducts = function (_React$Component) {
 											React.createElement(
 												'span',
 												{ className: 'sale-price' },
-												'$96.00'
+												'\u20B996.00'
 											)
 										),
 										React.createElement(
@@ -53813,7 +54298,7 @@ var OurProducts = function (_React$Component) {
 											{ className: 'product-image' },
 											React.createElement(
 												Link,
-												{ to: 'product-detail-left-sidebar.html' },
+												{ to: '/productDetails' },
 												React.createElement('img', { src: 'img/product/33.jpg', alt: 'Product Image' })
 											)
 										),
@@ -53822,7 +54307,7 @@ var OurProducts = function (_React$Component) {
 											{ className: 'product-title' },
 											React.createElement(
 												Link,
-												{ to: 'product-detail-left-sidebar.html' },
+												{ to: '/productDetails' },
 												'Organic Strawberry Fruits'
 											)
 										),
@@ -53841,12 +54326,12 @@ var OurProducts = function (_React$Component) {
 											React.createElement(
 												'span',
 												{ className: 'sale-price' },
-												'$80.00'
+												'\u20B980.00'
 											),
 											React.createElement(
 												'span',
 												{ className: 'base-price' },
-												'$90.00'
+												'\u20B990.00'
 											)
 										),
 										React.createElement(
@@ -53877,7 +54362,7 @@ var OurProducts = function (_React$Component) {
 											{ className: 'product-image' },
 											React.createElement(
 												Link,
-												{ to: 'product-detail-left-sidebar.html' },
+												{ to: '/productDetails' },
 												React.createElement('img', { src: 'img/product/22.jpg', alt: 'Product Image' })
 											)
 										),
@@ -53886,7 +54371,7 @@ var OurProducts = function (_React$Component) {
 											{ className: 'product-title' },
 											React.createElement(
 												Link,
-												{ to: 'product-detail-left-sidebar.html' },
+												{ to: '/productDetails' },
 												'Organic Strawberry Fruits'
 											)
 										),
@@ -53905,12 +54390,12 @@ var OurProducts = function (_React$Component) {
 											React.createElement(
 												'span',
 												{ className: 'sale-price' },
-												'$80.00'
+												'\u20B980.00'
 											),
 											React.createElement(
 												'span',
 												{ className: 'base-price' },
-												'$90.00'
+												'\u20B990.00'
 											)
 										),
 										React.createElement(
@@ -53941,7 +54426,7 @@ var OurProducts = function (_React$Component) {
 											{ className: 'product-image' },
 											React.createElement(
 												Link,
-												{ to: 'product-detail-left-sidebar.html' },
+												{ to: '/productDetails' },
 												React.createElement('img', { src: 'img/product/20.jpg', alt: 'Product Image' })
 											)
 										),
@@ -53950,7 +54435,7 @@ var OurProducts = function (_React$Component) {
 											{ className: 'product-title' },
 											React.createElement(
 												Link,
-												{ to: 'product-detail-left-sidebar.html' },
+												{ to: '/productDetails' },
 												'Organic Strawberry Fruits'
 											)
 										),
@@ -53969,7 +54454,7 @@ var OurProducts = function (_React$Component) {
 											React.createElement(
 												'span',
 												{ className: 'sale-price' },
-												'$96.00'
+												'\u20B996.00'
 											)
 										),
 										React.createElement(
@@ -54000,7 +54485,7 @@ var OurProducts = function (_React$Component) {
 											{ className: 'product-image' },
 											React.createElement(
 												Link,
-												{ to: 'product-detail-left-sidebar.html' },
+												{ to: '/productDetails' },
 												React.createElement('img', { src: 'img/product/23.jpg', alt: 'Product Image' })
 											)
 										),
@@ -54009,7 +54494,7 @@ var OurProducts = function (_React$Component) {
 											{ className: 'product-title' },
 											React.createElement(
 												Link,
-												{ to: 'product-detail-left-sidebar.html' },
+												{ to: '/productDetails' },
 												'Organic Strawberry Fruits'
 											)
 										),
@@ -54028,12 +54513,12 @@ var OurProducts = function (_React$Component) {
 											React.createElement(
 												'span',
 												{ className: 'sale-price' },
-												'$80.00'
+												'\u20B980.00'
 											),
 											React.createElement(
 												'span',
 												{ className: 'base-price' },
-												'$90.00'
+												'\u20B990.00'
 											)
 										),
 										React.createElement(
@@ -54064,7 +54549,7 @@ var OurProducts = function (_React$Component) {
 											{ className: 'product-image' },
 											React.createElement(
 												Link,
-												{ to: 'product-detail-left-sidebar.html' },
+												{ to: '/productDetails' },
 												React.createElement('img', { src: 'img/product/30.jpg', alt: 'Product Image' })
 											)
 										),
@@ -54073,7 +54558,7 @@ var OurProducts = function (_React$Component) {
 											{ className: 'product-title' },
 											React.createElement(
 												Link,
-												{ to: 'product-detail-left-sidebar.html' },
+												{ to: '/productDetails' },
 												'Organic Strawberry Fruits'
 											)
 										),
@@ -54092,12 +54577,12 @@ var OurProducts = function (_React$Component) {
 											React.createElement(
 												'span',
 												{ className: 'sale-price' },
-												'$80.00'
+												'\u20B980.00'
 											),
 											React.createElement(
 												'span',
 												{ className: 'base-price' },
-												'$90.00'
+												'\u20B990.00'
 											)
 										),
 										React.createElement(
@@ -54128,7 +54613,7 @@ var OurProducts = function (_React$Component) {
 											{ className: 'product-image' },
 											React.createElement(
 												Link,
-												{ to: 'product-detail-left-sidebar.html' },
+												{ to: '/productDetails' },
 												React.createElement('img', { src: 'img/product/21.jpg', alt: 'Product Image' })
 											)
 										),
@@ -54137,7 +54622,7 @@ var OurProducts = function (_React$Component) {
 											{ className: 'product-title' },
 											React.createElement(
 												Link,
-												{ to: 'product-detail-left-sidebar.html' },
+												{ to: '/productDetails' },
 												'Organic Strawberry Fruits'
 											)
 										),
@@ -54156,7 +54641,7 @@ var OurProducts = function (_React$Component) {
 											React.createElement(
 												'span',
 												{ className: 'sale-price' },
-												'$96.00'
+												'\u20B996.00'
 											)
 										),
 										React.createElement(
@@ -54187,7 +54672,7 @@ var OurProducts = function (_React$Component) {
 											{ className: 'product-image' },
 											React.createElement(
 												Link,
-												{ to: 'product-detail-left-sidebar.html' },
+												{ to: '/productDetails' },
 												React.createElement('img', { src: 'img/product/6.jpg', alt: 'Product Image' })
 											)
 										),
@@ -54196,7 +54681,7 @@ var OurProducts = function (_React$Component) {
 											{ className: 'product-title' },
 											React.createElement(
 												Link,
-												{ to: 'product-detail-left-sidebar.html' },
+												{ to: '/productDetails' },
 												'Organic Strawberry Fruits'
 											)
 										),
@@ -54215,12 +54700,12 @@ var OurProducts = function (_React$Component) {
 											React.createElement(
 												'span',
 												{ className: 'sale-price' },
-												'$80.00'
+												'\u20B980.00'
 											),
 											React.createElement(
 												'span',
 												{ className: 'base-price' },
-												'$90.00'
+												'\u20B990.00'
 											)
 										),
 										React.createElement(
@@ -54251,7 +54736,7 @@ var OurProducts = function (_React$Component) {
 											{ className: 'product-image' },
 											React.createElement(
 												Link,
-												{ to: 'product-detail-left-sidebar.html' },
+												{ to: '/productDetails' },
 												React.createElement('img', { src: 'img/product/3.jpg', alt: 'Product Image' })
 											)
 										),
@@ -54260,7 +54745,7 @@ var OurProducts = function (_React$Component) {
 											{ className: 'product-title' },
 											React.createElement(
 												Link,
-												{ to: 'product-detail-left-sidebar.html' },
+												{ to: '/productDetails' },
 												'Organic Strawberry Fruits'
 											)
 										),
@@ -54279,12 +54764,12 @@ var OurProducts = function (_React$Component) {
 											React.createElement(
 												'span',
 												{ className: 'sale-price' },
-												'$80.00'
+												'\u20B980.00'
 											),
 											React.createElement(
 												'span',
 												{ className: 'base-price' },
-												'$90.00'
+												'\u20B990.00'
 											)
 										),
 										React.createElement(
@@ -54322,7 +54807,7 @@ var OurProducts = function (_React$Component) {
 module.exports = OurProducts;
 
 /***/ }),
-/* 92 */
+/* 93 */
 /***/ (function(module, exports, __webpack_require__) {
 
 var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
@@ -54334,6 +54819,10 @@ function _possibleConstructorReturn(self, call) { if (!self) { throw new Referen
 function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
 
 var React = __webpack_require__(0);
+var Link = __webpack_require__(1).Link;
+var baseURL = 'http://localhost:8000/';
+var Header = __webpack_require__(6);
+var Footer = __webpack_require__(7);
 
 var About = function (_React$Component) {
 	_inherits(About, _React$Component);
@@ -54345,20 +54834,191 @@ var About = function (_React$Component) {
 	}
 
 	_createClass(About, [{
-		key: "render",
+		key: 'render',
 		value: function render() {
 			return React.createElement(
-				"div",
-				{ className: "container" },
+				'div',
+				null,
+				React.createElement(Header, null),
 				React.createElement(
-					"div",
-					{ className: "col-md-12 text-center" },
+					'div',
+					{ id: 'content', className: 'site-content' },
 					React.createElement(
-						"h3",
-						{ className: "title" },
-						"About Page"
+						'div',
+						{ id: 'breadcrumb' },
+						React.createElement(
+							'div',
+							{ className: 'container' },
+							React.createElement(
+								'h2',
+								{ className: 'title' },
+								'About Us'
+							),
+							React.createElement(
+								'ul',
+								{ className: 'breadcrumb' },
+								React.createElement(
+									'li',
+									null,
+									React.createElement(
+										Link,
+										{ to: '#' },
+										'Home'
+									)
+								),
+								React.createElement(
+									'li',
+									null,
+									React.createElement(
+										'span',
+										null,
+										'About Us'
+									)
+								)
+							)
+						)
+					),
+					React.createElement(
+						'div',
+						{ className: 'container' },
+						React.createElement(
+							'div',
+							{ className: 'about-us intro' },
+							React.createElement(
+								'div',
+								{ className: 'container' },
+								React.createElement(
+									'div',
+									{ className: 'row' },
+									React.createElement(
+										'div',
+										{ className: 'col-xs-12 col-sm-12 col-md-12 col-lg-12' },
+										React.createElement(
+											'div',
+											{ className: 'intro-header' },
+											React.createElement(
+												'h3',
+												null,
+												'Welcome To FreshMart'
+											),
+											React.createElement(
+												'p',
+												null,
+												'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat'
+											)
+										)
+									),
+									React.createElement(
+										'div',
+										{ className: 'col-lg-4 col-md-4 col-sm-12 col-xs-12' },
+										React.createElement(
+											'div',
+											{ className: 'intro-left' },
+											React.createElement(
+												'div',
+												{ className: 'intro-item' },
+												React.createElement(
+													'p',
+													null,
+													React.createElement('img', { src: 'img/intro-icon-1.png', alt: 'Intro Image' })
+												),
+												React.createElement(
+													'h4',
+													null,
+													'Always Fresh'
+												),
+												React.createElement(
+													'p',
+													null,
+													'Lorem ipsum dolor sit amet, consectetur elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.'
+												)
+											),
+											React.createElement(
+												'div',
+												{ className: 'intro-item' },
+												React.createElement(
+													'p',
+													null,
+													React.createElement('img', { src: 'img/intro-icon-3.png', alt: 'Intro Image' })
+												),
+												React.createElement(
+													'h4',
+													null,
+													'Super Healthy'
+												),
+												React.createElement(
+													'p',
+													null,
+													'Lorem ipsum dolor sit amet, consectetur elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.'
+												)
+											)
+										)
+									),
+									React.createElement(
+										'div',
+										{ className: 'col-lg-4 col-md-4 col-sm-12 col-xs-12' },
+										React.createElement(
+											'div',
+											{ className: 'pb60 effect' },
+											React.createElement(
+												Link,
+												{ to: '#' },
+												React.createElement('img', { className: 'img-responsive', style: { display: 'inherit' }, src: 'img/intro-1.png', alt: 'Intro Image' })
+											)
+										)
+									),
+									React.createElement(
+										'div',
+										{ className: 'col-lg-4 col-md-4 col-sm-12 col-xs-12' },
+										React.createElement(
+											'div',
+											{ className: 'intro-right' },
+											React.createElement(
+												'div',
+												{ className: 'intro-item' },
+												React.createElement(
+													'p',
+													null,
+													React.createElement('img', { src: 'img/intro-icon-2.png', alt: 'Intro Image' })
+												),
+												React.createElement(
+													'h4',
+													null,
+													'100% Natural'
+												),
+												React.createElement(
+													'p',
+													null,
+													'Lorem ipsum dolor sit amet, consectetur elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.'
+												)
+											),
+											React.createElement(
+												'div',
+												{ className: 'intro-item' },
+												React.createElement(
+													'p',
+													null,
+													React.createElement('img', { src: 'img/intro-icon-4.png', alt: 'Intro Image' })
+												),
+												React.createElement(
+													'h4',
+													null,
+													'Premium Quality'
+												),
+												React.createElement(
+													'p',
+													null,
+													'Lorem ipsum dolor sit amet, consectetur elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.'
+												)
+											)
+										)
+									)
+								)
+							)
+						)
 					)
-				)
+				),
+				React.createElement(Footer, null)
 			);
 		}
 	}]);
@@ -54369,7 +55029,6740 @@ var About = function (_React$Component) {
 module.exports = About;
 
 /***/ }),
-/* 93 */
+/* 94 */
+/***/ (function(module, exports, __webpack_require__) {
+
+var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+
+function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
+
+function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
+
+var React = __webpack_require__(0);
+var Link = __webpack_require__(1).Link;
+var baseURL = 'http://localhost:8000/';
+var Header = __webpack_require__(6);
+var Footer = __webpack_require__(7);
+
+var Contact = function (_React$Component) {
+	_inherits(Contact, _React$Component);
+
+	function Contact() {
+		_classCallCheck(this, Contact);
+
+		return _possibleConstructorReturn(this, (Contact.__proto__ || Object.getPrototypeOf(Contact)).apply(this, arguments));
+	}
+
+	_createClass(Contact, [{
+		key: 'render',
+		value: function render() {
+			return React.createElement(
+				'div',
+				null,
+				React.createElement(Header, null),
+				React.createElement(
+					'div',
+					{ id: 'breadcrumb' },
+					React.createElement(
+						'div',
+						{ className: 'container' },
+						React.createElement(
+							'h2',
+							{ className: 'title' },
+							'Contact'
+						),
+						React.createElement(
+							'ul',
+							{ className: 'breadcrumb' },
+							React.createElement(
+								'li',
+								null,
+								React.createElement(
+									Link,
+									{ to: '#', title: 'Home' },
+									'Home'
+								)
+							),
+							React.createElement(
+								'li',
+								null,
+								React.createElement(
+									'span',
+									null,
+									'Contact'
+								)
+							)
+						)
+					)
+				),
+				React.createElement(
+					'div',
+					{ className: 'container' },
+					React.createElement(
+						'div',
+						{ className: 'contact-page' },
+						React.createElement(
+							'div',
+							{ className: 'contact-info' },
+							React.createElement(
+								'div',
+								{ className: 'row' },
+								React.createElement(
+									'div',
+									{ className: 'col-lg-4 col-md-4 col-sm-4 col-xs-12' },
+									React.createElement(
+										'div',
+										{ className: 'item d-flex' },
+										React.createElement(
+											'div',
+											{ className: 'item-left' },
+											React.createElement(
+												'div',
+												{ className: 'icon' },
+												React.createElement('i', { className: 'zmdi zmdi-email' })
+											)
+										),
+										React.createElement(
+											'div',
+											{ className: 'item-right d-flex' },
+											React.createElement(
+												'div',
+												{ className: 'title' },
+												'Email:'
+											),
+											React.createElement(
+												'div',
+												{ className: 'content' },
+												React.createElement(
+													Link,
+													{ to: '/mailto:support@domain.com' },
+													'support@domain.com'
+												),
+												React.createElement('br', null),
+												React.createElement(
+													Link,
+													{ to: '/mailto:contact@domain.com' },
+													'contact@domain.com'
+												)
+											)
+										)
+									)
+								),
+								React.createElement(
+									'div',
+									{ className: 'col-lg-4 col-md-4 col-sm-4 col-xs-12' },
+									React.createElement(
+										'div',
+										{ className: 'item d-flex justify-content-center' },
+										React.createElement(
+											'div',
+											{ className: 'item-left' },
+											React.createElement(
+												'div',
+												{ className: 'icon' },
+												React.createElement('i', { className: 'zmdi zmdi-home' })
+											)
+										),
+										React.createElement(
+											'div',
+											{ className: 'item-right d-flex' },
+											React.createElement(
+												'div',
+												{ className: 'title' },
+												'Address:'
+											),
+											React.createElement(
+												'div',
+												{ className: 'content' },
+												'23 Suspendis matti, Visaosang Building VST',
+												React.createElement('br', null),
+												' District, NY Accums, North American'
+											)
+										)
+									)
+								),
+								React.createElement(
+									'div',
+									{ className: 'col-lg-4 col-md-4 col-sm-4 col-xs-12' },
+									React.createElement(
+										'div',
+										{ className: 'item d-flex justify-content-end' },
+										React.createElement(
+											'div',
+											{ className: 'item-left' },
+											React.createElement(
+												'div',
+												{ className: 'icon' },
+												React.createElement('i', { className: 'zmdi zmdi-phone' })
+											)
+										),
+										React.createElement(
+											'div',
+											{ className: 'item-right d-flex' },
+											React.createElement(
+												'div',
+												{ className: 'title' },
+												'Holine:'
+											),
+											React.createElement(
+												'div',
+												{ className: 'content' },
+												'0123-456-78910',
+												React.createElement('br', null),
+												'0987-654-32100'
+											)
+										)
+									)
+								)
+							)
+						),
+						React.createElement(
+							'div',
+							{ className: 'section row' },
+							React.createElement(
+								'div',
+								{ className: 'col-md-12 col-sm-12 col-lg-12 text-center' },
+								React.createElement('img', { src: 'img/map.png', alt: 'Map image', className: 'img-responsive mapImage' })
+							)
+						),
+						React.createElement(
+							'div',
+							{ className: 'section pb60 col-md-12' },
+							React.createElement(
+								'div',
+								{ className: 'contact-form form' },
+								React.createElement(
+									'form',
+									null,
+									React.createElement(
+										'div',
+										{ className: 'form-group row' },
+										React.createElement(
+											'div',
+											{ className: 'col-md-6' },
+											React.createElement('input', { type: 'text', name: 'name', placeholder: 'YOUR NAME' })
+										),
+										React.createElement(
+											'div',
+											{ className: 'col-md-6' },
+											React.createElement('input', { type: 'email', name: 'email', placeholder: 'YOUR EMAIL' })
+										)
+									),
+									React.createElement(
+										'div',
+										{ className: 'form-group' },
+										React.createElement('input', { type: 'text', name: 'subject', placeholder: 'SUBJECT' })
+									),
+									React.createElement(
+										'div',
+										{ className: 'form-group' },
+										React.createElement('textarea', { rows: '10', name: 'content', placeholder: 'MESSAGE' })
+									),
+									React.createElement(
+										'div',
+										{ className: 'form-group text-center' },
+										React.createElement('input', { type: 'submit', className: 'btn btn-primary', value: 'Send Message' })
+									)
+								)
+							)
+						)
+					)
+				),
+				React.createElement(Footer, null)
+			);
+		}
+	}]);
+
+	return Contact;
+}(React.Component);
+
+module.exports = Contact;
+
+/***/ }),
+/* 95 */
+/***/ (function(module, exports, __webpack_require__) {
+
+var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+
+function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
+
+function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
+
+var React = __webpack_require__(0);
+var Link = __webpack_require__(1).Link;
+var baseURL = 'http://localhost:8000/';
+var Header = __webpack_require__(6);
+var Footer = __webpack_require__(7);
+
+var ProductsList = function (_React$Component) {
+	_inherits(ProductsList, _React$Component);
+
+	function ProductsList() {
+		_classCallCheck(this, ProductsList);
+
+		return _possibleConstructorReturn(this, (ProductsList.__proto__ || Object.getPrototypeOf(ProductsList)).apply(this, arguments));
+	}
+
+	_createClass(ProductsList, [{
+		key: 'render',
+		value: function render() {
+			return React.createElement(
+				'div',
+				null,
+				React.createElement(Header, null),
+				React.createElement(
+					'div',
+					{ id: 'content', className: 'site-content' },
+					React.createElement(
+						'div',
+						{ id: 'breadcrumb' },
+						React.createElement(
+							'div',
+							{ className: 'container' },
+							React.createElement(
+								'h2',
+								{ className: 'title' },
+								'Fruit'
+							),
+							React.createElement(
+								'ul',
+								{ className: 'breadcrumb' },
+								React.createElement(
+									'li',
+									null,
+									React.createElement(
+										Link,
+										{ to: '#' },
+										'Home'
+									)
+								),
+								React.createElement(
+									'li',
+									null,
+									React.createElement(
+										Link,
+										{ to: '#' },
+										'Fruit'
+									)
+								),
+								React.createElement(
+									'li',
+									null,
+									React.createElement(
+										'span',
+										null,
+										'Tomato'
+									)
+								)
+							)
+						)
+					),
+					React.createElement(
+						'div',
+						{ className: 'home-1' },
+						React.createElement(
+							'div',
+							{ className: 'container' },
+							React.createElement(
+								'div',
+								{ className: 'row' },
+								React.createElement(
+									'div',
+									{ className: 'container' },
+									React.createElement(
+										'div',
+										{ className: 'col-md-10 col-sm-12 col-lg-10 col-lg-offset-1 col-md-offset-1' },
+										React.createElement(
+											'div',
+											{ id: 'left-column', className: 'sidebar col-lg-3 col-md-3 col-sm-3 col-xs-12' },
+											React.createElement(
+												'div',
+												{ className: 'block product-categories' },
+												React.createElement(
+													'h3',
+													{ className: 'block-title' },
+													'Categories'
+												),
+												React.createElement(
+													'div',
+													{ className: 'block-content' },
+													React.createElement(
+														'div',
+														{ className: 'item' },
+														React.createElement(
+															'span',
+															{ className: 'arrow collapsed', 'data-toggle': 'collapse', 'data-target': '#vegetables', 'aria-expanded': 'false', role: 'button' },
+															React.createElement('i', { className: 'zmdi zmdi-minus' }),
+															React.createElement('i', { className: 'zmdi zmdi-plus' })
+														),
+														React.createElement(
+															Link,
+															{ className: 'category-title', to: '#' },
+															'Vegetables'
+														),
+														React.createElement(
+															'div',
+															{ className: 'sub-category collapse', id: 'vegetables', 'aria-expanded': 'true', role: 'main' },
+															React.createElement(
+																'div',
+																{ className: 'item' },
+																React.createElement(
+																	Link,
+																	{ to: '#' },
+																	'Tomato'
+																)
+															),
+															React.createElement(
+																'div',
+																{ className: 'item' },
+																React.createElement(
+																	Link,
+																	{ to: '#' },
+																	'Broccoli'
+																)
+															),
+															React.createElement(
+																'div',
+																{ className: 'item' },
+																React.createElement(
+																	Link,
+																	{ to: '#' },
+																	'Cabbage'
+																)
+															),
+															React.createElement(
+																'div',
+																{ className: 'item' },
+																React.createElement(
+																	Link,
+																	{ to: '#' },
+																	'Cucumber'
+																)
+															)
+														)
+													),
+													React.createElement(
+														'div',
+														{ className: 'item' },
+														React.createElement(
+															'span',
+															{ className: 'arrow collapsed', 'data-toggle': 'collapse', 'data-target': '#fruits', 'aria-expanded': 'false', role: 'button' },
+															React.createElement('i', { className: 'zmdi zmdi-minus' }),
+															React.createElement('i', { className: 'zmdi zmdi-plus' })
+														),
+														React.createElement(
+															Link,
+															{ className: 'category-title', to: '#' },
+															'Fruits'
+														),
+														React.createElement(
+															'div',
+															{ className: 'sub-category collapse', id: 'fruits', 'aria-expanded': 'true', role: 'main' },
+															React.createElement(
+																'div',
+																{ className: 'item' },
+																React.createElement(
+																	Link,
+																	{ to: '#' },
+																	'Orange'
+																)
+															),
+															React.createElement(
+																'div',
+																{ className: 'item' },
+																React.createElement(
+																	Link,
+																	{ to: '#' },
+																	'Apple'
+																)
+															),
+															React.createElement(
+																'div',
+																{ className: 'item' },
+																React.createElement(
+																	Link,
+																	{ to: '#' },
+																	'Banana'
+																)
+															),
+															React.createElement(
+																'div',
+																{ className: 'item' },
+																React.createElement(
+																	Link,
+																	{ to: '#' },
+																	'Strawberry'
+																)
+															)
+														)
+													),
+													React.createElement(
+														'div',
+														{ className: 'item' },
+														React.createElement(
+															'span',
+															{ className: 'arrow collapsed', 'data-toggle': 'collapse', 'data-target': '#juices', 'aria-expanded': 'false', role: 'button' },
+															React.createElement('i', { className: 'zmdi zmdi-minus' }),
+															React.createElement('i', { className: 'zmdi zmdi-plus' })
+														),
+														React.createElement(
+															Link,
+															{ className: 'category-title', to: '#' },
+															'Juices'
+														),
+														React.createElement(
+															'div',
+															{ className: 'sub-category collapse', id: 'juices', 'aria-expanded': 'true', role: 'main' },
+															React.createElement(
+																'div',
+																{ className: 'item' },
+																React.createElement(
+																	Link,
+																	{ to: '#' },
+																	'Orange Juices'
+																)
+															),
+															React.createElement(
+																'div',
+																{ className: 'item' },
+																React.createElement(
+																	Link,
+																	{ to: '#' },
+																	'Tomato Juices'
+																)
+															),
+															React.createElement(
+																'div',
+																{ className: 'item' },
+																React.createElement(
+																	Link,
+																	{ to: '#' },
+																	'Apple Juices'
+																)
+															),
+															React.createElement(
+																'div',
+																{ className: 'item' },
+																React.createElement(
+																	Link,
+																	{ to: '#' },
+																	'Peaches Juices'
+																)
+															)
+														)
+													),
+													React.createElement(
+														'div',
+														{ className: 'item' },
+														React.createElement(
+															Link,
+															{ className: 'category-title', to: '#' },
+															'Tea and Coffee'
+														)
+													),
+													React.createElement(
+														'div',
+														{ className: 'item' },
+														React.createElement(
+															Link,
+															{ className: 'category-title', to: '#' },
+															'Jam'
+														)
+													),
+													React.createElement(
+														'div',
+														{ className: 'item' },
+														React.createElement(
+															Link,
+															{ className: 'category-title', to: '#' },
+															'SeaFood'
+														)
+													),
+													React.createElement(
+														'div',
+														{ className: 'item' },
+														React.createElement(
+															Link,
+															{ className: 'category-title', to: '#' },
+															'Fresh Meats'
+														)
+													)
+												)
+											),
+											React.createElement(
+												'div',
+												{ className: 'block product-filter' },
+												React.createElement(
+													'h3',
+													{ className: 'block-title' },
+													'Catalog'
+												),
+												React.createElement(
+													'div',
+													{ className: 'block-content' },
+													React.createElement(
+														'div',
+														{ className: 'filter-item' },
+														React.createElement(
+															'h3',
+															{ className: 'filter-title' },
+															'Categories'
+														),
+														React.createElement(
+															'div',
+															{ className: 'filter-content' },
+															React.createElement(
+																'ul',
+																null,
+																React.createElement(
+																	'li',
+																	null,
+																	React.createElement(
+																		'label',
+																		{ className: 'check' },
+																		React.createElement(
+																			'span',
+																			{ className: 'custom-checkbox' },
+																			React.createElement('input', { type: 'checkbox' }),
+																			React.createElement('span', { className: 'checkmark' })
+																		),
+																		React.createElement(
+																			Link,
+																			{ to: '#' },
+																			'Tomato ',
+																			React.createElement(
+																				'span',
+																				{ className: 'quantity' },
+																				'(20)'
+																			)
+																		)
+																	)
+																),
+																React.createElement(
+																	'li',
+																	null,
+																	React.createElement(
+																		'label',
+																		{ className: 'check' },
+																		React.createElement(
+																			'span',
+																			{ className: 'custom-checkbox' },
+																			React.createElement('input', { type: 'checkbox' }),
+																			React.createElement('span', { className: 'checkmark' })
+																		),
+																		React.createElement(
+																			Link,
+																			{ to: '#' },
+																			'Broccoli ',
+																			React.createElement(
+																				'span',
+																				{ className: 'quantity' },
+																				'(14)'
+																			)
+																		)
+																	)
+																),
+																React.createElement(
+																	'li',
+																	null,
+																	React.createElement(
+																		'label',
+																		{ className: 'check' },
+																		React.createElement(
+																			'span',
+																			{ className: 'custom-checkbox' },
+																			React.createElement('input', { type: 'checkbox' }),
+																			React.createElement('span', { className: 'checkmark' })
+																		),
+																		React.createElement(
+																			Link,
+																			{ to: '#' },
+																			'Cabbage ',
+																			React.createElement(
+																				'span',
+																				{ className: 'quantity' },
+																				'(8)'
+																			)
+																		)
+																	)
+																),
+																React.createElement(
+																	'li',
+																	null,
+																	React.createElement(
+																		'label',
+																		{ className: 'check' },
+																		React.createElement(
+																			'span',
+																			{ className: 'custom-checkbox' },
+																			React.createElement('input', { type: 'checkbox' }),
+																			React.createElement('span', { className: 'checkmark' })
+																		),
+																		React.createElement(
+																			Link,
+																			{ to: '#' },
+																			'Cucumber ',
+																			React.createElement(
+																				'span',
+																				{ className: 'quantity' },
+																				'(12)'
+																			)
+																		)
+																	)
+																),
+																React.createElement(
+																	'li',
+																	null,
+																	React.createElement(
+																		'label',
+																		{ className: 'check' },
+																		React.createElement(
+																			'span',
+																			{ className: 'custom-checkbox' },
+																			React.createElement('input', { type: 'checkbox' }),
+																			React.createElement('span', { className: 'checkmark' })
+																		),
+																		React.createElement(
+																			Link,
+																			{ to: '#' },
+																			'Eggplant ',
+																			React.createElement(
+																				'span',
+																				{ className: 'quantity' },
+																				'(15)'
+																			)
+																		)
+																	)
+																),
+																React.createElement(
+																	'li',
+																	null,
+																	React.createElement(
+																		'label',
+																		{ className: 'check' },
+																		React.createElement(
+																			'span',
+																			{ className: 'custom-checkbox' },
+																			React.createElement('input', { type: 'checkbox' }),
+																			React.createElement('span', { className: 'checkmark' })
+																		),
+																		React.createElement(
+																			Link,
+																			{ to: '#' },
+																			'Pea ',
+																			React.createElement(
+																				'span',
+																				{ className: 'quantity' },
+																				'(22)'
+																			)
+																		)
+																	)
+																),
+																React.createElement(
+																	'li',
+																	null,
+																	React.createElement(
+																		'label',
+																		{ className: 'check' },
+																		React.createElement(
+																			'span',
+																			{ className: 'custom-checkbox' },
+																			React.createElement('input', { type: 'checkbox' }),
+																			React.createElement('span', { className: 'checkmark' })
+																		),
+																		React.createElement(
+																			Link,
+																			{ to: '#' },
+																			'Pineapple ',
+																			React.createElement(
+																				'span',
+																				{ className: 'quantity' },
+																				'(20)'
+																			)
+																		)
+																	)
+																),
+																React.createElement(
+																	'li',
+																	null,
+																	React.createElement(
+																		'label',
+																		{ className: 'check' },
+																		React.createElement(
+																			'span',
+																			{ className: 'custom-checkbox' },
+																			React.createElement('input', { type: 'checkbox' }),
+																			React.createElement('span', { className: 'checkmark' })
+																		),
+																		React.createElement(
+																			Link,
+																			{ to: '#' },
+																			'Lettuce ',
+																			React.createElement(
+																				'span',
+																				{ className: 'quantity' },
+																				'(10)'
+																			)
+																		)
+																	)
+																)
+															)
+														)
+													),
+													React.createElement(
+														'div',
+														{ className: 'filter-item' },
+														React.createElement(
+															'h3',
+															{ className: 'filter-title' },
+															'Manufacture'
+														),
+														React.createElement(
+															'div',
+															{ className: 'filter-content' },
+															React.createElement(
+																'ul',
+																null,
+																React.createElement(
+																	'li',
+																	null,
+																	React.createElement(
+																		'label',
+																		{ className: 'check' },
+																		React.createElement(
+																			'span',
+																			{ className: 'custom-checkbox' },
+																			React.createElement('input', { type: 'checkbox' }),
+																			React.createElement('span', { className: 'checkmark' })
+																		),
+																		React.createElement(
+																			Link,
+																			{ to: '#' },
+																			'Samsung ',
+																			React.createElement(
+																				'span',
+																				{ className: 'quantity' },
+																				'(20)'
+																			)
+																		)
+																	)
+																),
+																React.createElement(
+																	'li',
+																	null,
+																	React.createElement(
+																		'label',
+																		{ className: 'check' },
+																		React.createElement(
+																			'span',
+																			{ className: 'custom-checkbox' },
+																			React.createElement('input', { type: 'checkbox' }),
+																			React.createElement('span', { className: 'checkmark' })
+																		),
+																		React.createElement(
+																			Link,
+																			{ to: '#' },
+																			'Dell ',
+																			React.createElement(
+																				'span',
+																				{ className: 'quantity' },
+																				'(14)'
+																			)
+																		)
+																	)
+																),
+																React.createElement(
+																	'li',
+																	null,
+																	React.createElement(
+																		'label',
+																		{ className: 'check' },
+																		React.createElement(
+																			'span',
+																			{ className: 'custom-checkbox' },
+																			React.createElement('input', { type: 'checkbox' }),
+																			React.createElement('span', { className: 'checkmark' })
+																		),
+																		React.createElement(
+																			Link,
+																			{ to: '#' },
+																			'Polygon ',
+																			React.createElement(
+																				'span',
+																				{ className: 'quantity' },
+																				'(8)'
+																			)
+																		)
+																	)
+																),
+																React.createElement(
+																	'li',
+																	null,
+																	React.createElement(
+																		'label',
+																		{ className: 'check' },
+																		React.createElement(
+																			'span',
+																			{ className: 'custom-checkbox' },
+																			React.createElement('input', { type: 'checkbox' }),
+																			React.createElement('span', { className: 'checkmark' })
+																		),
+																		React.createElement(
+																			Link,
+																			{ to: '#' },
+																			'Newment ',
+																			React.createElement(
+																				'span',
+																				{ className: 'quantity' },
+																				'(12)'
+																			)
+																		)
+																	)
+																),
+																React.createElement(
+																	'li',
+																	null,
+																	React.createElement(
+																		'label',
+																		{ className: 'check' },
+																		React.createElement(
+																			'span',
+																			{ className: 'custom-checkbox' },
+																			React.createElement('input', { type: 'checkbox' }),
+																			React.createElement('span', { className: 'checkmark' })
+																		),
+																		React.createElement(
+																			Link,
+																			{ to: '#' },
+																			'Asus ',
+																			React.createElement(
+																				'span',
+																				{ className: 'quantity' },
+																				'(15)'
+																			)
+																		)
+																	)
+																),
+																React.createElement(
+																	'li',
+																	null,
+																	React.createElement(
+																		'label',
+																		{ className: 'check' },
+																		React.createElement(
+																			'span',
+																			{ className: 'custom-checkbox' },
+																			React.createElement('input', { type: 'checkbox' }),
+																			React.createElement('span', { className: 'checkmark' })
+																		),
+																		React.createElement(
+																			Link,
+																			{ to: '#' },
+																			'Mac ',
+																			React.createElement(
+																				'span',
+																				{ className: 'quantity' },
+																				'(22)'
+																			)
+																		)
+																	)
+																),
+																React.createElement(
+																	'li',
+																	null,
+																	React.createElement(
+																		'label',
+																		{ className: 'check' },
+																		React.createElement(
+																			'span',
+																			{ className: 'custom-checkbox' },
+																			React.createElement('input', { type: 'checkbox' }),
+																			React.createElement('span', { className: 'checkmark' })
+																		),
+																		React.createElement(
+																			Link,
+																			{ to: '#' },
+																			'Vaio ',
+																			React.createElement(
+																				'span',
+																				{ className: 'quantity' },
+																				'(20)'
+																			)
+																		)
+																	)
+																),
+																React.createElement(
+																	'li',
+																	null,
+																	React.createElement(
+																		'label',
+																		{ className: 'check' },
+																		React.createElement(
+																			'span',
+																			{ className: 'custom-checkbox' },
+																			React.createElement('input', { type: 'checkbox' }),
+																			React.createElement('span', { className: 'checkmark' })
+																		),
+																		React.createElement(
+																			Link,
+																			{ to: '#' },
+																			'Lettuce ',
+																			React.createElement(
+																				'span',
+																				{ className: 'quantity' },
+																				'(10)'
+																			)
+																		)
+																	)
+																)
+															)
+														)
+													),
+													React.createElement(
+														'div',
+														{ className: 'filter-item' },
+														React.createElement(
+															'h3',
+															{ className: 'filter-title' },
+															'By Flavor'
+														),
+														React.createElement(
+															'div',
+															{ className: 'block-content' },
+															React.createElement(
+																'div',
+																{ className: 'filter-color' },
+																React.createElement(
+																	'div',
+																	{ className: 'left' },
+																	React.createElement(
+																		'div',
+																		{ className: 'item' },
+																		React.createElement('label', { className: 'color color-1' }),
+																		React.createElement(
+																			'span',
+																			{ className: 'color-label' },
+																			'Blueberry'
+																		),
+																		React.createElement(
+																			'span',
+																			null,
+																			'(3)'
+																		)
+																	),
+																	React.createElement(
+																		'div',
+																		{ className: 'item' },
+																		React.createElement('label', { className: 'color color-3' }),
+																		React.createElement(
+																			'span',
+																			{ className: 'color-label' },
+																			'Mango'
+																		),
+																		React.createElement(
+																			'span',
+																			null,
+																			'(2)'
+																		)
+																	),
+																	React.createElement(
+																		'div',
+																		{ className: 'item' },
+																		React.createElement('label', { className: 'color color-5' }),
+																		React.createElement(
+																			'span',
+																			{ className: 'color-label' },
+																			'Strawberry'
+																		),
+																		React.createElement(
+																			'span',
+																			null,
+																			'(2)'
+																		)
+																	)
+																),
+																React.createElement(
+																	'div',
+																	{ className: 'right' },
+																	React.createElement(
+																		'div',
+																		{ className: 'item' },
+																		React.createElement('label', { className: 'color color-2' }),
+																		React.createElement(
+																			'span',
+																			{ className: 'color-label' },
+																			'Grapes'
+																		),
+																		React.createElement(
+																			'span',
+																			null,
+																			'(1)'
+																		)
+																	),
+																	React.createElement(
+																		'div',
+																		{ className: 'item' },
+																		React.createElement('label', { className: 'color color-4' }),
+																		React.createElement(
+																			'span',
+																			{ className: 'color-label' },
+																			'Almond'
+																		),
+																		React.createElement(
+																			'span',
+																			null,
+																			'(3)'
+																		)
+																	),
+																	React.createElement(
+																		'div',
+																		{ className: 'item' },
+																		React.createElement('label', { className: 'color color-6' }),
+																		React.createElement(
+																			'span',
+																			{ className: 'color-label' },
+																			'Cherry'
+																		),
+																		React.createElement(
+																			'span',
+																			null,
+																			'(10)'
+																		)
+																	)
+																)
+															)
+														)
+													)
+												)
+											),
+											React.createElement(
+												'div',
+												{ className: 'block tags product-tags' },
+												React.createElement(
+													'h3',
+													{ className: 'block-title' },
+													'Product Tags'
+												),
+												React.createElement(
+													'div',
+													{ className: 'block-content' },
+													React.createElement(
+														'ul',
+														null,
+														React.createElement(
+															'li',
+															null,
+															React.createElement(
+																Link,
+																{ to: '#' },
+																'Hot Trend'
+															)
+														),
+														React.createElement(
+															'li',
+															null,
+															React.createElement(
+																Link,
+																{ to: '#' },
+																'Flour'
+															)
+														),
+														React.createElement(
+															'li',
+															null,
+															React.createElement(
+																Link,
+																{ to: '#' },
+																'200gm'
+															)
+														),
+														React.createElement(
+															'li',
+															null,
+															React.createElement(
+																Link,
+																{ to: '#' },
+																'500gm'
+															)
+														),
+														React.createElement(
+															'li',
+															null,
+															React.createElement(
+																Link,
+																{ to: '#' },
+																'1kg'
+															)
+														),
+														React.createElement(
+															'li',
+															null,
+															React.createElement(
+																Link,
+																{ to: '#' },
+																'Cookies'
+															)
+														)
+													)
+												)
+											)
+										),
+										React.createElement(
+											'div',
+											{ id: 'center-column', className: 'col-lg-9 col-md-9 col-sm-9 col-xs-12' },
+											React.createElement(
+												'div',
+												{ className: 'product-category-page' },
+												React.createElement(
+													'div',
+													{ className: 'products-bar' },
+													React.createElement(
+														'div',
+														{ className: 'row' },
+														React.createElement(
+															'div',
+															{ className: 'col-md-6 col-xs-6' },
+															React.createElement(
+																'div',
+																{ className: 'gridlist-toggle', role: 'tablist' },
+																React.createElement(
+																	'ul',
+																	{ className: 'nav nav-tabs' },
+																	React.createElement(
+																		'li',
+																		{ className: 'active' },
+																		React.createElement(
+																			Link,
+																			{ to: '#products-grid', 'data-toggle': 'tab', 'aria-expanded': 'true' },
+																			React.createElement('i', { className: 'fa fa-th-large' })
+																		)
+																	),
+																	React.createElement(
+																		'li',
+																		null,
+																		React.createElement(
+																			Link,
+																			{ to: '#products-list', 'data-toggle': 'tab', 'aria-expanded': 'false' },
+																			React.createElement('i', { className: 'fa fa-bars' })
+																		)
+																	)
+																)
+															),
+															React.createElement(
+																'div',
+																{ className: 'total-products' },
+																'There are 12 products'
+															)
+														),
+														React.createElement(
+															'div',
+															{ className: 'col-md-6 col-xs-6' },
+															React.createElement(
+																'div',
+																{ className: 'filter-bar' },
+																React.createElement(
+																	'form',
+																	{ action: '#', className: 'pull-right' },
+																	React.createElement(
+																		'div',
+																		{ className: 'select' },
+																		React.createElement(
+																			'select',
+																			{ className: 'form-control' },
+																			React.createElement(
+																				'option',
+																				{ value: '' },
+																				'Sort By'
+																			),
+																			React.createElement(
+																				'option',
+																				{ value: '1' },
+																				'Price: Lowest first'
+																			),
+																			React.createElement(
+																				'option',
+																				{ value: '2' },
+																				'Price: Highest first'
+																			),
+																			React.createElement(
+																				'option',
+																				{ value: '3' },
+																				'Product Name: A to Z'
+																			),
+																			React.createElement(
+																				'option',
+																				{ value: '4' },
+																				'Product Name: Z to A'
+																			),
+																			React.createElement(
+																				'option',
+																				{ value: '5' },
+																				'In stock'
+																			)
+																		)
+																	)
+																),
+																React.createElement(
+																	'form',
+																	{ action: '#', className: 'pull-right' },
+																	React.createElement(
+																		'div',
+																		{ className: 'select' },
+																		React.createElement(
+																			'select',
+																			{ className: 'form-control' },
+																			React.createElement(
+																				'option',
+																				{ value: '' },
+																				'Relevance'
+																			),
+																			React.createElement(
+																				'option',
+																				{ value: '1' },
+																				'Price: Lowest first'
+																			),
+																			React.createElement(
+																				'option',
+																				{ value: '2' },
+																				'Price: Highest first'
+																			),
+																			React.createElement(
+																				'option',
+																				{ value: '3' },
+																				'Product Name: A to Z'
+																			),
+																			React.createElement(
+																				'option',
+																				{ value: '4' },
+																				'Product Name: Z to A'
+																			),
+																			React.createElement(
+																				'option',
+																				{ value: '5' },
+																				'In stock'
+																			)
+																		)
+																	)
+																)
+															)
+														)
+													)
+												),
+												React.createElement(
+													'div',
+													{ className: 'tab-content' },
+													React.createElement(
+														'div',
+														{ className: 'tab-pane active', id: 'products-grid' },
+														React.createElement(
+															'div',
+															{ className: 'products-block' },
+															React.createElement(
+																'div',
+																{ className: 'row' },
+																React.createElement(
+																	'div',
+																	{ className: 'col-lg-4 col-md-4 col-sm-6 col-xs-12' },
+																	React.createElement(
+																		'div',
+																		{ className: 'product-item' },
+																		React.createElement(
+																			'div',
+																			{ className: 'product-image' },
+																			React.createElement(
+																				Link,
+																				{ to: '/productDetails' },
+																				React.createElement('img', { className: 'img-responsive', src: baseURL + "img/product/4.jpg", alt: 'Product Image' })
+																			)
+																		),
+																		React.createElement(
+																			'div',
+																			{ className: 'product-title' },
+																			React.createElement(
+																				Link,
+																				{ to: '/productDetails' },
+																				'Organic Strawberry Fruits'
+																			)
+																		),
+																		React.createElement(
+																			'div',
+																			{ className: 'product-rating' },
+																			React.createElement('div', { className: 'star on' }),
+																			React.createElement('div', { className: 'star on' }),
+																			React.createElement('div', { className: 'star on ' }),
+																			React.createElement('div', { className: 'star on' }),
+																			React.createElement('div', { className: 'star' })
+																		),
+																		React.createElement(
+																			'div',
+																			{ className: 'product-price' },
+																			React.createElement(
+																				'span',
+																				{ className: 'sale-price' },
+																				'\u20B980.00'
+																			),
+																			React.createElement(
+																				'span',
+																				{ className: 'base-price' },
+																				'\u20B990.00'
+																			)
+																		),
+																		React.createElement(
+																			'div',
+																			{ className: 'product-buttons' },
+																			React.createElement(
+																				Link,
+																				{ className: 'add-to-cart', to: '/shoppingCart' },
+																				React.createElement('i', { className: 'fa fa-shopping-basket', 'aria-hidden': 'true' })
+																			),
+																			React.createElement(
+																				Link,
+																				{ className: 'add-wishlist', to: '#' },
+																				React.createElement('i', { className: 'fa fa-heart', 'aria-hidden': 'true' })
+																			),
+																			React.createElement(
+																				Link,
+																				{ className: 'quickview', to: '/productDetails' },
+																				React.createElement('i', { className: 'fa fa-eye', 'aria-hidden': 'true' })
+																			)
+																		)
+																	)
+																),
+																React.createElement(
+																	'div',
+																	{ className: 'col-lg-4 col-md-4 col-sm-6 col-xs-12' },
+																	React.createElement(
+																		'div',
+																		{ className: 'product-item' },
+																		React.createElement(
+																			'div',
+																			{ className: 'product-image' },
+																			React.createElement(
+																				Link,
+																				{ to: '/productDetails' },
+																				React.createElement('img', { className: 'img-responsive', src: baseURL + "img/product/14.jpg", alt: 'Product Image' })
+																			)
+																		),
+																		React.createElement(
+																			'div',
+																			{ className: 'product-title' },
+																			React.createElement(
+																				Link,
+																				{ to: '/productDetails' },
+																				'Organic Strawberry Fruits'
+																			)
+																		),
+																		React.createElement(
+																			'div',
+																			{ className: 'product-rating' },
+																			React.createElement('div', { className: 'star on' }),
+																			React.createElement('div', { className: 'star on' }),
+																			React.createElement('div', { className: 'star on ' }),
+																			React.createElement('div', { className: 'star on' }),
+																			React.createElement('div', { className: 'star' })
+																		),
+																		React.createElement(
+																			'div',
+																			{ className: 'product-price' },
+																			React.createElement(
+																				'span',
+																				{ className: 'sale-price' },
+																				'\u20B980.00'
+																			),
+																			React.createElement(
+																				'span',
+																				{ className: 'base-price' },
+																				'\u20B990.00'
+																			)
+																		),
+																		React.createElement(
+																			'div',
+																			{ className: 'product-buttons' },
+																			React.createElement(
+																				Link,
+																				{ className: 'add-to-cart', to: '/shoppingCart' },
+																				React.createElement('i', { className: 'fa fa-shopping-basket', 'aria-hidden': 'true' })
+																			),
+																			React.createElement(
+																				Link,
+																				{ className: 'add-wishlist', to: '#' },
+																				React.createElement('i', { className: 'fa fa-heart', 'aria-hidden': 'true' })
+																			),
+																			React.createElement(
+																				Link,
+																				{ className: 'quickview', to: '/productDetails' },
+																				React.createElement('i', { className: 'fa fa-eye', 'aria-hidden': 'true' })
+																			)
+																		)
+																	)
+																),
+																React.createElement(
+																	'div',
+																	{ className: 'col-lg-4 col-md-4 col-sm-6 col-xs-12' },
+																	React.createElement(
+																		'div',
+																		{ className: 'product-item' },
+																		React.createElement(
+																			'div',
+																			{ className: 'product-image' },
+																			React.createElement(
+																				Link,
+																				{ to: '/productDetails' },
+																				React.createElement('img', { className: 'img-responsive', src: baseURL + "img/product/17.jpg", alt: 'Product Image' })
+																			)
+																		),
+																		React.createElement(
+																			'div',
+																			{ className: 'product-title' },
+																			React.createElement(
+																				Link,
+																				{ to: '/productDetails' },
+																				'Organic Strawberry Fruits'
+																			)
+																		),
+																		React.createElement(
+																			'div',
+																			{ className: 'product-rating' },
+																			React.createElement('div', { className: 'star on' }),
+																			React.createElement('div', { className: 'star on' }),
+																			React.createElement('div', { className: 'star on ' }),
+																			React.createElement('div', { className: 'star on' }),
+																			React.createElement('div', { className: 'star' })
+																		),
+																		React.createElement(
+																			'div',
+																			{ className: 'product-price' },
+																			React.createElement(
+																				'span',
+																				{ className: 'sale-price' },
+																				'\u20B980.00'
+																			),
+																			React.createElement(
+																				'span',
+																				{ className: 'base-price' },
+																				'\u20B990.00'
+																			)
+																		),
+																		React.createElement(
+																			'div',
+																			{ className: 'product-buttons' },
+																			React.createElement(
+																				Link,
+																				{ className: 'add-to-cart', to: '/shoppingCart' },
+																				React.createElement('i', { className: 'fa fa-shopping-basket', 'aria-hidden': 'true' })
+																			),
+																			React.createElement(
+																				Link,
+																				{ className: 'add-wishlist', to: '#' },
+																				React.createElement('i', { className: 'fa fa-heart', 'aria-hidden': 'true' })
+																			),
+																			React.createElement(
+																				Link,
+																				{ className: 'quickview', to: '/productDetails' },
+																				React.createElement('i', { className: 'fa fa-eye', 'aria-hidden': 'true' })
+																			)
+																		)
+																	)
+																),
+																React.createElement(
+																	'div',
+																	{ className: 'col-lg-4 col-md-4 col-sm-6 col-xs-12' },
+																	React.createElement(
+																		'div',
+																		{ className: 'product-item' },
+																		React.createElement(
+																			'div',
+																			{ className: 'product-image' },
+																			React.createElement(
+																				Link,
+																				{ to: '/productDetails' },
+																				React.createElement('img', { className: 'img-responsive', src: baseURL + "img/product/8.jpg", alt: 'Product Image' })
+																			)
+																		),
+																		React.createElement(
+																			'div',
+																			{ className: 'product-title' },
+																			React.createElement(
+																				Link,
+																				{ to: '/productDetails' },
+																				'Organic Strawberry Fruits'
+																			)
+																		),
+																		React.createElement(
+																			'div',
+																			{ className: 'product-rating' },
+																			React.createElement('div', { className: 'star on' }),
+																			React.createElement('div', { className: 'star on' }),
+																			React.createElement('div', { className: 'star on ' }),
+																			React.createElement('div', { className: 'star on' }),
+																			React.createElement('div', { className: 'star' })
+																		),
+																		React.createElement(
+																			'div',
+																			{ className: 'product-price' },
+																			React.createElement(
+																				'span',
+																				{ className: 'sale-price' },
+																				'\u20B9120.00'
+																			)
+																		),
+																		React.createElement(
+																			'div',
+																			{ className: 'product-buttons' },
+																			React.createElement(
+																				Link,
+																				{ className: 'add-to-cart', to: '/shoppingCart' },
+																				React.createElement('i', { className: 'fa fa-shopping-basket', 'aria-hidden': 'true' })
+																			),
+																			React.createElement(
+																				Link,
+																				{ className: 'add-wishlist', to: '#' },
+																				React.createElement('i', { className: 'fa fa-heart', 'aria-hidden': 'true' })
+																			),
+																			React.createElement(
+																				Link,
+																				{ className: 'quickview', to: '/productDetails' },
+																				React.createElement('i', { className: 'fa fa-eye', 'aria-hidden': 'true' })
+																			)
+																		)
+																	)
+																),
+																React.createElement(
+																	'div',
+																	{ className: 'col-lg-4 col-md-4 col-sm-6 col-xs-12' },
+																	React.createElement(
+																		'div',
+																		{ className: 'product-item' },
+																		React.createElement(
+																			'div',
+																			{ className: 'product-image' },
+																			React.createElement(
+																				Link,
+																				{ to: '/productDetails' },
+																				React.createElement('img', { className: 'img-responsive', src: baseURL + "img/product/9.jpg", alt: 'Product Image' })
+																			)
+																		),
+																		React.createElement(
+																			'div',
+																			{ className: 'product-title' },
+																			React.createElement(
+																				Link,
+																				{ to: '/productDetails' },
+																				'Organic Strawberry Fruits'
+																			)
+																		),
+																		React.createElement(
+																			'div',
+																			{ className: 'product-rating' },
+																			React.createElement('div', { className: 'star on' }),
+																			React.createElement('div', { className: 'star on' }),
+																			React.createElement('div', { className: 'star on ' }),
+																			React.createElement('div', { className: 'star on' }),
+																			React.createElement('div', { className: 'star on' })
+																		),
+																		React.createElement(
+																			'div',
+																			{ className: 'product-price' },
+																			React.createElement(
+																				'span',
+																				{ className: 'sale-price' },
+																				'\u20B980.00'
+																			),
+																			React.createElement(
+																				'span',
+																				{ className: 'base-price' },
+																				'\u20B990.00'
+																			)
+																		),
+																		React.createElement(
+																			'div',
+																			{ className: 'product-buttons' },
+																			React.createElement(
+																				Link,
+																				{ className: 'add-to-cart', to: '/shoppingCart' },
+																				React.createElement('i', { className: 'fa fa-shopping-basket', 'aria-hidden': 'true' })
+																			),
+																			React.createElement(
+																				Link,
+																				{ className: 'add-wishlist', to: '#' },
+																				React.createElement('i', { className: 'fa fa-heart', 'aria-hidden': 'true' })
+																			),
+																			React.createElement(
+																				Link,
+																				{ className: 'quickview', to: '/productDetails' },
+																				React.createElement('i', { className: 'fa fa-eye', 'aria-hidden': 'true' })
+																			)
+																		)
+																	)
+																),
+																React.createElement(
+																	'div',
+																	{ className: 'col-lg-4 col-md-4 col-sm-6 col-xs-12' },
+																	React.createElement(
+																		'div',
+																		{ className: 'product-item' },
+																		React.createElement(
+																			'div',
+																			{ className: 'product-image' },
+																			React.createElement(
+																				Link,
+																				{ to: '/productDetails' },
+																				React.createElement('img', { className: 'img-responsive', src: baseURL + "img/product/15.jpg", alt: 'Product Image' })
+																			)
+																		),
+																		React.createElement(
+																			'div',
+																			{ className: 'product-title' },
+																			React.createElement(
+																				Link,
+																				{ to: '/productDetails' },
+																				'Organic Strawberry Fruits'
+																			)
+																		),
+																		React.createElement(
+																			'div',
+																			{ className: 'product-rating' },
+																			React.createElement('div', { className: 'star on' }),
+																			React.createElement('div', { className: 'star on' }),
+																			React.createElement('div', { className: 'star on ' }),
+																			React.createElement('div', { className: 'star on' }),
+																			React.createElement('div', { className: 'star on' })
+																		),
+																		React.createElement(
+																			'div',
+																			{ className: 'product-price' },
+																			React.createElement(
+																				'span',
+																				{ className: 'sale-price' },
+																				'\u20B980.00'
+																			),
+																			React.createElement(
+																				'span',
+																				{ className: 'base-price' },
+																				'\u20B990.00'
+																			)
+																		),
+																		React.createElement(
+																			'div',
+																			{ className: 'product-buttons' },
+																			React.createElement(
+																				Link,
+																				{ className: 'add-to-cart', to: '/shoppingCart' },
+																				React.createElement('i', { className: 'fa fa-shopping-basket', 'aria-hidden': 'true' })
+																			),
+																			React.createElement(
+																				Link,
+																				{ className: 'add-wishlist', to: '#' },
+																				React.createElement('i', { className: 'fa fa-heart', 'aria-hidden': 'true' })
+																			),
+																			React.createElement(
+																				Link,
+																				{ className: 'quickview', to: '/productDetails' },
+																				React.createElement('i', { className: 'fa fa-eye', 'aria-hidden': 'true' })
+																			)
+																		)
+																	)
+																),
+																React.createElement(
+																	'div',
+																	{ className: 'col-lg-4 col-md-4 col-sm-6 col-xs-12' },
+																	React.createElement(
+																		'div',
+																		{ className: 'product-item' },
+																		React.createElement(
+																			'div',
+																			{ className: 'product-image' },
+																			React.createElement(
+																				Link,
+																				{ to: '/productDetails' },
+																				React.createElement('img', { className: 'img-responsive', src: baseURL + "img/product/10.jpg", alt: 'Product Image' })
+																			)
+																		),
+																		React.createElement(
+																			'div',
+																			{ className: 'product-title' },
+																			React.createElement(
+																				Link,
+																				{ to: '/productDetails' },
+																				'Organic Strawberry Fruits'
+																			)
+																		),
+																		React.createElement(
+																			'div',
+																			{ className: 'product-rating' },
+																			React.createElement('div', { className: 'star on' }),
+																			React.createElement('div', { className: 'star on' }),
+																			React.createElement('div', { className: 'star on ' }),
+																			React.createElement('div', { className: 'star on' }),
+																			React.createElement('div', { className: 'star' })
+																		),
+																		React.createElement(
+																			'div',
+																			{ className: 'product-price' },
+																			React.createElement(
+																				'span',
+																				{ className: 'sale-price' },
+																				'\u20B996.00'
+																			)
+																		),
+																		React.createElement(
+																			'div',
+																			{ className: 'product-buttons' },
+																			React.createElement(
+																				Link,
+																				{ className: 'add-to-cart', to: '/shoppingCart' },
+																				React.createElement('i', { className: 'fa fa-shopping-basket', 'aria-hidden': 'true' })
+																			),
+																			React.createElement(
+																				Link,
+																				{ className: 'add-wishlist', to: '#' },
+																				React.createElement('i', { className: 'fa fa-heart', 'aria-hidden': 'true' })
+																			),
+																			React.createElement(
+																				Link,
+																				{ className: 'quickview', to: '/productDetails' },
+																				React.createElement('i', { className: 'fa fa-eye', 'aria-hidden': 'true' })
+																			)
+																		)
+																	)
+																),
+																React.createElement(
+																	'div',
+																	{ className: 'col-lg-4 col-md-4 col-sm-6 col-xs-12' },
+																	React.createElement(
+																		'div',
+																		{ className: 'product-item' },
+																		React.createElement(
+																			'div',
+																			{ className: 'product-image' },
+																			React.createElement(
+																				Link,
+																				{ to: '/productDetails' },
+																				React.createElement('img', { className: 'img-responsive', src: baseURL + "img/product/33.jpg", alt: 'Product Image' })
+																			)
+																		),
+																		React.createElement(
+																			'div',
+																			{ className: 'product-title' },
+																			React.createElement(
+																				Link,
+																				{ to: '/productDetails' },
+																				'Organic Strawberry Fruits'
+																			)
+																		),
+																		React.createElement(
+																			'div',
+																			{ className: 'product-rating' },
+																			React.createElement('div', { className: 'star on' }),
+																			React.createElement('div', { className: 'star on' }),
+																			React.createElement('div', { className: 'star on ' }),
+																			React.createElement('div', { className: 'star on' }),
+																			React.createElement('div', { className: 'star' })
+																		),
+																		React.createElement(
+																			'div',
+																			{ className: 'product-price' },
+																			React.createElement(
+																				'span',
+																				{ className: 'sale-price' },
+																				'\u20B980.00'
+																			),
+																			React.createElement(
+																				'span',
+																				{ className: 'base-price' },
+																				'\u20B990.00'
+																			)
+																		),
+																		React.createElement(
+																			'div',
+																			{ className: 'product-buttons' },
+																			React.createElement(
+																				Link,
+																				{ className: 'add-to-cart', to: '/shoppingCart' },
+																				React.createElement('i', { className: 'fa fa-shopping-basket', 'aria-hidden': 'true' })
+																			),
+																			React.createElement(
+																				Link,
+																				{ className: 'add-wishlist', to: '#' },
+																				React.createElement('i', { className: 'fa fa-heart', 'aria-hidden': 'true' })
+																			),
+																			React.createElement(
+																				Link,
+																				{ className: 'quickview', to: '/productDetails' },
+																				React.createElement('i', { className: 'fa fa-eye', 'aria-hidden': 'true' })
+																			)
+																		)
+																	)
+																),
+																React.createElement(
+																	'div',
+																	{ className: 'col-lg-4 col-md-4 col-sm-6 col-xs-12' },
+																	React.createElement(
+																		'div',
+																		{ className: 'product-item' },
+																		React.createElement(
+																			'div',
+																			{ className: 'product-image' },
+																			React.createElement(
+																				Link,
+																				{ to: '/productDetails' },
+																				React.createElement('img', { className: 'img-responsive', src: baseURL + "img/product/22.jpg", alt: 'Product Image' })
+																			)
+																		),
+																		React.createElement(
+																			'div',
+																			{ className: 'product-title' },
+																			React.createElement(
+																				Link,
+																				{ to: '/productDetails' },
+																				'Organic Strawberry Fruits'
+																			)
+																		),
+																		React.createElement(
+																			'div',
+																			{ className: 'product-rating' },
+																			React.createElement('div', { className: 'star on' }),
+																			React.createElement('div', { className: 'star on' }),
+																			React.createElement('div', { className: 'star on ' }),
+																			React.createElement('div', { className: 'star on' }),
+																			React.createElement('div', { className: 'star' })
+																		),
+																		React.createElement(
+																			'div',
+																			{ className: 'product-price' },
+																			React.createElement(
+																				'span',
+																				{ className: 'sale-price' },
+																				'\u20B980.00'
+																			),
+																			React.createElement(
+																				'span',
+																				{ className: 'base-price' },
+																				'\u20B990.00'
+																			)
+																		),
+																		React.createElement(
+																			'div',
+																			{ className: 'product-buttons' },
+																			React.createElement(
+																				Link,
+																				{ className: 'add-to-cart', to: '/shoppingCart' },
+																				React.createElement('i', { className: 'fa fa-shopping-basket', 'aria-hidden': 'true' })
+																			),
+																			React.createElement(
+																				Link,
+																				{ className: 'add-wishlist', to: '#' },
+																				React.createElement('i', { className: 'fa fa-heart', 'aria-hidden': 'true' })
+																			),
+																			React.createElement(
+																				Link,
+																				{ className: 'quickview', to: '/productDetails' },
+																				React.createElement('i', { className: 'fa fa-eye', 'aria-hidden': 'true' })
+																			)
+																		)
+																	)
+																),
+																React.createElement(
+																	'div',
+																	{ className: 'col-lg-4 col-md-4 col-sm-6 col-xs-12' },
+																	React.createElement(
+																		'div',
+																		{ className: 'product-item' },
+																		React.createElement(
+																			'div',
+																			{ className: 'product-image' },
+																			React.createElement(
+																				Link,
+																				{ to: '/productDetails' },
+																				React.createElement('img', { className: 'img-responsive', src: baseURL + "img/product/20.jpg", alt: 'Product Image' })
+																			)
+																		),
+																		React.createElement(
+																			'div',
+																			{ className: 'product-title' },
+																			React.createElement(
+																				Link,
+																				{ to: '/productDetails' },
+																				'Organic Strawberry Fruits'
+																			)
+																		),
+																		React.createElement(
+																			'div',
+																			{ className: 'product-rating' },
+																			React.createElement('div', { className: 'star on' }),
+																			React.createElement('div', { className: 'star on' }),
+																			React.createElement('div', { className: 'star on ' }),
+																			React.createElement('div', { className: 'star on' }),
+																			React.createElement('div', { className: 'star' })
+																		),
+																		React.createElement(
+																			'div',
+																			{ className: 'product-price' },
+																			React.createElement(
+																				'span',
+																				{ className: 'sale-price' },
+																				'\u20B996.00'
+																			)
+																		),
+																		React.createElement(
+																			'div',
+																			{ className: 'product-buttons' },
+																			React.createElement(
+																				Link,
+																				{ className: 'add-to-cart', to: '/shoppingCart' },
+																				React.createElement('i', { className: 'fa fa-shopping-basket', 'aria-hidden': 'true' })
+																			),
+																			React.createElement(
+																				Link,
+																				{ className: 'add-wishlist', to: '#' },
+																				React.createElement('i', { className: 'fa fa-heart', 'aria-hidden': 'true' })
+																			),
+																			React.createElement(
+																				Link,
+																				{ className: 'quickview', to: '/productDetails' },
+																				React.createElement('i', { className: 'fa fa-eye', 'aria-hidden': 'true' })
+																			)
+																		)
+																	)
+																),
+																React.createElement(
+																	'div',
+																	{ className: 'col-lg-4 col-md-4 col-sm-6 col-xs-12' },
+																	React.createElement(
+																		'div',
+																		{ className: 'product-item' },
+																		React.createElement(
+																			'div',
+																			{ className: 'product-image' },
+																			React.createElement(
+																				Link,
+																				{ to: '/productDetails' },
+																				React.createElement('img', { className: 'img-responsive', src: baseURL + "img/product/23.jpg", alt: 'Product Image' })
+																			)
+																		),
+																		React.createElement(
+																			'div',
+																			{ className: 'product-title' },
+																			React.createElement(
+																				Link,
+																				{ to: '/productDetails' },
+																				'Organic Strawberry Fruits'
+																			)
+																		),
+																		React.createElement(
+																			'div',
+																			{ className: 'product-rating' },
+																			React.createElement('div', { className: 'star on' }),
+																			React.createElement('div', { className: 'star on' }),
+																			React.createElement('div', { className: 'star on ' }),
+																			React.createElement('div', { className: 'star on' }),
+																			React.createElement('div', { className: 'star' })
+																		),
+																		React.createElement(
+																			'div',
+																			{ className: 'product-price' },
+																			React.createElement(
+																				'span',
+																				{ className: 'sale-price' },
+																				'\u20B980.00'
+																			),
+																			React.createElement(
+																				'span',
+																				{ className: 'base-price' },
+																				'\u20B990.00'
+																			)
+																		),
+																		React.createElement(
+																			'div',
+																			{ className: 'product-buttons' },
+																			React.createElement(
+																				Link,
+																				{ className: 'add-to-cart', to: '/shoppingCart' },
+																				React.createElement('i', { className: 'fa fa-shopping-basket', 'aria-hidden': 'true' })
+																			),
+																			React.createElement(
+																				Link,
+																				{ className: 'add-wishlist', to: '#' },
+																				React.createElement('i', { className: 'fa fa-heart', 'aria-hidden': 'true' })
+																			),
+																			React.createElement(
+																				Link,
+																				{ className: 'quickview', to: '/productDetails' },
+																				React.createElement('i', { className: 'fa fa-eye', 'aria-hidden': 'true' })
+																			)
+																		)
+																	)
+																),
+																React.createElement(
+																	'div',
+																	{ className: 'col-lg-4 col-md-4 col-sm-6 col-xs-12' },
+																	React.createElement(
+																		'div',
+																		{ className: 'product-item' },
+																		React.createElement(
+																			'div',
+																			{ className: 'product-image' },
+																			React.createElement(
+																				Link,
+																				{ to: '/productDetails' },
+																				React.createElement('img', { className: 'img-responsive', src: baseURL + "img/product/30.jpg", alt: 'Product Image' })
+																			)
+																		),
+																		React.createElement(
+																			'div',
+																			{ className: 'product-title' },
+																			React.createElement(
+																				Link,
+																				{ to: '/productDetails' },
+																				'Organic Strawberry Fruits'
+																			)
+																		),
+																		React.createElement(
+																			'div',
+																			{ className: 'product-rating' },
+																			React.createElement('div', { className: 'star on' }),
+																			React.createElement('div', { className: 'star on' }),
+																			React.createElement('div', { className: 'star on ' }),
+																			React.createElement('div', { className: 'star on' }),
+																			React.createElement('div', { className: 'star' })
+																		),
+																		React.createElement(
+																			'div',
+																			{ className: 'product-price' },
+																			React.createElement(
+																				'span',
+																				{ className: 'sale-price' },
+																				'\u20B980.00'
+																			),
+																			React.createElement(
+																				'span',
+																				{ className: 'base-price' },
+																				'\u20B990.00'
+																			)
+																		),
+																		React.createElement(
+																			'div',
+																			{ className: 'product-buttons' },
+																			React.createElement(
+																				Link,
+																				{ className: 'add-to-cart', to: '/shoppingCart' },
+																				React.createElement('i', { className: 'fa fa-shopping-basket', 'aria-hidden': 'true' })
+																			),
+																			React.createElement(
+																				Link,
+																				{ className: 'add-wishlist', to: '#' },
+																				React.createElement('i', { className: 'fa fa-heart', 'aria-hidden': 'true' })
+																			),
+																			React.createElement(
+																				Link,
+																				{ className: 'quickview', to: '/productDetails' },
+																				React.createElement('i', { className: 'fa fa-eye', 'aria-hidden': 'true' })
+																			)
+																		)
+																	)
+																)
+															)
+														)
+													),
+													React.createElement(
+														'div',
+														{ className: 'tab-pane', id: 'products-list' },
+														React.createElement(
+															'div',
+															{ className: 'products-block layout-5' },
+															React.createElement(
+																'div',
+																{ className: 'product-item' },
+																React.createElement(
+																	'div',
+																	{ className: 'row' },
+																	React.createElement(
+																		'div',
+																		{ className: 'col-lg-4 col-md-4 col-sm-6 col-xs-12' },
+																		React.createElement(
+																			'div',
+																			{ className: 'product-image' },
+																			React.createElement(
+																				Link,
+																				{ to: '/productDetails' },
+																				React.createElement('img', { className: 'img-responsive', src: baseURL + "img/product/4.jpg", alt: 'Product Image' })
+																			)
+																		)
+																	),
+																	React.createElement(
+																		'div',
+																		{ className: 'col-lg-8 col-md-8 col-sm-6 col-xs-12' },
+																		React.createElement(
+																			'div',
+																			{ className: 'product-info' },
+																			React.createElement(
+																				'div',
+																				{ className: 'product-title' },
+																				React.createElement(
+																					Link,
+																					{ to: '/productDetails' },
+																					'Organic Strawberry Fruits'
+																				)
+																			),
+																			React.createElement(
+																				'div',
+																				{ className: 'product-rating' },
+																				React.createElement('div', { className: 'star on' }),
+																				React.createElement('div', { className: 'star on' }),
+																				React.createElement('div', { className: 'star on ' }),
+																				React.createElement('div', { className: 'star on' }),
+																				React.createElement('div', { className: 'star' }),
+																				React.createElement(
+																					'span',
+																					{ className: 'review-count' },
+																					'(3 Reviews)'
+																				)
+																			),
+																			React.createElement(
+																				'div',
+																				{ className: 'product-price' },
+																				React.createElement(
+																					'span',
+																					{ className: 'sale-price' },
+																					'\u20B980.00'
+																				),
+																				React.createElement(
+																					'span',
+																					{ className: 'base-price' },
+																					'\u20B990.00'
+																				)
+																			),
+																			React.createElement(
+																				'div',
+																				{ className: 'product-stock' },
+																				React.createElement('i', { className: 'fa fa-check-square-o', 'aria-hidden': 'true' }),
+																				'In stock'
+																			),
+																			React.createElement(
+																				'div',
+																				{ className: 'product-description' },
+																				'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse sapien urna, commodo ut molestie vitae, feugiat tincidunt ligula...'
+																			),
+																			React.createElement(
+																				'div',
+																				{ className: 'product-buttons' },
+																				React.createElement(
+																					Link,
+																					{ className: 'add-to-cart', to: '/shoppingCart' },
+																					React.createElement('i', { className: 'fa fa-shopping-basket', 'aria-hidden': 'true' }),
+																					React.createElement(
+																						'span',
+																						null,
+																						'Add To Cart'
+																					)
+																				),
+																				React.createElement(
+																					Link,
+																					{ className: 'add-wishlist', to: '#' },
+																					React.createElement('i', { className: 'fa fa-heart', 'aria-hidden': 'true' })
+																				),
+																				React.createElement(
+																					Link,
+																					{ className: 'quickview', to: '/productDetails' },
+																					React.createElement('i', { className: 'fa fa-eye', 'aria-hidden': 'true' })
+																				)
+																			)
+																		)
+																	)
+																)
+															),
+															React.createElement(
+																'div',
+																{ className: 'product-item' },
+																React.createElement(
+																	'div',
+																	{ className: 'row' },
+																	React.createElement(
+																		'div',
+																		{ className: 'col-lg-4 col-md-4 col-sm-6 col-xs-12' },
+																		React.createElement(
+																			'div',
+																			{ className: 'product-image' },
+																			React.createElement(
+																				Link,
+																				{ to: '/productDetails' },
+																				React.createElement('img', { className: 'img-responsive', src: baseURL + "img/product/14.jpg", alt: 'Product Image' })
+																			)
+																		)
+																	),
+																	React.createElement(
+																		'div',
+																		{ className: 'col-lg-8 col-md-8 col-sm-6 col-xs-12' },
+																		React.createElement(
+																			'div',
+																			{ className: 'product-info' },
+																			React.createElement(
+																				'div',
+																				{ className: 'product-title' },
+																				React.createElement(
+																					Link,
+																					{ to: '/productDetails' },
+																					'Organic Strawberry Fruits'
+																				)
+																			),
+																			React.createElement(
+																				'div',
+																				{ className: 'product-rating' },
+																				React.createElement('div', { className: 'star on' }),
+																				React.createElement('div', { className: 'star on' }),
+																				React.createElement('div', { className: 'star on ' }),
+																				React.createElement('div', { className: 'star on' }),
+																				React.createElement('div', { className: 'star' }),
+																				React.createElement(
+																					'span',
+																					{ className: 'review-count' },
+																					'(3 Reviews)'
+																				)
+																			),
+																			React.createElement(
+																				'div',
+																				{ className: 'product-price' },
+																				React.createElement(
+																					'span',
+																					{ className: 'sale-price' },
+																					'\u20B980.00'
+																				),
+																				React.createElement(
+																					'span',
+																					{ className: 'base-price' },
+																					'\u20B990.00'
+																				)
+																			),
+																			React.createElement(
+																				'div',
+																				{ className: 'product-stock' },
+																				React.createElement('i', { className: 'fa fa-check-square-o', 'aria-hidden': 'true' }),
+																				'In stock'
+																			),
+																			React.createElement(
+																				'div',
+																				{ className: 'product-description' },
+																				'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse sapien urna, commodo ut molestie vitae, feugiat tincidunt ligula...'
+																			),
+																			React.createElement(
+																				'div',
+																				{ className: 'product-buttons' },
+																				React.createElement(
+																					Link,
+																					{ className: 'add-to-cart', to: '/shoppingCart' },
+																					React.createElement('i', { className: 'fa fa-shopping-basket', 'aria-hidden': 'true' }),
+																					React.createElement(
+																						'span',
+																						null,
+																						'Add To Cart'
+																					)
+																				),
+																				React.createElement(
+																					Link,
+																					{ className: 'add-wishlist', to: '#' },
+																					React.createElement('i', { className: 'fa fa-heart', 'aria-hidden': 'true' })
+																				),
+																				React.createElement(
+																					Link,
+																					{ className: 'quickview', to: '/productDetails' },
+																					React.createElement('i', { className: 'fa fa-eye', 'aria-hidden': 'true' })
+																				)
+																			)
+																		)
+																	)
+																)
+															),
+															React.createElement(
+																'div',
+																{ className: 'product-item' },
+																React.createElement(
+																	'div',
+																	{ className: 'row' },
+																	React.createElement(
+																		'div',
+																		{ className: 'col-lg-4 col-md-4 col-sm-6 col-xs-12' },
+																		React.createElement(
+																			'div',
+																			{ className: 'product-image' },
+																			React.createElement(
+																				Link,
+																				{ to: '/productDetails' },
+																				React.createElement('img', { className: 'img-responsive', src: baseURL + "img/product/17.jpg", alt: 'Product Image' })
+																			)
+																		)
+																	),
+																	React.createElement(
+																		'div',
+																		{ className: 'col-lg-8 col-md-8 col-sm-6 col-xs-12' },
+																		React.createElement(
+																			'div',
+																			{ className: 'product-info' },
+																			React.createElement(
+																				'div',
+																				{ className: 'product-title' },
+																				React.createElement(
+																					Link,
+																					{ to: '/productDetails' },
+																					'Organic Strawberry Fruits'
+																				)
+																			),
+																			React.createElement(
+																				'div',
+																				{ className: 'product-rating' },
+																				React.createElement('div', { className: 'star on' }),
+																				React.createElement('div', { className: 'star on' }),
+																				React.createElement('div', { className: 'star on ' }),
+																				React.createElement('div', { className: 'star on' }),
+																				React.createElement('div', { className: 'star' }),
+																				React.createElement(
+																					'span',
+																					{ className: 'review-count' },
+																					'(3 Reviews)'
+																				)
+																			),
+																			React.createElement(
+																				'div',
+																				{ className: 'product-price' },
+																				React.createElement(
+																					'span',
+																					{ className: 'sale-price' },
+																					'\u20B980.00'
+																				),
+																				React.createElement(
+																					'span',
+																					{ className: 'base-price' },
+																					'\u20B990.00'
+																				)
+																			),
+																			React.createElement(
+																				'div',
+																				{ className: 'product-stock' },
+																				React.createElement('i', { className: 'fa fa-check-square-o', 'aria-hidden': 'true' }),
+																				'In stock'
+																			),
+																			React.createElement(
+																				'div',
+																				{ className: 'product-description' },
+																				'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse sapien urna, commodo ut molestie vitae, feugiat tincidunt ligula...'
+																			),
+																			React.createElement(
+																				'div',
+																				{ className: 'product-buttons' },
+																				React.createElement(
+																					Link,
+																					{ className: 'add-to-cart', to: '/shoppingCart' },
+																					React.createElement('i', { className: 'fa fa-shopping-basket', 'aria-hidden': 'true' }),
+																					React.createElement(
+																						'span',
+																						null,
+																						'Add To Cart'
+																					)
+																				),
+																				React.createElement(
+																					Link,
+																					{ className: 'add-wishlist', to: '#' },
+																					React.createElement('i', { className: 'fa fa-heart', 'aria-hidden': 'true' })
+																				),
+																				React.createElement(
+																					Link,
+																					{ className: 'quickview', to: '/productDetails' },
+																					React.createElement('i', { className: 'fa fa-eye', 'aria-hidden': 'true' })
+																				)
+																			)
+																		)
+																	)
+																)
+															),
+															React.createElement(
+																'div',
+																{ className: 'product-item' },
+																React.createElement(
+																	'div',
+																	{ className: 'row' },
+																	React.createElement(
+																		'div',
+																		{ className: 'col-lg-4 col-md-4 col-sm-6 col-xs-12' },
+																		React.createElement(
+																			'div',
+																			{ className: 'product-image' },
+																			React.createElement(
+																				Link,
+																				{ to: '/productDetails' },
+																				React.createElement('img', { className: 'img-responsive', src: baseURL + "img/product/8.jpg", alt: 'Product Image' })
+																			)
+																		)
+																	),
+																	React.createElement(
+																		'div',
+																		{ className: 'col-lg-8 col-md-8 col-sm-6 col-xs-12' },
+																		React.createElement(
+																			'div',
+																			{ className: 'product-info' },
+																			React.createElement(
+																				'div',
+																				{ className: 'product-title' },
+																				React.createElement(
+																					Link,
+																					{ to: '/productDetails' },
+																					'Organic Strawberry Fruits'
+																				)
+																			),
+																			React.createElement(
+																				'div',
+																				{ className: 'product-rating' },
+																				React.createElement('div', { className: 'star on' }),
+																				React.createElement('div', { className: 'star on' }),
+																				React.createElement('div', { className: 'star on ' }),
+																				React.createElement('div', { className: 'star on' }),
+																				React.createElement('div', { className: 'star' }),
+																				React.createElement(
+																					'span',
+																					{ className: 'review-count' },
+																					'(3 Reviews)'
+																				)
+																			),
+																			React.createElement(
+																				'div',
+																				{ className: 'product-price' },
+																				React.createElement(
+																					'span',
+																					{ className: 'sale-price' },
+																					'\u20B980.00'
+																				),
+																				React.createElement(
+																					'span',
+																					{ className: 'base-price' },
+																					'\u20B990.00'
+																				)
+																			),
+																			React.createElement(
+																				'div',
+																				{ className: 'product-stock' },
+																				React.createElement('i', { className: 'fa fa-check-square-o', 'aria-hidden': 'true' }),
+																				'In stock'
+																			),
+																			React.createElement(
+																				'div',
+																				{ className: 'product-description' },
+																				'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse sapien urna, commodo ut molestie vitae, feugiat tincidunt ligula...'
+																			),
+																			React.createElement(
+																				'div',
+																				{ className: 'product-buttons' },
+																				React.createElement(
+																					Link,
+																					{ className: 'add-to-cart', to: '/shoppingCart' },
+																					React.createElement('i', { className: 'fa fa-shopping-basket', 'aria-hidden': 'true' }),
+																					React.createElement(
+																						'span',
+																						null,
+																						'Add To Cart'
+																					)
+																				),
+																				React.createElement(
+																					Link,
+																					{ className: 'add-wishlist', to: '#' },
+																					React.createElement('i', { className: 'fa fa-heart', 'aria-hidden': 'true' })
+																				),
+																				React.createElement(
+																					Link,
+																					{ className: 'quickview', to: '/productDetails' },
+																					React.createElement('i', { className: 'fa fa-eye', 'aria-hidden': 'true' })
+																				)
+																			)
+																		)
+																	)
+																)
+															),
+															React.createElement(
+																'div',
+																{ className: 'product-item' },
+																React.createElement(
+																	'div',
+																	{ className: 'row' },
+																	React.createElement(
+																		'div',
+																		{ className: 'col-lg-4 col-md-4 col-sm-6 col-xs-12' },
+																		React.createElement(
+																			'div',
+																			{ className: 'product-image' },
+																			React.createElement(
+																				Link,
+																				{ to: '/productDetails' },
+																				React.createElement('img', { className: 'img-responsive', src: baseURL + "img/product/9.jpg", alt: 'Product Image' })
+																			)
+																		)
+																	),
+																	React.createElement(
+																		'div',
+																		{ className: 'col-lg-8 col-md-8 col-sm-6 col-xs-12' },
+																		React.createElement(
+																			'div',
+																			{ className: 'product-info' },
+																			React.createElement(
+																				'div',
+																				{ className: 'product-title' },
+																				React.createElement(
+																					Link,
+																					{ to: '/productDetails' },
+																					'Organic Strawberry Fruits'
+																				)
+																			),
+																			React.createElement(
+																				'div',
+																				{ className: 'product-rating' },
+																				React.createElement('div', { className: 'star on' }),
+																				React.createElement('div', { className: 'star on' }),
+																				React.createElement('div', { className: 'star on ' }),
+																				React.createElement('div', { className: 'star on' }),
+																				React.createElement('div', { className: 'star' }),
+																				React.createElement(
+																					'span',
+																					{ className: 'review-count' },
+																					'(3 Reviews)'
+																				)
+																			),
+																			React.createElement(
+																				'div',
+																				{ className: 'product-price' },
+																				React.createElement(
+																					'span',
+																					{ className: 'sale-price' },
+																					'\u20B980.00'
+																				),
+																				React.createElement(
+																					'span',
+																					{ className: 'base-price' },
+																					'\u20B990.00'
+																				)
+																			),
+																			React.createElement(
+																				'div',
+																				{ className: 'product-stock' },
+																				React.createElement('i', { className: 'fa fa-check-square-o', 'aria-hidden': 'true' }),
+																				'In stock'
+																			),
+																			React.createElement(
+																				'div',
+																				{ className: 'product-description' },
+																				'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse sapien urna, commodo ut molestie vitae, feugiat tincidunt ligula...'
+																			),
+																			React.createElement(
+																				'div',
+																				{ className: 'product-buttons' },
+																				React.createElement(
+																					Link,
+																					{ className: 'add-to-cart', to: '/shoppingCart' },
+																					React.createElement('i', { className: 'fa fa-shopping-basket', 'aria-hidden': 'true' }),
+																					React.createElement(
+																						'span',
+																						null,
+																						'Add To Cart'
+																					)
+																				),
+																				React.createElement(
+																					Link,
+																					{ className: 'add-wishlist', to: '#' },
+																					React.createElement('i', { className: 'fa fa-heart', 'aria-hidden': 'true' })
+																				),
+																				React.createElement(
+																					Link,
+																					{ className: 'quickview', to: '/productDetails' },
+																					React.createElement('i', { className: 'fa fa-eye', 'aria-hidden': 'true' })
+																				)
+																			)
+																		)
+																	)
+																)
+															)
+														)
+													)
+												),
+												React.createElement(
+													'div',
+													{ className: 'pagination-bar' },
+													React.createElement(
+														'div',
+														{ className: 'row' },
+														React.createElement(
+															'div',
+															{ className: 'col-md-4 col-sm-4 col-xs-12' },
+															React.createElement(
+																'div',
+																{ className: 'text' },
+																'Showing 1-12 of 20 item(s)'
+															)
+														),
+														React.createElement(
+															'div',
+															{ className: 'col-md-8 col-sm-8 col-xs-12' },
+															React.createElement(
+																'div',
+																{ className: 'pagination' },
+																React.createElement(
+																	'ul',
+																	{ className: 'page-list' },
+																	React.createElement(
+																		'li',
+																		null,
+																		React.createElement(
+																			Link,
+																			{ to: '#', className: 'prev' },
+																			'Previous'
+																		)
+																	),
+																	React.createElement(
+																		'li',
+																		null,
+																		React.createElement(
+																			Link,
+																			{ to: '#', className: 'current' },
+																			'1'
+																		)
+																	),
+																	React.createElement(
+																		'li',
+																		null,
+																		React.createElement(
+																			Link,
+																			{ to: '#' },
+																			'2'
+																		)
+																	),
+																	React.createElement(
+																		'li',
+																		null,
+																		React.createElement(
+																			Link,
+																			{ to: '#', className: 'next' },
+																			'Next'
+																		)
+																	)
+																)
+															)
+														)
+													)
+												)
+											)
+										)
+									)
+								)
+							)
+						)
+					)
+				),
+				React.createElement(Footer, null)
+			);
+		}
+	}]);
+
+	return ProductsList;
+}(React.Component);
+
+module.exports = ProductsList;
+
+/***/ }),
+/* 96 */
+/***/ (function(module, exports, __webpack_require__) {
+
+var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+
+function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
+
+function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
+
+var React = __webpack_require__(0);
+var Link = __webpack_require__(1).Link;
+var baseURL = 'http://localhost:8000/';
+var Header = __webpack_require__(6);
+var Footer = __webpack_require__(7);
+var loadjs = __webpack_require__(19);
+
+var GluttenFreeProducts = function (_React$Component) {
+	_inherits(GluttenFreeProducts, _React$Component);
+
+	function GluttenFreeProducts() {
+		_classCallCheck(this, GluttenFreeProducts);
+
+		return _possibleConstructorReturn(this, (GluttenFreeProducts.__proto__ || Object.getPrototypeOf(GluttenFreeProducts)).apply(this, arguments));
+	}
+
+	_createClass(GluttenFreeProducts, [{
+		key: 'componentDidMount',
+		value: function componentDidMount() {
+			loadjs('js/main.js', function () {});
+		}
+	}, {
+		key: 'render',
+		value: function render() {
+			return React.createElement(
+				'div',
+				null,
+				React.createElement(Header, null),
+				React.createElement(
+					'div',
+					{ id: 'content', className: 'site-content' },
+					React.createElement(
+						'div',
+						{ id: 'breadcrumb' },
+						React.createElement(
+							'div',
+							{ className: 'container' },
+							React.createElement(
+								'h2',
+								{ className: 'title' },
+								'Glutten Free Products'
+							),
+							React.createElement(
+								'ul',
+								{ className: 'breadcrumb' },
+								React.createElement(
+									'li',
+									null,
+									React.createElement(
+										Link,
+										{ to: '#' },
+										'Home'
+									)
+								),
+								React.createElement(
+									'li',
+									null,
+									React.createElement(
+										'span',
+										null,
+										'Glutten Free Products'
+									)
+								)
+							)
+						)
+					),
+					React.createElement(
+						'div',
+						{ className: 'home-2' },
+						React.createElement(
+							'div',
+							{ className: 'container' },
+							React.createElement(
+								'div',
+								{ className: 'col-md-10 col-md-offset-1' },
+								React.createElement(
+									'div',
+									{ className: 'section slideshow' },
+									React.createElement(
+										'div',
+										{ className: 'container' },
+										React.createElement(
+											'div',
+											{ className: 'tiva-slideshow-wrapper' },
+											React.createElement(
+												'div',
+												{ id: 'tiva-slideshow', className: 'nivoSlider' },
+												React.createElement(
+													Link,
+													{ to: '#' },
+													React.createElement('img', { className: 'img-responsive', src: 'img/slideshow/home2-slideshow-1.jpg', alt: 'Slideshow Image' })
+												),
+												React.createElement(
+													Link,
+													{ to: '#' },
+													React.createElement('img', { className: 'img-responsive', src: 'img/slideshow/home2-slideshow-2.jpg', alt: 'Slideshow Image' })
+												),
+												React.createElement(
+													Link,
+													{ to: '#' },
+													React.createElement('img', { className: 'img-responsive', src: 'img/slideshow/home2-slideshow-3.jpg', alt: 'Slideshow Image' })
+												)
+											)
+										)
+									)
+								),
+								React.createElement(
+									'div',
+									{ className: 'section banners' },
+									React.createElement(
+										'div',
+										{ className: 'container' },
+										React.createElement(
+											'div',
+											{ className: 'row text-center' },
+											React.createElement(
+												'div',
+												{ className: 'col-lg-4 col-md-4 col-sm-4 col-xs-12 padding-10' },
+												React.createElement(
+													'div',
+													{ className: 'banner-item disp-inline-block effect' },
+													React.createElement(
+														Link,
+														{ to: '#' },
+														React.createElement('img', { className: 'img-responsive', src: 'img/banner/home2-banner-1.png', alt: 'Banner 1' })
+													)
+												)
+											),
+											React.createElement(
+												'div',
+												{ className: 'col-lg-4 col-md-4 col-sm-4 col-xs-12 padding-10' },
+												React.createElement(
+													'div',
+													{ className: 'banner-item disp-inline-block effect' },
+													React.createElement(
+														Link,
+														{ to: '#' },
+														React.createElement('img', { className: 'img-responsive', src: 'img/banner/home2-banner-2.png', alt: 'Banner 2' })
+													)
+												)
+											),
+											React.createElement(
+												'div',
+												{ className: 'col-lg-4 col-md-4 col-sm-4 col-xs-12 padding-10' },
+												React.createElement(
+													'div',
+													{ className: 'banner-item disp-inline-block effect' },
+													React.createElement(
+														Link,
+														{ to: '#' },
+														React.createElement('img', { className: 'img-responsive', src: 'img/banner/home2-banner-3.png', alt: 'Banner 3' })
+													)
+												)
+											)
+										)
+									)
+								),
+								React.createElement(
+									'div',
+									{ className: 'section two-columns pb60' },
+									React.createElement(
+										'div',
+										{ className: 'container' },
+										React.createElement(
+											'div',
+											{ className: 'row ' },
+											React.createElement(
+												'div',
+												{ className: 'col-20p col-md-3 left-column' },
+												React.createElement(
+													'div',
+													{ className: 'section product-categories' },
+													React.createElement(
+														'div',
+														{ className: 'block-title' },
+														React.createElement(
+															'h2',
+															{ className: 'title' },
+															'Categories'
+														)
+													),
+													React.createElement(
+														'div',
+														{ className: 'block-content' },
+														React.createElement(
+															'div',
+															{ className: 'item' },
+															React.createElement(
+																'span',
+																{ className: 'arrow collapsed', 'data-toggle': 'collapse', 'data-target': '#vegetables', 'aria-expanded': 'false', role: 'button' },
+																React.createElement('i', { className: 'fa fa-angle-down', 'aria-hidden': 'true' }),
+																React.createElement('i', { className: 'fa fa-angle-right', 'aria-hidden': 'true' })
+															),
+															React.createElement(
+																Link,
+																{ className: 'category-title', to: '#' },
+																'Vegetables'
+															),
+															React.createElement(
+																'div',
+																{ className: 'sub-category collapse', id: 'vegetables', 'aria-expanded': 'true', role: 'main' },
+																React.createElement(
+																	'div',
+																	{ className: 'item' },
+																	React.createElement(
+																		Link,
+																		{ to: '#' },
+																		'Tomato'
+																	)
+																),
+																React.createElement(
+																	'div',
+																	{ className: 'item' },
+																	React.createElement(
+																		Link,
+																		{ to: '#' },
+																		'Broccoli'
+																	)
+																),
+																React.createElement(
+																	'div',
+																	{ className: 'item' },
+																	React.createElement(
+																		Link,
+																		{ to: '#' },
+																		'Cabbage'
+																	)
+																),
+																React.createElement(
+																	'div',
+																	{ className: 'item' },
+																	React.createElement(
+																		Link,
+																		{ to: '#' },
+																		'Cucumber'
+																	)
+																)
+															)
+														),
+														React.createElement(
+															'div',
+															{ className: 'item' },
+															React.createElement(
+																'span',
+																{ className: 'arrow collapsed', 'data-toggle': 'collapse', 'data-target': '#fruits', 'aria-expanded': 'false', role: 'button' },
+																React.createElement('i', { className: 'fa fa-angle-down', 'aria-hidden': 'true' }),
+																React.createElement('i', { className: 'fa fa-angle-right', 'aria-hidden': 'true' })
+															),
+															React.createElement(
+																Link,
+																{ className: 'category-title', to: '#' },
+																'Fruits'
+															),
+															React.createElement(
+																'div',
+																{ className: 'sub-category collapse', id: 'fruits', 'aria-expanded': 'true', role: 'main' },
+																React.createElement(
+																	'div',
+																	{ className: 'item' },
+																	React.createElement(
+																		Link,
+																		{ to: '#' },
+																		'Orange'
+																	)
+																),
+																React.createElement(
+																	'div',
+																	{ className: 'item' },
+																	React.createElement(
+																		Link,
+																		{ to: '#' },
+																		'Apple'
+																	)
+																),
+																React.createElement(
+																	'div',
+																	{ className: 'item' },
+																	React.createElement(
+																		Link,
+																		{ to: '#' },
+																		'Banana'
+																	)
+																),
+																React.createElement(
+																	'div',
+																	{ className: 'item' },
+																	React.createElement(
+																		Link,
+																		{ to: '#' },
+																		'Strawberry'
+																	)
+																)
+															)
+														),
+														React.createElement(
+															'div',
+															{ className: 'item' },
+															React.createElement(
+																'span',
+																{ className: 'arrow collapsed', 'data-toggle': 'collapse', 'data-target': '#juices', 'aria-expanded': 'false', role: 'button' },
+																React.createElement('i', { className: 'fa fa-angle-down', 'aria-hidden': 'true' }),
+																React.createElement('i', { className: 'fa fa-angle-right', 'aria-hidden': 'true' })
+															),
+															React.createElement(
+																Link,
+																{ className: 'category-title', to: '#' },
+																'Juices'
+															),
+															React.createElement(
+																'div',
+																{ className: 'sub-category collapse', id: 'juices', 'aria-expanded': 'true', role: 'main' },
+																React.createElement(
+																	'div',
+																	{ className: 'item' },
+																	React.createElement(
+																		Link,
+																		{ to: '#' },
+																		'Orange Juices'
+																	)
+																),
+																React.createElement(
+																	'div',
+																	{ className: 'item' },
+																	React.createElement(
+																		Link,
+																		{ to: '#' },
+																		'Tomato Juices'
+																	)
+																),
+																React.createElement(
+																	'div',
+																	{ className: 'item' },
+																	React.createElement(
+																		Link,
+																		{ to: '#' },
+																		'Apple Juices'
+																	)
+																),
+																React.createElement(
+																	'div',
+																	{ className: 'item' },
+																	React.createElement(
+																		Link,
+																		{ to: '#' },
+																		'Peaches Juices'
+																	)
+																)
+															)
+														),
+														React.createElement(
+															'div',
+															{ className: 'item' },
+															React.createElement(
+																Link,
+																{ className: 'category-title', to: '#' },
+																'Tea and Coffee'
+															)
+														),
+														React.createElement(
+															'div',
+															{ className: 'item' },
+															React.createElement(
+																Link,
+																{ className: 'category-title', to: '#' },
+																'Jam'
+															)
+														),
+														React.createElement(
+															'div',
+															{ className: 'item' },
+															React.createElement(
+																Link,
+																{ className: 'category-title', to: '#' },
+																'SeaFood'
+															)
+														),
+														React.createElement(
+															'div',
+															{ className: 'item' },
+															React.createElement(
+																Link,
+																{ className: 'category-title', to: '#' },
+																'Fresh Meats'
+															)
+														)
+													)
+												),
+												React.createElement(
+													'div',
+													{ className: 'section testimonial' },
+													React.createElement(
+														'div',
+														{ className: 'block-title' },
+														React.createElement(
+															'h2',
+															{ className: 'title' },
+															'Testimonial'
+														)
+													),
+													React.createElement(
+														'div',
+														{ className: 'block-content' },
+														React.createElement(
+															'div',
+															{ className: 'testimonial-wrap owl-theme owl-carousel' },
+															React.createElement(
+																'div',
+																{ className: 'item' },
+																React.createElement(
+																	'div',
+																	{ className: 'image' },
+																	React.createElement('img', { src: 'img/testimonial-1.png', alt: '' })
+																),
+																React.createElement(
+																	'div',
+																	{ className: 'content' },
+																	'\u201CProin gravida nibh vel velit auctor aliquet. Aenean sollicudin, lorem quis bibendum auctor, nisi elit consequat ipsum.\u201D'
+																),
+																React.createElement(
+																	'div',
+																	{ className: 'name' },
+																	'WILLIAM JAMES'
+																),
+																React.createElement(
+																	'div',
+																	{ className: 'job' },
+																	'Hairstyle'
+																)
+															),
+															React.createElement(
+																'div',
+																{ className: 'item' },
+																React.createElement(
+																	'div',
+																	{ className: 'image' },
+																	React.createElement('img', { src: 'img/testimonial-2.png', alt: '' })
+																),
+																React.createElement(
+																	'div',
+																	{ className: 'content' },
+																	'\u201CProin gravida nibh vel velit auctor aliquet. Aenean sollicudin, lorem quis bibendum auctor, nisi elit consequat ipsum.\u201D'
+																),
+																React.createElement(
+																	'div',
+																	{ className: 'name' },
+																	'WILLIAM JAMES'
+																),
+																React.createElement(
+																	'div',
+																	{ className: 'job' },
+																	'Hairstyle'
+																)
+															),
+															React.createElement(
+																'div',
+																{ className: 'item' },
+																React.createElement(
+																	'div',
+																	{ className: 'image' },
+																	React.createElement('img', { src: 'img/testimonial-3.png', alt: '' })
+																),
+																React.createElement(
+																	'div',
+																	{ className: 'content' },
+																	'\u201CProin gravida nibh vel velit auctor aliquet. Aenean sollicudin, lorem quis bibendum auctor, nisi elit consequat ipsum.\u201D'
+																),
+																React.createElement(
+																	'div',
+																	{ className: 'name' },
+																	'WILLIAM JAMES'
+																),
+																React.createElement(
+																	'div',
+																	{ className: 'job' },
+																	'Hairstyle'
+																)
+															)
+														)
+													)
+												)
+											),
+											React.createElement(
+												'div',
+												{ className: 'col-80p col-md-9 right-column' },
+												React.createElement(
+													'div',
+													{ className: 'section products-block category-tab' },
+													React.createElement(
+														'div',
+														{ className: 'block-title' },
+														React.createElement(
+															'h2',
+															{ className: 'title' },
+															'Vegetables'
+														)
+													),
+													React.createElement(
+														'div',
+														{ className: 'block-content' },
+														React.createElement(
+															'div',
+															{ className: 'tab-nav' },
+															React.createElement(
+																'ul',
+																null,
+																React.createElement(
+																	'li',
+																	{ className: 'active' },
+																	React.createElement(
+																		Link,
+																		{ 'data-toggle': 'tab', to: '#new-arrivals' },
+																		React.createElement(
+																			'span',
+																			null,
+																			'New Arrivals'
+																		)
+																	)
+																),
+																React.createElement(
+																	'li',
+																	null,
+																	React.createElement(
+																		Link,
+																		{ 'data-toggle': 'tab', to: '#best-seller' },
+																		React.createElement(
+																			'span',
+																			null,
+																			'Best Seller'
+																		)
+																	)
+																),
+																React.createElement(
+																	'li',
+																	null,
+																	React.createElement(
+																		Link,
+																		{ 'data-toggle': 'tab', to: '#on-sale' },
+																		React.createElement(
+																			'span',
+																			null,
+																			'On Sale'
+																		)
+																	)
+																)
+															)
+														),
+														React.createElement(
+															'div',
+															{ className: 'tab-content' },
+															React.createElement(
+																'div',
+																{ role: 'tabpanel', className: 'tab-pane fade in active', id: 'new-arrivals' },
+																React.createElement(
+																	'div',
+																	{ className: 'products owl-theme owl-carousel' },
+																	React.createElement(
+																		'div',
+																		{ className: 'product-item' },
+																		React.createElement(
+																			'div',
+																			{ className: 'product-image' },
+																			React.createElement(
+																				Link,
+																				{ to: '/productDetails' },
+																				React.createElement('img', { src: 'img/product/4.jpg', alt: 'Product Image' })
+																			)
+																		),
+																		React.createElement(
+																			'div',
+																			{ className: 'product-title' },
+																			React.createElement(
+																				Link,
+																				{ to: '/productDetails' },
+																				'Organic Strawberry Fruits'
+																			)
+																		),
+																		React.createElement(
+																			'div',
+																			{ className: 'product-rating' },
+																			React.createElement('div', { className: 'star on' }),
+																			React.createElement('div', { className: 'star on' }),
+																			React.createElement('div', { className: 'star on ' }),
+																			React.createElement('div', { className: 'star on' }),
+																			React.createElement('div', { className: 'star' })
+																		),
+																		React.createElement(
+																			'div',
+																			{ className: 'product-price' },
+																			React.createElement(
+																				'span',
+																				{ className: 'sale-price' },
+																				'\u20B980.00'
+																			),
+																			React.createElement(
+																				'span',
+																				{ className: 'base-price' },
+																				'\u20B990.00'
+																			)
+																		),
+																		React.createElement(
+																			'div',
+																			{ className: 'product-buttons' },
+																			React.createElement(
+																				Link,
+																				{ className: 'add-to-cart', to: '/shoppingCart' },
+																				React.createElement('i', { className: 'fa fa-shopping-basket', 'aria-hidden': 'true' })
+																			),
+																			React.createElement(
+																				Link,
+																				{ className: 'add-wishlist', to: '#' },
+																				React.createElement('i', { className: 'fa fa-heart', 'aria-hidden': 'true' })
+																			),
+																			React.createElement(
+																				Link,
+																				{ className: 'quickview', to: '/productDetails' },
+																				React.createElement('i', { className: 'fa fa-eye', 'aria-hidden': 'true' })
+																			)
+																		)
+																	),
+																	React.createElement(
+																		'div',
+																		{ className: 'product-item' },
+																		React.createElement(
+																			'div',
+																			{ className: 'product-image' },
+																			React.createElement(
+																				Link,
+																				{ to: '/productDetails' },
+																				React.createElement('img', { src: 'img/product/8.jpg', alt: 'Product Image' })
+																			)
+																		),
+																		React.createElement(
+																			'div',
+																			{ className: 'product-title' },
+																			React.createElement(
+																				Link,
+																				{ to: '/productDetails' },
+																				'Organic Strawberry Fruits'
+																			)
+																		),
+																		React.createElement(
+																			'div',
+																			{ className: 'product-rating' },
+																			React.createElement('div', { className: 'star on' }),
+																			React.createElement('div', { className: 'star on' }),
+																			React.createElement('div', { className: 'star on ' }),
+																			React.createElement('div', { className: 'star on' }),
+																			React.createElement('div', { className: 'star' })
+																		),
+																		React.createElement(
+																			'div',
+																			{ className: 'product-price' },
+																			React.createElement(
+																				'span',
+																				{ className: 'sale-price' },
+																				'\u20B9120.00'
+																			)
+																		),
+																		React.createElement(
+																			'div',
+																			{ className: 'product-buttons' },
+																			React.createElement(
+																				Link,
+																				{ className: 'add-to-cart', to: '/shoppingCart' },
+																				React.createElement('i', { className: 'fa fa-shopping-basket', 'aria-hidden': 'true' })
+																			),
+																			React.createElement(
+																				Link,
+																				{ className: 'add-wishlist', to: '#' },
+																				React.createElement('i', { className: 'fa fa-heart', 'aria-hidden': 'true' })
+																			),
+																			React.createElement(
+																				Link,
+																				{ className: 'quickview', to: '/productDetails' },
+																				React.createElement('i', { className: 'fa fa-eye', 'aria-hidden': 'true' })
+																			)
+																		)
+																	),
+																	React.createElement(
+																		'div',
+																		{ className: 'product-item' },
+																		React.createElement(
+																			'div',
+																			{ className: 'product-image' },
+																			React.createElement(
+																				Link,
+																				{ to: '/productDetails' },
+																				React.createElement('img', { src: 'img/product/9.jpg', alt: 'Product Image' })
+																			)
+																		),
+																		React.createElement(
+																			'div',
+																			{ className: 'product-title' },
+																			React.createElement(
+																				Link,
+																				{ to: '/productDetails' },
+																				'Organic Strawberry Fruits'
+																			)
+																		),
+																		React.createElement(
+																			'div',
+																			{ className: 'product-rating' },
+																			React.createElement('div', { className: 'star on' }),
+																			React.createElement('div', { className: 'star on' }),
+																			React.createElement('div', { className: 'star on ' }),
+																			React.createElement('div', { className: 'star on' }),
+																			React.createElement('div', { className: 'star on' })
+																		),
+																		React.createElement(
+																			'div',
+																			{ className: 'product-price' },
+																			React.createElement(
+																				'span',
+																				{ className: 'sale-price' },
+																				'\u20B980.00'
+																			),
+																			React.createElement(
+																				'span',
+																				{ className: 'base-price' },
+																				'\u20B990.00'
+																			)
+																		),
+																		React.createElement(
+																			'div',
+																			{ className: 'product-buttons' },
+																			React.createElement(
+																				Link,
+																				{ className: 'add-to-cart', to: '/shoppingCart' },
+																				React.createElement('i', { className: 'fa fa-shopping-basket', 'aria-hidden': 'true' })
+																			),
+																			React.createElement(
+																				Link,
+																				{ className: 'add-wishlist', to: '#' },
+																				React.createElement('i', { className: 'fa fa-heart', 'aria-hidden': 'true' })
+																			),
+																			React.createElement(
+																				Link,
+																				{ className: 'quickview', to: '/productDetails' },
+																				React.createElement('i', { className: 'fa fa-eye', 'aria-hidden': 'true' })
+																			)
+																		)
+																	),
+																	React.createElement(
+																		'div',
+																		{ className: 'product-item' },
+																		React.createElement(
+																			'div',
+																			{ className: 'product-image' },
+																			React.createElement(
+																				Link,
+																				{ to: '/productDetails' },
+																				React.createElement('img', { src: 'img/product/10.jpg', alt: 'Product Image' })
+																			)
+																		),
+																		React.createElement(
+																			'div',
+																			{ className: 'product-title' },
+																			React.createElement(
+																				Link,
+																				{ to: '/productDetails' },
+																				'Organic Strawberry Fruits'
+																			)
+																		),
+																		React.createElement(
+																			'div',
+																			{ className: 'product-rating' },
+																			React.createElement('div', { className: 'star on' }),
+																			React.createElement('div', { className: 'star on' }),
+																			React.createElement('div', { className: 'star on ' }),
+																			React.createElement('div', { className: 'star on' }),
+																			React.createElement('div', { className: 'star' })
+																		),
+																		React.createElement(
+																			'div',
+																			{ className: 'product-price' },
+																			React.createElement(
+																				'span',
+																				{ className: 'sale-price' },
+																				'\u20B996.00'
+																			)
+																		),
+																		React.createElement(
+																			'div',
+																			{ className: 'product-buttons' },
+																			React.createElement(
+																				Link,
+																				{ className: 'add-to-cart', to: '/shoppingCart' },
+																				React.createElement('i', { className: 'fa fa-shopping-basket', 'aria-hidden': 'true' })
+																			),
+																			React.createElement(
+																				Link,
+																				{ className: 'add-wishlist', to: '#' },
+																				React.createElement('i', { className: 'fa fa-heart', 'aria-hidden': 'true' })
+																			),
+																			React.createElement(
+																				Link,
+																				{ className: 'quickview', to: '/productDetails' },
+																				React.createElement('i', { className: 'fa fa-eye', 'aria-hidden': 'true' })
+																			)
+																		)
+																	)
+																)
+															),
+															React.createElement(
+																'div',
+																{ role: 'tabpanel', className: 'tab-pane fade', id: 'best-seller' },
+																React.createElement(
+																	'div',
+																	{ className: 'products owl-theme owl-carousel' },
+																	React.createElement(
+																		'div',
+																		{ className: 'product-item' },
+																		React.createElement(
+																			'div',
+																			{ className: 'product-image' },
+																			React.createElement(
+																				Link,
+																				{ to: '/productDetails' },
+																				React.createElement('img', { src: 'img/product/8.jpg', alt: 'Product Image' })
+																			)
+																		),
+																		React.createElement(
+																			'div',
+																			{ className: 'product-title' },
+																			React.createElement(
+																				Link,
+																				{ to: '/productDetails' },
+																				'Organic Strawberry Fruits'
+																			)
+																		),
+																		React.createElement(
+																			'div',
+																			{ className: 'product-rating' },
+																			React.createElement('div', { className: 'star on' }),
+																			React.createElement('div', { className: 'star on' }),
+																			React.createElement('div', { className: 'star on ' }),
+																			React.createElement('div', { className: 'star on' }),
+																			React.createElement('div', { className: 'star' })
+																		),
+																		React.createElement(
+																			'div',
+																			{ className: 'product-price' },
+																			React.createElement(
+																				'span',
+																				{ className: 'sale-price' },
+																				'\u20B9120.00'
+																			)
+																		),
+																		React.createElement(
+																			'div',
+																			{ className: 'product-buttons' },
+																			React.createElement(
+																				Link,
+																				{ className: 'add-to-cart', to: '/shoppingCart' },
+																				React.createElement('i', { className: 'fa fa-shopping-basket', 'aria-hidden': 'true' })
+																			),
+																			React.createElement(
+																				Link,
+																				{ className: 'add-wishlist', to: '#' },
+																				React.createElement('i', { className: 'fa fa-heart', 'aria-hidden': 'true' })
+																			),
+																			React.createElement(
+																				Link,
+																				{ className: 'quickview', to: '/productDetails' },
+																				React.createElement('i', { className: 'fa fa-eye', 'aria-hidden': 'true' })
+																			)
+																		)
+																	),
+																	React.createElement(
+																		'div',
+																		{ className: 'product-item' },
+																		React.createElement(
+																			'div',
+																			{ className: 'product-image' },
+																			React.createElement(
+																				Link,
+																				{ to: '/productDetails' },
+																				React.createElement('img', { src: 'img/product/10.jpg', alt: 'Product Image' })
+																			)
+																		),
+																		React.createElement(
+																			'div',
+																			{ className: 'product-title' },
+																			React.createElement(
+																				Link,
+																				{ to: '/productDetails' },
+																				'Organic Strawberry Fruits'
+																			)
+																		),
+																		React.createElement(
+																			'div',
+																			{ className: 'product-rating' },
+																			React.createElement('div', { className: 'star on' }),
+																			React.createElement('div', { className: 'star on' }),
+																			React.createElement('div', { className: 'star on ' }),
+																			React.createElement('div', { className: 'star on' }),
+																			React.createElement('div', { className: 'star' })
+																		),
+																		React.createElement(
+																			'div',
+																			{ className: 'product-price' },
+																			React.createElement(
+																				'span',
+																				{ className: 'sale-price' },
+																				'\u20B996.00'
+																			)
+																		),
+																		React.createElement(
+																			'div',
+																			{ className: 'product-buttons' },
+																			React.createElement(
+																				Link,
+																				{ className: 'add-to-cart', to: '/shoppingCart' },
+																				React.createElement('i', { className: 'fa fa-shopping-basket', 'aria-hidden': 'true' })
+																			),
+																			React.createElement(
+																				Link,
+																				{ className: 'add-wishlist', to: '#' },
+																				React.createElement('i', { className: 'fa fa-heart', 'aria-hidden': 'true' })
+																			),
+																			React.createElement(
+																				Link,
+																				{ className: 'quickview', to: '/productDetails' },
+																				React.createElement('i', { className: 'fa fa-eye', 'aria-hidden': 'true' })
+																			)
+																		)
+																	),
+																	React.createElement(
+																		'div',
+																		{ className: 'product-item' },
+																		React.createElement(
+																			'div',
+																			{ className: 'product-image' },
+																			React.createElement(
+																				Link,
+																				{ to: '/productDetails' },
+																				React.createElement('img', { src: 'img/product/4.jpg', alt: 'Product Image' })
+																			)
+																		),
+																		React.createElement(
+																			'div',
+																			{ className: 'product-title' },
+																			React.createElement(
+																				Link,
+																				{ to: '/productDetails' },
+																				'Organic Strawberry Fruits'
+																			)
+																		),
+																		React.createElement(
+																			'div',
+																			{ className: 'product-rating' },
+																			React.createElement('div', { className: 'star on' }),
+																			React.createElement('div', { className: 'star on' }),
+																			React.createElement('div', { className: 'star on ' }),
+																			React.createElement('div', { className: 'star on' }),
+																			React.createElement('div', { className: 'star' })
+																		),
+																		React.createElement(
+																			'div',
+																			{ className: 'product-price' },
+																			React.createElement(
+																				'span',
+																				{ className: 'sale-price' },
+																				'\u20B980.00'
+																			),
+																			React.createElement(
+																				'span',
+																				{ className: 'base-price' },
+																				'\u20B990.00'
+																			)
+																		),
+																		React.createElement(
+																			'div',
+																			{ className: 'product-buttons' },
+																			React.createElement(
+																				Link,
+																				{ className: 'add-to-cart', to: '/shoppingCart' },
+																				React.createElement('i', { className: 'fa fa-shopping-basket', 'aria-hidden': 'true' })
+																			),
+																			React.createElement(
+																				Link,
+																				{ className: 'add-wishlist', to: '#' },
+																				React.createElement('i', { className: 'fa fa-heart', 'aria-hidden': 'true' })
+																			),
+																			React.createElement(
+																				Link,
+																				{ className: 'quickview', to: '/productDetails' },
+																				React.createElement('i', { className: 'fa fa-eye', 'aria-hidden': 'true' })
+																			)
+																		)
+																	),
+																	React.createElement(
+																		'div',
+																		{ className: 'product-item' },
+																		React.createElement(
+																			'div',
+																			{ className: 'product-image' },
+																			React.createElement(
+																				Link,
+																				{ to: '/productDetails' },
+																				React.createElement('img', { src: 'img/product/33.jpg', alt: 'Product Image' })
+																			)
+																		),
+																		React.createElement(
+																			'div',
+																			{ className: 'product-title' },
+																			React.createElement(
+																				Link,
+																				{ to: '/productDetails' },
+																				'Organic Strawberry Fruits'
+																			)
+																		),
+																		React.createElement(
+																			'div',
+																			{ className: 'product-rating' },
+																			React.createElement('div', { className: 'star on' }),
+																			React.createElement('div', { className: 'star on' }),
+																			React.createElement('div', { className: 'star on ' }),
+																			React.createElement('div', { className: 'star on' }),
+																			React.createElement('div', { className: 'star' })
+																		),
+																		React.createElement(
+																			'div',
+																			{ className: 'product-price' },
+																			React.createElement(
+																				'span',
+																				{ className: 'sale-price' },
+																				'\u20B980.00'
+																			),
+																			React.createElement(
+																				'span',
+																				{ className: 'base-price' },
+																				'\u20B990.00'
+																			)
+																		),
+																		React.createElement(
+																			'div',
+																			{ className: 'product-buttons' },
+																			React.createElement(
+																				Link,
+																				{ className: 'add-to-cart', to: '/shoppingCart' },
+																				React.createElement('i', { className: 'fa fa-shopping-basket', 'aria-hidden': 'true' })
+																			),
+																			React.createElement(
+																				Link,
+																				{ className: 'add-wishlist', to: '#' },
+																				React.createElement('i', { className: 'fa fa-heart', 'aria-hidden': 'true' })
+																			),
+																			React.createElement(
+																				Link,
+																				{ className: 'quickview', to: '/productDetails' },
+																				React.createElement('i', { className: 'fa fa-eye', 'aria-hidden': 'true' })
+																			)
+																		)
+																	)
+																)
+															),
+															React.createElement(
+																'div',
+																{ role: 'tabpanel', className: 'tab-pane fade', id: 'on-sale' },
+																React.createElement(
+																	'div',
+																	{ className: 'products owl-theme owl-carousel' },
+																	React.createElement(
+																		'div',
+																		{ className: 'product-item' },
+																		React.createElement(
+																			'div',
+																			{ className: 'product-image' },
+																			React.createElement(
+																				Link,
+																				{ to: '/productDetails' },
+																				React.createElement('img', { src: 'img/product/4.jpg', alt: 'Product Image' })
+																			)
+																		),
+																		React.createElement(
+																			'div',
+																			{ className: 'product-title' },
+																			React.createElement(
+																				Link,
+																				{ to: '/productDetails' },
+																				'Organic Strawberry Fruits'
+																			)
+																		),
+																		React.createElement(
+																			'div',
+																			{ className: 'product-rating' },
+																			React.createElement('div', { className: 'star on' }),
+																			React.createElement('div', { className: 'star on' }),
+																			React.createElement('div', { className: 'star on ' }),
+																			React.createElement('div', { className: 'star on' }),
+																			React.createElement('div', { className: 'star' })
+																		),
+																		React.createElement(
+																			'div',
+																			{ className: 'product-price' },
+																			React.createElement(
+																				'span',
+																				{ className: 'sale-price' },
+																				'\u20B980.00'
+																			),
+																			React.createElement(
+																				'span',
+																				{ className: 'base-price' },
+																				'\u20B990.00'
+																			)
+																		),
+																		React.createElement(
+																			'div',
+																			{ className: 'product-buttons' },
+																			React.createElement(
+																				Link,
+																				{ className: 'add-to-cart', to: '/shoppingCart' },
+																				React.createElement('i', { className: 'fa fa-shopping-basket', 'aria-hidden': 'true' })
+																			),
+																			React.createElement(
+																				Link,
+																				{ className: 'add-wishlist', to: '#' },
+																				React.createElement('i', { className: 'fa fa-heart', 'aria-hidden': 'true' })
+																			),
+																			React.createElement(
+																				Link,
+																				{ className: 'quickview', to: '/productDetails' },
+																				React.createElement('i', { className: 'fa fa-eye', 'aria-hidden': 'true' })
+																			)
+																		)
+																	),
+																	React.createElement(
+																		'div',
+																		{ className: 'product-item' },
+																		React.createElement(
+																			'div',
+																			{ className: 'product-image' },
+																			React.createElement(
+																				Link,
+																				{ to: '/productDetails' },
+																				React.createElement('img', { src: 'img/product/8.jpg', alt: 'Product Image' })
+																			)
+																		),
+																		React.createElement(
+																			'div',
+																			{ className: 'product-title' },
+																			React.createElement(
+																				Link,
+																				{ to: '/productDetails' },
+																				'Organic Strawberry Fruits'
+																			)
+																		),
+																		React.createElement(
+																			'div',
+																			{ className: 'product-rating' },
+																			React.createElement('div', { className: 'star on' }),
+																			React.createElement('div', { className: 'star on' }),
+																			React.createElement('div', { className: 'star on ' }),
+																			React.createElement('div', { className: 'star on' }),
+																			React.createElement('div', { className: 'star' })
+																		),
+																		React.createElement(
+																			'div',
+																			{ className: 'product-price' },
+																			React.createElement(
+																				'span',
+																				{ className: 'sale-price' },
+																				'\u20B9120.00'
+																			)
+																		),
+																		React.createElement(
+																			'div',
+																			{ className: 'product-buttons' },
+																			React.createElement(
+																				Link,
+																				{ className: 'add-to-cart', to: '/shoppingCart' },
+																				React.createElement('i', { className: 'fa fa-shopping-basket', 'aria-hidden': 'true' })
+																			),
+																			React.createElement(
+																				Link,
+																				{ className: 'add-wishlist', to: '#' },
+																				React.createElement('i', { className: 'fa fa-heart', 'aria-hidden': 'true' })
+																			),
+																			React.createElement(
+																				Link,
+																				{ className: 'quickview', to: '/productDetails' },
+																				React.createElement('i', { className: 'fa fa-eye', 'aria-hidden': 'true' })
+																			)
+																		)
+																	),
+																	React.createElement(
+																		'div',
+																		{ className: 'product-item' },
+																		React.createElement(
+																			'div',
+																			{ className: 'product-image' },
+																			React.createElement(
+																				Link,
+																				{ to: '/productDetails' },
+																				React.createElement('img', { src: 'img/product/9.jpg', alt: 'Product Image' })
+																			)
+																		),
+																		React.createElement(
+																			'div',
+																			{ className: 'product-title' },
+																			React.createElement(
+																				Link,
+																				{ to: '/productDetails' },
+																				'Organic Strawberry Fruits'
+																			)
+																		),
+																		React.createElement(
+																			'div',
+																			{ className: 'product-rating' },
+																			React.createElement('div', { className: 'star on' }),
+																			React.createElement('div', { className: 'star on' }),
+																			React.createElement('div', { className: 'star on ' }),
+																			React.createElement('div', { className: 'star on' }),
+																			React.createElement('div', { className: 'star on' })
+																		),
+																		React.createElement(
+																			'div',
+																			{ className: 'product-price' },
+																			React.createElement(
+																				'span',
+																				{ className: 'sale-price' },
+																				'\u20B980.00'
+																			),
+																			React.createElement(
+																				'span',
+																				{ className: 'base-price' },
+																				'\u20B990.00'
+																			)
+																		),
+																		React.createElement(
+																			'div',
+																			{ className: 'product-buttons' },
+																			React.createElement(
+																				Link,
+																				{ className: 'add-to-cart', to: '/shoppingCart' },
+																				React.createElement('i', { className: 'fa fa-shopping-basket', 'aria-hidden': 'true' })
+																			),
+																			React.createElement(
+																				Link,
+																				{ className: 'add-wishlist', to: '#' },
+																				React.createElement('i', { className: 'fa fa-heart', 'aria-hidden': 'true' })
+																			),
+																			React.createElement(
+																				Link,
+																				{ className: 'quickview', to: '/productDetails' },
+																				React.createElement('i', { className: 'fa fa-eye', 'aria-hidden': 'true' })
+																			)
+																		)
+																	),
+																	React.createElement(
+																		'div',
+																		{ className: 'product-item' },
+																		React.createElement(
+																			'div',
+																			{ className: 'product-image' },
+																			React.createElement(
+																				Link,
+																				{ to: '/productDetails' },
+																				React.createElement('img', { src: 'img/product/10.jpg', alt: 'Product Image' })
+																			)
+																		),
+																		React.createElement(
+																			'div',
+																			{ className: 'product-title' },
+																			React.createElement(
+																				Link,
+																				{ to: '/productDetails' },
+																				'Organic Strawberry Fruits'
+																			)
+																		),
+																		React.createElement(
+																			'div',
+																			{ className: 'product-rating' },
+																			React.createElement('div', { className: 'star on' }),
+																			React.createElement('div', { className: 'star on' }),
+																			React.createElement('div', { className: 'star on ' }),
+																			React.createElement('div', { className: 'star on' }),
+																			React.createElement('div', { className: 'star' })
+																		),
+																		React.createElement(
+																			'div',
+																			{ className: 'product-price' },
+																			React.createElement(
+																				'span',
+																				{ className: 'sale-price' },
+																				'\u20B996.00'
+																			)
+																		),
+																		React.createElement(
+																			'div',
+																			{ className: 'product-buttons' },
+																			React.createElement(
+																				Link,
+																				{ className: 'add-to-cart', to: '/shoppingCart' },
+																				React.createElement('i', { className: 'fa fa-shopping-basket', 'aria-hidden': 'true' })
+																			),
+																			React.createElement(
+																				Link,
+																				{ className: 'add-wishlist', to: '#' },
+																				React.createElement('i', { className: 'fa fa-heart', 'aria-hidden': 'true' })
+																			),
+																			React.createElement(
+																				Link,
+																				{ className: 'quickview', to: '/productDetails' },
+																				React.createElement('i', { className: 'fa fa-eye', 'aria-hidden': 'true' })
+																			)
+																		)
+																	)
+																)
+															)
+														)
+													)
+												),
+												React.createElement(
+													'div',
+													{ className: 'section banners-block' },
+													React.createElement(
+														'div',
+														{ className: 'row margin-15' },
+														React.createElement(
+															'div',
+															{ className: 'col-lg-6 col-md-6 col-sm-6 padding-15' },
+															React.createElement(
+																'div',
+																{ className: 'banner-item effect' },
+																React.createElement(
+																	Link,
+																	{ to: '#' },
+																	React.createElement('img', { className: 'img-responsive', src: 'img/banner/home2-banner-4.png', alt: 'Banner' })
+																)
+															)
+														),
+														React.createElement(
+															'div',
+															{ className: 'col-lg-6 col-md-6 col-sm-6 padding-15' },
+															React.createElement(
+																'div',
+																{ className: 'banner-item effect' },
+																React.createElement(
+																	Link,
+																	{ to: '#' },
+																	React.createElement('img', { className: 'img-responsive', src: 'img/banner/home2-banner-5.png', alt: 'Banner' })
+																)
+															)
+														)
+													)
+												),
+												React.createElement(
+													'div',
+													{ className: 'row' },
+													React.createElement(
+														'div',
+														{ className: 'col-lg-6 col-md-6 col-sm-12 col-xs-12' },
+														React.createElement(
+															'div',
+															{ className: 'section products-block category-double' },
+															React.createElement(
+																'div',
+																{ className: 'block-title' },
+																React.createElement(
+																	'h2',
+																	{ className: 'title' },
+																	'Fruits'
+																)
+															),
+															React.createElement(
+																'div',
+																{ className: 'block-content' },
+																React.createElement(
+																	'div',
+																	{ className: 'products owl-theme owl-carousel' },
+																	React.createElement(
+																		'div',
+																		{ className: 'product-item' },
+																		React.createElement(
+																			'div',
+																			{ className: 'product-image' },
+																			React.createElement(
+																				Link,
+																				{ to: '/productDetails' },
+																				React.createElement('img', { src: 'img/product/4.jpg', alt: 'Product Image' })
+																			)
+																		),
+																		React.createElement(
+																			'div',
+																			{ className: 'product-title' },
+																			React.createElement(
+																				Link,
+																				{ to: '/productDetails' },
+																				'Organic Strawberry Fruits'
+																			)
+																		),
+																		React.createElement(
+																			'div',
+																			{ className: 'product-rating' },
+																			React.createElement('div', { className: 'star on' }),
+																			React.createElement('div', { className: 'star on' }),
+																			React.createElement('div', { className: 'star on ' }),
+																			React.createElement('div', { className: 'star on' }),
+																			React.createElement('div', { className: 'star' })
+																		),
+																		React.createElement(
+																			'div',
+																			{ className: 'product-price' },
+																			React.createElement(
+																				'span',
+																				{ className: 'sale-price' },
+																				'\u20B980.00'
+																			),
+																			React.createElement(
+																				'span',
+																				{ className: 'base-price' },
+																				'\u20B990.00'
+																			)
+																		),
+																		React.createElement(
+																			'div',
+																			{ className: 'product-buttons' },
+																			React.createElement(
+																				Link,
+																				{ className: 'add-to-cart', to: '/shoppingCart' },
+																				React.createElement('i', { className: 'fa fa-shopping-basket', 'aria-hidden': 'true' })
+																			),
+																			React.createElement(
+																				Link,
+																				{ className: 'add-wishlist', to: '#' },
+																				React.createElement('i', { className: 'fa fa-heart', 'aria-hidden': 'true' })
+																			),
+																			React.createElement(
+																				Link,
+																				{ className: 'quickview', to: '/productDetails' },
+																				React.createElement('i', { className: 'fa fa-eye', 'aria-hidden': 'true' })
+																			)
+																		)
+																	),
+																	React.createElement(
+																		'div',
+																		{ className: 'product-item' },
+																		React.createElement(
+																			'div',
+																			{ className: 'product-image' },
+																			React.createElement(
+																				Link,
+																				{ to: '/productDetails' },
+																				React.createElement('img', { src: 'img/product/8.jpg', alt: 'Product Image' })
+																			)
+																		),
+																		React.createElement(
+																			'div',
+																			{ className: 'product-title' },
+																			React.createElement(
+																				Link,
+																				{ to: '/productDetails' },
+																				'Organic Strawberry Fruits'
+																			)
+																		),
+																		React.createElement(
+																			'div',
+																			{ className: 'product-rating' },
+																			React.createElement('div', { className: 'star on' }),
+																			React.createElement('div', { className: 'star on' }),
+																			React.createElement('div', { className: 'star on ' }),
+																			React.createElement('div', { className: 'star on' }),
+																			React.createElement('div', { className: 'star' })
+																		),
+																		React.createElement(
+																			'div',
+																			{ className: 'product-price' },
+																			React.createElement(
+																				'span',
+																				{ className: 'sale-price' },
+																				'\u20B9120.00'
+																			)
+																		),
+																		React.createElement(
+																			'div',
+																			{ className: 'product-buttons' },
+																			React.createElement(
+																				Link,
+																				{ className: 'add-to-cart', to: '/shoppingCart' },
+																				React.createElement('i', { className: 'fa fa-shopping-basket', 'aria-hidden': 'true' })
+																			),
+																			React.createElement(
+																				Link,
+																				{ className: 'add-wishlist', to: '#' },
+																				React.createElement('i', { className: 'fa fa-heart', 'aria-hidden': 'true' })
+																			),
+																			React.createElement(
+																				Link,
+																				{ className: 'quickview', to: '/productDetails' },
+																				React.createElement('i', { className: 'fa fa-eye', 'aria-hidden': 'true' })
+																			)
+																		)
+																	),
+																	React.createElement(
+																		'div',
+																		{ className: 'product-item' },
+																		React.createElement(
+																			'div',
+																			{ className: 'product-image' },
+																			React.createElement(
+																				Link,
+																				{ to: '/productDetails' },
+																				React.createElement('img', { src: 'img/product/2.jpg', alt: 'Product Image' })
+																			)
+																		),
+																		React.createElement(
+																			'div',
+																			{ className: 'product-title' },
+																			React.createElement(
+																				Link,
+																				{ to: '/productDetails' },
+																				'Organic Strawberry Fruits'
+																			)
+																		),
+																		React.createElement(
+																			'div',
+																			{ className: 'product-rating' },
+																			React.createElement('div', { className: 'star on' }),
+																			React.createElement('div', { className: 'star on' }),
+																			React.createElement('div', { className: 'star on ' }),
+																			React.createElement('div', { className: 'star on' }),
+																			React.createElement('div', { className: 'star' })
+																		),
+																		React.createElement(
+																			'div',
+																			{ className: 'product-price' },
+																			React.createElement(
+																				'span',
+																				{ className: 'sale-price' },
+																				'\u20B980.00'
+																			),
+																			React.createElement(
+																				'span',
+																				{ className: 'base-price' },
+																				'\u20B990.00'
+																			)
+																		),
+																		React.createElement(
+																			'div',
+																			{ className: 'product-buttons' },
+																			React.createElement(
+																				Link,
+																				{ className: 'add-to-cart', to: '/shoppingCart' },
+																				React.createElement('i', { className: 'fa fa-shopping-basket', 'aria-hidden': 'true' })
+																			),
+																			React.createElement(
+																				Link,
+																				{ className: 'add-wishlist', to: '#' },
+																				React.createElement('i', { className: 'fa fa-heart', 'aria-hidden': 'true' })
+																			),
+																			React.createElement(
+																				Link,
+																				{ className: 'quickview', to: '/productDetails' },
+																				React.createElement('i', { className: 'fa fa-eye', 'aria-hidden': 'true' })
+																			)
+																		)
+																	)
+																)
+															)
+														)
+													),
+													React.createElement(
+														'div',
+														{ className: 'col-lg-6 col-md-6 col-sm-12 col-xs-12' },
+														React.createElement(
+															'div',
+															{ className: 'section products-block category-double' },
+															React.createElement(
+																'div',
+																{ className: 'block-title' },
+																React.createElement(
+																	'h2',
+																	{ className: 'title' },
+																	'Juices'
+																)
+															),
+															React.createElement(
+																'div',
+																{ className: 'block-content' },
+																React.createElement(
+																	'div',
+																	{ className: 'products owl-theme owl-carousel' },
+																	React.createElement(
+																		'div',
+																		{ className: 'product-item' },
+																		React.createElement(
+																			'div',
+																			{ className: 'product-image' },
+																			React.createElement(
+																				Link,
+																				{ to: '/productDetails' },
+																				React.createElement('img', { src: 'img/product/16.jpg', alt: 'Product Image' })
+																			)
+																		),
+																		React.createElement(
+																			'div',
+																			{ className: 'product-title' },
+																			React.createElement(
+																				Link,
+																				{ to: '/productDetails' },
+																				'Organic Strawberry Fruits'
+																			)
+																		),
+																		React.createElement(
+																			'div',
+																			{ className: 'product-rating' },
+																			React.createElement('div', { className: 'star on' }),
+																			React.createElement('div', { className: 'star on' }),
+																			React.createElement('div', { className: 'star on ' }),
+																			React.createElement('div', { className: 'star on' }),
+																			React.createElement('div', { className: 'star' })
+																		),
+																		React.createElement(
+																			'div',
+																			{ className: 'product-price' },
+																			React.createElement(
+																				'span',
+																				{ className: 'sale-price' },
+																				'\u20B980.00'
+																			),
+																			React.createElement(
+																				'span',
+																				{ className: 'base-price' },
+																				'\u20B990.00'
+																			)
+																		),
+																		React.createElement(
+																			'div',
+																			{ className: 'product-buttons' },
+																			React.createElement(
+																				Link,
+																				{ className: 'add-to-cart', to: '/shoppingCart' },
+																				React.createElement('i', { className: 'fa fa-shopping-basket', 'aria-hidden': 'true' })
+																			),
+																			React.createElement(
+																				Link,
+																				{ className: 'add-wishlist', to: '#' },
+																				React.createElement('i', { className: 'fa fa-heart', 'aria-hidden': 'true' })
+																			),
+																			React.createElement(
+																				Link,
+																				{ className: 'quickview', to: '/productDetails' },
+																				React.createElement('i', { className: 'fa fa-eye', 'aria-hidden': 'true' })
+																			)
+																		)
+																	),
+																	React.createElement(
+																		'div',
+																		{ className: 'product-item' },
+																		React.createElement(
+																			'div',
+																			{ className: 'product-image' },
+																			React.createElement(
+																				Link,
+																				{ to: '/productDetails' },
+																				React.createElement('img', { src: 'img/product/13.jpg', alt: 'Product Image' })
+																			)
+																		),
+																		React.createElement(
+																			'div',
+																			{ className: 'product-title' },
+																			React.createElement(
+																				Link,
+																				{ to: '/productDetails' },
+																				'Organic Strawberry Fruits'
+																			)
+																		),
+																		React.createElement(
+																			'div',
+																			{ className: 'product-rating' },
+																			React.createElement('div', { className: 'star on' }),
+																			React.createElement('div', { className: 'star on' }),
+																			React.createElement('div', { className: 'star on ' }),
+																			React.createElement('div', { className: 'star on' }),
+																			React.createElement('div', { className: 'star' })
+																		),
+																		React.createElement(
+																			'div',
+																			{ className: 'product-price' },
+																			React.createElement(
+																				'span',
+																				{ className: 'sale-price' },
+																				'\u20B9120.00'
+																			)
+																		),
+																		React.createElement(
+																			'div',
+																			{ className: 'product-buttons' },
+																			React.createElement(
+																				Link,
+																				{ className: 'add-to-cart', to: '/shoppingCart' },
+																				React.createElement('i', { className: 'fa fa-shopping-basket', 'aria-hidden': 'true' })
+																			),
+																			React.createElement(
+																				Link,
+																				{ className: 'add-wishlist', to: '#' },
+																				React.createElement('i', { className: 'fa fa-heart', 'aria-hidden': 'true' })
+																			),
+																			React.createElement(
+																				Link,
+																				{ className: 'quickview', to: '/productDetails' },
+																				React.createElement('i', { className: 'fa fa-eye', 'aria-hidden': 'true' })
+																			)
+																		)
+																	),
+																	React.createElement(
+																		'div',
+																		{ className: 'product-item' },
+																		React.createElement(
+																			'div',
+																			{ className: 'product-image' },
+																			React.createElement(
+																				Link,
+																				{ to: '/productDetails' },
+																				React.createElement('img', { src: 'img/product/28.jpg', alt: 'Product Image' })
+																			)
+																		),
+																		React.createElement(
+																			'div',
+																			{ className: 'product-title' },
+																			React.createElement(
+																				Link,
+																				{ to: '/productDetails' },
+																				'Organic Strawberry Fruits'
+																			)
+																		),
+																		React.createElement(
+																			'div',
+																			{ className: 'product-rating' },
+																			React.createElement('div', { className: 'star on' }),
+																			React.createElement('div', { className: 'star on' }),
+																			React.createElement('div', { className: 'star on ' }),
+																			React.createElement('div', { className: 'star on' }),
+																			React.createElement('div', { className: 'star' })
+																		),
+																		React.createElement(
+																			'div',
+																			{ className: 'product-price' },
+																			React.createElement(
+																				'span',
+																				{ className: 'sale-price' },
+																				'\u20B980.00'
+																			),
+																			React.createElement(
+																				'span',
+																				{ className: 'base-price' },
+																				'\u20B990.00'
+																			)
+																		),
+																		React.createElement(
+																			'div',
+																			{ className: 'product-buttons' },
+																			React.createElement(
+																				Link,
+																				{ className: 'add-to-cart', to: '/shoppingCart' },
+																				React.createElement('i', { className: 'fa fa-shopping-basket', 'aria-hidden': 'true' })
+																			),
+																			React.createElement(
+																				Link,
+																				{ className: 'add-wishlist', to: '#' },
+																				React.createElement('i', { className: 'fa fa-heart', 'aria-hidden': 'true' })
+																			),
+																			React.createElement(
+																				Link,
+																				{ className: 'quickview', to: '/productDetails' },
+																				React.createElement('i', { className: 'fa fa-eye', 'aria-hidden': 'true' })
+																			)
+																		)
+																	)
+																)
+															)
+														)
+													)
+												)
+											)
+										)
+									)
+								)
+							)
+						)
+					)
+				),
+				React.createElement(Footer, null)
+			);
+		}
+	}]);
+
+	return GluttenFreeProducts;
+}(React.Component);
+
+module.exports = GluttenFreeProducts;
+
+/***/ }),
+/* 97 */
+/***/ (function(module, exports, __webpack_require__) {
+
+var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+
+function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
+
+function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
+
+var React = __webpack_require__(0);
+var Link = __webpack_require__(1).Link;
+var baseURL = 'http://localhost:8000/';
+var Header = __webpack_require__(6);
+var Footer = __webpack_require__(7);
+
+var ShoppingCart = function (_React$Component) {
+	_inherits(ShoppingCart, _React$Component);
+
+	function ShoppingCart() {
+		_classCallCheck(this, ShoppingCart);
+
+		return _possibleConstructorReturn(this, (ShoppingCart.__proto__ || Object.getPrototypeOf(ShoppingCart)).apply(this, arguments));
+	}
+
+	_createClass(ShoppingCart, [{
+		key: 'render',
+		value: function render() {
+			return React.createElement(
+				'div',
+				null,
+				React.createElement(Header, null),
+				React.createElement(
+					'div',
+					{ id: 'content', className: 'site-content' },
+					React.createElement(
+						'div',
+						{ id: 'breadcrumb' },
+						React.createElement(
+							'div',
+							{ className: 'container' },
+							React.createElement(
+								'h2',
+								{ className: 'title' },
+								'Shopping Cart'
+							),
+							React.createElement(
+								'ul',
+								{ className: 'breadcrumb' },
+								React.createElement(
+									'li',
+									null,
+									React.createElement(
+										Link,
+										{ to: '#' },
+										'Home'
+									)
+								),
+								React.createElement(
+									'li',
+									null,
+									React.createElement(
+										'span',
+										null,
+										'Shopping Cart'
+									)
+								)
+							)
+						)
+					),
+					React.createElement(
+						'div',
+						{ className: 'container pb60' },
+						React.createElement(
+							'div',
+							{ className: 'col-md-10 col-md-offset-1' },
+							React.createElement(
+								'div',
+								{ className: 'page-cart' },
+								React.createElement(
+									'div',
+									{ className: 'table-responsive' },
+									React.createElement(
+										'table',
+										{ className: 'cart-summary table table-bordered' },
+										React.createElement(
+											'thead',
+											null,
+											React.createElement(
+												'tr',
+												null,
+												React.createElement(
+													'th',
+													{ className: 'width-20' },
+													'\xA0'
+												),
+												React.createElement(
+													'th',
+													{ className: 'width-80 text-center' },
+													'Image'
+												),
+												React.createElement(
+													'th',
+													null,
+													'Name'
+												),
+												React.createElement(
+													'th',
+													{ className: 'width-100 text-center' },
+													'Unit price'
+												),
+												React.createElement(
+													'th',
+													{ className: 'width-100 text-center' },
+													'Qty'
+												),
+												React.createElement(
+													'th',
+													{ className: 'width-100 text-center' },
+													'Total'
+												)
+											)
+										),
+										React.createElement(
+											'tbody',
+											null,
+											React.createElement(
+												'tr',
+												null,
+												React.createElement(
+													'td',
+													{ className: 'product-remove' },
+													React.createElement(
+														Link,
+														{ className: 'remove', to: '#' },
+														React.createElement('i', { className: 'fa fa-times' })
+													)
+												),
+												React.createElement(
+													'td',
+													null,
+													React.createElement(
+														Link,
+														{ to: '/productDetails' },
+														React.createElement('img', { width: '80', alt: 'Product Image', className: 'img-responsive', src: 'img/product/19.jpg' })
+													)
+												),
+												React.createElement(
+													'td',
+													null,
+													React.createElement(
+														Link,
+														{ to: '/productDetails', className: 'product-name' },
+														'Organic Strawberry Fruits'
+													)
+												),
+												React.createElement(
+													'td',
+													{ className: 'text-center' },
+													'\u20B9265'
+												),
+												React.createElement(
+													'td',
+													null,
+													React.createElement(
+														'div',
+														{ className: 'product-quantity' },
+														React.createElement(
+															'div',
+															{ className: 'qty' },
+															React.createElement(
+																'div',
+																{ className: 'input-group' },
+																React.createElement('input', { type: 'text', name: 'qty', value: '1', 'data-min': '1' }),
+																React.createElement(
+																	'span',
+																	{ className: 'adjust-qty' },
+																	React.createElement(
+																		'span',
+																		{ className: 'adjust-btn plus' },
+																		'+'
+																	),
+																	React.createElement(
+																		'span',
+																		{ className: 'adjust-btn minus' },
+																		'-'
+																	)
+																)
+															)
+														)
+													)
+												),
+												React.createElement(
+													'td',
+													{ className: 'text-center' },
+													'\u20B9265'
+												)
+											),
+											React.createElement(
+												'tr',
+												null,
+												React.createElement(
+													'td',
+													{ className: 'product-remove' },
+													React.createElement(
+														Link,
+														{ className: 'remove', to: '#' },
+														React.createElement('i', { className: 'fa fa-times' })
+													)
+												),
+												React.createElement(
+													'td',
+													null,
+													React.createElement(
+														Link,
+														{ to: '/productDetails' },
+														React.createElement('img', { width: '80', alt: 'Product Image', className: 'img-responsive', src: 'img/product/31.jpg' })
+													)
+												),
+												React.createElement(
+													'td',
+													null,
+													React.createElement(
+														Link,
+														{ to: '/productDetails', className: 'product-name' },
+														'Organic Strawberry Fruits'
+													)
+												),
+												React.createElement(
+													'td',
+													{ className: 'text-center' },
+													'\u20B9150'
+												),
+												React.createElement(
+													'td',
+													null,
+													React.createElement(
+														'div',
+														{ className: 'product-quantity' },
+														React.createElement(
+															'div',
+															{ className: 'qty' },
+															React.createElement(
+																'div',
+																{ className: 'input-group' },
+																React.createElement('input', { type: 'text', name: 'qty', value: '2', 'data-min': '1' }),
+																React.createElement(
+																	'span',
+																	{ className: 'adjust-qty' },
+																	React.createElement(
+																		'span',
+																		{ className: 'adjust-btn plus' },
+																		'+'
+																	),
+																	React.createElement(
+																		'span',
+																		{ className: 'adjust-btn minus' },
+																		'-'
+																	)
+																)
+															)
+														)
+													)
+												),
+												React.createElement(
+													'td',
+													{ className: 'text-center' },
+													'\u20B9300'
+												)
+											)
+										),
+										React.createElement(
+											'tfoot',
+											null,
+											React.createElement(
+												'tr',
+												{ className: 'cart-total' },
+												React.createElement('td', { rowSpan: '3', colSpan: '3' }),
+												React.createElement(
+													'td',
+													{ colSpan: '2', className: 'text-right' },
+													'Total products'
+												),
+												React.createElement(
+													'td',
+													{ colSpan: '1', className: 'text-center' },
+													'\u20B9565'
+												)
+											),
+											React.createElement(
+												'tr',
+												{ className: 'cart-total' },
+												React.createElement(
+													'td',
+													{ colSpan: '2', className: 'text-right' },
+													'Total shipping'
+												),
+												React.createElement(
+													'td',
+													{ colSpan: '1', className: 'text-center' },
+													'\u20B910'
+												)
+											),
+											React.createElement(
+												'tr',
+												{ className: 'cart-total' },
+												React.createElement(
+													'td',
+													{ colSpan: '2', className: 'total text-right' },
+													'Total'
+												),
+												React.createElement(
+													'td',
+													{ colSpan: '1', className: 'total text-center' },
+													'\u20B9575'
+												)
+											)
+										)
+									)
+								),
+								React.createElement(
+									'div',
+									{ className: 'checkout-btn' },
+									React.createElement(
+										Link,
+										{ to: 'product-checkout.html', className: 'btn btn-primary pull-right' },
+										React.createElement(
+											'span',
+											null,
+											'Proceed to checkout'
+										),
+										React.createElement('i', { className: 'fa fa-angle-right ml-xs' })
+									)
+								)
+							)
+						)
+					)
+				),
+				React.createElement(Footer, null)
+			);
+		}
+	}]);
+
+	return ShoppingCart;
+}(React.Component);
+
+module.exports = ShoppingCart;
+
+/***/ }),
+/* 98 */
+/***/ (function(module, exports, __webpack_require__) {
+
+var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+
+function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
+
+function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
+
+var React = __webpack_require__(0);
+var Link = __webpack_require__(1).Link;
+var baseURL = 'http://localhost:8000/';
+var Header = __webpack_require__(6);
+var Footer = __webpack_require__(7);
+
+var Checkout = function (_React$Component) {
+	_inherits(Checkout, _React$Component);
+
+	function Checkout() {
+		_classCallCheck(this, Checkout);
+
+		return _possibleConstructorReturn(this, (Checkout.__proto__ || Object.getPrototypeOf(Checkout)).apply(this, arguments));
+	}
+
+	_createClass(Checkout, [{
+		key: 'render',
+		value: function render() {
+			return React.createElement(
+				'div',
+				null,
+				React.createElement(Header, null),
+				React.createElement(
+					'div',
+					{ id: 'content', className: 'site-content' },
+					React.createElement(
+						'div',
+						{ id: 'breadcrumb' },
+						React.createElement(
+							'div',
+							{ className: 'container' },
+							React.createElement(
+								'h2',
+								{ className: 'title' },
+								'Shopping Cart'
+							),
+							React.createElement(
+								'ul',
+								{ className: 'breadcrumb' },
+								React.createElement(
+									'li',
+									null,
+									React.createElement(
+										Link,
+										{ to: '#' },
+										'Home'
+									)
+								),
+								React.createElement(
+									'li',
+									null,
+									React.createElement(
+										'span',
+										null,
+										'Shopping Cart'
+									)
+								)
+							)
+						)
+					),
+					React.createElement(
+						'div',
+						{ className: 'container pb60' },
+						React.createElement(
+							'div',
+							{ className: 'page-checkout' },
+							React.createElement(
+								'div',
+								{ className: 'row' },
+								React.createElement(
+									'div',
+									{ className: 'container' },
+									React.createElement(
+										'div',
+										{ className: 'col-md-10 col-md-offset-1' },
+										React.createElement(
+											'div',
+											{ className: 'checkout-left col-lg-9 col-md-9 col-sm-9 col-xs-12' },
+											React.createElement(
+												'p',
+												null,
+												'Returning customer? ',
+												React.createElement(
+													Link,
+													{ className: 'login', to: 'user-login.html' },
+													'Click here to login'
+												),
+												'.'
+											),
+											React.createElement(
+												'div',
+												{ className: 'panel-group', id: 'accordion' },
+												React.createElement(
+													'div',
+													{ className: 'panel panel-default' },
+													React.createElement(
+														'div',
+														{ className: 'panel-heading' },
+														React.createElement(
+															'h4',
+															{ className: 'panel-title' },
+															React.createElement(
+																Link,
+																{ className: 'accordion-toggle collapsed', 'data-toggle': 'collapse', 'data-parent': '#accordion', to: '#collapseOne' },
+																'Address'
+															)
+														)
+													),
+													React.createElement(
+														'div',
+														{ id: 'collapseOne', className: 'accordion-body collapse', style: { height: '0px' } },
+														React.createElement(
+															'div',
+															{ className: 'panel-body' },
+															React.createElement(
+																'form',
+																{ id: 'formaddress', className: 'form-horizontal' },
+																React.createElement(
+																	'div',
+																	{ className: 'form-group' },
+																	React.createElement(
+																		'div',
+																		{ className: 'col-md-12' },
+																		React.createElement(
+																			'label',
+																			null,
+																			'Country'
+																		),
+																		React.createElement(
+																			'select',
+																			{ className: 'form-control' },
+																			React.createElement(
+																				'option',
+																				{ value: '' },
+																				'Select a country'
+																			),
+																			React.createElement(
+																				'option',
+																				{ value: 'australia' },
+																				'Australia'
+																			),
+																			React.createElement(
+																				'option',
+																				{ value: 'brazil' },
+																				'Brazil'
+																			)
+																		)
+																	)
+																),
+																React.createElement(
+																	'div',
+																	{ className: 'form-group' },
+																	React.createElement(
+																		'div',
+																		{ className: 'col-md-6' },
+																		React.createElement(
+																			'label',
+																			null,
+																			'First Name'
+																		),
+																		React.createElement('input', { type: 'text', className: 'form-control' })
+																	),
+																	React.createElement(
+																		'div',
+																		{ className: 'col-md-6' },
+																		React.createElement(
+																			'label',
+																			null,
+																			'Last Name'
+																		),
+																		React.createElement('input', { type: 'text', className: 'form-control' })
+																	)
+																),
+																React.createElement(
+																	'div',
+																	{ className: 'form-group' },
+																	React.createElement(
+																		'div',
+																		{ className: 'col-md-12' },
+																		React.createElement(
+																			'label',
+																			null,
+																			'Company Name'
+																		),
+																		React.createElement('input', { type: 'text', className: 'form-control' })
+																	)
+																),
+																React.createElement(
+																	'div',
+																	{ className: 'form-group' },
+																	React.createElement(
+																		'div',
+																		{ className: 'col-md-12' },
+																		React.createElement(
+																			'label',
+																			null,
+																			'Address '
+																		),
+																		React.createElement('input', { type: 'text', className: 'form-control' })
+																	)
+																),
+																React.createElement(
+																	'div',
+																	{ className: 'form-group' },
+																	React.createElement(
+																		'div',
+																		{ className: 'col-md-12' },
+																		React.createElement(
+																			'label',
+																			null,
+																			'City '
+																		),
+																		React.createElement('input', { type: 'text', className: 'form-control' })
+																	)
+																),
+																React.createElement(
+																	'div',
+																	{ className: 'form-group' },
+																	React.createElement(
+																		'div',
+																		{ className: 'col-md-12' },
+																		React.createElement('input', { type: 'submit', value: 'Save', className: 'btn pull-right' })
+																	)
+																)
+															)
+														)
+													)
+												),
+												React.createElement(
+													'div',
+													{ className: 'panel panel-default' },
+													React.createElement(
+														'div',
+														{ className: 'panel-heading' },
+														React.createElement(
+															'h4',
+															{ className: 'panel-title' },
+															React.createElement(
+																Link,
+																{ className: 'accordion-toggle collapsed', 'data-toggle': 'collapse', 'data-parent': '#accordion', to: '#collapseTwo' },
+																'Shipping'
+															)
+														)
+													),
+													React.createElement(
+														'div',
+														{ id: 'collapseTwo', className: 'accordion-body collapse', style: { height: '0px' } },
+														React.createElement(
+															'div',
+															{ className: 'panel-body' },
+															React.createElement(
+																'form',
+																{ id: 'formshipping', className: 'form-horizontal' },
+																React.createElement(
+																	'div',
+																	{ className: 'form-group' },
+																	React.createElement(
+																		'div',
+																		{ className: 'col-md-12' },
+																		React.createElement(
+																			'span',
+																			{ className: 'remember-box checkbox' },
+																			React.createElement(
+																				'label',
+																				null,
+																				React.createElement('input', { type: 'checkbox', checked: 'checked' }),
+																				'Ship to billing address?'
+																			)
+																		)
+																	)
+																),
+																React.createElement(
+																	'div',
+																	{ className: 'form-group' },
+																	React.createElement(
+																		'div',
+																		{ className: 'col-md-12' },
+																		React.createElement(
+																			'label',
+																			null,
+																			'Country'
+																		),
+																		React.createElement(
+																			'select',
+																			{ className: 'form-control' },
+																			React.createElement(
+																				'option',
+																				{ value: '' },
+																				'Select a country'
+																			),
+																			React.createElement(
+																				'option',
+																				{ value: 'australia' },
+																				'Australia'
+																			),
+																			React.createElement(
+																				'option',
+																				{ value: 'brazil' },
+																				'Brazil'
+																			)
+																		)
+																	)
+																),
+																React.createElement(
+																	'div',
+																	{ className: 'form-group' },
+																	React.createElement(
+																		'div',
+																		{ className: 'col-md-6' },
+																		React.createElement(
+																			'label',
+																			null,
+																			'First Name'
+																		),
+																		React.createElement('input', { type: 'text', className: 'form-control' })
+																	),
+																	React.createElement(
+																		'div',
+																		{ className: 'col-md-6' },
+																		React.createElement(
+																			'label',
+																			null,
+																			'Last Name'
+																		),
+																		React.createElement('input', { type: 'text', className: 'form-control' })
+																	)
+																),
+																React.createElement(
+																	'div',
+																	{ className: 'form-group' },
+																	React.createElement(
+																		'div',
+																		{ className: 'col-md-12' },
+																		React.createElement(
+																			'label',
+																			null,
+																			'Company Name'
+																		),
+																		React.createElement('input', { type: 'text', className: 'form-control' })
+																	)
+																),
+																React.createElement(
+																	'div',
+																	{ className: 'form-group' },
+																	React.createElement(
+																		'div',
+																		{ className: 'col-md-12' },
+																		React.createElement(
+																			'label',
+																			null,
+																			'Address '
+																		),
+																		React.createElement('input', { type: 'text', className: 'form-control' })
+																	)
+																),
+																React.createElement(
+																	'div',
+																	{ className: 'form-group' },
+																	React.createElement(
+																		'div',
+																		{ className: 'col-md-12' },
+																		React.createElement(
+																			'label',
+																			null,
+																			'City '
+																		),
+																		React.createElement('input', { type: 'text', className: 'form-control' })
+																	)
+																),
+																React.createElement(
+																	'div',
+																	{ className: 'form-group' },
+																	React.createElement(
+																		'div',
+																		{ className: 'col-md-12' },
+																		React.createElement('input', { type: 'submit', value: 'Save', className: 'btn pull-right' })
+																	)
+																)
+															)
+														)
+													)
+												),
+												React.createElement(
+													'div',
+													{ className: 'panel panel-default' },
+													React.createElement(
+														'div',
+														{ className: 'panel-heading' },
+														React.createElement(
+															'h4',
+															{ className: 'panel-title' },
+															React.createElement(
+																Link,
+																{ className: 'accordion-toggle collapsed', 'data-toggle': 'collapse', 'data-parent': '#accordion', to: '#collapseThree' },
+																'Payment'
+															)
+														)
+													),
+													React.createElement(
+														'div',
+														{ id: 'collapseThree', className: 'accordion-body collapse', style: { height: '0px' } },
+														React.createElement(
+															'div',
+															{ className: 'panel-body' },
+															React.createElement(
+																'table',
+																{ className: 'cart-summary table table-bordered' },
+																React.createElement(
+																	'thead',
+																	null,
+																	React.createElement(
+																		'tr',
+																		null,
+																		React.createElement(
+																			'th',
+																			{ className: 'width-80 text-center' },
+																			'Image'
+																		),
+																		React.createElement(
+																			'th',
+																			null,
+																			'Name'
+																		),
+																		React.createElement(
+																			'th',
+																			{ className: 'width-100 text-center' },
+																			'Unit price'
+																		),
+																		React.createElement(
+																			'th',
+																			{ className: 'width-100 text-center' },
+																			'Qty'
+																		),
+																		React.createElement(
+																			'th',
+																			{ className: 'width-100 text-center' },
+																			'Total'
+																		)
+																	)
+																),
+																React.createElement(
+																	'tbody',
+																	null,
+																	React.createElement(
+																		'tr',
+																		null,
+																		React.createElement(
+																			'td',
+																			null,
+																			React.createElement(
+																				Link,
+																				{ to: '/productDetails' },
+																				React.createElement('img', { width: '80', alt: 'Product Image', className: 'img-responsive', src: 'img/product/19.jpg' })
+																			)
+																		),
+																		React.createElement(
+																			'td',
+																			null,
+																			React.createElement(
+																				Link,
+																				{ to: '/productDetails', className: 'product-name' },
+																				'Organic Strawberry Fruits'
+																			)
+																		),
+																		React.createElement(
+																			'td',
+																			{ className: 'text-center' },
+																			'\u20B9265'
+																		),
+																		React.createElement(
+																			'td',
+																			{ className: 'text-center' },
+																			'1'
+																		),
+																		React.createElement(
+																			'td',
+																			{ className: 'text-center' },
+																			'\u20B9265'
+																		)
+																	),
+																	React.createElement(
+																		'tr',
+																		null,
+																		React.createElement(
+																			'td',
+																			null,
+																			React.createElement(
+																				Link,
+																				{ to: '/productDetails' },
+																				React.createElement('img', { width: '80', alt: 'Product Image', className: 'img-responsive', src: 'img/product/31.jpg' })
+																			)
+																		),
+																		React.createElement(
+																			'td',
+																			null,
+																			React.createElement(
+																				Link,
+																				{ to: '/productDetails', className: 'product-name' },
+																				'Organic Strawberry Fruits'
+																			)
+																		),
+																		React.createElement(
+																			'td',
+																			{ className: 'text-center' },
+																			'\u20B9150'
+																		),
+																		React.createElement(
+																			'td',
+																			{ className: 'text-center' },
+																			'2'
+																		),
+																		React.createElement(
+																			'td',
+																			{ className: 'text-center' },
+																			'\u20B9300'
+																		)
+																	)
+																)
+															),
+															React.createElement(
+																'h4',
+																{ className: 'heading-primary' },
+																'Cart Total'
+															),
+															React.createElement(
+																'table',
+																{ className: 'table cart-total' },
+																React.createElement(
+																	'tbody',
+																	null,
+																	React.createElement(
+																		'tr',
+																		null,
+																		React.createElement(
+																			'th',
+																			null,
+																			'Cart Subtotal'
+																		),
+																		React.createElement(
+																			'td',
+																			{ className: 'total' },
+																			'\u20B9431'
+																		)
+																	),
+																	React.createElement(
+																		'tr',
+																		null,
+																		React.createElement(
+																			'th',
+																			null,
+																			'Shipping'
+																		),
+																		React.createElement(
+																			'td',
+																			null,
+																			'Free Shipping'
+																		)
+																	),
+																	React.createElement(
+																		'tr',
+																		null,
+																		React.createElement(
+																			'th',
+																			null,
+																			React.createElement(
+																				'strong',
+																				null,
+																				'Order Total'
+																			)
+																		),
+																		React.createElement(
+																			'td',
+																			{ className: 'total' },
+																			'\u20B9431'
+																		)
+																	)
+																)
+															),
+															React.createElement(
+																'h4',
+																{ className: 'heading-primary' },
+																'Payment'
+															),
+															React.createElement(
+																'form',
+																null,
+																React.createElement(
+																	'div',
+																	{ className: 'item' },
+																	React.createElement('input', { type: 'checkbox' }),
+																	'Pay by bank wire (order processing will be longer)'
+																),
+																React.createElement(
+																	'div',
+																	{ className: 'item' },
+																	React.createElement('input', { type: 'checkbox' }),
+																	'Pay by check (order processing will be longer)'
+																)
+															)
+														)
+													)
+												)
+											),
+											React.createElement(
+												'div',
+												{ className: 'pull-right' },
+												React.createElement('input', { type: 'submit', value: 'Place Order', name: 'proceed', className: 'btn btn-primary' })
+											)
+										),
+										React.createElement(
+											'div',
+											{ className: 'checkout-right col-lg-3 col-md-3 col-sm-3 col-xs-12' },
+											React.createElement(
+												'h4',
+												{ className: 'title' },
+												'Cart Total'
+											),
+											React.createElement(
+												'table',
+												{ className: 'table cart-total' },
+												React.createElement(
+													'tbody',
+													null,
+													React.createElement(
+														'tr',
+														{ className: 'cart-subtotal' },
+														React.createElement(
+															'th',
+															null,
+															React.createElement(
+																'strong',
+																null,
+																'Cart Subtotal'
+															)
+														),
+														React.createElement(
+															'td',
+															null,
+															React.createElement(
+																'strong',
+																null,
+																React.createElement(
+																	'span',
+																	{ className: 'amount' },
+																	'\u20B9431'
+																)
+															)
+														)
+													),
+													React.createElement(
+														'tr',
+														{ className: 'shipping' },
+														React.createElement(
+															'th',
+															null,
+															'Shipping'
+														),
+														React.createElement(
+															'td',
+															null,
+															'Free Shipping',
+															React.createElement('input', { type: 'hidden', value: 'free_shipping', className: 'shipping-method', name: 'shipping_method' })
+														)
+													),
+													React.createElement(
+														'tr',
+														{ className: 'total' },
+														React.createElement(
+															'th',
+															null,
+															React.createElement(
+																'strong',
+																null,
+																'Order Total'
+															)
+														),
+														React.createElement(
+															'td',
+															null,
+															React.createElement(
+																'strong',
+																null,
+																React.createElement(
+																	'span',
+																	{ className: 'amount' },
+																	'\u20B9431'
+																)
+															)
+														)
+													)
+												)
+											)
+										)
+									)
+								)
+							)
+						)
+					)
+				),
+				React.createElement(Footer, null)
+			);
+		}
+	}]);
+
+	return Checkout;
+}(React.Component);
+
+module.exports = Checkout;
+
+/***/ }),
+/* 99 */
+/***/ (function(module, exports, __webpack_require__) {
+
+var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+
+function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
+
+function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
+
+var React = __webpack_require__(0);
+var Link = __webpack_require__(1).Link;
+var baseURL = 'http://localhost:8000/';
+var Header = __webpack_require__(6);
+var Footer = __webpack_require__(7);
+var loadjs = __webpack_require__(19);
+
+var ProductDetails = function (_React$Component) {
+	_inherits(ProductDetails, _React$Component);
+
+	function ProductDetails() {
+		_classCallCheck(this, ProductDetails);
+
+		return _possibleConstructorReturn(this, (ProductDetails.__proto__ || Object.getPrototypeOf(ProductDetails)).apply(this, arguments));
+	}
+
+	_createClass(ProductDetails, [{
+		key: 'componentDidMount',
+		value: function componentDidMount() {
+			loadjs('js/main.js', function () {});
+		}
+	}, {
+		key: 'render',
+		value: function render() {
+			return React.createElement(
+				'div',
+				null,
+				React.createElement(Header, null),
+				React.createElement(
+					'div',
+					{ id: 'content', className: 'site-content' },
+					React.createElement(
+						'div',
+						{ id: 'breadcrumb' },
+						React.createElement(
+							'div',
+							{ className: 'container' },
+							React.createElement(
+								'h2',
+								{ className: 'title' },
+								'Organic Strawberry Fruits'
+							),
+							React.createElement(
+								'ul',
+								{ className: 'breadcrumb' },
+								React.createElement(
+									'li',
+									null,
+									React.createElement(
+										Link,
+										{ to: '#' },
+										'Home'
+									)
+								),
+								React.createElement(
+									'li',
+									null,
+									React.createElement(
+										Link,
+										{ to: '#' },
+										'Fruit'
+									)
+								),
+								React.createElement(
+									'li',
+									null,
+									React.createElement(
+										'span',
+										null,
+										'Tomato'
+									)
+								)
+							)
+						)
+					),
+					React.createElement(
+						'div',
+						{ className: 'container pb60' },
+						React.createElement(
+							'div',
+							{ className: 'col-md-10 col-md-offset-1' },
+							React.createElement(
+								'div',
+								{ className: 'product-detail' },
+								React.createElement(
+									'div',
+									{ className: 'products-block layout-5' },
+									React.createElement(
+										'div',
+										{ className: 'product-item' },
+										React.createElement(
+											'div',
+											{ className: 'product-title' },
+											'Organic Strawberry Fruits'
+										),
+										React.createElement(
+											'div',
+											{ className: 'row' },
+											React.createElement(
+												'div',
+												{ className: 'product-left col-md-4 col-sm-4 col-xs-12' },
+												React.createElement(
+													'div',
+													{ className: 'product-image horizontal' },
+													React.createElement(
+														'div',
+														{ className: 'main-image' },
+														React.createElement('img', { className: 'img-responsive', src: 'img/product/2.jpg', alt: 'Product Image' })
+													),
+													React.createElement(
+														'div',
+														{ className: 'thumb-images owl-theme owl-carousel' },
+														React.createElement('img', { className: 'img-responsive', src: 'img/product/33.jpg', alt: 'Product Image' }),
+														React.createElement('img', { className: 'img-responsive', src: 'img/product/3.jpg', alt: 'Product Image' }),
+														React.createElement('img', { className: 'img-responsive', src: 'img/product/7.jpg', alt: 'Product Image' }),
+														React.createElement('img', { className: 'img-responsive', src: 'img/product/30.jpg', alt: 'Product Image' })
+													)
+												)
+											),
+											React.createElement(
+												'div',
+												{ className: 'product-right col-md-5 col-sm-4 col-xs-12' },
+												React.createElement(
+													'div',
+													{ className: 'product-info' },
+													React.createElement(
+														'div',
+														{ className: 'product-price' },
+														React.createElement(
+															'span',
+															{ className: 'sale-price' },
+															'\u20B980.00'
+														),
+														React.createElement(
+															'span',
+															{ className: 'base-price' },
+															'\u20B990.00'
+														)
+													),
+													React.createElement(
+														'div',
+														{ className: 'product-stock' },
+														React.createElement(
+															'span',
+															{ className: 'availability' },
+															'Availability :'
+														),
+														React.createElement('i', { className: 'fa fa-check-square-o', 'aria-hidden': 'true' }),
+														'In stock'
+													),
+													React.createElement(
+														'div',
+														{ className: 'product-short-description' },
+														'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse sapien urna, commodo ut molestie vitae, feugiat tincidunt ligula. Nam gravida nulla in convallis condimentum.'
+													),
+													React.createElement(
+														'div',
+														{ className: 'product-variants border-bottom' },
+														React.createElement(
+															'div',
+															{ className: 'product-variants-item' },
+															React.createElement(
+																'span',
+																{ className: 'control-label' },
+																'Size :'
+															),
+															React.createElement(
+																'select',
+																null,
+																React.createElement(
+																	'option',
+																	{ value: '1', title: 'S' },
+																	'S'
+																),
+																React.createElement(
+																	'option',
+																	{ value: '2', title: 'M' },
+																	'M'
+																),
+																React.createElement(
+																	'option',
+																	{ value: '3', title: 'L' },
+																	'L'
+																),
+																React.createElement(
+																	'option',
+																	{ value: '4', title: 'One size' },
+																	'One size'
+																)
+															)
+														),
+														React.createElement(
+															'div',
+															{ className: 'product-variants-item' },
+															React.createElement(
+																'span',
+																{ className: 'control-label' },
+																'Color :'
+															),
+															React.createElement(
+																'ul',
+																null,
+																React.createElement(
+																	'li',
+																	null,
+																	React.createElement('input', { className: 'input-color', readOnly: true, type: 'radio', value: '1' }),
+																	React.createElement('span', { className: 'color', style: { backgroundColor: '#E84C3D' } })
+																),
+																React.createElement(
+																	'li',
+																	null,
+																	React.createElement('input', { className: 'input-color', readOnly: true, type: 'radio', value: '2' }),
+																	React.createElement('span', { className: 'color', style: { backgroundColor: '#5D9CEC' } })
+																),
+																React.createElement(
+																	'li',
+																	null,
+																	React.createElement('input', { className: 'input-color', readOnly: true, type: 'radio', value: '3' }),
+																	React.createElement('span', { className: 'color', style: { backgroundColor: '#A0D468' } })
+																),
+																React.createElement(
+																	'li',
+																	null,
+																	React.createElement('input', { className: 'input-color', readOnly: true, type: 'radio', value: '4' }),
+																	React.createElement('span', { className: 'color', style: { backgroundColor: '#F1C40F' } })
+																),
+																React.createElement(
+																	'li',
+																	null,
+																	React.createElement('input', { className: 'input-color', readOnly: true, type: 'radio', value: '5' }),
+																	React.createElement('span', { className: 'color', style: { backgroundColor: '#964B00' } })
+																),
+																React.createElement(
+																	'li',
+																	null,
+																	React.createElement('input', { className: 'input-color', readOnly: true, type: 'radio', value: '6' }),
+																	React.createElement('span', { className: 'color', style: { backgroundColor: '#FCCACD' } })
+																)
+															)
+														)
+													),
+													React.createElement(
+														'div',
+														{ className: 'product-add-to-cart border-bottom' },
+														React.createElement(
+															'div',
+															{ className: 'product-quantity' },
+															React.createElement(
+																'span',
+																{ className: 'control-label' },
+																'QTY :'
+															),
+															React.createElement(
+																'div',
+																{ className: 'qty' },
+																React.createElement(
+																	'div',
+																	{ className: 'input-group' },
+																	React.createElement('input', { type: 'text', readOnly: true, name: 'qty', value: '1', 'data-min': '1' }),
+																	React.createElement(
+																		'span',
+																		{ className: 'adjust-qty' },
+																		React.createElement(
+																			'span',
+																			{ className: 'adjust-btn plus' },
+																			'+'
+																		),
+																		React.createElement(
+																			'span',
+																			{ className: 'adjust-btn minus' },
+																			'-'
+																		)
+																	)
+																)
+															)
+														),
+														React.createElement(
+															'div',
+															{ className: 'product-buttons' },
+															React.createElement(
+																Link,
+																{ className: 'add-to-cart', to: '/shoppingCart' },
+																React.createElement('i', { className: 'fa fa-shopping-basket', 'aria-hidden': 'true' }),
+																React.createElement(
+																	'span',
+																	null,
+																	'Add To Cart'
+																)
+															),
+															React.createElement(
+																Link,
+																{ className: 'add-wishlist', to: '#' },
+																React.createElement('i', { className: 'fa fa-heart', 'aria-hidden': 'true' })
+															)
+														)
+													),
+													React.createElement(
+														'div',
+														{ className: 'product-share border-bottom' },
+														React.createElement(
+															'div',
+															{ className: 'item' },
+															React.createElement(
+																Link,
+																{ to: '#' },
+																React.createElement('i', { className: 'zmdi zmdi-share', 'aria-hidden': 'true' }),
+																React.createElement(
+																	'span',
+																	{ className: 'text' },
+																	'Share'
+																)
+															)
+														),
+														React.createElement(
+															'div',
+															{ className: 'item' },
+															React.createElement(
+																Link,
+																{ to: '#' },
+																React.createElement('i', { className: 'zmdi zmdi-email', 'aria-hidden': 'true' }),
+																React.createElement(
+																	'span',
+																	{ className: 'text' },
+																	'Send to a friend'
+																)
+															)
+														),
+														React.createElement(
+															'div',
+															{ className: 'item' },
+															React.createElement(
+																Link,
+																{ to: '#' },
+																React.createElement('i', { className: 'zmdi zmdi-print', 'aria-hidden': 'true' }),
+																React.createElement(
+																	'span',
+																	{ className: 'text' },
+																	'Print'
+																)
+															)
+														)
+													),
+													React.createElement(
+														'div',
+														{ className: 'product-review border-bottom' },
+														React.createElement(
+															'div',
+															{ className: 'item' },
+															React.createElement(
+																'div',
+																{ className: 'product-quantity' },
+																React.createElement(
+																	'span',
+																	{ className: 'control-label' },
+																	'Review :'
+																),
+																React.createElement(
+																	'div',
+																	{ className: 'product-rating' },
+																	React.createElement('div', { className: 'star on' }),
+																	React.createElement('div', { className: 'star on' }),
+																	React.createElement('div', { className: 'star on' }),
+																	React.createElement('div', { className: 'star on' }),
+																	React.createElement('div', { className: 'star' })
+																)
+															)
+														),
+														React.createElement(
+															'div',
+															{ className: 'item' },
+															React.createElement(
+																Link,
+																{ to: '#' },
+																React.createElement('i', { className: 'zmdi zmdi-comments', 'aria-hidden': 'true' }),
+																React.createElement(
+																	'span',
+																	{ className: 'text' },
+																	'Read Reviews (3)'
+																)
+															)
+														),
+														React.createElement(
+															'div',
+															{ className: 'item' },
+															React.createElement(
+																Link,
+																{ to: '#' },
+																React.createElement('i', { className: 'zmdi zmdi-edit', 'aria-hidden': 'true' }),
+																React.createElement(
+																	'span',
+																	{ className: 'text' },
+																	'Write a review'
+																)
+															)
+														)
+													),
+													React.createElement(
+														'div',
+														{ className: 'product-extra' },
+														React.createElement(
+															'div',
+															{ className: 'item' },
+															React.createElement(
+																'span',
+																{ className: 'control-label' },
+																'Review :'
+															),
+															React.createElement(
+																'span',
+																{ className: 'control-label' },
+																'E-02154'
+															)
+														),
+														React.createElement(
+															'div',
+															{ className: 'item' },
+															React.createElement(
+																'span',
+																{ className: 'control-label' },
+																'Categories :'
+															),
+															React.createElement(
+																Link,
+																{ to: '#', title: 'Vegetables' },
+																'Vegetables,'
+															),
+															React.createElement(
+																Link,
+																{ to: '#', title: 'Fruits' },
+																'Fruits,'
+															),
+															React.createElement(
+																Link,
+																{ to: '#', title: 'Apple' },
+																'Apple'
+															)
+														),
+														React.createElement(
+															'div',
+															{ className: 'item' },
+															React.createElement(
+																'span',
+																{ className: 'control-label' },
+																'Tags :'
+															),
+															React.createElement(
+																Link,
+																{ to: '#', title: 'Vegetables' },
+																'Hot Trend,'
+															),
+															React.createElement(
+																Link,
+																{ to: '#', title: 'Fruits' },
+																'Summer'
+															)
+														)
+													)
+												)
+											),
+											React.createElement(
+												'div',
+												{ className: 'payment-intro col-md-3 col-sm-4 col-xs-12' },
+												React.createElement(
+													'div',
+													{ className: 'block-content' },
+													React.createElement(
+														'div',
+														{ className: 'item' },
+														React.createElement('img', { className: 'img-responsive', src: 'img/home2-payment-1.png', alt: 'Payment Intro' }),
+														React.createElement(
+															'h3',
+															{ className: 'title' },
+															'Free Shipping item'
+														),
+														React.createElement(
+															'div',
+															{ className: 'content' },
+															'Proin gravida nibh vel velit auctor aliquet aenean'
+														)
+													),
+													React.createElement(
+														'div',
+														{ className: 'item' },
+														React.createElement('img', { className: 'img-responsive', src: 'img/home2-payment-2.png', alt: 'Payment Intro' }),
+														React.createElement(
+															'h3',
+															{ className: 'title' },
+															'Secured Payment'
+														),
+														React.createElement(
+															'div',
+															{ className: 'content' },
+															'Proin gravida nibh vel velit auctor aliquet aenean'
+														)
+													),
+													React.createElement(
+														'div',
+														{ className: 'item' },
+														React.createElement('img', { className: 'img-responsive', src: 'img/home2-payment-3.png', alt: 'Payment Intro' }),
+														React.createElement(
+															'h3',
+															{ className: 'title' },
+															'money back guarantee'
+														),
+														React.createElement(
+															'div',
+															{ className: 'content' },
+															'Proin gravida nibh vel velit auctor aliquet aenean'
+														)
+													)
+												)
+											)
+										),
+										React.createElement(
+											'div',
+											{ className: 'product-tab' },
+											React.createElement(
+												'div',
+												{ className: 'tab-nav' },
+												React.createElement(
+													'ul',
+													null,
+													React.createElement(
+														'li',
+														{ className: 'active' },
+														React.createElement(
+															Link,
+															{ 'data-toggle': 'tab', to: '#description' },
+															React.createElement(
+																'span',
+																null,
+																'Description'
+															)
+														)
+													),
+													React.createElement(
+														'li',
+														null,
+														React.createElement(
+															Link,
+															{ 'data-toggle': 'tab', to: '#additional-information' },
+															React.createElement(
+																'span',
+																null,
+																'Additional Information'
+															)
+														)
+													),
+													React.createElement(
+														'li',
+														null,
+														React.createElement(
+															Link,
+															{ 'data-toggle': 'tab', to: '#review' },
+															React.createElement(
+																'span',
+																null,
+																'Review'
+															)
+														)
+													)
+												)
+											),
+											React.createElement(
+												'div',
+												{ className: 'tab-content' },
+												React.createElement(
+													'div',
+													{ role: 'tabpanel', className: 'tab-pane fade in active', id: 'description' },
+													React.createElement(
+														'p',
+														null,
+														'Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu.'
+													),
+													React.createElement(
+														'p',
+														null,
+														'Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu.'
+													)
+												),
+												React.createElement(
+													'div',
+													{ role: 'tabpanel', className: 'tab-pane fade', id: 'additional-information' },
+													React.createElement(
+														'p',
+														null,
+														'Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu.'
+													),
+													React.createElement(
+														'p',
+														null,
+														'Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu.'
+													)
+												),
+												React.createElement(
+													'div',
+													{ role: 'tabpanel', className: 'tab-pane fade', id: 'review' },
+													React.createElement(
+														'div',
+														{ className: 'reviews' },
+														React.createElement(
+															'div',
+															{ className: 'comments-list' },
+															React.createElement(
+																'div',
+																{ className: 'item' },
+																React.createElement(
+																	'div',
+																	{ className: 'comment-left pull-left' },
+																	React.createElement(
+																		'div',
+																		{ className: 'avatar' },
+																		React.createElement('img', { src: 'img/avatar.jpg', alt: '', width: '70', height: '70' })
+																	),
+																	React.createElement(
+																		'div',
+																		{ className: 'product-rating' },
+																		React.createElement('div', { className: 'star on' }),
+																		React.createElement('div', { className: 'star on' }),
+																		React.createElement('div', { className: 'star on' }),
+																		React.createElement('div', { className: 'star on' }),
+																		React.createElement('div', { className: 'star on' })
+																	)
+																),
+																React.createElement(
+																	'div',
+																	{ className: 'comment-body' },
+																	React.createElement(
+																		'div',
+																		{ className: 'comment-meta' },
+																		React.createElement(
+																			'span',
+																			{ className: 'author' },
+																			'Peter'
+																		),
+																		' - ',
+																		React.createElement(
+																			'span',
+																			{ className: 'time' },
+																			'June 02, 2018'
+																		)
+																	),
+																	React.createElement(
+																		'div',
+																		{ className: 'comment-content' },
+																		'Look at the sunset, life is amazing, life is beautiful, life is what you make it. To succeed you must believe. When you believe, you will succeed. In life there will be road blocks but we will over come it. Celebrate success right, the only way, apple. The ladies always say Khaled you smell good, I use no cologne. Cocoa butter is the key. '
+																	)
+																)
+															),
+															React.createElement(
+																'div',
+																{ className: 'item' },
+																React.createElement(
+																	'div',
+																	{ className: 'comment-left pull-left' },
+																	React.createElement(
+																		'div',
+																		{ className: 'avatar' },
+																		React.createElement('img', { src: 'img/avatar.jpg', alt: '', width: '70', height: '70' })
+																	),
+																	React.createElement(
+																		'div',
+																		{ className: 'product-rating' },
+																		React.createElement('div', { className: 'star on' }),
+																		React.createElement('div', { className: 'star on' }),
+																		React.createElement('div', { className: 'star on' }),
+																		React.createElement('div', { className: 'star on' }),
+																		React.createElement('div', { className: 'star' })
+																	)
+																),
+																React.createElement(
+																	'div',
+																	{ className: 'comment-body' },
+																	React.createElement(
+																		'div',
+																		{ className: 'comment-meta' },
+																		React.createElement(
+																			'span',
+																			{ className: 'author' },
+																			'Merry'
+																		),
+																		' - ',
+																		React.createElement(
+																			'span',
+																			{ className: 'time' },
+																			'June 17, 2018'
+																		)
+																	),
+																	React.createElement(
+																		'div',
+																		{ className: 'comment-content' },
+																		'Look at the sunset, life is amazing, life is beautiful, life is what you make it. To succeed you must believe. When you believe, you will succeed. In life there will be road blocks but we will over come it. Celebrate success right, the only way, apple. The ladies always say Khaled you smell good, I use no cologne. Cocoa butter is the key. '
+																	)
+																)
+															)
+														),
+														React.createElement(
+															'div',
+															{ className: 'review-form' },
+															React.createElement(
+																'h4',
+																{ className: 'title' },
+																'Write a review'
+															),
+															React.createElement(
+																'form',
+																{ action: 'http://tivatheme.com/html/freshmart/index.html', method: 'post', className: 'form-validate' },
+																React.createElement(
+																	'div',
+																	{ className: 'form-group' },
+																	React.createElement(
+																		'div',
+																		{ className: 'text' },
+																		'Your Rating'
+																	),
+																	React.createElement(
+																		'div',
+																		{ className: 'product-rating' },
+																		React.createElement('div', { className: 'star' }),
+																		React.createElement('div', { className: 'star' }),
+																		React.createElement('div', { className: 'star' }),
+																		React.createElement('div', { className: 'star' }),
+																		React.createElement('div', { className: 'star' })
+																	)
+																),
+																React.createElement(
+																	'div',
+																	{ className: 'form-group' },
+																	React.createElement(
+																		'div',
+																		{ className: 'text' },
+																		'You review',
+																		React.createElement(
+																			'sup',
+																			{ className: 'required' },
+																			'*'
+																		)
+																	),
+																	React.createElement('textarea', { id: 'comment', name: 'comment', cols: '45', rows: '6', 'aria-required': 'true' })
+																),
+																React.createElement(
+																	'div',
+																	{ className: 'form-group' },
+																	React.createElement(
+																		'button',
+																		{ className: 'btn btn-primary' },
+																		'Send your review'
+																	)
+																)
+															)
+														)
+													)
+												)
+											)
+										)
+									)
+								)
+							),
+							React.createElement(
+								'div',
+								{ className: 'products-block related-products item-4' },
+								React.createElement(
+									'div',
+									{ className: 'block-title' },
+									React.createElement(
+										'h2',
+										{ className: 'title' },
+										'Related ',
+										React.createElement(
+											'span',
+											null,
+											'Products'
+										)
+									)
+								),
+								React.createElement(
+									'div',
+									{ className: 'block-content' },
+									React.createElement(
+										'div',
+										{ className: 'products owl-theme owl-carousel' },
+										React.createElement(
+											'div',
+											{ className: 'product-item' },
+											React.createElement(
+												'div',
+												{ className: 'product-image' },
+												React.createElement(
+													Link,
+													{ to: 'product-detail-left-sidebar.html' },
+													React.createElement('img', { src: 'img/product/4.jpg', alt: 'Product Image' })
+												)
+											),
+											React.createElement(
+												'div',
+												{ className: 'product-title' },
+												React.createElement(
+													Link,
+													{ to: 'product-detail-left-sidebar.html' },
+													'Organic Strawberry Fruits'
+												)
+											),
+											React.createElement(
+												'div',
+												{ className: 'product-rating' },
+												React.createElement('div', { className: 'star on' }),
+												React.createElement('div', { className: 'star on' }),
+												React.createElement('div', { className: 'star on ' }),
+												React.createElement('div', { className: 'star on' }),
+												React.createElement('div', { className: 'star' })
+											),
+											React.createElement(
+												'div',
+												{ className: 'product-price' },
+												React.createElement(
+													'span',
+													{ className: 'sale-price' },
+													'\u20B980.00'
+												),
+												React.createElement(
+													'span',
+													{ className: 'base-price' },
+													'\u20B990.00'
+												)
+											),
+											React.createElement(
+												'div',
+												{ className: 'product-buttons' },
+												React.createElement(
+													Link,
+													{ className: 'add-to-cart', to: '/shoppingCart' },
+													React.createElement('i', { className: 'fa fa-shopping-basket', 'aria-hidden': 'true' })
+												),
+												React.createElement(
+													Link,
+													{ className: 'add-wishlist', to: '#' },
+													React.createElement('i', { className: 'fa fa-heart', 'aria-hidden': 'true' })
+												),
+												React.createElement(
+													Link,
+													{ className: 'quickview', to: '#' },
+													React.createElement('i', { className: 'fa fa-eye', 'aria-hidden': 'true' })
+												)
+											)
+										),
+										React.createElement(
+											'div',
+											{ className: 'product-item' },
+											React.createElement(
+												'div',
+												{ className: 'product-image' },
+												React.createElement(
+													Link,
+													{ to: 'product-detail-left-sidebar.html' },
+													React.createElement('img', { src: 'img/product/15.jpg', alt: 'Product Image' })
+												)
+											),
+											React.createElement(
+												'div',
+												{ className: 'product-title' },
+												React.createElement(
+													Link,
+													{ to: 'product-detail-left-sidebar.html' },
+													'Organic Strawberry Fruits'
+												)
+											),
+											React.createElement(
+												'div',
+												{ className: 'product-rating' },
+												React.createElement('div', { className: 'star on' }),
+												React.createElement('div', { className: 'star on' }),
+												React.createElement('div', { className: 'star on ' }),
+												React.createElement('div', { className: 'star on' }),
+												React.createElement('div', { className: 'star' })
+											),
+											React.createElement(
+												'div',
+												{ className: 'product-price' },
+												React.createElement(
+													'span',
+													{ className: 'sale-price' },
+													'\u20B9120.00'
+												)
+											),
+											React.createElement(
+												'div',
+												{ className: 'product-buttons' },
+												React.createElement(
+													Link,
+													{ className: 'add-to-cart', to: '/shoppingCart' },
+													React.createElement('i', { className: 'fa fa-shopping-basket', 'aria-hidden': 'true' })
+												),
+												React.createElement(
+													Link,
+													{ className: 'add-wishlist', to: '#' },
+													React.createElement('i', { className: 'fa fa-heart', 'aria-hidden': 'true' })
+												),
+												React.createElement(
+													Link,
+													{ className: 'quickview', to: '#' },
+													React.createElement('i', { className: 'fa fa-eye', 'aria-hidden': 'true' })
+												)
+											)
+										),
+										React.createElement(
+											'div',
+											{ className: 'product-item' },
+											React.createElement(
+												'div',
+												{ className: 'product-image' },
+												React.createElement(
+													Link,
+													{ to: 'product-detail-left-sidebar.html' },
+													React.createElement('img', { src: 'img/product/31.jpg', alt: 'Product Image' })
+												)
+											),
+											React.createElement(
+												'div',
+												{ className: 'product-title' },
+												React.createElement(
+													Link,
+													{ to: 'product-detail-left-sidebar.html' },
+													'Organic Strawberry Fruits'
+												)
+											),
+											React.createElement(
+												'div',
+												{ className: 'product-rating' },
+												React.createElement('div', { className: 'star on' }),
+												React.createElement('div', { className: 'star on' }),
+												React.createElement('div', { className: 'star on ' }),
+												React.createElement('div', { className: 'star on' }),
+												React.createElement('div', { className: 'star' })
+											),
+											React.createElement(
+												'div',
+												{ className: 'product-price' },
+												React.createElement(
+													'span',
+													{ className: 'sale-price' },
+													'\u20B980.00'
+												),
+												React.createElement(
+													'span',
+													{ className: 'base-price' },
+													'\u20B990.00'
+												)
+											),
+											React.createElement(
+												'div',
+												{ className: 'product-buttons' },
+												React.createElement(
+													Link,
+													{ className: 'add-to-cart', to: '/shoppingCart' },
+													React.createElement('i', { className: 'fa fa-shopping-basket', 'aria-hidden': 'true' })
+												),
+												React.createElement(
+													Link,
+													{ className: 'add-wishlist', to: '#' },
+													React.createElement('i', { className: 'fa fa-heart', 'aria-hidden': 'true' })
+												),
+												React.createElement(
+													Link,
+													{ className: 'quickview', to: '#' },
+													React.createElement('i', { className: 'fa fa-eye', 'aria-hidden': 'true' })
+												)
+											)
+										),
+										React.createElement(
+											'div',
+											{ className: 'product-item' },
+											React.createElement(
+												'div',
+												{ className: 'product-image' },
+												React.createElement(
+													Link,
+													{ to: 'product-detail-left-sidebar.html' },
+													React.createElement('img', { src: 'img/product/9.jpg', alt: 'Product Image' })
+												)
+											),
+											React.createElement(
+												'div',
+												{ className: 'product-title' },
+												React.createElement(
+													Link,
+													{ to: 'product-detail-left-sidebar.html' },
+													'Organic Strawberry Fruits'
+												)
+											),
+											React.createElement(
+												'div',
+												{ className: 'product-rating' },
+												React.createElement('div', { className: 'star on' }),
+												React.createElement('div', { className: 'star on' }),
+												React.createElement('div', { className: 'star on ' }),
+												React.createElement('div', { className: 'star on' }),
+												React.createElement('div', { className: 'star' })
+											),
+											React.createElement(
+												'div',
+												{ className: 'product-price' },
+												React.createElement(
+													'span',
+													{ className: 'sale-price' },
+													'\u20B980.00'
+												),
+												React.createElement(
+													'span',
+													{ className: 'base-price' },
+													'\u20B990.00'
+												)
+											),
+											React.createElement(
+												'div',
+												{ className: 'product-buttons' },
+												React.createElement(
+													Link,
+													{ className: 'add-to-cart', to: '/shoppingCart' },
+													React.createElement('i', { className: 'fa fa-shopping-basket', 'aria-hidden': 'true' })
+												),
+												React.createElement(
+													Link,
+													{ className: 'add-wishlist', to: '#' },
+													React.createElement('i', { className: 'fa fa-heart', 'aria-hidden': 'true' })
+												),
+												React.createElement(
+													Link,
+													{ className: 'quickview', to: '#' },
+													React.createElement('i', { className: 'fa fa-eye', 'aria-hidden': 'true' })
+												)
+											)
+										),
+										React.createElement(
+											'div',
+											{ className: 'product-item' },
+											React.createElement(
+												'div',
+												{ className: 'product-image' },
+												React.createElement(
+													Link,
+													{ to: 'product-detail-left-sidebar.html' },
+													React.createElement('img', { src: 'img/product/15.jpg', alt: 'Product Image' })
+												)
+											),
+											React.createElement(
+												'div',
+												{ className: 'product-title' },
+												React.createElement(
+													Link,
+													{ to: 'product-detail-left-sidebar.html' },
+													'Organic Strawberry Fruits'
+												)
+											),
+											React.createElement(
+												'div',
+												{ className: 'product-rating' },
+												React.createElement('div', { className: 'star on' }),
+												React.createElement('div', { className: 'star on' }),
+												React.createElement('div', { className: 'star on ' }),
+												React.createElement('div', { className: 'star on' }),
+												React.createElement('div', { className: 'star' })
+											),
+											React.createElement(
+												'div',
+												{ className: 'product-price' },
+												React.createElement(
+													'span',
+													{ className: 'sale-price' },
+													'\u20B9120.00'
+												)
+											),
+											React.createElement(
+												'div',
+												{ className: 'product-buttons' },
+												React.createElement(
+													Link,
+													{ className: 'add-to-cart', to: '/shoppingCart' },
+													React.createElement('i', { className: 'fa fa-shopping-basket', 'aria-hidden': 'true' })
+												),
+												React.createElement(
+													Link,
+													{ className: 'add-wishlist', to: '#' },
+													React.createElement('i', { className: 'fa fa-heart', 'aria-hidden': 'true' })
+												),
+												React.createElement(
+													Link,
+													{ className: 'quickview', to: '#' },
+													React.createElement('i', { className: 'fa fa-eye', 'aria-hidden': 'true' })
+												)
+											)
+										)
+									)
+								)
+							)
+						)
+					)
+				),
+				React.createElement(Footer, null)
+			);
+		}
+	}]);
+
+	return ProductDetails;
+}(React.Component);
+
+module.exports = ProductDetails;
+
+/***/ }),
+/* 100 */
 /***/ (function(module, exports) {
 
 // removed by extract-text-webpack-plugin

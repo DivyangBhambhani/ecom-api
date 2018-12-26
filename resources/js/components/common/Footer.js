@@ -56,14 +56,8 @@ class Footer extends React.Component {
 				<div className="footer-copyright">
 					<div className="container">
 						<div className="row">
-							<div className="col-lg-7 col-md-7 col-sm-12 col-xs-12">
-								<div className="copyright">Copyright © 2018 - All rights reserved. Powered by TivaTheme.</div>
-							</div>
-							
-							<div className="col-lg-5 col-md-5 col-sm-12 col-xs-12 align-right">
-								<div className="payment">
-									<img src="img/payment.png" alt="Payment" />
-								</div>
+							<div className="col-lg-12 col-md-12 col-sm-12 col-xs-12 text-center">
+								<div className="copyright">Copyright © 2018 - All rights reserved. Heilmittel Health Corporation.</div>
 							</div>
 						</div>
 					</div>

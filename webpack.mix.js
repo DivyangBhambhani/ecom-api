@@ -10,8 +10,8 @@ let mix = require('laravel-mix');
  | file for the application as well as bundling up all the JS files.
  |
  */
-
 mix.react('resources/js/app.js', 'public/js')
    .sass('resources/sass/app.scss', 'public/css');
+// mix.extract(['react', 'axios', 'lodash', 'react-dom']);
 
 mix.browserSync('http://localhost:8000');

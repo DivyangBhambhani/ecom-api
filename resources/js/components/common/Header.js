@@ -1,5 +1,6 @@
 var React = require('react');
 var Link = require('react-router-dom').Link;
+var NavLink = require('react-router-dom').NavLink;
 var baseURL = 'http://localhost:8000/';
 
 class Header extends React.Component {
@@ -13,47 +14,47 @@ class Header extends React.Component {
 								<div id="main-menu">
 									<ul className="menu">
 										<li>
-											<Link to="/home">Home</Link>
+											<NavLink activeClassName="activeNav" exact to="/">Home</NavLink>
 										</li>
 										
 										<li className="dropdown">
-											<Link to={`product-grid-left-sidebar.html`}>Glutten Free Products</Link>
+											<NavLink activeClassName="activeNav"  to="/glutten_free_products">Glutten Free Products</NavLink>
 											<div className="dropdown-menu">
 												<ul>
 													<li className="has-image">
 														<img src={baseURL + "img/product/product-category-1.png"} alt="Product Category Image" />
-														<Link to={`product-grid-left-sidebar.html`}>Cooking & Baking Flour</Link>
+														<Link to="/glutten_free_products/flour">Cooking & Baking Flour</Link>
 													</li>
 													<li className="has-image">
 														<img src={baseURL + "img/product/product-category-2.png"} alt="Product Category Image" />
-														<Link to={`product-grid-left-sidebar.html`}>Biscuits & Cookies</Link>
+														<Link to="/glutten_free_products/cookies">Biscuits & Cookies</Link>
 													</li>
 													<li className="has-image">
 														<img src={baseURL + "img/product/product-category-3.png"} alt="Product Category Image" />
-														<Link to={`product-grid-left-sidebar.html`}>Namkeens</Link>
+														<Link to="/glutten_free_products/namkeens">Namkeens</Link>
 													</li>
 													<li className="has-image">
 														<img src={baseURL + "img/product/product-category-4.png"} alt="Product Category Image" />
-														<Link to={`product-grid-left-sidebar.html`}>Snacks</Link>
+														<Link to="/glutten_free_products/snacks">Snacks</Link>
 													</li>
 													<li className="has-image">
 														<img src={baseURL + "img/product/product-category-0.png"} alt="Product Category Image" />
-														<Link to={`product-grid-left-sidebar.html`}>Desserts & Confectionaries</Link>
+														<Link to="/glutten_free_products/desserts">Desserts & Confectionaries</Link>
 													</li>
 												</ul>
 											</div>
 										</li>
 										
 										<li>
-											<Link to="/blog">Blog</Link>
+											<NavLink activeClassName="activeNav" to="//blog.drkiranshomeo.com/">Blog</NavLink>
 										</li>
 
 										<li>
-											<Link to="/about">About Us</Link>
+											<NavLink activeClassName="activeNav" to="/about">About Us</NavLink>
 										</li>
 										
 										<li>
-											<Link to="/contact">Contact</Link>
+											<NavLink activeClassName="activeNav" to="/contact">Contact</NavLink>
 										</li>
 									</ul>
 								</div>
@@ -61,7 +62,7 @@ class Header extends React.Component {
 							
 							<div className="col-lg-2 col-md-2 col-sm-12 header-center justify-content-center">
 								<div className="logo">
-									<Link to="home-4.html">
+									<Link to="">
 										<img className="img-responsive" src={baseURL + "img/logo.png"} alt="Logo" />
 									</Link>
 								</div>
@@ -138,8 +139,8 @@ class Header extends React.Component {
 													<tr>
 														<td colSpan="3">
 															<div className="cart-button">
-																<Link className="btn btn-primary" to="product-cart.html">View Cart</Link>
-																<Link className="btn btn-primary" to="product-checkout.html">Checkout</Link>
+																<Link className="btn btn-primary" to="/shoppingCart">View Cart</Link>
+																<Link className="btn btn-primary" to="/checkout">Checkout</Link>
 															</div>
 														</td>
 													</tr>

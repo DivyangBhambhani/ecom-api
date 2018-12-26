@@ -16,15 +16,26 @@ const Router = require('react-router-dom').BrowserRouter;
 const Route = require('react-router-dom').Route;
 const Switch = require('react-router-dom').Switch;
 
-// var Nav = require('./Nav');
 var Home = require('./components/Home');
 var About = require('./components/About');
+var Contact = require('./components/Contact');
+var ProductsList = require('./components/ProductsList');
+var GluttenFreeProducts = require('./components/GluttenFreeProducts');
+var ShoppingCart = require('./components/ShoppingCart');
+var Checkout = require('./components/Checkout');
+var ProductDetails = require('./components/ProductDetails');
 
 ReactDOM.render(
     <Router>
-    	<div className="container">    		
+    	<div className="row">    		
 	        <Route path="/" exact component={Home}></Route>
 	        <Route path="/home" component={Home}></Route>
 	        <Route path="/about" component={About}></Route>
+	        <Route path="/contact" component={Contact}></Route>
+	        <Route path="/glutten_free_products" exact component={GluttenFreeProducts}></Route>
+	        <Route path="/glutten_free_products/:categoryName" component={ProductsList}></Route>
+	        <Route path="/shoppingCart" component={ShoppingCart}></Route>
+	        <Route path="/checkout" component={Checkout}></Route>
+	        <Route path="/productdetails" component={ProductDetails}></Route>
         </div>
     </Router>, document.getElementById('app'));
