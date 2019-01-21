@@ -27,7 +27,7 @@ class Footer extends React.Component {
 								<div className="col-lg-4 col-md-4 col-sm-6 col-xs-12 footer-col">
 									<div className="block text">								
 										<Link to="home-4.html" className="logo-footer">
-											<img src="img/logo-3.png" alt="Logo" />
+											<img src="img/logo.png" alt="Logo" />
 										</Link>
 										
 										<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incid idunt ut labore et dolore magna aliqua. Ut enim ad minim ipsum dolor sit amet, consec tetur adipiscing elit ipsum dolor sit amet, consectetur adipiscing elit</p>

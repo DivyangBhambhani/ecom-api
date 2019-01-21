@@ -3,11 +3,49 @@ var Link = require('react-router-dom').Link;
 var baseURL = 'http://localhost:8000/';
 var Header = require('./common/Header');
 var Footer = require('./common/Footer');
+const api = require("../utils/api");
+var ProductItem = require("./ProductItem");
+var ProductItem_List = require("./ProductItem_List");
+var Pagination = require('./common/Pagination');
 
 class ProductsList extends React.Component {
+	constructor(props) {
+		super(props);
+		this.state = {
+	      	products: [],
+	      	currentPage:1,
+	      	prodPerPage:9
+	    }
+	    this.handleCurrentPage = this.handleCurrentPage.bind(this);
+	    this.handleGridList = this.handleGridList.bind(this);
+	}
+
+	componentDidMount() {
+		api.getAllProducts().then(function (res) {
+			 var products = res.data.map(obj => (obj));
+			 this.setState({ products });
+		}.bind(this));
+	}
+
+	handleCurrentPage(curPage) {
+		this.setState({currentPage: curPage});
+	}
+
+	handleGridList(event) {
+		var limit = event.target.id == 'listLink' ? 5 : 9;
+		this.setState({prodPerPage: limit})
+	}
+
 	render() {
+		const { products, currentPage, prodPerPage } = this.state;
+
+		// Logic for displaying paginated products
+	    const indexOfLastProd = currentPage * prodPerPage;
+	    const indexOfFirstProd = indexOfLastProd - prodPerPage;
+	    const currentProducts = products.slice(indexOfFirstProd, indexOfLastProd);
+
 		return(
-			<div>
+			<div className="container">
 				<Header />
 				<div id="content" className="site-content">
 					<div id="breadcrumb">
@@ -351,12 +389,13 @@ class ProductsList extends React.Component {
 													<div className="col-md-6 col-xs-6">
 														<div className="gridlist-toggle" role="tablist">
 															<ul className="nav nav-tabs">
-																<li className="active"><Link to="#products-grid" data-toggle="tab" aria-expanded="true"><i className="fa fa-th-large"></i></Link></li>
-																<li><Link to="#products-list" data-toggle="tab" aria-expanded="false"><i className="fa fa-bars"></i></Link></li>
+																<li className="active">
+																	<Link id="gridLink" to="#products-grid" onClick={this.handleGridList} data-toggle="tab" aria-expanded="true"><i className="fa fa-th-large"></i></Link></li>
+																<li><Link id="listLink" to="#products-list" onClick={this.handleGridList} data-toggle="tab" aria-expanded="false"><i className="fa fa-bars"></i></Link></li>
 															</ul>
 														</div>
 														
-														<div className="total-products">There are 12 products</div>
+														<div className="total-products">There are {this.state.products.length} products</div>
 													</div>
 													
 													<div className="col-md-6 col-xs-6">
@@ -394,818 +433,18 @@ class ProductsList extends React.Component {
 												<div className="tab-pane active" id="products-grid">
 													<div className="products-block">
 														<div className="row">
-															<div className="col-lg-4 col-md-4 col-sm-6 col-xs-12">
-																<div className="product-item">
-																	<div className="product-image">
-																		<Link to="/productDetails">
-																			<img className="img-responsive" src={baseURL + "img/product/4.jpg"} alt="Product Image" />
-																		</Link>
-																	</div>
-																	
-																	<div className="product-title">
-																		<Link to="/productDetails">
-																			Organic Strawberry Fruits
-																		</Link>
-																	</div>
-																	
-																	<div className="product-rating">
-																		<div className="star on"></div>
-																		<div className="star on"></div>
-																		<div className="star on "></div>
-																		<div className="star on"></div>
-																		<div className="star"></div>
-																	</div>
-																	
-																	<div className="product-price">
-																		<span className="sale-price">₹80.00</span>
-																		<span className="base-price">₹90.00</span>
-																	</div>
-																	
-																	<div className="product-buttons">
-																		<Link className="add-to-cart" to="/shoppingCart">
-																			<i className="fa fa-shopping-basket" aria-hidden="true"></i>
-																		</Link>
-																		
-																		<Link className="add-wishlist" to="#">
-																			<i className="fa fa-heart" aria-hidden="true"></i>												
-																		</Link>
-																		
-																		<Link className="quickview" to="/productDetails">
-																			<i className="fa fa-eye" aria-hidden="true"></i>
-																		</Link>
-																	</div>
-																</div>
-															</div>
-															
-															<div className="col-lg-4 col-md-4 col-sm-6 col-xs-12">
-																<div className="product-item">
-																	<div className="product-image">
-																		<Link to="/productDetails">
-																			<img className="img-responsive" src={baseURL + "img/product/14.jpg"} alt="Product Image" />
-																		</Link>
-																	</div>
-																	
-																	<div className="product-title">
-																		<Link to="/productDetails">
-																			Organic Strawberry Fruits
-																		</Link>
-																	</div>
-																	
-																	<div className="product-rating">
-																		<div className="star on"></div>
-																		<div className="star on"></div>
-																		<div className="star on "></div>
-																		<div className="star on"></div>
-																		<div className="star"></div>
-																	</div>
-																	
-																	<div className="product-price">
-																		<span className="sale-price">₹80.00</span>
-																		<span className="base-price">₹90.00</span>
-																	</div>
-																	
-																	<div className="product-buttons">
-																		<Link className="add-to-cart" to="/shoppingCart">
-																			<i className="fa fa-shopping-basket" aria-hidden="true"></i>
-																		</Link>
-																		
-																		<Link className="add-wishlist" to="#">
-																			<i className="fa fa-heart" aria-hidden="true"></i>												
-																		</Link>
-																		
-																		<Link className="quickview" to="/productDetails">
-																			<i className="fa fa-eye" aria-hidden="true"></i>
-																		</Link>
-																	</div>
-																</div>
-															</div>
-															
-															<div className="col-lg-4 col-md-4 col-sm-6 col-xs-12">
-																<div className="product-item">
-																	<div className="product-image">
-																		<Link to="/productDetails">
-																			<img className="img-responsive" src={baseURL + "img/product/17.jpg"} alt="Product Image" />
-																		</Link>
-																	</div>
-																	
-																	<div className="product-title">
-																		<Link to="/productDetails">
-																			Organic Strawberry Fruits
-																		</Link>
-																	</div>
-																	
-																	<div className="product-rating">
-																		<div className="star on"></div>
-																		<div className="star on"></div>
-																		<div className="star on "></div>
-																		<div className="star on"></div>
-																		<div className="star"></div>
-																	</div>
-																	
-																	<div className="product-price">
-																		<span className="sale-price">₹80.00</span>
-																		<span className="base-price">₹90.00</span>
-																	</div>
-																	
-																	<div className="product-buttons">
-																		<Link className="add-to-cart" to="/shoppingCart">
-																			<i className="fa fa-shopping-basket" aria-hidden="true"></i>
-																		</Link>
-																		
-																		<Link className="add-wishlist" to="#">
-																			<i className="fa fa-heart" aria-hidden="true"></i>												
-																		</Link>
-																		
-																		<Link className="quickview" to="/productDetails">
-																			<i className="fa fa-eye" aria-hidden="true"></i>
-																		</Link>
-																	</div>
-																</div>
-															</div>
-															
-															<div className="col-lg-4 col-md-4 col-sm-6 col-xs-12">
-																<div className="product-item">
-																	<div className="product-image">
-																		<Link to="/productDetails">
-																			<img className="img-responsive" src={baseURL + "img/product/8.jpg"} alt="Product Image" />
-																		</Link>
-																	</div>
-																	
-																	<div className="product-title">
-																		<Link to="/productDetails">
-																			Organic Strawberry Fruits
-																		</Link>
-																	</div>
-																	
-																	<div className="product-rating">
-																		<div className="star on"></div>
-																		<div className="star on"></div>
-																		<div className="star on "></div>
-																		<div className="star on"></div>
-																		<div className="star"></div>
-																	</div>
-																	
-																	<div className="product-price">
-																		<span className="sale-price">₹120.00</span>
-																	</div>
-																	
-																	<div className="product-buttons">
-																		<Link className="add-to-cart" to="/shoppingCart">
-																			<i className="fa fa-shopping-basket" aria-hidden="true"></i>
-																		</Link>
-																		
-																		<Link className="add-wishlist" to="#">
-																			<i className="fa fa-heart" aria-hidden="true"></i>												
-																		</Link>
-																		
-																		<Link className="quickview" to="/productDetails">
-																			<i className="fa fa-eye" aria-hidden="true"></i>
-																		</Link>
-																	</div>
-																</div>
-															</div>
-															
-															<div className="col-lg-4 col-md-4 col-sm-6 col-xs-12">
-																<div className="product-item">
-																	<div className="product-image">
-																		<Link to="/productDetails">
-																			<img className="img-responsive" src={baseURL + "img/product/9.jpg"} alt="Product Image" />
-																		</Link>
-																	</div>
-																	
-																	<div className="product-title">
-																		<Link to="/productDetails">
-																			Organic Strawberry Fruits
-																		</Link>
-																	</div>
-																	
-																	<div className="product-rating">
-																		<div className="star on"></div>
-																		<div className="star on"></div>
-																		<div className="star on "></div>
-																		<div className="star on"></div>
-																		<div className="star on"></div>
-																	</div>
-																	
-																	<div className="product-price">
-																		<span className="sale-price">₹80.00</span>
-																		<span className="base-price">₹90.00</span>
-																	</div>
-																	
-																	<div className="product-buttons">
-																		<Link className="add-to-cart" to="/shoppingCart">
-																			<i className="fa fa-shopping-basket" aria-hidden="true"></i>
-																		</Link>
-																		
-																		<Link className="add-wishlist" to="#">
-																			<i className="fa fa-heart" aria-hidden="true"></i>												
-																		</Link>
-																		
-																		<Link className="quickview" to="/productDetails">
-																			<i className="fa fa-eye" aria-hidden="true"></i>
-																		</Link>
-																	</div>
-																</div>
-															</div>
-															
-															<div className="col-lg-4 col-md-4 col-sm-6 col-xs-12">
-																<div className="product-item">
-																	<div className="product-image">
-																		<Link to="/productDetails">
-																			<img className="img-responsive" src={baseURL + "img/product/15.jpg"} alt="Product Image" />
-																		</Link>
-																	</div>
-																	
-																	<div className="product-title">
-																		<Link to="/productDetails">
-																			Organic Strawberry Fruits
-																		</Link>
-																	</div>
-																	
-																	<div className="product-rating">
-																		<div className="star on"></div>
-																		<div className="star on"></div>
-																		<div className="star on "></div>
-																		<div className="star on"></div>
-																		<div className="star on"></div>
-																	</div>
-																	
-																	<div className="product-price">
-																		<span className="sale-price">₹80.00</span>
-																		<span className="base-price">₹90.00</span>
-																	</div>
-																	
-																	<div className="product-buttons">
-																		<Link className="add-to-cart" to="/shoppingCart">
-																			<i className="fa fa-shopping-basket" aria-hidden="true"></i>
-																		</Link>
-																		
-																		<Link className="add-wishlist" to="#">
-																			<i className="fa fa-heart" aria-hidden="true"></i>												
-																		</Link>
-																		
-																		<Link className="quickview" to="/productDetails">
-																			<i className="fa fa-eye" aria-hidden="true"></i>
-																		</Link>
-																	</div>
-																</div>
-															</div>
-															
-															<div className="col-lg-4 col-md-4 col-sm-6 col-xs-12">
-																<div className="product-item">
-																	<div className="product-image">
-																		<Link to="/productDetails">
-																			<img className="img-responsive" src={baseURL + "img/product/10.jpg"} alt="Product Image" />
-																		</Link>
-																	</div>
-																	
-																	<div className="product-title">
-																		<Link to="/productDetails">
-																			Organic Strawberry Fruits
-																		</Link>
-																	</div>
-																	
-																	<div className="product-rating">
-																		<div className="star on"></div>
-																		<div className="star on"></div>
-																		<div className="star on "></div>
-																		<div className="star on"></div>
-																		<div className="star"></div>
-																	</div>
-																	
-																	<div className="product-price">
-																		<span className="sale-price">₹96.00</span>
-																	</div>
-																	
-																	<div className="product-buttons">
-																		<Link className="add-to-cart" to="/shoppingCart">
-																			<i className="fa fa-shopping-basket" aria-hidden="true"></i>
-																		</Link>
-																		
-																		<Link className="add-wishlist" to="#">
-																			<i className="fa fa-heart" aria-hidden="true"></i>												
-																		</Link>
-																		
-																		<Link className="quickview" to="/productDetails">
-																			<i className="fa fa-eye" aria-hidden="true"></i>
-																		</Link>
-																	</div>
-																</div>
-															</div>
-															
-															<div className="col-lg-4 col-md-4 col-sm-6 col-xs-12">
-																<div className="product-item">
-																	<div className="product-image">
-																		<Link to="/productDetails">
-																			<img className="img-responsive" src={baseURL + "img/product/33.jpg"} alt="Product Image" />
-																		</Link>
-																	</div>
-																	
-																	<div className="product-title">
-																		<Link to="/productDetails">
-																			Organic Strawberry Fruits
-																		</Link>
-																	</div>
-																	
-																	<div className="product-rating">
-																		<div className="star on"></div>
-																		<div className="star on"></div>
-																		<div className="star on "></div>
-																		<div className="star on"></div>
-																		<div className="star"></div>
-																	</div>
-																	
-																	<div className="product-price">
-																		<span className="sale-price">₹80.00</span>
-																		<span className="base-price">₹90.00</span>
-																	</div>
-																	
-																	<div className="product-buttons">
-																		<Link className="add-to-cart" to="/shoppingCart">
-																			<i className="fa fa-shopping-basket" aria-hidden="true"></i>
-																		</Link>
-																		
-																		<Link className="add-wishlist" to="#">
-																			<i className="fa fa-heart" aria-hidden="true"></i>												
-																		</Link>
-																		
-																		<Link className="quickview" to="/productDetails">
-																			<i className="fa fa-eye" aria-hidden="true"></i>
-																		</Link>
-																	</div>
-																</div>
-															</div>
-															
-															<div className="col-lg-4 col-md-4 col-sm-6 col-xs-12">
-																<div className="product-item">
-																	<div className="product-image">
-																		<Link to="/productDetails">
-																			<img className="img-responsive" src={baseURL + "img/product/22.jpg"} alt="Product Image" />
-																		</Link>
-																	</div>
-																	
-																	<div className="product-title">
-																		<Link to="/productDetails">
-																			Organic Strawberry Fruits
-																		</Link>
-																	</div>
-																	
-																	<div className="product-rating">
-																		<div className="star on"></div>
-																		<div className="star on"></div>
-																		<div className="star on "></div>
-																		<div className="star on"></div>
-																		<div className="star"></div>
-																	</div>
-																	
-																	<div className="product-price">
-																		<span className="sale-price">₹80.00</span>
-																		<span className="base-price">₹90.00</span>
-																	</div>
-																	
-																	<div className="product-buttons">
-																		<Link className="add-to-cart" to="/shoppingCart">
-																			<i className="fa fa-shopping-basket" aria-hidden="true"></i>
-																		</Link>
-																		
-																		<Link className="add-wishlist" to="#">
-																			<i className="fa fa-heart" aria-hidden="true"></i>												
-																		</Link>
-																		
-																		<Link className="quickview" to="/productDetails">
-																			<i className="fa fa-eye" aria-hidden="true"></i>
-																		</Link>
-																	</div>
-																</div>
-															</div>
-															
-															<div className="col-lg-4 col-md-4 col-sm-6 col-xs-12">
-																<div className="product-item">
-																	<div className="product-image">
-																		<Link to="/productDetails">
-																			<img className="img-responsive" src={baseURL + "img/product/20.jpg"} alt="Product Image" />
-																		</Link>
-																	</div>
-																	
-																	<div className="product-title">
-																		<Link to="/productDetails">
-																			Organic Strawberry Fruits
-																		</Link>
-																	</div>
-																	
-																	<div className="product-rating">
-																		<div className="star on"></div>
-																		<div className="star on"></div>
-																		<div className="star on "></div>
-																		<div className="star on"></div>
-																		<div className="star"></div>
-																	</div>
-																	
-																	<div className="product-price">
-																		<span className="sale-price">₹96.00</span>
-																	</div>
-																	
-																	<div className="product-buttons">
-																		<Link className="add-to-cart" to="/shoppingCart">
-																			<i className="fa fa-shopping-basket" aria-hidden="true"></i>
-																		</Link>
-																		
-																		<Link className="add-wishlist" to="#">
-																			<i className="fa fa-heart" aria-hidden="true"></i>												
-																		</Link>
-																		
-																		<Link className="quickview" to="/productDetails">
-																			<i className="fa fa-eye" aria-hidden="true"></i>
-																		</Link>
-																	</div>
-																</div>
-															</div>
-															
-															<div className="col-lg-4 col-md-4 col-sm-6 col-xs-12">
-																<div className="product-item">
-																	<div className="product-image">
-																		<Link to="/productDetails">
-																			<img className="img-responsive" src={baseURL + "img/product/23.jpg"} alt="Product Image" />
-																		</Link>
-																	</div>
-																	
-																	<div className="product-title">
-																		<Link to="/productDetails">
-																			Organic Strawberry Fruits
-																		</Link>
-																	</div>
-																	
-																	<div className="product-rating">
-																		<div className="star on"></div>
-																		<div className="star on"></div>
-																		<div className="star on "></div>
-																		<div className="star on"></div>
-																		<div className="star"></div>
-																	</div>
-																	
-																	<div className="product-price">
-																		<span className="sale-price">₹80.00</span>
-																		<span className="base-price">₹90.00</span>
-																	</div>
-																	
-																	<div className="product-buttons">
-																		<Link className="add-to-cart" to="/shoppingCart">
-																			<i className="fa fa-shopping-basket" aria-hidden="true"></i>
-																		</Link>
-																		
-																		<Link className="add-wishlist" to="#">
-																			<i className="fa fa-heart" aria-hidden="true"></i>												
-																		</Link>
-																		
-																		<Link className="quickview" to="/productDetails">
-																			<i className="fa fa-eye" aria-hidden="true"></i>
-																		</Link>
-																	</div>
-																</div>
-															</div>
-															
-															<div className="col-lg-4 col-md-4 col-sm-6 col-xs-12">
-																<div className="product-item">
-																	<div className="product-image">
-																		<Link to="/productDetails">
-																			<img className="img-responsive" src={baseURL + "img/product/30.jpg"} alt="Product Image" />
-																		</Link>
-																	</div>
-																	
-																	<div className="product-title">
-																		<Link to="/productDetails">
-																			Organic Strawberry Fruits
-																		</Link>
-																	</div>
-																	
-																	<div className="product-rating">
-																		<div className="star on"></div>
-																		<div className="star on"></div>
-																		<div className="star on "></div>
-																		<div className="star on"></div>
-																		<div className="star"></div>
-																	</div>
-																	
-																	<div className="product-price">
-																		<span className="sale-price">₹80.00</span>
-																		<span className="base-price">₹90.00</span>
-																	</div>
-																	
-																	<div className="product-buttons">
-																		<Link className="add-to-cart" to="/shoppingCart">
-																			<i className="fa fa-shopping-basket" aria-hidden="true"></i>
-																		</Link>
-																		
-																		<Link className="add-wishlist" to="#">
-																			<i className="fa fa-heart" aria-hidden="true"></i>												
-																		</Link>
-																		
-																		<Link className="quickview" to="/productDetails">
-																			<i className="fa fa-eye" aria-hidden="true"></i>
-																		</Link>
-																	</div>
-																</div>
-															</div>
+															{currentProducts.map((product, index) => (
+																<ProductItem key={index} name={product.name} effPrice={product.effectivePrice} />)
+															)}
 														</div>
 													</div>
 												</div>
 												
 												<div className="tab-pane" id="products-list">
 													<div className="products-block layout-5">
-														<div className="product-item">
-															<div className="row">
-																<div className="col-lg-4 col-md-4 col-sm-6 col-xs-12">
-																	<div className="product-image">
-																		<Link to="/productDetails">
-																			<img className="img-responsive" src={baseURL + "img/product/4.jpg"} alt="Product Image" />
-																		</Link>
-																	</div>
-																</div>
-																
-																<div className="col-lg-8 col-md-8 col-sm-6 col-xs-12">
-																	<div className="product-info">
-																		<div className="product-title">
-																			<Link to="/productDetails">
-																				Organic Strawberry Fruits
-																			</Link>
-																		</div>
-																		
-																		<div className="product-rating">
-																			<div className="star on"></div>
-																			<div className="star on"></div>
-																			<div className="star on "></div>
-																			<div className="star on"></div>
-																			<div className="star"></div>
-																			<span className="review-count">(3 Reviews)</span>
-																		</div>
-																		
-																		<div className="product-price">
-																			<span className="sale-price">₹80.00</span>
-																			<span className="base-price">₹90.00</span>
-																		</div>
-																		
-																		<div className="product-stock">
-																			<i className="fa fa-check-square-o" aria-hidden="true"></i>In stock  
-																		</div>
-																		
-																		<div className="product-description">
-																			Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse sapien urna, commodo ut molestie vitae, feugiat tincidunt ligula...
-																		</div>
-																		
-																		<div className="product-buttons">
-																			<Link className="add-to-cart" to="/shoppingCart">
-																				<i className="fa fa-shopping-basket" aria-hidden="true"></i>
-																				<span>Add To Cart</span>
-																			</Link>
-																			
-																			<Link className="add-wishlist" to="#">
-																				<i className="fa fa-heart" aria-hidden="true"></i>												
-																			</Link>
-																			
-																			<Link className="quickview" to="/productDetails">
-																				<i className="fa fa-eye" aria-hidden="true"></i>
-																			</Link>
-																		</div>
-																	</div>
-																</div>
-															</div>
-														</div>
-														
-														<div className="product-item">
-															<div className="row">
-																<div className="col-lg-4 col-md-4 col-sm-6 col-xs-12">
-																	<div className="product-image">
-																		<Link to="/productDetails">
-																			<img className="img-responsive" src={baseURL + "img/product/14.jpg"} alt="Product Image" />
-																		</Link>
-																	</div>
-																</div>
-																
-																<div className="col-lg-8 col-md-8 col-sm-6 col-xs-12">
-																	<div className="product-info">
-																		<div className="product-title">
-																			<Link to="/productDetails">
-																				Organic Strawberry Fruits
-																			</Link>
-																		</div>
-																		
-																		<div className="product-rating">
-																			<div className="star on"></div>
-																			<div className="star on"></div>
-																			<div className="star on "></div>
-																			<div className="star on"></div>
-																			<div className="star"></div>
-																			<span className="review-count">(3 Reviews)</span>
-																		</div>
-																		
-																		<div className="product-price">
-																			<span className="sale-price">₹80.00</span>
-																			<span className="base-price">₹90.00</span>
-																		</div>
-																		
-																		<div className="product-stock">
-																			<i className="fa fa-check-square-o" aria-hidden="true"></i>In stock  
-																		</div>
-																		
-																		<div className="product-description">
-																			Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse sapien urna, commodo ut molestie vitae, feugiat tincidunt ligula...
-																		</div>
-																		
-																		<div className="product-buttons">
-																			<Link className="add-to-cart" to="/shoppingCart">
-																				<i className="fa fa-shopping-basket" aria-hidden="true"></i>
-																				<span>Add To Cart</span>
-																			</Link>
-																			
-																			<Link className="add-wishlist" to="#">
-																				<i className="fa fa-heart" aria-hidden="true"></i>												
-																			</Link>
-																			
-																			<Link className="quickview" to="/productDetails">
-																				<i className="fa fa-eye" aria-hidden="true"></i>
-																			</Link>
-																		</div>
-																	</div>
-																</div>
-															</div>
-														</div>
-													
-														<div className="product-item">
-															<div className="row">
-																<div className="col-lg-4 col-md-4 col-sm-6 col-xs-12">
-																	<div className="product-image">
-																		<Link to="/productDetails">
-																			<img className="img-responsive" src={baseURL + "img/product/17.jpg"} alt="Product Image" />
-																		</Link>
-																	</div>
-																</div>
-																
-																<div className="col-lg-8 col-md-8 col-sm-6 col-xs-12">
-																	<div className="product-info">
-																		<div className="product-title">
-																			<Link to="/productDetails">
-																				Organic Strawberry Fruits
-																			</Link>
-																		</div>
-																		
-																		<div className="product-rating">
-																			<div className="star on"></div>
-																			<div className="star on"></div>
-																			<div className="star on "></div>
-																			<div className="star on"></div>
-																			<div className="star"></div>
-																			<span className="review-count">(3 Reviews)</span>
-																		</div>
-																		
-																		<div className="product-price">
-																			<span className="sale-price">₹80.00</span>
-																			<span className="base-price">₹90.00</span>
-																		</div>
-																		
-																		<div className="product-stock">
-																			<i className="fa fa-check-square-o" aria-hidden="true"></i>In stock  
-																		</div>
-																		
-																		<div className="product-description">
-																			Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse sapien urna, commodo ut molestie vitae, feugiat tincidunt ligula...
-																		</div>
-																		
-																		<div className="product-buttons">
-																			<Link className="add-to-cart" to="/shoppingCart">
-																				<i className="fa fa-shopping-basket" aria-hidden="true"></i>
-																				<span>Add To Cart</span>
-																			</Link>
-																			
-																			<Link className="add-wishlist" to="#">
-																				<i className="fa fa-heart" aria-hidden="true"></i>												
-																			</Link>
-																			
-																			<Link className="quickview" to="/productDetails">
-																				<i className="fa fa-eye" aria-hidden="true"></i>
-																			</Link>
-																		</div>
-																	</div>
-																</div>
-															</div>
-														</div>
-													
-														<div className="product-item">
-															<div className="row">
-																<div className="col-lg-4 col-md-4 col-sm-6 col-xs-12">
-																	<div className="product-image">
-																		<Link to="/productDetails">
-																			<img className="img-responsive" src={baseURL + "img/product/8.jpg"} alt="Product Image" />
-																		</Link>
-																	</div>
-																</div>
-																
-																<div className="col-lg-8 col-md-8 col-sm-6 col-xs-12">
-																	<div className="product-info">
-																		<div className="product-title">
-																			<Link to="/productDetails">
-																				Organic Strawberry Fruits
-																			</Link>
-																		</div>
-																		
-																		<div className="product-rating">
-																			<div className="star on"></div>
-																			<div className="star on"></div>
-																			<div className="star on "></div>
-																			<div className="star on"></div>
-																			<div className="star"></div>
-																			<span className="review-count">(3 Reviews)</span>
-																		</div>
-																		
-																		<div className="product-price">
-																			<span className="sale-price">₹80.00</span>
-																			<span className="base-price">₹90.00</span>
-																		</div>
-																		
-																		<div className="product-stock">
-																			<i className="fa fa-check-square-o" aria-hidden="true"></i>In stock  
-																		</div>
-																		
-																		<div className="product-description">
-																			Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse sapien urna, commodo ut molestie vitae, feugiat tincidunt ligula...
-																		</div>
-																		
-																		<div className="product-buttons">
-																			<Link className="add-to-cart" to="/shoppingCart">
-																				<i className="fa fa-shopping-basket" aria-hidden="true"></i>
-																				<span>Add To Cart</span>
-																			</Link>
-																			
-																			<Link className="add-wishlist" to="#">
-																				<i className="fa fa-heart" aria-hidden="true"></i>												
-																			</Link>
-																			
-																			<Link className="quickview" to="/productDetails">
-																				<i className="fa fa-eye" aria-hidden="true"></i>
-																			</Link>
-																		</div>
-																	</div>
-																</div>
-															</div>
-														</div>
-													
-														<div className="product-item">
-															<div className="row">
-																<div className="col-lg-4 col-md-4 col-sm-6 col-xs-12">
-																	<div className="product-image">
-																		<Link to="/productDetails">
-																			<img className="img-responsive" src={baseURL + "img/product/9.jpg"} alt="Product Image" />
-																		</Link>
-																	</div>
-																</div>
-																
-																<div className="col-lg-8 col-md-8 col-sm-6 col-xs-12">
-																	<div className="product-info">
-																		<div className="product-title">
-																			<Link to="/productDetails">
-																				Organic Strawberry Fruits
-																			</Link>
-																		</div>
-																		
-																		<div className="product-rating">
-																			<div className="star on"></div>
-																			<div className="star on"></div>
-																			<div className="star on "></div>
-																			<div className="star on"></div>
-																			<div className="star"></div>
-																			<span className="review-count">(3 Reviews)</span>
-																		</div>
-																		
-																		<div className="product-price">
-																			<span className="sale-price">₹80.00</span>
-																			<span className="base-price">₹90.00</span>
-																		</div>
-																		
-																		<div className="product-stock">
-																			<i className="fa fa-check-square-o" aria-hidden="true"></i>In stock  
-																		</div>
-																		
-																		<div className="product-description">
-																			Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse sapien urna, commodo ut molestie vitae, feugiat tincidunt ligula...
-																		</div>
-																		
-																		<div className="product-buttons">
-																			<Link className="add-to-cart" to="/shoppingCart">
-																				<i className="fa fa-shopping-basket" aria-hidden="true"></i>
-																				<span>Add To Cart</span>
-																			</Link>
-																			
-																			<Link className="add-wishlist" to="#">
-																				<i className="fa fa-heart" aria-hidden="true"></i>												
-																			</Link>
-																			
-																			<Link className="quickview" to="/productDetails">
-																				<i className="fa fa-eye" aria-hidden="true"></i>
-																			</Link>
-																		</div>
-																	</div>
-																</div>
-															</div>
-														</div>
+														{currentProducts.map((product, index) => (
+															<ProductItem_List key={index} name={product.name} effPrice={product.effectivePrice} />)
+														)}
 													</div>
 												</div>
 											</div>
@@ -1213,18 +452,13 @@ class ProductsList extends React.Component {
 											<div className="pagination-bar">
 												<div className="row">
 													<div className="col-md-4 col-sm-4 col-xs-12">
-														<div className="text">Showing 1-12 of 20 item(s)</div>
+														<div className="text">Showing {indexOfFirstProd}-{indexOfLastProd} of {products.length} item(s)</div>
 													</div>
 													
 													<div className="col-md-8 col-sm-8 col-xs-12">
-														<div className="pagination">
-															<ul className="page-list">
-																<li><Link to="#" className="prev">Previous</Link></li>
-																<li><Link to="#" className="current">1</Link></li>
-																<li><Link to="#">2</Link></li>
-																<li><Link to="#" className="next">Next</Link></li>
-															</ul>
-														</div>
+														{products.length != 0 
+															? <Pagination onPageChange={this.handleCurrentPage} itemPerPage={prodPerPage} items={products}/> 
+															: 'No Products'}
 													</div>
 												</div>
 											</div>

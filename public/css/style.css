@@ -12960,6 +12960,7 @@ input {
 
 [class~=home-4] #footer [class~=footer] [class~=logo-footer] img {
     max-width: 8.375pc;
+    background: white;
 }
 
 [class~=sidebar] [class~=product-filter] [class~=filter-item] [class~=filter-content] ul::-webkit-scrollbar-thumb {
@@ -15667,4 +15668,11 @@ input {
 
 .disp-inline-block{
     display: inline-block;
+}
+
+.disable-anchor {
+    cursor: no-drop;
+    background: #eee !important;
+    color:#ccc !important;
+    /*pointer-events: none;*/
 }

@@ -45,6 +45,23 @@
         <div class="all">
             <div id="app"></div>
         </div>
+        <!-- Go Up button -->
+        <div class="go-up">
+            <a href="#">
+                <i class="fa fa-long-arrow-up"></i>
+            </a>
+        </div>
+        
+        <!-- Page Loader -->
+        <div id="page-preloader">
+            <div class="page-loading">
+                <div class="dot"></div>
+                <div class="dot"></div>
+                <div class="dot"></div>
+                <div class="dot"></div>
+                <div class="dot"></div>
+            </div>
+        </div>
         
         <!-- App JS -->
         <script src="{{URL::asset('js/app.js')}}" ></script>

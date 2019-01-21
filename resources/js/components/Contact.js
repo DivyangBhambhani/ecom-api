@@ -7,7 +7,7 @@ var Footer = require('./common/Footer');
 class Contact extends React.Component {
 	render() {
 		return(
-			<div>
+			<div className="container">
 				<Header />
 				<div id="breadcrumb">
 					<div className="container">

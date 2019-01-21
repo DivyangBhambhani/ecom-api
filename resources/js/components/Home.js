@@ -12,7 +12,7 @@ class Home extends React.Component {
 	}
 	render() {
 		return(
-			<div>
+			<div className="container">
 				<Header />
 				<div id="content" className="site-content">
 					<div className="section slideshow">

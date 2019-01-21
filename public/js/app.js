@@ -60,7 +60,7 @@
 /******/ 	__webpack_require__.p = "/";
 /******/
 /******/ 	// Load entry module and return exports
-/******/ 	return __webpack_require__(__webpack_require__.s = 33);
+/******/ 	return __webpack_require__(__webpack_require__.s = 34);
 /******/ })
 /************************************************************************/
 /******/ ([
@@ -87,7 +87,7 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 /* harmony reexport (binding) */ __webpack_require__.d(__webpack_exports__, "BrowserRouter", function() { return __WEBPACK_IMPORTED_MODULE_0__BrowserRouter__["a"]; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__HashRouter__ = __webpack_require__(73);
 /* harmony reexport (binding) */ __webpack_require__.d(__webpack_exports__, "HashRouter", function() { return __WEBPACK_IMPORTED_MODULE_1__HashRouter__["a"]; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__Link__ = __webpack_require__(28);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__Link__ = __webpack_require__(29);
 /* harmony reexport (binding) */ __webpack_require__.d(__webpack_exports__, "Link", function() { return __WEBPACK_IMPORTED_MODULE_2__Link__["a"]; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__MemoryRouter__ = __webpack_require__(74);
 /* harmony reexport (binding) */ __webpack_require__.d(__webpack_exports__, "MemoryRouter", function() { return __WEBPACK_IMPORTED_MODULE_3__MemoryRouter__["a"]; });
@@ -97,7 +97,7 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 /* harmony reexport (binding) */ __webpack_require__.d(__webpack_exports__, "Prompt", function() { return __WEBPACK_IMPORTED_MODULE_5__Prompt__["a"]; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__Redirect__ = __webpack_require__(80);
 /* harmony reexport (binding) */ __webpack_require__.d(__webpack_exports__, "Redirect", function() { return __WEBPACK_IMPORTED_MODULE_6__Redirect__["a"]; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__Route__ = __webpack_require__(29);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__Route__ = __webpack_require__(30);
 /* harmony reexport (binding) */ __webpack_require__.d(__webpack_exports__, "Route", function() { return __WEBPACK_IMPORTED_MODULE_7__Route__["a"]; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_8__Router__ = __webpack_require__(16);
 /* harmony reexport (binding) */ __webpack_require__.d(__webpack_exports__, "Router", function() { return __WEBPACK_IMPORTED_MODULE_8__Router__["a"]; });
@@ -147,7 +147,7 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 "use strict";
 
 
-var bind = __webpack_require__(21);
+var bind = __webpack_require__(22);
 var isBuffer = __webpack_require__(41);
 
 /*global toString:true*/
@@ -1102,7 +1102,7 @@ var Footer = function (_React$Component) {
 										React.createElement(
 											Link,
 											{ to: 'home-4.html', className: 'logo-footer' },
-											React.createElement('img', { src: 'img/logo-3.png', alt: 'Logo' })
+											React.createElement('img', { src: 'img/logo.png', alt: 'Logo' })
 										),
 										React.createElement(
 											'p',
@@ -1466,10 +1466,10 @@ function getDefaultAdapter() {
   var adapter;
   if (typeof XMLHttpRequest !== 'undefined') {
     // For browsers use XHR adapter
-    adapter = __webpack_require__(22);
+    adapter = __webpack_require__(23);
   } else if (typeof process !== 'undefined') {
     // For node use HTTP adapter
-    adapter = __webpack_require__(22);
+    adapter = __webpack_require__(23);
   }
   return adapter;
 }
@@ -1660,7 +1660,7 @@ module.exports = shouldUseNative() ? Object.assign : function (target, source) {
 var printWarning = function() {};
 
 if (true) {
-  var ReactPropTypesSecret = __webpack_require__(26);
+  var ReactPropTypesSecret = __webpack_require__(27);
   var loggedTypeFailures = {};
 
   printWarning = function(text) {
@@ -1961,7 +1961,7 @@ Router.childContextTypes = {
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_path_to_regexp__ = __webpack_require__(31);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_path_to_regexp__ = __webpack_require__(32);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_path_to_regexp___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_path_to_regexp__);
 
 
@@ -2369,6 +2369,12 @@ module.exports = g;
 /* 21 */
 /***/ (function(module, exports, __webpack_require__) {
 
+module.exports = __webpack_require__(40);
+
+/***/ }),
+/* 22 */
+/***/ (function(module, exports, __webpack_require__) {
+
 "use strict";
 
 
@@ -2384,7 +2390,7 @@ module.exports = function bind(fn, thisArg) {
 
 
 /***/ }),
-/* 22 */
+/* 23 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -2395,7 +2401,7 @@ var settle = __webpack_require__(45);
 var buildURL = __webpack_require__(47);
 var parseHeaders = __webpack_require__(48);
 var isURLSameOrigin = __webpack_require__(49);
-var createError = __webpack_require__(23);
+var createError = __webpack_require__(24);
 var btoa = (typeof window !== 'undefined' && window.btoa && window.btoa.bind(window)) || __webpack_require__(50);
 
 module.exports = function xhrAdapter(config) {
@@ -2571,7 +2577,7 @@ module.exports = function xhrAdapter(config) {
 
 
 /***/ }),
-/* 23 */
+/* 24 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -2596,7 +2602,7 @@ module.exports = function createError(message, config, code, request, response) 
 
 
 /***/ }),
-/* 24 */
+/* 25 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -2608,7 +2614,7 @@ module.exports = function isCancel(value) {
 
 
 /***/ }),
-/* 25 */
+/* 26 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -2634,7 +2640,7 @@ module.exports = Cancel;
 
 
 /***/ }),
-/* 26 */
+/* 27 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -2653,7 +2659,7 @@ module.exports = ReactPropTypesSecret;
 
 
 /***/ }),
-/* 27 */
+/* 28 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -2719,7 +2725,7 @@ var isExtraneousPopstateEvent = function isExtraneousPopstateEvent(event) {
 };
 
 /***/ }),
-/* 28 */
+/* 29 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -2836,18 +2842,18 @@ Link.contextTypes = {
 /* harmony default export */ __webpack_exports__["a"] = (Link);
 
 /***/ }),
-/* 29 */
+/* 30 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_react_router_es_Route__ = __webpack_require__(30);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_react_router_es_Route__ = __webpack_require__(31);
 // Written in this round about way for babel-transform-imports
 
 
 /* harmony default export */ __webpack_exports__["a"] = (__WEBPACK_IMPORTED_MODULE_0_react_router_es_Route__["a" /* default */]);
 
 /***/ }),
-/* 30 */
+/* 31 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -3001,7 +3007,7 @@ Route.childContextTypes = {
 /* harmony default export */ __webpack_exports__["a"] = (Route);
 
 /***/ }),
-/* 31 */
+/* 32 */
 /***/ (function(module, exports, __webpack_require__) {
 
 var isarray = __webpack_require__(77)
@@ -3433,11 +3439,11 @@ function pathToRegexp (path, keys, options) {
 
 
 /***/ }),
-/* 32 */
+/* 33 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_path_to_regexp__ = __webpack_require__(31);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_path_to_regexp__ = __webpack_require__(32);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_path_to_regexp___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_path_to_regexp__);
 
 
@@ -3478,21 +3484,21 @@ var generatePath = function generatePath() {
 /* harmony default export */ __webpack_exports__["a"] = (generatePath);
 
 /***/ }),
-/* 33 */
+/* 34 */
 /***/ (function(module, exports, __webpack_require__) {
 
-__webpack_require__(34);
-module.exports = __webpack_require__(100);
+__webpack_require__(35);
+module.exports = __webpack_require__(104);
 
 
 /***/ }),
-/* 34 */
+/* 35 */
 /***/ (function(module, exports, __webpack_require__) {
 
 /**
 * Loading Our Dependencies
 */
-__webpack_require__(35);
+__webpack_require__(36);
 
 /**
  * Next, we will create a fresh React component instance and attach it to
@@ -3511,10 +3517,10 @@ var Home = __webpack_require__(91);
 var About = __webpack_require__(93);
 var Contact = __webpack_require__(94);
 var ProductsList = __webpack_require__(95);
-var GluttenFreeProducts = __webpack_require__(96);
-var ShoppingCart = __webpack_require__(97);
-var Checkout = __webpack_require__(98);
-var ProductDetails = __webpack_require__(99);
+var GluttenFreeProducts = __webpack_require__(100);
+var ShoppingCart = __webpack_require__(101);
+var Checkout = __webpack_require__(102);
+var ProductDetails = __webpack_require__(103);
 
 ReactDOM.render(React.createElement(
 	Router,
@@ -3535,7 +3541,7 @@ ReactDOM.render(React.createElement(
 ), document.getElementById('app'));
 
 /***/ }),
-/* 35 */
+/* 36 */
 /***/ (function(module, exports, __webpack_require__) {
 
 /**
@@ -3544,8 +3550,8 @@ ReactDOM.render(React.createElement(
  * building robust, powerful web applications using React + Laravel.
  */
 
-window._ = __webpack_require__(36);
-window.Popper = __webpack_require__(38).default;
+window._ = __webpack_require__(37);
+window.Popper = __webpack_require__(39).default;
 
 /**
  * We'll load the axios HTTP library which allows us to easily issue requests
@@ -3553,7 +3559,7 @@ window.Popper = __webpack_require__(38).default;
  * CSRF token as a header based on the value of the "XSRF" token cookie.
  */
 
-window.axios = __webpack_require__(39);
+window.axios = __webpack_require__(21);
 window.axios.defaults.headers.common['X-Requested-With'] = 'XMLHttpRequest';
 
 /**
@@ -3571,7 +3577,7 @@ if (token) {
 }
 
 /***/ }),
-/* 36 */
+/* 37 */
 /***/ (function(module, exports, __webpack_require__) {
 
 /* WEBPACK VAR INJECTION */(function(global, module) {var __WEBPACK_AMD_DEFINE_RESULT__;/**
@@ -20683,10 +20689,10 @@ if (token) {
   }
 }.call(this));
 
-/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(20), __webpack_require__(37)(module)))
+/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(20), __webpack_require__(38)(module)))
 
 /***/ }),
-/* 37 */
+/* 38 */
 /***/ (function(module, exports) {
 
 module.exports = function(module) {
@@ -20714,7 +20720,7 @@ module.exports = function(module) {
 
 
 /***/ }),
-/* 38 */
+/* 39 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -23257,12 +23263,6 @@ Popper.Defaults = Defaults;
 /* WEBPACK VAR INJECTION */}.call(__webpack_exports__, __webpack_require__(20)))
 
 /***/ }),
-/* 39 */
-/***/ (function(module, exports, __webpack_require__) {
-
-module.exports = __webpack_require__(40);
-
-/***/ }),
 /* 40 */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -23270,7 +23270,7 @@ module.exports = __webpack_require__(40);
 
 
 var utils = __webpack_require__(2);
-var bind = __webpack_require__(21);
+var bind = __webpack_require__(22);
 var Axios = __webpack_require__(42);
 var defaults = __webpack_require__(12);
 
@@ -23305,9 +23305,9 @@ axios.create = function create(instanceConfig) {
 };
 
 // Expose Cancel & CancelToken
-axios.Cancel = __webpack_require__(25);
+axios.Cancel = __webpack_require__(26);
 axios.CancelToken = __webpack_require__(57);
-axios.isCancel = __webpack_require__(24);
+axios.isCancel = __webpack_require__(25);
 
 // Expose all/spread
 axios.all = function all(promises) {
@@ -23650,7 +23650,7 @@ module.exports = function normalizeHeaderName(headers, normalizedName) {
 "use strict";
 
 
-var createError = __webpack_require__(23);
+var createError = __webpack_require__(24);
 
 /**
  * Resolve or reject a Promise based on response status.
@@ -24083,7 +24083,7 @@ module.exports = InterceptorManager;
 
 var utils = __webpack_require__(2);
 var transformData = __webpack_require__(54);
-var isCancel = __webpack_require__(24);
+var isCancel = __webpack_require__(25);
 var defaults = __webpack_require__(12);
 var isAbsoluteURL = __webpack_require__(55);
 var combineURLs = __webpack_require__(56);
@@ -24243,7 +24243,7 @@ module.exports = function combineURLs(baseURL, relativeURL) {
 "use strict";
 
 
-var Cancel = __webpack_require__(25);
+var Cancel = __webpack_require__(26);
 
 /**
  * A `CancelToken` is an object that can be used to request cancellation of an operation.
@@ -47143,7 +47143,7 @@ BrowserRouter.propTypes = {
 
 var assign = __webpack_require__(13);
 
-var ReactPropTypesSecret = __webpack_require__(26);
+var ReactPropTypesSecret = __webpack_require__(27);
 var checkPropTypes = __webpack_require__(14);
 
 var printWarning = function() {};
@@ -47701,7 +47701,7 @@ module.exports = function(isValidElement, throwOnDirectAccess) {
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__LocationUtils__ = __webpack_require__(11);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__PathUtils__ = __webpack_require__(9);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__createTransitionManager__ = __webpack_require__(15);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__DOMUtils__ = __webpack_require__(27);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__DOMUtils__ = __webpack_require__(28);
 var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol" ? function (obj) { return typeof obj; } : function (obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; };
 
 var _extends = Object.assign || function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; };
@@ -48125,7 +48125,7 @@ function valueEqual(a, b) {
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__LocationUtils__ = __webpack_require__(11);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__PathUtils__ = __webpack_require__(9);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__createTransitionManager__ = __webpack_require__(15);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__DOMUtils__ = __webpack_require__(27);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__DOMUtils__ = __webpack_require__(28);
 var _extends = Object.assign || function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; };
 
 
@@ -48753,8 +48753,8 @@ MemoryRouter.propTypes = {
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_react___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_react__);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_prop_types__ = __webpack_require__(3);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_prop_types___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_1_prop_types__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__Route__ = __webpack_require__(29);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__Link__ = __webpack_require__(28);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__Route__ = __webpack_require__(30);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__Link__ = __webpack_require__(29);
 var _extends = Object.assign || function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; };
 
 var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol" ? function (obj) { return typeof obj; } : function (obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; };
@@ -48966,7 +48966,7 @@ Prompt.contextTypes = {
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_invariant__ = __webpack_require__(4);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_invariant___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_3_invariant__);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4_history__ = __webpack_require__(8);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__generatePath__ = __webpack_require__(32);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__generatePath__ = __webpack_require__(33);
 var _extends = Object.assign || function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; };
 
 function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
@@ -49366,7 +49366,7 @@ Switch.propTypes = {
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_react_router_es_generatePath__ = __webpack_require__(32);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_react_router_es_generatePath__ = __webpack_require__(33);
 // Written in this round about way for babel-transform-imports
 
 
@@ -49405,7 +49405,7 @@ Switch.propTypes = {
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_prop_types___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_1_prop_types__);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_hoist_non_react_statics__ = __webpack_require__(90);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_hoist_non_react_statics___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_2_hoist_non_react_statics__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__Route__ = __webpack_require__(30);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__Route__ = __webpack_require__(31);
 var _extends = Object.assign || function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; };
 
 function _objectWithoutProperties(obj, keys) { var target = {}; for (var i in obj) { if (keys.indexOf(i) >= 0) continue; if (!Object.prototype.hasOwnProperty.call(obj, i)) continue; target[i] = obj[i]; } return target; }
@@ -49557,7 +49557,7 @@ var Home = function (_React$Component) {
 		value: function render() {
 			return React.createElement(
 				'div',
-				null,
+				{ className: 'container' },
 				React.createElement(Header, null),
 				React.createElement(
 					'div',
@@ -54838,7 +54838,7 @@ var About = function (_React$Component) {
 		value: function render() {
 			return React.createElement(
 				'div',
-				null,
+				{ className: 'container' },
 				React.createElement(Header, null),
 				React.createElement(
 					'div',
@@ -55060,7 +55060,7 @@ var Contact = function (_React$Component) {
 		value: function render() {
 			return React.createElement(
 				'div',
-				null,
+				{ className: 'container' },
 				React.createElement(Header, null),
 				React.createElement(
 					'div',
@@ -55297,22 +55297,67 @@ var Link = __webpack_require__(1).Link;
 var baseURL = 'http://localhost:8000/';
 var Header = __webpack_require__(6);
 var Footer = __webpack_require__(7);
+var api = __webpack_require__(96);
+var ProductItem = __webpack_require__(97);
+var ProductItem_List = __webpack_require__(98);
+var Pagination = __webpack_require__(99);
 
 var ProductsList = function (_React$Component) {
 	_inherits(ProductsList, _React$Component);
 
-	function ProductsList() {
+	function ProductsList(props) {
 		_classCallCheck(this, ProductsList);
 
-		return _possibleConstructorReturn(this, (ProductsList.__proto__ || Object.getPrototypeOf(ProductsList)).apply(this, arguments));
+		var _this = _possibleConstructorReturn(this, (ProductsList.__proto__ || Object.getPrototypeOf(ProductsList)).call(this, props));
+
+		_this.state = {
+			products: [],
+			currentPage: 1,
+			prodPerPage: 9
+		};
+		_this.handleCurrentPage = _this.handleCurrentPage.bind(_this);
+		_this.handleGridList = _this.handleGridList.bind(_this);
+		return _this;
 	}
 
 	_createClass(ProductsList, [{
+		key: 'componentDidMount',
+		value: function componentDidMount() {
+			api.getAllProducts().then(function (res) {
+				var products = res.data.map(function (obj) {
+					return obj;
+				});
+				this.setState({ products: products });
+			}.bind(this));
+		}
+	}, {
+		key: 'handleCurrentPage',
+		value: function handleCurrentPage(curPage) {
+			this.setState({ currentPage: curPage });
+		}
+	}, {
+		key: 'handleGridList',
+		value: function handleGridList(event) {
+			var limit = event.target.id == 'listLink' ? 5 : 9;
+			this.setState({ prodPerPage: limit });
+		}
+	}, {
 		key: 'render',
 		value: function render() {
+			var _state = this.state,
+			    products = _state.products,
+			    currentPage = _state.currentPage,
+			    prodPerPage = _state.prodPerPage;
+
+			// Logic for displaying paginated products
+
+			var indexOfLastProd = currentPage * prodPerPage;
+			var indexOfFirstProd = indexOfLastProd - prodPerPage;
+			var currentProducts = products.slice(indexOfFirstProd, indexOfLastProd);
+
 			return React.createElement(
 				'div',
-				null,
+				{ className: 'container' },
 				React.createElement(Header, null),
 				React.createElement(
 					'div',
@@ -56237,7 +56282,7 @@ var ProductsList = function (_React$Component) {
 																		{ className: 'active' },
 																		React.createElement(
 																			Link,
-																			{ to: '#products-grid', 'data-toggle': 'tab', 'aria-expanded': 'true' },
+																			{ id: 'gridLink', to: '#products-grid', onClick: this.handleGridList, 'data-toggle': 'tab', 'aria-expanded': 'true' },
 																			React.createElement('i', { className: 'fa fa-th-large' })
 																		)
 																	),
@@ -56246,7 +56291,7 @@ var ProductsList = function (_React$Component) {
 																		null,
 																		React.createElement(
 																			Link,
-																			{ to: '#products-list', 'data-toggle': 'tab', 'aria-expanded': 'false' },
+																			{ id: 'listLink', to: '#products-list', onClick: this.handleGridList, 'data-toggle': 'tab', 'aria-expanded': 'false' },
 																			React.createElement('i', { className: 'fa fa-bars' })
 																		)
 																	)
@@ -56255,7 +56300,9 @@ var ProductsList = function (_React$Component) {
 															React.createElement(
 																'div',
 																{ className: 'total-products' },
-																'There are 12 products'
+																'There are ',
+																this.state.products.length,
+																' products'
 															)
 														),
 														React.createElement(
@@ -56364,807 +56411,9 @@ var ProductsList = function (_React$Component) {
 															React.createElement(
 																'div',
 																{ className: 'row' },
-																React.createElement(
-																	'div',
-																	{ className: 'col-lg-4 col-md-4 col-sm-6 col-xs-12' },
-																	React.createElement(
-																		'div',
-																		{ className: 'product-item' },
-																		React.createElement(
-																			'div',
-																			{ className: 'product-image' },
-																			React.createElement(
-																				Link,
-																				{ to: '/productDetails' },
-																				React.createElement('img', { className: 'img-responsive', src: baseURL + "img/product/4.jpg", alt: 'Product Image' })
-																			)
-																		),
-																		React.createElement(
-																			'div',
-																			{ className: 'product-title' },
-																			React.createElement(
-																				Link,
-																				{ to: '/productDetails' },
-																				'Organic Strawberry Fruits'
-																			)
-																		),
-																		React.createElement(
-																			'div',
-																			{ className: 'product-rating' },
-																			React.createElement('div', { className: 'star on' }),
-																			React.createElement('div', { className: 'star on' }),
-																			React.createElement('div', { className: 'star on ' }),
-																			React.createElement('div', { className: 'star on' }),
-																			React.createElement('div', { className: 'star' })
-																		),
-																		React.createElement(
-																			'div',
-																			{ className: 'product-price' },
-																			React.createElement(
-																				'span',
-																				{ className: 'sale-price' },
-																				'\u20B980.00'
-																			),
-																			React.createElement(
-																				'span',
-																				{ className: 'base-price' },
-																				'\u20B990.00'
-																			)
-																		),
-																		React.createElement(
-																			'div',
-																			{ className: 'product-buttons' },
-																			React.createElement(
-																				Link,
-																				{ className: 'add-to-cart', to: '/shoppingCart' },
-																				React.createElement('i', { className: 'fa fa-shopping-basket', 'aria-hidden': 'true' })
-																			),
-																			React.createElement(
-																				Link,
-																				{ className: 'add-wishlist', to: '#' },
-																				React.createElement('i', { className: 'fa fa-heart', 'aria-hidden': 'true' })
-																			),
-																			React.createElement(
-																				Link,
-																				{ className: 'quickview', to: '/productDetails' },
-																				React.createElement('i', { className: 'fa fa-eye', 'aria-hidden': 'true' })
-																			)
-																		)
-																	)
-																),
-																React.createElement(
-																	'div',
-																	{ className: 'col-lg-4 col-md-4 col-sm-6 col-xs-12' },
-																	React.createElement(
-																		'div',
-																		{ className: 'product-item' },
-																		React.createElement(
-																			'div',
-																			{ className: 'product-image' },
-																			React.createElement(
-																				Link,
-																				{ to: '/productDetails' },
-																				React.createElement('img', { className: 'img-responsive', src: baseURL + "img/product/14.jpg", alt: 'Product Image' })
-																			)
-																		),
-																		React.createElement(
-																			'div',
-																			{ className: 'product-title' },
-																			React.createElement(
-																				Link,
-																				{ to: '/productDetails' },
-																				'Organic Strawberry Fruits'
-																			)
-																		),
-																		React.createElement(
-																			'div',
-																			{ className: 'product-rating' },
-																			React.createElement('div', { className: 'star on' }),
-																			React.createElement('div', { className: 'star on' }),
-																			React.createElement('div', { className: 'star on ' }),
-																			React.createElement('div', { className: 'star on' }),
-																			React.createElement('div', { className: 'star' })
-																		),
-																		React.createElement(
-																			'div',
-																			{ className: 'product-price' },
-																			React.createElement(
-																				'span',
-																				{ className: 'sale-price' },
-																				'\u20B980.00'
-																			),
-																			React.createElement(
-																				'span',
-																				{ className: 'base-price' },
-																				'\u20B990.00'
-																			)
-																		),
-																		React.createElement(
-																			'div',
-																			{ className: 'product-buttons' },
-																			React.createElement(
-																				Link,
-																				{ className: 'add-to-cart', to: '/shoppingCart' },
-																				React.createElement('i', { className: 'fa fa-shopping-basket', 'aria-hidden': 'true' })
-																			),
-																			React.createElement(
-																				Link,
-																				{ className: 'add-wishlist', to: '#' },
-																				React.createElement('i', { className: 'fa fa-heart', 'aria-hidden': 'true' })
-																			),
-																			React.createElement(
-																				Link,
-																				{ className: 'quickview', to: '/productDetails' },
-																				React.createElement('i', { className: 'fa fa-eye', 'aria-hidden': 'true' })
-																			)
-																		)
-																	)
-																),
-																React.createElement(
-																	'div',
-																	{ className: 'col-lg-4 col-md-4 col-sm-6 col-xs-12' },
-																	React.createElement(
-																		'div',
-																		{ className: 'product-item' },
-																		React.createElement(
-																			'div',
-																			{ className: 'product-image' },
-																			React.createElement(
-																				Link,
-																				{ to: '/productDetails' },
-																				React.createElement('img', { className: 'img-responsive', src: baseURL + "img/product/17.jpg", alt: 'Product Image' })
-																			)
-																		),
-																		React.createElement(
-																			'div',
-																			{ className: 'product-title' },
-																			React.createElement(
-																				Link,
-																				{ to: '/productDetails' },
-																				'Organic Strawberry Fruits'
-																			)
-																		),
-																		React.createElement(
-																			'div',
-																			{ className: 'product-rating' },
-																			React.createElement('div', { className: 'star on' }),
-																			React.createElement('div', { className: 'star on' }),
-																			React.createElement('div', { className: 'star on ' }),
-																			React.createElement('div', { className: 'star on' }),
-																			React.createElement('div', { className: 'star' })
-																		),
-																		React.createElement(
-																			'div',
-																			{ className: 'product-price' },
-																			React.createElement(
-																				'span',
-																				{ className: 'sale-price' },
-																				'\u20B980.00'
-																			),
-																			React.createElement(
-																				'span',
-																				{ className: 'base-price' },
-																				'\u20B990.00'
-																			)
-																		),
-																		React.createElement(
-																			'div',
-																			{ className: 'product-buttons' },
-																			React.createElement(
-																				Link,
-																				{ className: 'add-to-cart', to: '/shoppingCart' },
-																				React.createElement('i', { className: 'fa fa-shopping-basket', 'aria-hidden': 'true' })
-																			),
-																			React.createElement(
-																				Link,
-																				{ className: 'add-wishlist', to: '#' },
-																				React.createElement('i', { className: 'fa fa-heart', 'aria-hidden': 'true' })
-																			),
-																			React.createElement(
-																				Link,
-																				{ className: 'quickview', to: '/productDetails' },
-																				React.createElement('i', { className: 'fa fa-eye', 'aria-hidden': 'true' })
-																			)
-																		)
-																	)
-																),
-																React.createElement(
-																	'div',
-																	{ className: 'col-lg-4 col-md-4 col-sm-6 col-xs-12' },
-																	React.createElement(
-																		'div',
-																		{ className: 'product-item' },
-																		React.createElement(
-																			'div',
-																			{ className: 'product-image' },
-																			React.createElement(
-																				Link,
-																				{ to: '/productDetails' },
-																				React.createElement('img', { className: 'img-responsive', src: baseURL + "img/product/8.jpg", alt: 'Product Image' })
-																			)
-																		),
-																		React.createElement(
-																			'div',
-																			{ className: 'product-title' },
-																			React.createElement(
-																				Link,
-																				{ to: '/productDetails' },
-																				'Organic Strawberry Fruits'
-																			)
-																		),
-																		React.createElement(
-																			'div',
-																			{ className: 'product-rating' },
-																			React.createElement('div', { className: 'star on' }),
-																			React.createElement('div', { className: 'star on' }),
-																			React.createElement('div', { className: 'star on ' }),
-																			React.createElement('div', { className: 'star on' }),
-																			React.createElement('div', { className: 'star' })
-																		),
-																		React.createElement(
-																			'div',
-																			{ className: 'product-price' },
-																			React.createElement(
-																				'span',
-																				{ className: 'sale-price' },
-																				'\u20B9120.00'
-																			)
-																		),
-																		React.createElement(
-																			'div',
-																			{ className: 'product-buttons' },
-																			React.createElement(
-																				Link,
-																				{ className: 'add-to-cart', to: '/shoppingCart' },
-																				React.createElement('i', { className: 'fa fa-shopping-basket', 'aria-hidden': 'true' })
-																			),
-																			React.createElement(
-																				Link,
-																				{ className: 'add-wishlist', to: '#' },
-																				React.createElement('i', { className: 'fa fa-heart', 'aria-hidden': 'true' })
-																			),
-																			React.createElement(
-																				Link,
-																				{ className: 'quickview', to: '/productDetails' },
-																				React.createElement('i', { className: 'fa fa-eye', 'aria-hidden': 'true' })
-																			)
-																		)
-																	)
-																),
-																React.createElement(
-																	'div',
-																	{ className: 'col-lg-4 col-md-4 col-sm-6 col-xs-12' },
-																	React.createElement(
-																		'div',
-																		{ className: 'product-item' },
-																		React.createElement(
-																			'div',
-																			{ className: 'product-image' },
-																			React.createElement(
-																				Link,
-																				{ to: '/productDetails' },
-																				React.createElement('img', { className: 'img-responsive', src: baseURL + "img/product/9.jpg", alt: 'Product Image' })
-																			)
-																		),
-																		React.createElement(
-																			'div',
-																			{ className: 'product-title' },
-																			React.createElement(
-																				Link,
-																				{ to: '/productDetails' },
-																				'Organic Strawberry Fruits'
-																			)
-																		),
-																		React.createElement(
-																			'div',
-																			{ className: 'product-rating' },
-																			React.createElement('div', { className: 'star on' }),
-																			React.createElement('div', { className: 'star on' }),
-																			React.createElement('div', { className: 'star on ' }),
-																			React.createElement('div', { className: 'star on' }),
-																			React.createElement('div', { className: 'star on' })
-																		),
-																		React.createElement(
-																			'div',
-																			{ className: 'product-price' },
-																			React.createElement(
-																				'span',
-																				{ className: 'sale-price' },
-																				'\u20B980.00'
-																			),
-																			React.createElement(
-																				'span',
-																				{ className: 'base-price' },
-																				'\u20B990.00'
-																			)
-																		),
-																		React.createElement(
-																			'div',
-																			{ className: 'product-buttons' },
-																			React.createElement(
-																				Link,
-																				{ className: 'add-to-cart', to: '/shoppingCart' },
-																				React.createElement('i', { className: 'fa fa-shopping-basket', 'aria-hidden': 'true' })
-																			),
-																			React.createElement(
-																				Link,
-																				{ className: 'add-wishlist', to: '#' },
-																				React.createElement('i', { className: 'fa fa-heart', 'aria-hidden': 'true' })
-																			),
-																			React.createElement(
-																				Link,
-																				{ className: 'quickview', to: '/productDetails' },
-																				React.createElement('i', { className: 'fa fa-eye', 'aria-hidden': 'true' })
-																			)
-																		)
-																	)
-																),
-																React.createElement(
-																	'div',
-																	{ className: 'col-lg-4 col-md-4 col-sm-6 col-xs-12' },
-																	React.createElement(
-																		'div',
-																		{ className: 'product-item' },
-																		React.createElement(
-																			'div',
-																			{ className: 'product-image' },
-																			React.createElement(
-																				Link,
-																				{ to: '/productDetails' },
-																				React.createElement('img', { className: 'img-responsive', src: baseURL + "img/product/15.jpg", alt: 'Product Image' })
-																			)
-																		),
-																		React.createElement(
-																			'div',
-																			{ className: 'product-title' },
-																			React.createElement(
-																				Link,
-																				{ to: '/productDetails' },
-																				'Organic Strawberry Fruits'
-																			)
-																		),
-																		React.createElement(
-																			'div',
-																			{ className: 'product-rating' },
-																			React.createElement('div', { className: 'star on' }),
-																			React.createElement('div', { className: 'star on' }),
-																			React.createElement('div', { className: 'star on ' }),
-																			React.createElement('div', { className: 'star on' }),
-																			React.createElement('div', { className: 'star on' })
-																		),
-																		React.createElement(
-																			'div',
-																			{ className: 'product-price' },
-																			React.createElement(
-																				'span',
-																				{ className: 'sale-price' },
-																				'\u20B980.00'
-																			),
-																			React.createElement(
-																				'span',
-																				{ className: 'base-price' },
-																				'\u20B990.00'
-																			)
-																		),
-																		React.createElement(
-																			'div',
-																			{ className: 'product-buttons' },
-																			React.createElement(
-																				Link,
-																				{ className: 'add-to-cart', to: '/shoppingCart' },
-																				React.createElement('i', { className: 'fa fa-shopping-basket', 'aria-hidden': 'true' })
-																			),
-																			React.createElement(
-																				Link,
-																				{ className: 'add-wishlist', to: '#' },
-																				React.createElement('i', { className: 'fa fa-heart', 'aria-hidden': 'true' })
-																			),
-																			React.createElement(
-																				Link,
-																				{ className: 'quickview', to: '/productDetails' },
-																				React.createElement('i', { className: 'fa fa-eye', 'aria-hidden': 'true' })
-																			)
-																		)
-																	)
-																),
-																React.createElement(
-																	'div',
-																	{ className: 'col-lg-4 col-md-4 col-sm-6 col-xs-12' },
-																	React.createElement(
-																		'div',
-																		{ className: 'product-item' },
-																		React.createElement(
-																			'div',
-																			{ className: 'product-image' },
-																			React.createElement(
-																				Link,
-																				{ to: '/productDetails' },
-																				React.createElement('img', { className: 'img-responsive', src: baseURL + "img/product/10.jpg", alt: 'Product Image' })
-																			)
-																		),
-																		React.createElement(
-																			'div',
-																			{ className: 'product-title' },
-																			React.createElement(
-																				Link,
-																				{ to: '/productDetails' },
-																				'Organic Strawberry Fruits'
-																			)
-																		),
-																		React.createElement(
-																			'div',
-																			{ className: 'product-rating' },
-																			React.createElement('div', { className: 'star on' }),
-																			React.createElement('div', { className: 'star on' }),
-																			React.createElement('div', { className: 'star on ' }),
-																			React.createElement('div', { className: 'star on' }),
-																			React.createElement('div', { className: 'star' })
-																		),
-																		React.createElement(
-																			'div',
-																			{ className: 'product-price' },
-																			React.createElement(
-																				'span',
-																				{ className: 'sale-price' },
-																				'\u20B996.00'
-																			)
-																		),
-																		React.createElement(
-																			'div',
-																			{ className: 'product-buttons' },
-																			React.createElement(
-																				Link,
-																				{ className: 'add-to-cart', to: '/shoppingCart' },
-																				React.createElement('i', { className: 'fa fa-shopping-basket', 'aria-hidden': 'true' })
-																			),
-																			React.createElement(
-																				Link,
-																				{ className: 'add-wishlist', to: '#' },
-																				React.createElement('i', { className: 'fa fa-heart', 'aria-hidden': 'true' })
-																			),
-																			React.createElement(
-																				Link,
-																				{ className: 'quickview', to: '/productDetails' },
-																				React.createElement('i', { className: 'fa fa-eye', 'aria-hidden': 'true' })
-																			)
-																		)
-																	)
-																),
-																React.createElement(
-																	'div',
-																	{ className: 'col-lg-4 col-md-4 col-sm-6 col-xs-12' },
-																	React.createElement(
-																		'div',
-																		{ className: 'product-item' },
-																		React.createElement(
-																			'div',
-																			{ className: 'product-image' },
-																			React.createElement(
-																				Link,
-																				{ to: '/productDetails' },
-																				React.createElement('img', { className: 'img-responsive', src: baseURL + "img/product/33.jpg", alt: 'Product Image' })
-																			)
-																		),
-																		React.createElement(
-																			'div',
-																			{ className: 'product-title' },
-																			React.createElement(
-																				Link,
-																				{ to: '/productDetails' },
-																				'Organic Strawberry Fruits'
-																			)
-																		),
-																		React.createElement(
-																			'div',
-																			{ className: 'product-rating' },
-																			React.createElement('div', { className: 'star on' }),
-																			React.createElement('div', { className: 'star on' }),
-																			React.createElement('div', { className: 'star on ' }),
-																			React.createElement('div', { className: 'star on' }),
-																			React.createElement('div', { className: 'star' })
-																		),
-																		React.createElement(
-																			'div',
-																			{ className: 'product-price' },
-																			React.createElement(
-																				'span',
-																				{ className: 'sale-price' },
-																				'\u20B980.00'
-																			),
-																			React.createElement(
-																				'span',
-																				{ className: 'base-price' },
-																				'\u20B990.00'
-																			)
-																		),
-																		React.createElement(
-																			'div',
-																			{ className: 'product-buttons' },
-																			React.createElement(
-																				Link,
-																				{ className: 'add-to-cart', to: '/shoppingCart' },
-																				React.createElement('i', { className: 'fa fa-shopping-basket', 'aria-hidden': 'true' })
-																			),
-																			React.createElement(
-																				Link,
-																				{ className: 'add-wishlist', to: '#' },
-																				React.createElement('i', { className: 'fa fa-heart', 'aria-hidden': 'true' })
-																			),
-																			React.createElement(
-																				Link,
-																				{ className: 'quickview', to: '/productDetails' },
-																				React.createElement('i', { className: 'fa fa-eye', 'aria-hidden': 'true' })
-																			)
-																		)
-																	)
-																),
-																React.createElement(
-																	'div',
-																	{ className: 'col-lg-4 col-md-4 col-sm-6 col-xs-12' },
-																	React.createElement(
-																		'div',
-																		{ className: 'product-item' },
-																		React.createElement(
-																			'div',
-																			{ className: 'product-image' },
-																			React.createElement(
-																				Link,
-																				{ to: '/productDetails' },
-																				React.createElement('img', { className: 'img-responsive', src: baseURL + "img/product/22.jpg", alt: 'Product Image' })
-																			)
-																		),
-																		React.createElement(
-																			'div',
-																			{ className: 'product-title' },
-																			React.createElement(
-																				Link,
-																				{ to: '/productDetails' },
-																				'Organic Strawberry Fruits'
-																			)
-																		),
-																		React.createElement(
-																			'div',
-																			{ className: 'product-rating' },
-																			React.createElement('div', { className: 'star on' }),
-																			React.createElement('div', { className: 'star on' }),
-																			React.createElement('div', { className: 'star on ' }),
-																			React.createElement('div', { className: 'star on' }),
-																			React.createElement('div', { className: 'star' })
-																		),
-																		React.createElement(
-																			'div',
-																			{ className: 'product-price' },
-																			React.createElement(
-																				'span',
-																				{ className: 'sale-price' },
-																				'\u20B980.00'
-																			),
-																			React.createElement(
-																				'span',
-																				{ className: 'base-price' },
-																				'\u20B990.00'
-																			)
-																		),
-																		React.createElement(
-																			'div',
-																			{ className: 'product-buttons' },
-																			React.createElement(
-																				Link,
-																				{ className: 'add-to-cart', to: '/shoppingCart' },
-																				React.createElement('i', { className: 'fa fa-shopping-basket', 'aria-hidden': 'true' })
-																			),
-																			React.createElement(
-																				Link,
-																				{ className: 'add-wishlist', to: '#' },
-																				React.createElement('i', { className: 'fa fa-heart', 'aria-hidden': 'true' })
-																			),
-																			React.createElement(
-																				Link,
-																				{ className: 'quickview', to: '/productDetails' },
-																				React.createElement('i', { className: 'fa fa-eye', 'aria-hidden': 'true' })
-																			)
-																		)
-																	)
-																),
-																React.createElement(
-																	'div',
-																	{ className: 'col-lg-4 col-md-4 col-sm-6 col-xs-12' },
-																	React.createElement(
-																		'div',
-																		{ className: 'product-item' },
-																		React.createElement(
-																			'div',
-																			{ className: 'product-image' },
-																			React.createElement(
-																				Link,
-																				{ to: '/productDetails' },
-																				React.createElement('img', { className: 'img-responsive', src: baseURL + "img/product/20.jpg", alt: 'Product Image' })
-																			)
-																		),
-																		React.createElement(
-																			'div',
-																			{ className: 'product-title' },
-																			React.createElement(
-																				Link,
-																				{ to: '/productDetails' },
-																				'Organic Strawberry Fruits'
-																			)
-																		),
-																		React.createElement(
-																			'div',
-																			{ className: 'product-rating' },
-																			React.createElement('div', { className: 'star on' }),
-																			React.createElement('div', { className: 'star on' }),
-																			React.createElement('div', { className: 'star on ' }),
-																			React.createElement('div', { className: 'star on' }),
-																			React.createElement('div', { className: 'star' })
-																		),
-																		React.createElement(
-																			'div',
-																			{ className: 'product-price' },
-																			React.createElement(
-																				'span',
-																				{ className: 'sale-price' },
-																				'\u20B996.00'
-																			)
-																		),
-																		React.createElement(
-																			'div',
-																			{ className: 'product-buttons' },
-																			React.createElement(
-																				Link,
-																				{ className: 'add-to-cart', to: '/shoppingCart' },
-																				React.createElement('i', { className: 'fa fa-shopping-basket', 'aria-hidden': 'true' })
-																			),
-																			React.createElement(
-																				Link,
-																				{ className: 'add-wishlist', to: '#' },
-																				React.createElement('i', { className: 'fa fa-heart', 'aria-hidden': 'true' })
-																			),
-																			React.createElement(
-																				Link,
-																				{ className: 'quickview', to: '/productDetails' },
-																				React.createElement('i', { className: 'fa fa-eye', 'aria-hidden': 'true' })
-																			)
-																		)
-																	)
-																),
-																React.createElement(
-																	'div',
-																	{ className: 'col-lg-4 col-md-4 col-sm-6 col-xs-12' },
-																	React.createElement(
-																		'div',
-																		{ className: 'product-item' },
-																		React.createElement(
-																			'div',
-																			{ className: 'product-image' },
-																			React.createElement(
-																				Link,
-																				{ to: '/productDetails' },
-																				React.createElement('img', { className: 'img-responsive', src: baseURL + "img/product/23.jpg", alt: 'Product Image' })
-																			)
-																		),
-																		React.createElement(
-																			'div',
-																			{ className: 'product-title' },
-																			React.createElement(
-																				Link,
-																				{ to: '/productDetails' },
-																				'Organic Strawberry Fruits'
-																			)
-																		),
-																		React.createElement(
-																			'div',
-																			{ className: 'product-rating' },
-																			React.createElement('div', { className: 'star on' }),
-																			React.createElement('div', { className: 'star on' }),
-																			React.createElement('div', { className: 'star on ' }),
-																			React.createElement('div', { className: 'star on' }),
-																			React.createElement('div', { className: 'star' })
-																		),
-																		React.createElement(
-																			'div',
-																			{ className: 'product-price' },
-																			React.createElement(
-																				'span',
-																				{ className: 'sale-price' },
-																				'\u20B980.00'
-																			),
-																			React.createElement(
-																				'span',
-																				{ className: 'base-price' },
-																				'\u20B990.00'
-																			)
-																		),
-																		React.createElement(
-																			'div',
-																			{ className: 'product-buttons' },
-																			React.createElement(
-																				Link,
-																				{ className: 'add-to-cart', to: '/shoppingCart' },
-																				React.createElement('i', { className: 'fa fa-shopping-basket', 'aria-hidden': 'true' })
-																			),
-																			React.createElement(
-																				Link,
-																				{ className: 'add-wishlist', to: '#' },
-																				React.createElement('i', { className: 'fa fa-heart', 'aria-hidden': 'true' })
-																			),
-																			React.createElement(
-																				Link,
-																				{ className: 'quickview', to: '/productDetails' },
-																				React.createElement('i', { className: 'fa fa-eye', 'aria-hidden': 'true' })
-																			)
-																		)
-																	)
-																),
-																React.createElement(
-																	'div',
-																	{ className: 'col-lg-4 col-md-4 col-sm-6 col-xs-12' },
-																	React.createElement(
-																		'div',
-																		{ className: 'product-item' },
-																		React.createElement(
-																			'div',
-																			{ className: 'product-image' },
-																			React.createElement(
-																				Link,
-																				{ to: '/productDetails' },
-																				React.createElement('img', { className: 'img-responsive', src: baseURL + "img/product/30.jpg", alt: 'Product Image' })
-																			)
-																		),
-																		React.createElement(
-																			'div',
-																			{ className: 'product-title' },
-																			React.createElement(
-																				Link,
-																				{ to: '/productDetails' },
-																				'Organic Strawberry Fruits'
-																			)
-																		),
-																		React.createElement(
-																			'div',
-																			{ className: 'product-rating' },
-																			React.createElement('div', { className: 'star on' }),
-																			React.createElement('div', { className: 'star on' }),
-																			React.createElement('div', { className: 'star on ' }),
-																			React.createElement('div', { className: 'star on' }),
-																			React.createElement('div', { className: 'star' })
-																		),
-																		React.createElement(
-																			'div',
-																			{ className: 'product-price' },
-																			React.createElement(
-																				'span',
-																				{ className: 'sale-price' },
-																				'\u20B980.00'
-																			),
-																			React.createElement(
-																				'span',
-																				{ className: 'base-price' },
-																				'\u20B990.00'
-																			)
-																		),
-																		React.createElement(
-																			'div',
-																			{ className: 'product-buttons' },
-																			React.createElement(
-																				Link,
-																				{ className: 'add-to-cart', to: '/shoppingCart' },
-																				React.createElement('i', { className: 'fa fa-shopping-basket', 'aria-hidden': 'true' })
-																			),
-																			React.createElement(
-																				Link,
-																				{ className: 'add-wishlist', to: '#' },
-																				React.createElement('i', { className: 'fa fa-heart', 'aria-hidden': 'true' })
-																			),
-																			React.createElement(
-																				Link,
-																				{ className: 'quickview', to: '/productDetails' },
-																				React.createElement('i', { className: 'fa fa-eye', 'aria-hidden': 'true' })
-																			)
-																		)
-																	)
-																)
+																currentProducts.map(function (product, index) {
+																	return React.createElement(ProductItem, { key: index, name: product.name, effPrice: product.effectivePrice });
+																})
 															)
 														)
 													),
@@ -57174,511 +56423,9 @@ var ProductsList = function (_React$Component) {
 														React.createElement(
 															'div',
 															{ className: 'products-block layout-5' },
-															React.createElement(
-																'div',
-																{ className: 'product-item' },
-																React.createElement(
-																	'div',
-																	{ className: 'row' },
-																	React.createElement(
-																		'div',
-																		{ className: 'col-lg-4 col-md-4 col-sm-6 col-xs-12' },
-																		React.createElement(
-																			'div',
-																			{ className: 'product-image' },
-																			React.createElement(
-																				Link,
-																				{ to: '/productDetails' },
-																				React.createElement('img', { className: 'img-responsive', src: baseURL + "img/product/4.jpg", alt: 'Product Image' })
-																			)
-																		)
-																	),
-																	React.createElement(
-																		'div',
-																		{ className: 'col-lg-8 col-md-8 col-sm-6 col-xs-12' },
-																		React.createElement(
-																			'div',
-																			{ className: 'product-info' },
-																			React.createElement(
-																				'div',
-																				{ className: 'product-title' },
-																				React.createElement(
-																					Link,
-																					{ to: '/productDetails' },
-																					'Organic Strawberry Fruits'
-																				)
-																			),
-																			React.createElement(
-																				'div',
-																				{ className: 'product-rating' },
-																				React.createElement('div', { className: 'star on' }),
-																				React.createElement('div', { className: 'star on' }),
-																				React.createElement('div', { className: 'star on ' }),
-																				React.createElement('div', { className: 'star on' }),
-																				React.createElement('div', { className: 'star' }),
-																				React.createElement(
-																					'span',
-																					{ className: 'review-count' },
-																					'(3 Reviews)'
-																				)
-																			),
-																			React.createElement(
-																				'div',
-																				{ className: 'product-price' },
-																				React.createElement(
-																					'span',
-																					{ className: 'sale-price' },
-																					'\u20B980.00'
-																				),
-																				React.createElement(
-																					'span',
-																					{ className: 'base-price' },
-																					'\u20B990.00'
-																				)
-																			),
-																			React.createElement(
-																				'div',
-																				{ className: 'product-stock' },
-																				React.createElement('i', { className: 'fa fa-check-square-o', 'aria-hidden': 'true' }),
-																				'In stock'
-																			),
-																			React.createElement(
-																				'div',
-																				{ className: 'product-description' },
-																				'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse sapien urna, commodo ut molestie vitae, feugiat tincidunt ligula...'
-																			),
-																			React.createElement(
-																				'div',
-																				{ className: 'product-buttons' },
-																				React.createElement(
-																					Link,
-																					{ className: 'add-to-cart', to: '/shoppingCart' },
-																					React.createElement('i', { className: 'fa fa-shopping-basket', 'aria-hidden': 'true' }),
-																					React.createElement(
-																						'span',
-																						null,
-																						'Add To Cart'
-																					)
-																				),
-																				React.createElement(
-																					Link,
-																					{ className: 'add-wishlist', to: '#' },
-																					React.createElement('i', { className: 'fa fa-heart', 'aria-hidden': 'true' })
-																				),
-																				React.createElement(
-																					Link,
-																					{ className: 'quickview', to: '/productDetails' },
-																					React.createElement('i', { className: 'fa fa-eye', 'aria-hidden': 'true' })
-																				)
-																			)
-																		)
-																	)
-																)
-															),
-															React.createElement(
-																'div',
-																{ className: 'product-item' },
-																React.createElement(
-																	'div',
-																	{ className: 'row' },
-																	React.createElement(
-																		'div',
-																		{ className: 'col-lg-4 col-md-4 col-sm-6 col-xs-12' },
-																		React.createElement(
-																			'div',
-																			{ className: 'product-image' },
-																			React.createElement(
-																				Link,
-																				{ to: '/productDetails' },
-																				React.createElement('img', { className: 'img-responsive', src: baseURL + "img/product/14.jpg", alt: 'Product Image' })
-																			)
-																		)
-																	),
-																	React.createElement(
-																		'div',
-																		{ className: 'col-lg-8 col-md-8 col-sm-6 col-xs-12' },
-																		React.createElement(
-																			'div',
-																			{ className: 'product-info' },
-																			React.createElement(
-																				'div',
-																				{ className: 'product-title' },
-																				React.createElement(
-																					Link,
-																					{ to: '/productDetails' },
-																					'Organic Strawberry Fruits'
-																				)
-																			),
-																			React.createElement(
-																				'div',
-																				{ className: 'product-rating' },
-																				React.createElement('div', { className: 'star on' }),
-																				React.createElement('div', { className: 'star on' }),
-																				React.createElement('div', { className: 'star on ' }),
-																				React.createElement('div', { className: 'star on' }),
-																				React.createElement('div', { className: 'star' }),
-																				React.createElement(
-																					'span',
-																					{ className: 'review-count' },
-																					'(3 Reviews)'
-																				)
-																			),
-																			React.createElement(
-																				'div',
-																				{ className: 'product-price' },
-																				React.createElement(
-																					'span',
-																					{ className: 'sale-price' },
-																					'\u20B980.00'
-																				),
-																				React.createElement(
-																					'span',
-																					{ className: 'base-price' },
-																					'\u20B990.00'
-																				)
-																			),
-																			React.createElement(
-																				'div',
-																				{ className: 'product-stock' },
-																				React.createElement('i', { className: 'fa fa-check-square-o', 'aria-hidden': 'true' }),
-																				'In stock'
-																			),
-																			React.createElement(
-																				'div',
-																				{ className: 'product-description' },
-																				'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse sapien urna, commodo ut molestie vitae, feugiat tincidunt ligula...'
-																			),
-																			React.createElement(
-																				'div',
-																				{ className: 'product-buttons' },
-																				React.createElement(
-																					Link,
-																					{ className: 'add-to-cart', to: '/shoppingCart' },
-																					React.createElement('i', { className: 'fa fa-shopping-basket', 'aria-hidden': 'true' }),
-																					React.createElement(
-																						'span',
-																						null,
-																						'Add To Cart'
-																					)
-																				),
-																				React.createElement(
-																					Link,
-																					{ className: 'add-wishlist', to: '#' },
-																					React.createElement('i', { className: 'fa fa-heart', 'aria-hidden': 'true' })
-																				),
-																				React.createElement(
-																					Link,
-																					{ className: 'quickview', to: '/productDetails' },
-																					React.createElement('i', { className: 'fa fa-eye', 'aria-hidden': 'true' })
-																				)
-																			)
-																		)
-																	)
-																)
-															),
-															React.createElement(
-																'div',
-																{ className: 'product-item' },
-																React.createElement(
-																	'div',
-																	{ className: 'row' },
-																	React.createElement(
-																		'div',
-																		{ className: 'col-lg-4 col-md-4 col-sm-6 col-xs-12' },
-																		React.createElement(
-																			'div',
-																			{ className: 'product-image' },
-																			React.createElement(
-																				Link,
-																				{ to: '/productDetails' },
-																				React.createElement('img', { className: 'img-responsive', src: baseURL + "img/product/17.jpg", alt: 'Product Image' })
-																			)
-																		)
-																	),
-																	React.createElement(
-																		'div',
-																		{ className: 'col-lg-8 col-md-8 col-sm-6 col-xs-12' },
-																		React.createElement(
-																			'div',
-																			{ className: 'product-info' },
-																			React.createElement(
-																				'div',
-																				{ className: 'product-title' },
-																				React.createElement(
-																					Link,
-																					{ to: '/productDetails' },
-																					'Organic Strawberry Fruits'
-																				)
-																			),
-																			React.createElement(
-																				'div',
-																				{ className: 'product-rating' },
-																				React.createElement('div', { className: 'star on' }),
-																				React.createElement('div', { className: 'star on' }),
-																				React.createElement('div', { className: 'star on ' }),
-																				React.createElement('div', { className: 'star on' }),
-																				React.createElement('div', { className: 'star' }),
-																				React.createElement(
-																					'span',
-																					{ className: 'review-count' },
-																					'(3 Reviews)'
-																				)
-																			),
-																			React.createElement(
-																				'div',
-																				{ className: 'product-price' },
-																				React.createElement(
-																					'span',
-																					{ className: 'sale-price' },
-																					'\u20B980.00'
-																				),
-																				React.createElement(
-																					'span',
-																					{ className: 'base-price' },
-																					'\u20B990.00'
-																				)
-																			),
-																			React.createElement(
-																				'div',
-																				{ className: 'product-stock' },
-																				React.createElement('i', { className: 'fa fa-check-square-o', 'aria-hidden': 'true' }),
-																				'In stock'
-																			),
-																			React.createElement(
-																				'div',
-																				{ className: 'product-description' },
-																				'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse sapien urna, commodo ut molestie vitae, feugiat tincidunt ligula...'
-																			),
-																			React.createElement(
-																				'div',
-																				{ className: 'product-buttons' },
-																				React.createElement(
-																					Link,
-																					{ className: 'add-to-cart', to: '/shoppingCart' },
-																					React.createElement('i', { className: 'fa fa-shopping-basket', 'aria-hidden': 'true' }),
-																					React.createElement(
-																						'span',
-																						null,
-																						'Add To Cart'
-																					)
-																				),
-																				React.createElement(
-																					Link,
-																					{ className: 'add-wishlist', to: '#' },
-																					React.createElement('i', { className: 'fa fa-heart', 'aria-hidden': 'true' })
-																				),
-																				React.createElement(
-																					Link,
-																					{ className: 'quickview', to: '/productDetails' },
-																					React.createElement('i', { className: 'fa fa-eye', 'aria-hidden': 'true' })
-																				)
-																			)
-																		)
-																	)
-																)
-															),
-															React.createElement(
-																'div',
-																{ className: 'product-item' },
-																React.createElement(
-																	'div',
-																	{ className: 'row' },
-																	React.createElement(
-																		'div',
-																		{ className: 'col-lg-4 col-md-4 col-sm-6 col-xs-12' },
-																		React.createElement(
-																			'div',
-																			{ className: 'product-image' },
-																			React.createElement(
-																				Link,
-																				{ to: '/productDetails' },
-																				React.createElement('img', { className: 'img-responsive', src: baseURL + "img/product/8.jpg", alt: 'Product Image' })
-																			)
-																		)
-																	),
-																	React.createElement(
-																		'div',
-																		{ className: 'col-lg-8 col-md-8 col-sm-6 col-xs-12' },
-																		React.createElement(
-																			'div',
-																			{ className: 'product-info' },
-																			React.createElement(
-																				'div',
-																				{ className: 'product-title' },
-																				React.createElement(
-																					Link,
-																					{ to: '/productDetails' },
-																					'Organic Strawberry Fruits'
-																				)
-																			),
-																			React.createElement(
-																				'div',
-																				{ className: 'product-rating' },
-																				React.createElement('div', { className: 'star on' }),
-																				React.createElement('div', { className: 'star on' }),
-																				React.createElement('div', { className: 'star on ' }),
-																				React.createElement('div', { className: 'star on' }),
-																				React.createElement('div', { className: 'star' }),
-																				React.createElement(
-																					'span',
-																					{ className: 'review-count' },
-																					'(3 Reviews)'
-																				)
-																			),
-																			React.createElement(
-																				'div',
-																				{ className: 'product-price' },
-																				React.createElement(
-																					'span',
-																					{ className: 'sale-price' },
-																					'\u20B980.00'
-																				),
-																				React.createElement(
-																					'span',
-																					{ className: 'base-price' },
-																					'\u20B990.00'
-																				)
-																			),
-																			React.createElement(
-																				'div',
-																				{ className: 'product-stock' },
-																				React.createElement('i', { className: 'fa fa-check-square-o', 'aria-hidden': 'true' }),
-																				'In stock'
-																			),
-																			React.createElement(
-																				'div',
-																				{ className: 'product-description' },
-																				'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse sapien urna, commodo ut molestie vitae, feugiat tincidunt ligula...'
-																			),
-																			React.createElement(
-																				'div',
-																				{ className: 'product-buttons' },
-																				React.createElement(
-																					Link,
-																					{ className: 'add-to-cart', to: '/shoppingCart' },
-																					React.createElement('i', { className: 'fa fa-shopping-basket', 'aria-hidden': 'true' }),
-																					React.createElement(
-																						'span',
-																						null,
-																						'Add To Cart'
-																					)
-																				),
-																				React.createElement(
-																					Link,
-																					{ className: 'add-wishlist', to: '#' },
-																					React.createElement('i', { className: 'fa fa-heart', 'aria-hidden': 'true' })
-																				),
-																				React.createElement(
-																					Link,
-																					{ className: 'quickview', to: '/productDetails' },
-																					React.createElement('i', { className: 'fa fa-eye', 'aria-hidden': 'true' })
-																				)
-																			)
-																		)
-																	)
-																)
-															),
-															React.createElement(
-																'div',
-																{ className: 'product-item' },
-																React.createElement(
-																	'div',
-																	{ className: 'row' },
-																	React.createElement(
-																		'div',
-																		{ className: 'col-lg-4 col-md-4 col-sm-6 col-xs-12' },
-																		React.createElement(
-																			'div',
-																			{ className: 'product-image' },
-																			React.createElement(
-																				Link,
-																				{ to: '/productDetails' },
-																				React.createElement('img', { className: 'img-responsive', src: baseURL + "img/product/9.jpg", alt: 'Product Image' })
-																			)
-																		)
-																	),
-																	React.createElement(
-																		'div',
-																		{ className: 'col-lg-8 col-md-8 col-sm-6 col-xs-12' },
-																		React.createElement(
-																			'div',
-																			{ className: 'product-info' },
-																			React.createElement(
-																				'div',
-																				{ className: 'product-title' },
-																				React.createElement(
-																					Link,
-																					{ to: '/productDetails' },
-																					'Organic Strawberry Fruits'
-																				)
-																			),
-																			React.createElement(
-																				'div',
-																				{ className: 'product-rating' },
-																				React.createElement('div', { className: 'star on' }),
-																				React.createElement('div', { className: 'star on' }),
-																				React.createElement('div', { className: 'star on ' }),
-																				React.createElement('div', { className: 'star on' }),
-																				React.createElement('div', { className: 'star' }),
-																				React.createElement(
-																					'span',
-																					{ className: 'review-count' },
-																					'(3 Reviews)'
-																				)
-																			),
-																			React.createElement(
-																				'div',
-																				{ className: 'product-price' },
-																				React.createElement(
-																					'span',
-																					{ className: 'sale-price' },
-																					'\u20B980.00'
-																				),
-																				React.createElement(
-																					'span',
-																					{ className: 'base-price' },
-																					'\u20B990.00'
-																				)
-																			),
-																			React.createElement(
-																				'div',
-																				{ className: 'product-stock' },
-																				React.createElement('i', { className: 'fa fa-check-square-o', 'aria-hidden': 'true' }),
-																				'In stock'
-																			),
-																			React.createElement(
-																				'div',
-																				{ className: 'product-description' },
-																				'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse sapien urna, commodo ut molestie vitae, feugiat tincidunt ligula...'
-																			),
-																			React.createElement(
-																				'div',
-																				{ className: 'product-buttons' },
-																				React.createElement(
-																					Link,
-																					{ className: 'add-to-cart', to: '/shoppingCart' },
-																					React.createElement('i', { className: 'fa fa-shopping-basket', 'aria-hidden': 'true' }),
-																					React.createElement(
-																						'span',
-																						null,
-																						'Add To Cart'
-																					)
-																				),
-																				React.createElement(
-																					Link,
-																					{ className: 'add-wishlist', to: '#' },
-																					React.createElement('i', { className: 'fa fa-heart', 'aria-hidden': 'true' })
-																				),
-																				React.createElement(
-																					Link,
-																					{ className: 'quickview', to: '/productDetails' },
-																					React.createElement('i', { className: 'fa fa-eye', 'aria-hidden': 'true' })
-																				)
-																			)
-																		)
-																	)
-																)
-															)
+															currentProducts.map(function (product, index) {
+																return React.createElement(ProductItem_List, { key: index, name: product.name, effPrice: product.effectivePrice });
+															})
 														)
 													)
 												),
@@ -57694,56 +56441,19 @@ var ProductsList = function (_React$Component) {
 															React.createElement(
 																'div',
 																{ className: 'text' },
-																'Showing 1-12 of 20 item(s)'
+																'Showing ',
+																indexOfFirstProd,
+																'-',
+																indexOfLastProd,
+																' of ',
+																products.length,
+																' item(s)'
 															)
 														),
 														React.createElement(
 															'div',
 															{ className: 'col-md-8 col-sm-8 col-xs-12' },
-															React.createElement(
-																'div',
-																{ className: 'pagination' },
-																React.createElement(
-																	'ul',
-																	{ className: 'page-list' },
-																	React.createElement(
-																		'li',
-																		null,
-																		React.createElement(
-																			Link,
-																			{ to: '#', className: 'prev' },
-																			'Previous'
-																		)
-																	),
-																	React.createElement(
-																		'li',
-																		null,
-																		React.createElement(
-																			Link,
-																			{ to: '#', className: 'current' },
-																			'1'
-																		)
-																	),
-																	React.createElement(
-																		'li',
-																		null,
-																		React.createElement(
-																			Link,
-																			{ to: '#' },
-																			'2'
-																		)
-																	),
-																	React.createElement(
-																		'li',
-																		null,
-																		React.createElement(
-																			Link,
-																			{ to: '#', className: 'next' },
-																			'Next'
-																		)
-																	)
-																)
-															)
+															products.length != 0 ? React.createElement(Pagination, { onPageChange: this.handleCurrentPage, itemPerPage: prodPerPage, items: products }) : 'No Products'
 														)
 													)
 												)
@@ -57767,6 +56477,538 @@ module.exports = ProductsList;
 
 /***/ }),
 /* 96 */
+/***/ (function(module, exports, __webpack_require__) {
+
+var axios = __webpack_require__(21);
+
+module.exports = {
+
+	getAllProducts: function getAllProducts() {
+		console.log('here');
+		return axios.get("http://localhost:8000/api/products").then(function (products) {
+			return products.data;
+		});
+	}
+
+};
+
+/***/ }),
+/* 97 */
+/***/ (function(module, exports, __webpack_require__) {
+
+var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+
+function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
+
+function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
+
+var React = __webpack_require__(0);
+var Link = __webpack_require__(1).Link;
+var baseURL = 'http://localhost:8000/';
+
+var ProductItem = function (_React$Component) {
+	_inherits(ProductItem, _React$Component);
+
+	function ProductItem(props) {
+		_classCallCheck(this, ProductItem);
+
+		return _possibleConstructorReturn(this, (ProductItem.__proto__ || Object.getPrototypeOf(ProductItem)).call(this, props));
+	}
+
+	_createClass(ProductItem, [{
+		key: 'render',
+		value: function render() {
+			return React.createElement(
+				'div',
+				{ className: 'col-lg-4 col-md-4 col-sm-6 col-xs-12' },
+				React.createElement(
+					'div',
+					{ className: 'product-item' },
+					React.createElement(
+						'div',
+						{ className: 'product-image' },
+						React.createElement(
+							Link,
+							{ to: '/productDetails' },
+							React.createElement('img', { className: 'img-responsive', src: 'http://localhost:8000/img/product/8.jpg', alt: 'Product Image' })
+						)
+					),
+					React.createElement(
+						'div',
+						{ className: 'product-title' },
+						React.createElement(
+							Link,
+							{ to: '/productDetails' },
+							this.props.name
+						)
+					),
+					React.createElement(
+						'div',
+						{ className: 'product-rating' },
+						React.createElement('div', { className: 'star on' }),
+						React.createElement('div', { className: 'star on' }),
+						React.createElement('div', { className: 'star on ' }),
+						React.createElement('div', { className: 'star on' }),
+						React.createElement('div', { className: 'star' })
+					),
+					React.createElement(
+						'div',
+						{ className: 'product-price' },
+						React.createElement(
+							'span',
+							{ className: 'sale-price' },
+							'\u20B9',
+							this.props.effPrice
+						),
+						React.createElement(
+							'span',
+							{ className: 'base-price' },
+							'\u20B9',
+							this.props.effPrice
+						)
+					),
+					React.createElement(
+						'div',
+						{ className: 'product-buttons' },
+						React.createElement(
+							Link,
+							{ className: 'add-to-cart', to: '/shoppingCart' },
+							React.createElement('i', { className: 'fa fa-shopping-basket', 'aria-hidden': 'true' })
+						),
+						React.createElement(
+							Link,
+							{ className: 'add-wishlist', to: '#' },
+							React.createElement('i', { className: 'fa fa-heart', 'aria-hidden': 'true' })
+						),
+						React.createElement(
+							Link,
+							{ className: 'quickview', to: '/productDetails' },
+							React.createElement('i', { className: 'fa fa-eye', 'aria-hidden': 'true' })
+						)
+					)
+				)
+			);
+		}
+	}]);
+
+	return ProductItem;
+}(React.Component);
+
+module.exports = ProductItem;
+
+/***/ }),
+/* 98 */
+/***/ (function(module, exports, __webpack_require__) {
+
+var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+
+function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
+
+function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
+
+var React = __webpack_require__(0);
+var Link = __webpack_require__(1).Link;
+var baseURL = 'http://localhost:8000/';
+
+var ProductItem_List = function (_React$Component) {
+	_inherits(ProductItem_List, _React$Component);
+
+	function ProductItem_List(props) {
+		_classCallCheck(this, ProductItem_List);
+
+		return _possibleConstructorReturn(this, (ProductItem_List.__proto__ || Object.getPrototypeOf(ProductItem_List)).call(this, props));
+	}
+
+	_createClass(ProductItem_List, [{
+		key: 'render',
+		value: function render() {
+			return React.createElement(
+				'div',
+				{ className: 'product-item' },
+				React.createElement(
+					'div',
+					{ className: 'row' },
+					React.createElement(
+						'div',
+						{ className: 'col-lg-4 col-md-4 col-sm-6 col-xs-12' },
+						React.createElement(
+							'div',
+							{ className: 'product-image' },
+							React.createElement(
+								Link,
+								{ to: '/productDetails' },
+								React.createElement('img', { className: 'img-responsive', src: baseURL + "img/product/4.jpg", alt: 'Product Image' })
+							)
+						)
+					),
+					React.createElement(
+						'div',
+						{ className: 'col-lg-8 col-md-8 col-sm-6 col-xs-12' },
+						React.createElement(
+							'div',
+							{ className: 'product-info' },
+							React.createElement(
+								'div',
+								{ className: 'product-title' },
+								React.createElement(
+									Link,
+									{ to: '/productDetails' },
+									this.props.name
+								)
+							),
+							React.createElement(
+								'div',
+								{ className: 'product-rating' },
+								React.createElement('div', { className: 'star on' }),
+								React.createElement('div', { className: 'star on' }),
+								React.createElement('div', { className: 'star on ' }),
+								React.createElement('div', { className: 'star on' }),
+								React.createElement('div', { className: 'star' }),
+								React.createElement(
+									'span',
+									{ className: 'review-count' },
+									'(3 Reviews)'
+								)
+							),
+							React.createElement(
+								'div',
+								{ className: 'product-price' },
+								React.createElement(
+									'span',
+									{ className: 'sale-price' },
+									'\u20B9',
+									this.props.effPrice
+								),
+								React.createElement(
+									'span',
+									{ className: 'base-price' },
+									'\u20B9',
+									this.props.effPrice
+								)
+							),
+							React.createElement(
+								'div',
+								{ className: 'product-stock' },
+								React.createElement('i', { className: 'fa fa-check-square-o', 'aria-hidden': 'true' }),
+								'In stock'
+							),
+							React.createElement(
+								'div',
+								{ className: 'product-description' },
+								'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse sapien urna, commodo ut molestie vitae, feugiat tincidunt ligula...'
+							),
+							React.createElement(
+								'div',
+								{ className: 'product-buttons' },
+								React.createElement(
+									Link,
+									{ className: 'add-to-cart', to: '/shoppingCart' },
+									React.createElement('i', { className: 'fa fa-shopping-basket', 'aria-hidden': 'true' }),
+									React.createElement(
+										'span',
+										null,
+										'Add To Cart'
+									)
+								),
+								React.createElement(
+									Link,
+									{ className: 'add-wishlist', to: '#' },
+									React.createElement('i', { className: 'fa fa-heart', 'aria-hidden': 'true' })
+								),
+								React.createElement(
+									Link,
+									{ className: 'quickview', to: '/productDetails' },
+									React.createElement('i', { className: 'fa fa-eye', 'aria-hidden': 'true' })
+								)
+							)
+						)
+					)
+				)
+			);
+		}
+	}]);
+
+	return ProductItem_List;
+}(React.Component);
+
+module.exports = ProductItem_List;
+
+/***/ }),
+/* 99 */
+/***/ (function(module, exports, __webpack_require__) {
+
+var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+
+function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
+
+function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
+
+var React = __webpack_require__(0);
+var Link = __webpack_require__(1).Link;
+var baseURL = 'http://localhost:8000/';
+
+var Pagination = function (_React$Component) {
+    _inherits(Pagination, _React$Component);
+
+    function Pagination(props) {
+        _classCallCheck(this, Pagination);
+
+        var _this = _possibleConstructorReturn(this, (Pagination.__proto__ || Object.getPrototypeOf(Pagination)).call(this, props));
+
+        _this.state = {
+            items: props.items,
+            currentPage: 1,
+            itemsPerPage: props.itemPerPage,
+            upperPageBound: 3,
+            lowerPageBound: 0,
+            isPrevBtnActive: 'disabled',
+            isNextBtnActive: '',
+            pageBound: 3
+        };
+        _this.handleClick = _this.handleClick.bind(_this);
+        _this.btnDecrementClick = _this.btnDecrementClick.bind(_this);
+        _this.btnIncrementClick = _this.btnIncrementClick.bind(_this);
+        _this.btnNextClick = _this.btnNextClick.bind(_this);
+        _this.btnPrevClick = _this.btnPrevClick.bind(_this);
+        _this.setPrevAndNextBtnClass = _this.setPrevAndNextBtnClass.bind(_this);
+        return _this;
+    }
+
+    _createClass(Pagination, [{
+        key: 'componentWillReceiveProps',
+        value: function componentWillReceiveProps(nextProps) {
+            this.setState({ itemsPerPage: nextProps.itemPerPage });
+        }
+    }, {
+        key: 'componentDidUpdate',
+        value: function componentDidUpdate() {
+            console.log(this.props.itemsPerPage);
+            $(".pagination ul li a").removeClass('current');
+            $('.pagination ul li #' + this.state.currentPage).addClass('current');
+        }
+    }, {
+        key: 'handleClick',
+        value: function handleClick(event) {
+            $(".pagination ul li a").removeClass('current');
+            $('.pagination ul li #' + this.state.currentPage).addClass('current');
+            this.setState({
+                currentPage: Number(event.target.id)
+            });
+            this.props.onPageChange(Number(event.target.id));
+            this.setPrevAndNextBtnClass(Number(event.target.id));
+        }
+    }, {
+        key: 'setPrevAndNextBtnClass',
+        value: function setPrevAndNextBtnClass(listid) {
+            var totalPage = Math.ceil(this.state.items.length / this.state.itemsPerPage);
+            console.log(this.state.items.length, this.state.itemsPerPage, 'Plugin');
+            this.setState({ isNextBtnActive: 'disabled' });
+            this.setState({ isPrevBtnActive: 'disabled' });
+            if (totalPage === listid && totalPage > 1) {
+                this.setState({ isPrevBtnActive: '' });
+            } else if (listid === 1 && totalPage > 1) {
+                this.setState({ isNextBtnActive: '' });
+            } else if (totalPage > 1) {
+                this.setState({ isNextBtnActive: '' });
+                this.setState({ isPrevBtnActive: '' });
+            }
+        }
+    }, {
+        key: 'btnIncrementClick',
+        value: function btnIncrementClick() {
+            // Increment ellipses - sets current page (upper + pagebound) and upper/lower pagebound values 
+            this.setState({ upperPageBound: this.state.upperPageBound + this.state.pageBound });
+            this.setState({ lowerPageBound: this.state.lowerPageBound + this.state.pageBound });
+            var currentPage = this.state.upperPageBound + 1;
+            this.setState({ currentPage: currentPage });
+            this.props.onPageChange(currentPage);
+            // check prev and next disable/enable
+            this.setPrevAndNextBtnClass(currentPage);
+        }
+    }, {
+        key: 'btnDecrementClick',
+        value: function btnDecrementClick() {
+            // Decrement ellipses - sets current page (upper - pagebound) and upper/lower pagebound values 
+            this.setState({ upperPageBound: this.state.upperPageBound - this.state.pageBound });
+            this.setState({ lowerPageBound: this.state.lowerPageBound - this.state.pageBound });
+            var currentPage = this.state.upperPageBound - this.state.pageBound;
+            this.setState({ currentPage: currentPage });
+            this.props.onPageChange(currentPage);
+            // check prev and next disable/enable
+            this.setPrevAndNextBtnClass(currentPage);
+        }
+    }, {
+        key: 'btnPrevClick',
+        value: function btnPrevClick() {
+            if (this.state.currentPage - 1 == this.state.lowerPageBound) {
+                this.setState({ upperPageBound: this.state.upperPageBound - this.state.pageBound });
+                this.setState({ lowerPageBound: this.state.lowerPageBound - this.state.pageBound });
+            }
+            var listid = this.state.currentPage - 1;
+            this.setState({ currentPage: listid });
+            this.props.onPageChange(listid);
+            this.setPrevAndNextBtnClass(listid);
+        }
+    }, {
+        key: 'btnNextClick',
+        value: function btnNextClick() {
+            if (this.state.currentPage + 1 > this.state.upperPageBound) {
+                this.setState({ upperPageBound: this.state.upperPageBound + this.state.pageBound });
+                this.setState({ lowerPageBound: this.state.lowerPageBound + this.state.pageBound });
+            }
+            var listid = this.state.currentPage + 1;
+            this.setState({ currentPage: listid });
+            this.props.onPageChange(listid);
+            this.setPrevAndNextBtnClass(listid);
+        }
+    }, {
+        key: 'render',
+        value: function render() {
+            var _this2 = this;
+
+            var _state = this.state,
+                items = _state.items,
+                currentPage = _state.currentPage,
+                itemsPerPage = _state.itemsPerPage,
+                upperPageBound = _state.upperPageBound,
+                lowerPageBound = _state.lowerPageBound,
+                isPrevBtnActive = _state.isPrevBtnActive,
+                isNextBtnActive = _state.isNextBtnActive;
+
+            // Logic for displaying items
+
+            var indexOfLastProd = currentPage * itemsPerPage;
+            var indexOfFirstProd = indexOfLastProd - itemsPerPage;
+            var currentProducts = items.slice(indexOfFirstProd, indexOfLastProd);
+
+            // Logic for displaying page numbers
+            var pageNumbers = [];
+            for (var i = 1; i <= Math.ceil(items.length / itemsPerPage); i++) {
+                pageNumbers.push(i);
+            }
+
+            var renderPageNumbers = pageNumbers.map(function (number) {
+                if (number === 1 && currentPage === 1) {
+                    return React.createElement(
+                        'li',
+                        { key: number },
+                        React.createElement(
+                            Link,
+                            { className: 'current', onClick: _this2.handleClick, id: number, to: '#' },
+                            number
+                        )
+                    );
+                } else if (number < upperPageBound + 1 && number > lowerPageBound) {
+                    return React.createElement(
+                        'li',
+                        { key: number },
+                        React.createElement(
+                            Link,
+                            { onClick: _this2.handleClick, id: number, to: '#' },
+                            number
+                        )
+                    );
+                }
+            });
+
+            var pageIncrementBtn = null;
+            if (pageNumbers.length > upperPageBound) {
+                pageIncrementBtn = React.createElement(
+                    'li',
+                    null,
+                    React.createElement(
+                        Link,
+                        { to: '#', onClick: this.btnIncrementClick },
+                        ' \u2026 '
+                    )
+                );
+            }
+            var pageDecrementBtn = null;
+            if (lowerPageBound >= 1) {
+                pageDecrementBtn = React.createElement(
+                    'li',
+                    null,
+                    React.createElement(
+                        Link,
+                        { to: '#', onClick: this.btnDecrementClick },
+                        ' \u2026 '
+                    )
+                );
+            }
+            var renderPrevBtn = null;
+            if (isPrevBtnActive === 'disabled') {
+                renderPrevBtn = React.createElement(
+                    'li',
+                    { className: '' },
+                    React.createElement(
+                        Link,
+                        { to: '#', className: 'prev disable-anchor' },
+                        'Previous'
+                    )
+                );
+            } else {
+                renderPrevBtn = React.createElement(
+                    'li',
+                    { className: '' },
+                    React.createElement(
+                        Link,
+                        { to: '#', onClick: this.btnPrevClick, className: 'prev' },
+                        'Previous'
+                    )
+                );
+            }
+            var renderNextBtn = null;
+            if (isNextBtnActive === 'disabled') {
+                renderNextBtn = React.createElement(
+                    'li',
+                    null,
+                    React.createElement(
+                        Link,
+                        { to: '#', className: 'next disable-anchor' },
+                        'Next'
+                    )
+                );
+            } else {
+                renderNextBtn = React.createElement(
+                    'li',
+                    null,
+                    React.createElement(
+                        Link,
+                        { to: '#', onClick: this.btnNextClick, className: 'next' },
+                        'Next'
+                    )
+                );
+            }
+
+            return React.createElement(
+                'div',
+                { className: 'pagination' },
+                React.createElement(
+                    'ul',
+                    { className: 'page-list' },
+                    renderPrevBtn,
+                    pageDecrementBtn,
+                    renderPageNumbers,
+                    pageIncrementBtn,
+                    renderNextBtn
+                )
+            );
+        }
+    }]);
+
+    return Pagination;
+}(React.Component);
+
+module.exports = Pagination;
+
+/***/ }),
+/* 100 */
 /***/ (function(module, exports, __webpack_require__) {
 
 var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
@@ -57803,7 +57045,7 @@ var GluttenFreeProducts = function (_React$Component) {
 		value: function render() {
 			return React.createElement(
 				'div',
-				null,
+				{ className: 'container' },
 				React.createElement(Header, null),
 				React.createElement(
 					'div',
@@ -59572,7 +58814,7 @@ var GluttenFreeProducts = function (_React$Component) {
 module.exports = GluttenFreeProducts;
 
 /***/ }),
-/* 97 */
+/* 101 */
 /***/ (function(module, exports, __webpack_require__) {
 
 var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
@@ -59603,7 +58845,7 @@ var ShoppingCart = function (_React$Component) {
 		value: function render() {
 			return React.createElement(
 				'div',
-				null,
+				{ className: 'container' },
 				React.createElement(Header, null),
 				React.createElement(
 					'div',
@@ -59922,7 +59164,7 @@ var ShoppingCart = function (_React$Component) {
 module.exports = ShoppingCart;
 
 /***/ }),
-/* 98 */
+/* 102 */
 /***/ (function(module, exports, __webpack_require__) {
 
 var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
@@ -59953,7 +59195,7 @@ var Checkout = function (_React$Component) {
 		value: function render() {
 			return React.createElement(
 				'div',
-				null,
+				{ className: 'container' },
 				React.createElement(Header, null),
 				React.createElement(
 					'div',
@@ -60643,7 +59885,7 @@ var Checkout = function (_React$Component) {
 module.exports = Checkout;
 
 /***/ }),
-/* 99 */
+/* 103 */
 /***/ (function(module, exports, __webpack_require__) {
 
 var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
@@ -60680,7 +59922,7 @@ var ProductDetails = function (_React$Component) {
 		value: function render() {
 			return React.createElement(
 				'div',
-				null,
+				{ className: 'container' },
 				React.createElement(Header, null),
 				React.createElement(
 					'div',
@@ -61762,7 +61004,7 @@ var ProductDetails = function (_React$Component) {
 module.exports = ProductDetails;
 
 /***/ }),
-/* 100 */
+/* 104 */
 /***/ (function(module, exports) {
 
 // removed by extract-text-webpack-plugin
