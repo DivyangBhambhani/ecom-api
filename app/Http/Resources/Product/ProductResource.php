@@ -16,14 +16,14 @@ class ProductResource extends JsonResource
     {
         return [
             'name' => $this->name,
-            'description' => $this->detail,
+            'short_desc' => $this->detail,
             'price' => $this->price,
             'stock' => $this->stock,
             'discount' => $this->discount,
             'effectivePrice' => round($this->price * (1 - ($this->discount/100)), 2),
             'rating' => $this->reviews->count() > 0 ? round($this->reviews->sum('star') / $this->reviews->count(), 2) : 'No Ratings Yet',
             'href' => [
-                'reviews_link' => route('reviews.index', $this->id)
+                'reviews_link' => route('reviews.index', ['category'=>$this->category_id,'product'=>$this->id])
             ]
         ];
     }

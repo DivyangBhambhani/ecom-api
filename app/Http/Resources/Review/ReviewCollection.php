@@ -15,7 +15,6 @@ class ReviewCollection extends ResourceCollection
     public function toArray($request)
     {
         $reviews = [];
-
         foreach ($this->collection as $review) {
             array_push($reviews, [
                 'customer' => $review->customer,
@@ -37,7 +36,7 @@ class ReviewCollection extends ResourceCollection
     {
         return [
             'href' => [
-                'product_link' => route('products.show', $this->collection->first()->product_id)
+                'product_link' => route('products.show', ['category' => $request->category->id, 'product' => $this->collection->first()->product_id])
             ]
         ];
     }

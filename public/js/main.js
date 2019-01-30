@@ -896,14 +896,13 @@ $('.product-detail .horizontal .thumb-images')['owlCarousel']( {
     items:4
 });
 
-if($('.product-detail .main-image img')['length']) {
-    $('.product-detail .main-image img')['elevateZoom']( {
+if($('.product-detail .main-image img').length) {
+    $('.product-detail .main-image img').elevateZoom({
         zoomType:'inner',
         cursor:'crosshair',
         easing:true,
         scrollZoom:false
-    }
-    )
+    });
 }
 
 $('.product-detail .thumb-images img')['on']('click', function(_0x64afxb) {

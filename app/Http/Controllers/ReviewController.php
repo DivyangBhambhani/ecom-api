@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use App\Model\Review;
 use App\Model\Product;
+use App\Model\Category;
 use App\Http\Resources\Review\ReviewCollection;
 use Illuminate\Http\Request;
 
@@ -14,7 +15,7 @@ class ReviewController extends Controller
      *
      * @return \Illuminate\Http\Response
      */
-    public function index(Product $product)
+    public function index(Category $category, Product $product)
     {
         return new ReviewCollection($product->reviews);
     }

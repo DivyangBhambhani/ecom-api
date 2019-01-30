@@ -23,11 +23,11 @@ class Header extends React.Component {
 												<ul>
 													<li className="has-image">
 														<img src={baseURL + "img/product/product-category-1.png"} alt="Product Category Image" />
-														<Link to="/glutten_free_products/flour">Cooking & Baking Flour</Link>
+														<Link to="/glutten_free_products/cooking-and-baking-flour">Cooking & Baking Flour</Link>
 													</li>
 													<li className="has-image">
 														<img src={baseURL + "img/product/product-category-2.png"} alt="Product Category Image" />
-														<Link to="/glutten_free_products/cookies">Biscuits & Cookies</Link>
+														<Link to="/glutten_free_products/biscuits-and-cookies">Biscuits & Cookies</Link>
 													</li>
 													<li className="has-image">
 														<img src={baseURL + "img/product/product-category-3.png"} alt="Product Category Image" />
@@ -39,7 +39,7 @@ class Header extends React.Component {
 													</li>
 													<li className="has-image">
 														<img src={baseURL + "img/product/product-category-0.png"} alt="Product Category Image" />
-														<Link to="/glutten_free_products/desserts">Desserts & Confectionaries</Link>
+														<Link to="/glutten_free_products/desserts-and-confectionaries">Desserts & Confectionaries</Link>
 													</li>
 												</ul>
 											</div>

@@ -8,17 +8,25 @@ class ProductItem extends React.Component {
 	}
 	
 	render() {
+		// Rounding rating to nearest 0.5 step
+		var rating = Math.round(this.props.rating*2)/2;
+		var fullStar = Math.trunc(rating);
+		console.log(fullStar, 'fullStar');
+		if((rating / 1) == 0.5) {
+			console.log('halfStar');
+		}
+		
 		return(
-			<div className="col-lg-4 col-md-4 col-sm-6 col-xs-12">
+			<div className="col-lg-4 col-md-4 col-sm-6 col-xs-12">				
 				<div className="product-item">
 					<div className="product-image">
-						<Link to="/productDetails">
+						<Link to="/productDetails/1" target="_blank">
 							<img className="img-responsive" src="http://localhost:8000/img/product/8.jpg" alt="Product Image" />
 						</Link>
 					</div>
 					
 					<div className="product-title">
-						<Link to="/productDetails">
+						<Link to="/productDetails/1" target="_blank">
 							{this.props.name}
 						</Link>
 					</div>
@@ -28,7 +36,7 @@ class ProductItem extends React.Component {
 						<div className="star on"></div>
 						<div className="star on "></div>
 						<div className="star on"></div>
-						<div className="star"></div>
+						<div className="star on"></div>
 					</div>
 					
 					<div className="product-price">

@@ -25,7 +25,7 @@ class ProductRequest extends FormRequest
     {
         return [
             'name' => 'required|unique:products|max:255',
-            'description' => 'required',
+            'short_desc' => 'required',
             'price' => 'required',
             'stock' => 'required|max:100',
             'discount' => 'required|max:30'

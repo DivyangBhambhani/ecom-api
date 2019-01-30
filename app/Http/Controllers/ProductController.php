@@ -6,6 +6,7 @@ use App\Model\Product;
 use App\Http\Resources\Product\ProductResource;
 use App\Http\Resources\Product\ProductCollection;
 use App\Http\Requests\ProductRequest;
+use App\Model\Category;
 use Symfony\Component\HttpFoundation\Response;
 use Illuminate\Http\Request;
 
@@ -20,9 +21,9 @@ class ProductController extends Controller
      *
      * @return \Illuminate\Http\Response
      */
-    public function index()
+    public function index(Category $category)
     {
-        return new ProductCollection(Product::all());
+        return new ProductCollection($category->products);
     }
 
     /**
@@ -63,7 +64,7 @@ class ProductController extends Controller
      * @param  \App\Model\Product  $product
      * @return \Illuminate\Http\Response
      */
-    public function show(Product $product)
+    public function show(Category $category, Product $product)
     {
         return new ProductResource($product); 
     }
@@ -109,4 +110,10 @@ class ProductController extends Controller
 
         return response(null, Response::HTTP_NO_CONTENT);
     }
+
+    // public function productsByCategory(Category $category)
+    // {
+    //     print_r('Great');
+    //     return new ProductCollection($category->products);
+    // }
 }

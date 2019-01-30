@@ -28,7 +28,6 @@ class Pagination extends React.Component {
 	}
 
 	componentDidUpdate() {
-		console.log(this.props.itemsPerPage);
         $(".pagination ul li a").removeClass('current');
         $('.pagination ul li #'+this.state.currentPage).addClass('current');
     }

@@ -15676,3 +15676,14 @@ input {
     color:#ccc !important;
     /*pointer-events: none;*/
 }
+
+.vegan-icon {
+    border: solid 2px #32b632 !important;
+    padding: 3px !important;
+    color: #32b632 !important;
+    margin-right: 0 !important;
+}
+
+.img-pg404 {
+    display: inline-block;
+}

@@ -13,7 +13,7 @@ class ProductItem_List extends React.Component {
 				<div className="row">
 					<div className="col-lg-4 col-md-4 col-sm-6 col-xs-12">
 						<div className="product-image">
-							<Link to="/productDetails">
+							<Link to="/productDetails" target="_blank">
 								<img className="img-responsive" src={baseURL + "img/product/4.jpg"} alt="Product Image" />
 							</Link>
 						</div>
@@ -22,7 +22,7 @@ class ProductItem_List extends React.Component {
 					<div className="col-lg-8 col-md-8 col-sm-6 col-xs-12">
 						<div className="product-info">
 							<div className="product-title">
-								<Link to="/productDetails">
+								<Link to="/productDetails" target="_blank">
 									{this.props.name}
 								</Link>
 							</div>

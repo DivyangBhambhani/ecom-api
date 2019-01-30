@@ -24,18 +24,23 @@ var GluttenFreeProducts = require('./components/GluttenFreeProducts');
 var ShoppingCart = require('./components/ShoppingCart');
 var Checkout = require('./components/Checkout');
 var ProductDetails = require('./components/ProductDetails');
+var NoMatch = require('./components/NoMatch');
 
 ReactDOM.render(
     <Router>
     	<div className="row">    		
-	        <Route path="/" exact component={Home}></Route>
-	        <Route path="/home" component={Home}></Route>
-	        <Route path="/about" component={About}></Route>
-	        <Route path="/contact" component={Contact}></Route>
-	        <Route path="/glutten_free_products" exact component={GluttenFreeProducts}></Route>
-	        <Route path="/glutten_free_products/:categoryName" component={ProductsList}></Route>
-	        <Route path="/shoppingCart" component={ShoppingCart}></Route>
-	        <Route path="/checkout" component={Checkout}></Route>
-	        <Route path="/productdetails" component={ProductDetails}></Route>
+	        <Switch>
+		        <Route path="/" exact component={Home}></Route>
+		        <Route path="/home" component={Home}></Route>
+		        <Route path="/about" component={About}></Route>
+		        <Route path="/contact" component={Contact}></Route>
+		        <Route path="/glutten_free_products" exact component={GluttenFreeProducts}></Route>
+		        <Route path="/glutten_free_products/:categoryName" component={ProductsList}></Route>
+		        <Route path="/shoppingCart" component={ShoppingCart}></Route>
+		        <Route path="/checkout" component={Checkout}></Route>
+		        <Route path="/category/:id/products" component={ProductsList}></Route>
+		        <Route path="/productdetails/:id" exact component={ProductDetails}></Route>
+		        <Route component={NoMatch}></Route>
+	        </Switch>
         </div>
     </Router>, document.getElementById('app'));

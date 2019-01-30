@@ -14,16 +14,58 @@ class ProductsList extends React.Component {
 		this.state = {
 	      	products: [],
 	      	currentPage:1,
-	      	prodPerPage:9
+	      	prodPerPage:9,
+	      	categoryId:0,
+	      	categoryName:''
 	    }
 	    this.handleCurrentPage = this.handleCurrentPage.bind(this);
 	    this.handleGridList = this.handleGridList.bind(this);
+	    this.updateProducts = this.updateProducts.bind(this);
 	}
 
 	componentDidMount() {
-		api.getAllProducts().then(function (res) {
-			 var products = res.data.map(obj => (obj));
-			 this.setState({ products });
+		var categoryInfo = this.decodeURItoCategoryInfo(this.props.match.params.categoryName);
+		this.updateProducts(categoryInfo.id);
+	}
+
+	componentWillReceiveProps(nextProps) {		
+		if(JSON.stringify(this.props.match.params.categoryName) 
+				!== JSON.stringify(nextProps.match.params.categoryName)) {
+	        var categoryInfo = this.decodeURItoCategoryInfo(nextProps.match.params.categoryName);
+	  		this.updateProducts(categoryInfo.id);
+	    }
+	}
+
+	decodeURItoCategoryInfo(cat) {
+		var categoryInfo = {};
+        var category = cat;
+    	switch(category){
+    		case "cooking-and-baking-flour":
+    			categoryInfo = {id:1, name:"Cooking and Baking Flour"};
+    			break;
+    		case "biscuits-and-cookies":
+    			categoryInfo = {id:2, name:"Biscuits and Cookies"};
+    			break;
+    		case "namkeens":
+    			categoryInfo = {id:3, name:"Namkeens"};
+    			break;
+    		case "snacks":
+    			categoryInfo = {id:4, name:"Snacks"};
+    			break;
+    		case "desserts-and-confectionaries":
+    			categoryInfo = {id:5, name:"Desserts and Confectionaries"};
+    			break;  	
+    	}
+    	var categoryId = categoryInfo.id;
+		var categoryName = categoryInfo.name;
+		this.setState({categoryId, categoryName});
+    	return categoryInfo;
+	}
+
+	updateProducts(cat) {
+		api.getProductByCategory(cat).then(function (res) {
+			var products = res.data.map(obj => (obj));
+			this.setState({ products });
 		}.bind(this));
 	}
 
@@ -50,7 +92,7 @@ class ProductsList extends React.Component {
 				<div id="content" className="site-content">
 					<div id="breadcrumb">
 						<div className="container">
-							<h2 className="title">Fruit</h2>
+							<h2 className="title">{this.state.categoryName}</h2>
 							
 							<ul className="breadcrumb">
 								<li><Link to="#">Home</Link></li>
@@ -434,7 +476,7 @@ class ProductsList extends React.Component {
 													<div className="products-block">
 														<div className="row">
 															{currentProducts.map((product, index) => (
-																<ProductItem key={index} name={product.name} effPrice={product.effectivePrice} />)
+																<ProductItem key={index} name={product.name} rating={product.rating} effPrice={product.price} />)
 															)}
 														</div>
 													</div>
@@ -443,7 +485,7 @@ class ProductsList extends React.Component {
 												<div className="tab-pane" id="products-list">
 													<div className="products-block layout-5">
 														{currentProducts.map((product, index) => (
-															<ProductItem_List key={index} name={product.name} effPrice={product.effectivePrice} />)
+															<ProductItem_List key={index} name={product.name} rating={product.rating} effPrice={product.price} />)
 														)}
 													</div>
 												</div>
@@ -454,7 +496,6 @@ class ProductsList extends React.Component {
 													<div className="col-md-4 col-sm-4 col-xs-12">
 														<div className="text">Showing {indexOfFirstProd}-{indexOfLastProd} of {products.length} item(s)</div>
 													</div>
-													
 													<div className="col-md-8 col-sm-8 col-xs-12">
 														{products.length != 0 
 															? <Pagination onPageChange={this.handleCurrentPage} itemPerPage={prodPerPage} items={products}/> 

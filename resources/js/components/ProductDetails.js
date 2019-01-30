@@ -4,12 +4,28 @@ var baseURL = 'http://localhost:8000/';
 var Header = require('./common/Header');
 var Footer = require('./common/Footer');
 var loadjs = require('loadjs');
+const api = require("../utils/api");
 
 class ProductDetails extends React.Component {
-	componentDidMount() {
-		loadjs('js/main.js', function() {});
+	constructor(props) {
+		super(props);
+		this.state = {
+			productDetails: []
+		}
 	}
+
+	componentDidMount() {
+		loadjs('../js/main.js', function() {});
+
+		const {id} = this.props.match.params;
+		api.getProductDetails(id).then(function (res) {
+			 var productDetails = res;
+			 this.setState({ productDetails });
+		}.bind(this));
+	}
+
 	render() {
+		console.log(this.state.productDetails);
 		return(
 			<div className="container">
 				<Header />
@@ -40,13 +56,13 @@ class ProductDetails extends React.Component {
 											<div className="product-left col-md-4 col-sm-4 col-xs-12">
 												<div className="product-image horizontal">
 													<div className="main-image">
-														<img className="img-responsive" src="img/product/2.jpg" alt="Product Image" />
+														<img className="img-responsive" src={baseURL + "img/product/2.jpg"} alt="Product Image" />
 													</div>
 													<div className="thumb-images owl-theme owl-carousel">
-														<img className="img-responsive" src="img/product/33.jpg" alt="Product Image" />
-														<img className="img-responsive" src="img/product/3.jpg" alt="Product Image" />
-														<img className="img-responsive" src="img/product/7.jpg" alt="Product Image" />
-														<img className="img-responsive" src="img/product/30.jpg" alt="Product Image" />
+														<img className="img-responsive" src={baseURL + "img/product/33.jpg"} alt="Product Image" />
+														<img className="img-responsive" src={baseURL + "img/product/3.jpg"} alt="Product Image" />
+														<img className="img-responsive" src={baseURL + "img/product/7.jpg"} alt="Product Image" />
+														<img className="img-responsive" src={baseURL + "img/product/30.jpg"} alt="Product Image" />
 													</div>
 												</div>
 											</div>
@@ -172,18 +188,15 @@ class ProductDetails extends React.Component {
 													
 													<div className="product-extra">
 														<div className="item">
-															<span className="control-label">Review :</span><span className="control-label">E-02154</span>
+															<span className="control-label">Product Type :</span><span className="control-label">Glutten Free</span>
 														</div>
 														<div className="item">
-															<span className="control-label">Categories :</span>
-															<Link to="#" title="Vegetables">Vegetables,</Link>
-															<Link to="#" title="Fruits">Fruits,</Link>
-															<Link to="#" title="Apple">Apple</Link>
+															<span className="control-label">Category:</span>
+															<Link to="#"><span className="badge badge-secondary">Vegetables</span></Link>
 														</div>
 														<div className="item">
-															<span className="control-label">Tags :</span>
-															<Link to="#" title="Vegetables">Hot Trend,</Link>
-															<Link to="#" title="Fruits">Summer</Link>			
+															<span className="control-label">Ingredient Type:</span>
+															<span className="control-label"><i className="fa fa-circle vegan-icon"></i> Vegetarian</span>
 														</div>
 													</div>
 												</div>
@@ -192,17 +205,17 @@ class ProductDetails extends React.Component {
 											<div className="payment-intro col-md-3 col-sm-4 col-xs-12">
 												<div className="block-content">
 													<div className="item">
-														<img className="img-responsive" src="img/home2-payment-1.png" alt="Payment Intro" />
+														<img className="img-responsive" src={baseURL + "img/home2-payment-1.png"} alt="Payment Intro" />
 														<h3 className="title">Free Shipping item</h3>
 														<div className="content">Proin gravida nibh vel velit auctor aliquet aenean</div>
 													</div>
 													<div className="item">
-														<img className="img-responsive" src="img/home2-payment-2.png" alt="Payment Intro" />
+														<img className="img-responsive" src={baseURL + "img/home2-payment-2.png"} alt="Payment Intro" />
 														<h3 className="title">Secured Payment</h3>
 														<div className="content">Proin gravida nibh vel velit auctor aliquet aenean</div>
 													</div>
 													<div className="item">
-														<img className="img-responsive" src="img/home2-payment-3.png" alt="Payment Intro" />
+														<img className="img-responsive" src={baseURL + "img/home2-payment-3.png"} alt="Payment Intro" />
 														<h3 className="title">money back guarantee</h3>
 														<div className="content">Proin gravida nibh vel velit auctor aliquet aenean</div>
 													</div>
@@ -248,7 +261,7 @@ class ProductDetails extends React.Component {
 															<div className="item">
 																<div className="comment-left pull-left">
 																	<div className="avatar">
-																		<img src="img/avatar.jpg" alt="" width="70" height="70" />
+																		<img src={baseURL + "img/avatar.jpg"} alt="" width="70" height="70" />
 																	</div>
 																	<div className="product-rating">
 																		<div className="star on"></div>
@@ -269,7 +282,7 @@ class ProductDetails extends React.Component {
 															<div className="item">
 																<div className="comment-left pull-left">
 																	<div className="avatar">
-																		<img src="img/avatar.jpg" alt="" width="70" height="70" />
+																		<img src={baseURL + "img/avatar.jpg"} alt="" width="70" height="70" />
 																	</div>
 																	<div className="product-rating">
 																		<div className="star on"></div>
@@ -331,7 +344,7 @@ class ProductDetails extends React.Component {
 										<div className="product-item">
 											<div className="product-image">
 												<Link to="product-detail-left-sidebar.html">
-													<img src="img/product/4.jpg" alt="Product Image" />
+													<img src={baseURL + "img/product/4.jpg"} alt="Product Image" />
 												</Link>
 											</div>
 											
@@ -372,7 +385,7 @@ class ProductDetails extends React.Component {
 										<div className="product-item">
 											<div className="product-image">
 												<Link to="product-detail-left-sidebar.html">
-													<img src="img/product/15.jpg" alt="Product Image" />
+													<img src={baseURL + "img/product/15.jpg"} alt="Product Image" />
 												</Link>
 											</div>
 											
@@ -412,7 +425,7 @@ class ProductDetails extends React.Component {
 										<div className="product-item">
 											<div className="product-image">
 												<Link to="product-detail-left-sidebar.html">
-													<img src="img/product/31.jpg" alt="Product Image" />
+													<img src={baseURL + "img/product/31.jpg"} alt="Product Image" />
 												</Link>
 											</div>
 											
@@ -453,7 +466,7 @@ class ProductDetails extends React.Component {
 										<div className="product-item">
 											<div className="product-image">
 												<Link to="product-detail-left-sidebar.html">
-													<img src="img/product/9.jpg" alt="Product Image" />
+													<img src={baseURL + "img/product/9.jpg"} alt="Product Image" />
 												</Link>
 											</div>
 											
@@ -494,7 +507,7 @@ class ProductDetails extends React.Component {
 										<div className="product-item">
 											<div className="product-image">
 												<Link to="product-detail-left-sidebar.html">
-													<img src="img/product/15.jpg" alt="Product Image" />
+													<img src={baseURL + "img/product/15.jpg"} alt="Product Image" />
 												</Link>
 											</div>
 											
