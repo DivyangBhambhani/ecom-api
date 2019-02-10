@@ -6374,7 +6374,7 @@ input {
 }
 
 [class~=product-categories] [class~=item] [class~=sub-category] [class~=item]:before {
-    content: "";
+    /*content: "";*/
 }
 
 [class~=testimonial][class~=layout-2] {
@@ -12938,6 +12938,8 @@ input {
 
 [class~=sidebar] [class~=product-categories] [class~=sub-category] [class~=item] {
     padding-top: .4375pc;
+    border-left: dashed 2px #78b144;
+    margin-top: 10px;
 }
 
 [class~=sidebar] [class~=product-filter] [class~=filter-item] [class~=filter-content] ul::-webkit-scrollbar {
@@ -15686,4 +15688,9 @@ input {
 
 .img-pg404 {
     display: inline-block;
+}
+
+.inactiveFilterOption {
+    color: #d2d0d0 !important;
+    text-decoration: line-through !important;
 }

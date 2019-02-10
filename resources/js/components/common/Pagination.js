@@ -7,7 +7,7 @@ class Pagination extends React.Component {
 		super(props);
 		this.state = {
 			items:props.items,
-	      	currentPage: 1,
+	      	currentPage: props.currentPage,
 	      	itemsPerPage: props.itemPerPage,
 	      	upperPageBound: 3,
 	        lowerPageBound: 0,
@@ -23,30 +23,43 @@ class Pagination extends React.Component {
         this.setPrevAndNextBtnClass = this.setPrevAndNextBtnClass.bind(this);
 	}
 
-	componentWillReceiveProps(nextProps) {
-		this.setState({ itemsPerPage: nextProps.itemPerPage });  
+	componentDidMount() {
+		this.setPrevAndNextBtnClass(this.state.currentPage);
 	}
 
-	componentDidUpdate() {
+	componentWillReceiveProps(nextProps) {		
+		this.setState({
+			itemsPerPage: nextProps.itemPerPage,
+			items: nextProps.items,
+			currentPage:nextProps.currentPage		
+		});
+	}
+
+	componentDidUpdate(prevProps, prevState) {
         $(".pagination ul li a").removeClass('current');
-        $('.pagination ul li #'+this.state.currentPage).addClass('current');
+        $('.pagination ul li #pg'+this.state.currentPage).addClass('current');
+        if(this.state.items.length != prevState.items.length) {
+	        this.setPrevAndNextBtnClass(this.state.currentPage);
+        }
     }
 
 	handleClick(event) {
 	    $(".pagination ul li a").removeClass('current');
-        $('.pagination ul li #'+this.state.currentPage).addClass('current');
+        $('.pagination ul li #pg'+this.state.currentPage).addClass('current');
+	    var curPg = Number(event.target.id.replace('pg',''));
 	    this.setState({
-	    	currentPage: Number(event.target.id)
+	    	currentPage: curPg
 	    });
-        this.props.onPageChange(Number(event.target.id))
-	    this.setPrevAndNextBtnClass(Number(event.target.id))
+        this.props.onPageChange(curPg)
+	    this.setPrevAndNextBtnClass(curPg)
 	}
 
 	setPrevAndNextBtnClass(listid) {
         let totalPage = Math.ceil(this.state.items.length / this.state.itemsPerPage);
-        console.log(this.state.items.length,this.state.itemsPerPage,'Plugin');
-        this.setState({isNextBtnActive: 'disabled'});
-        this.setState({isPrevBtnActive: 'disabled'});
+        this.setState({
+        	isNextBtnActive: 'disabled',
+        	isPrevBtnActive: 'disabled'
+        });
         if(totalPage === listid && totalPage > 1){
             this.setState({isPrevBtnActive: ''});
         }
@@ -54,8 +67,10 @@ class Pagination extends React.Component {
             this.setState({isNextBtnActive: ''});
         }
         else if(totalPage > 1){
-            this.setState({isNextBtnActive: ''});
-            this.setState({isPrevBtnActive: ''});
+            this.setState({
+            	isNextBtnActive: '',
+            	isPrevBtnActive: ''
+        	});
         }
     }
 
@@ -114,12 +129,11 @@ class Pagination extends React.Component {
 	    for (let i = 1; i <= Math.ceil(items.length / itemsPerPage); i++) {
 	    	pageNumbers.push(i);
 	    }
-
 	    const renderPageNumbers = pageNumbers.map(number => {
 	    	if (number === 1 && currentPage === 1) {
 		    	return (
 		    		<li key={number}>
-		    			<Link className="current" onClick={this.handleClick} id={number} to="#">
+		    			<Link className="current" onClick={this.handleClick} id={"pg"+number} to="#">
 		    				{number}
 		    			</Link>
 		    		</li>
@@ -127,14 +141,13 @@ class Pagination extends React.Component {
 		   	} else if((number < upperPageBound + 1) && number > lowerPageBound) {
 		   		return (
 		    		<li key={number}>
-		    			<Link onClick={this.handleClick} id={number} to="#">
+		    			<Link onClick={this.handleClick} id={"pg"+number} to="#">
 		    				{number}
 		    			</Link>
 		    		</li>
 		      	);
 		    }
 	    });
-
 	    let pageIncrementBtn = null;
         if(pageNumbers.length > upperPageBound){
             pageIncrementBtn = <li><Link to='#' onClick={this.btnIncrementClick}> &hellip; </Link></li>

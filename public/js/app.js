@@ -3503,8 +3503,15 @@ module.exports = {
 		});
 	},
 
-	getProductByCategory: function getProductByCategory(categoryID) {
-		return axios.get("http://localhost:8000/api/category/" + categoryID + "/products").then(function (products) {
+	getProductByCategory: function getProductByCategory(categoryID, filters) {
+		if (filters.checkedFlavors.length > 0) {
+			filteredFlavor = JSON.stringify(filters.checkedFlavors);
+			var url = "http://localhost:8000/api/category/" + categoryID + "/products?flavor=" + filteredFlavor;
+			console.log(url);
+		} else {
+			var url = "http://localhost:8000/api/category/" + categoryID + "/products";
+		}
+		return axios.get(url).then(function (products) {
 			return products.data;
 		});
 	}
@@ -55319,6 +55326,8 @@ module.exports = Contact;
 /* 96 */
 /***/ (function(module, exports, __webpack_require__) {
 
+var _extends = Object.assign || function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; };
+
 var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
 
 function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
@@ -55337,6 +55346,31 @@ var ProductItem = __webpack_require__(97);
 var ProductItem_List = __webpack_require__(98);
 var Pagination = __webpack_require__(99);
 
+var CheckBox = function CheckBox(props) {
+	return React.createElement(
+		'li',
+		{ key: props.id },
+		React.createElement(
+			'label',
+			{ className: 'check' },
+			React.createElement(
+				'span',
+				{ className: 'custom-checkbox' },
+				React.createElement('input', { key: props.id, type: 'checkbox', disabled: props.isDisabled, defaultChecked: props.isChecked, id: props.id, value: props.value, onClick: props.handleCheckChildElement }),
+				React.createElement('span', { className: 'checkmark' })
+			),
+			React.createElement(
+				Link,
+				{ to: '#', className: props.isDisabled ? "inactiveFilterOption" : "" },
+				props.value,
+				' (',
+				props.stock,
+				')'
+			)
+		)
+	);
+};
+
 var ProductsList = function (_React$Component) {
 	_inherits(ProductsList, _React$Component);
 
@@ -55350,11 +55384,20 @@ var ProductsList = function (_React$Component) {
 			currentPage: 1,
 			prodPerPage: 9,
 			categoryId: 0,
-			categoryName: ''
+			categoryName: '',
+			flavorFilter: [{ id: 1, name: "flavor", value: "Multigrain", isChecked: false, isDisabled: false }, { id: 2, name: "flavor", value: "Chocolate", isChecked: false, isDisabled: false }, { id: 3, name: "flavor", value: "Tooty Fruity", isChecked: false, isDisabled: false }, { id: 4, name: "flavor", value: "Vanilla", isChecked: false, isDisabled: false }, { id: 5, name: "flavor", value: "Spicy", isChecked: false, isDisabled: false }, { id: 6, name: "flavor", value: "Sweet", isChecked: false, isDisabled: false }, { id: 7, name: "flavor", value: "Mango", isChecked: false, isDisabled: false }],
+			weightFilter: [{ id: 1, name: "weight", value: "5 Kg", isChecked: false, isDisabled: false }, { id: 2, name: "weight", value: "1 Kg", isChecked: false, isDisabled: false }, { id: 3, name: "weight", value: "500 g", isChecked: false, isDisabled: false }, { id: 4, name: "weight", value: "200 g", isChecked: false, isDisabled: false }, { id: 5, name: "weight", value: "150 g", isChecked: false, isDisabled: false }],
+			activeFilters: {
+				checkedFlavors: [],
+				checkedWeight: []
+			},
+			activeSorting: 5
 		};
 		_this.handleCurrentPage = _this.handleCurrentPage.bind(_this);
 		_this.handleGridList = _this.handleGridList.bind(_this);
 		_this.updateProducts = _this.updateProducts.bind(_this);
+		_this.sortProducts = _this.sortProducts.bind(_this);
+		_this.handleChangeFilterCheckbox = _this.handleChangeFilterCheckbox.bind(_this);
 		return _this;
 	}
 
@@ -55363,6 +55406,14 @@ var ProductsList = function (_React$Component) {
 		value: function componentDidMount() {
 			var categoryInfo = this.decodeURItoCategoryInfo(this.props.match.params.categoryName);
 			this.updateProducts(categoryInfo.id);
+		}
+	}, {
+		key: 'componentDidUpdate',
+		value: function componentDidUpdate(prevProps, prevState) {
+			// If category changes, display first page of product listing
+			if (this.state.categoryId !== prevState.categoryId) {
+				this.setState({ currentPage: 1 });
+			}
 		}
 	}, {
 		key: 'componentWillReceiveProps',
@@ -55399,15 +55450,137 @@ var ProductsList = function (_React$Component) {
 			this.setState({ categoryId: categoryId, categoryName: categoryName });
 			return categoryInfo;
 		}
+
+		/* updateProducts(): 
+  		Updates product listing based on category and filters
+  */
+
 	}, {
 		key: 'updateProducts',
-		value: function updateProducts(cat) {
-			api.getProductByCategory(cat).then(function (res) {
+		value: function updateProducts(category) {
+			// make a copy of activeFilters state
+			var filters = this.state.activeFilters;
+			// Pass category and filters to get products
+			api.getProductByCategory(category, filters).then(function (res) {
 				var products = res.data.map(function (obj) {
 					return obj;
 				});
-				this.setState({ products: products });
+				this.setState({ products: products }, function () {
+					if (filters.checkedFlavors.length < 1 && filters.checkedWeight.length < 1) {
+						this.updateFilters();
+					}
+					this.sortProducts();
+				});
 			}.bind(this));
+		}
+
+		/* updateFilters(): 
+  		Manages active and inactive filters and sort filters by "Active First"
+  		Active Filter: If the filter option exist in "In Stock" products, its marked as active
+  */
+
+	}, {
+		key: 'updateFilters',
+		value: function updateFilters() {
+			// create array of active flavors
+			var active = [];
+			this.state.products.map(function (item, index) {
+				if (active.indexOf(item.flavor) === -1) {
+					active.push(item.flavor);
+				}
+			});
+			// Create array for active and inactive filters
+			var activeFilterOptions = [];
+			var inactiveFilterOptions = [];
+
+			// Create copy of flavorFilter state
+			var flavorFilter = this.state.flavorFilter;
+
+			// Map all and disable filters not in activeFilter array
+			flavorFilter.map(function (filter) {
+				if (active.indexOf(filter.value) === -1) {
+					filter.isDisabled = true;
+					inactiveFilterOptions.push(filter);
+				} else {
+					activeFilterOptions.push(filter);
+				}
+			});
+			// Sort flavors: re-order filters based on disabled property
+			flavorFilter = activeFilterOptions.concat(inactiveFilterOptions);
+
+			// update filters state
+			this.setState({ flavorFilter: flavorFilter });
+		}
+	}, {
+		key: 'sortProducts',
+		value: function sortProducts(event) {
+			// Get products to sort and sorting type id
+			var products = this.state.products;
+			var sortType = $('#sortProducts').val();
+
+			if (sortType == 1) {
+				products.sort(function (a, b) {
+					return parseFloat(a.price) - parseFloat(b.price); // Prices: Low to High
+				});
+			} else if (sortType == 2) {
+				products.sort(function (a, b) {
+					return parseFloat(b.price) - parseFloat(a.price); // Prices: High to Low 
+				});
+			} else if (sortType == 3) {
+				products.sort(function (a, b) {
+					var _a = a.name.toLowerCase();
+					var _b = b.name.toLowerCase();
+					return _a < _b ? -1 : _a > _b ? 1 : 0; // Product Name: A to Z
+				});
+			} else if (sortType == 4) {
+				products.sort(function (a, b) {
+					var _a = a.name.toLowerCase();
+					var _b = b.name.toLowerCase();
+					return _a < _b ? 1 : _a > _b ? -1 : 0; // Product Name: Z to A
+				});
+			} else {
+				products.sort(function (a, b) {
+					return parseFloat(b.rating) - parseFloat(a.rating); // Product Rating: Highest First
+				});
+			}
+			this.setState({ products: products });
+		}
+
+		/* handleChangeFilterCheckbox()
+  		filters products based on filter checkboxes checked
+  */
+
+	}, {
+		key: 'handleChangeFilterCheckbox',
+		value: function handleChangeFilterCheckbox(event) {
+			// Create a copy of current state in variable
+			var flavorFilter = this.state.flavorFilter;
+
+			// Set "isChecked" property of currently checked filters in flavorFilter variable
+			var checkedFlavors = [];
+			flavorFilter.map(function (item) {
+				if (item.value === event.target.value) {
+					item.isChecked = event.target.checked;
+				}
+			});
+
+			// Update filters state
+			this.setState({ flavorFilter: flavorFilter }, function () {
+				// Push items with "isChecked: 1" in checkedFlavors array
+				this.state.flavorFilter.map(function (item, index) {
+					if (item.isChecked) {
+						checkedFlavors.push(item.value);
+					}
+				});
+				// Update activeFilters and currentPage state
+				this.setState({
+					currentPage: 1,
+					activeFilters: _extends({}, this.state.activeFilters, { checkedFlavors: checkedFlavors })
+				}, function () {
+					// Update products passing category id
+					this.updateProducts(this.state.categoryId);
+				});
+			});
 		}
 	}, {
 		key: 'handleCurrentPage',
@@ -55418,11 +55591,17 @@ var ProductsList = function (_React$Component) {
 		key: 'handleGridList',
 		value: function handleGridList(event) {
 			var limit = event.target.id == 'listLink' ? 5 : 9;
-			this.setState({ prodPerPage: limit });
+			this.setState({
+				prodPerPage: limit,
+				currentPage: 1
+			});
 		}
 	}, {
 		key: 'render',
 		value: function render() {
+			var _this2 = this;
+
+			// Getting state
 			var _state = this.state,
 			    products = _state.products,
 			    currentPage = _state.currentPage,
@@ -55468,18 +55647,9 @@ var ProductsList = function (_React$Component) {
 									'li',
 									null,
 									React.createElement(
-										Link,
-										{ to: '#' },
-										'Fruit'
-									)
-								),
-								React.createElement(
-									'li',
-									null,
-									React.createElement(
 										'span',
 										null,
-										'Tomato'
+										this.state.categoryName
 									)
 								)
 							)
@@ -55519,25 +55689,25 @@ var ProductsList = function (_React$Component) {
 														{ className: 'item' },
 														React.createElement(
 															'span',
-															{ className: 'arrow collapsed', 'data-toggle': 'collapse', 'data-target': '#vegetables', 'aria-expanded': 'false', role: 'button' },
+															{ className: 'arrow collapsed', 'data-toggle': 'collapse', 'data-target': '#flour', 'aria-expanded': 'false', role: 'button' },
 															React.createElement('i', { className: 'zmdi zmdi-minus' }),
 															React.createElement('i', { className: 'zmdi zmdi-plus' })
 														),
 														React.createElement(
 															Link,
 															{ className: 'category-title', to: '#' },
-															'Vegetables'
+															'Cooking and Baking Flour'
 														),
 														React.createElement(
 															'div',
-															{ className: 'sub-category collapse', id: 'vegetables', 'aria-expanded': 'true', role: 'main' },
+															{ className: 'sub-category collapse', id: 'flour', 'aria-expanded': 'true', role: 'main' },
 															React.createElement(
 																'div',
 																{ className: 'item' },
 																React.createElement(
 																	Link,
 																	{ to: '#' },
-																	'Tomato'
+																	'Multigrain Flour'
 																)
 															),
 															React.createElement(
@@ -55546,7 +55716,7 @@ var ProductsList = function (_React$Component) {
 																React.createElement(
 																	Link,
 																	{ to: '#' },
-																	'Broccoli'
+																	'Rice Flour'
 																)
 															),
 															React.createElement(
@@ -55555,7 +55725,7 @@ var ProductsList = function (_React$Component) {
 																React.createElement(
 																	Link,
 																	{ to: '#' },
-																	'Cabbage'
+																	'Soya Flour'
 																)
 															),
 															React.createElement(
@@ -55564,7 +55734,16 @@ var ProductsList = function (_React$Component) {
 																React.createElement(
 																	Link,
 																	{ to: '#' },
-																	'Cucumber'
+																	'Suji'
+																)
+															),
+															React.createElement(
+																'div',
+																{ className: 'item' },
+																React.createElement(
+																	Link,
+																	{ to: '#' },
+																	'Besan'
 																)
 															)
 														)
@@ -55574,25 +55753,25 @@ var ProductsList = function (_React$Component) {
 														{ className: 'item' },
 														React.createElement(
 															'span',
-															{ className: 'arrow collapsed', 'data-toggle': 'collapse', 'data-target': '#fruits', 'aria-expanded': 'false', role: 'button' },
+															{ className: 'arrow collapsed', 'data-toggle': 'collapse', 'data-target': '#biscuits', 'aria-expanded': 'false', role: 'button' },
 															React.createElement('i', { className: 'zmdi zmdi-minus' }),
 															React.createElement('i', { className: 'zmdi zmdi-plus' })
 														),
 														React.createElement(
 															Link,
 															{ className: 'category-title', to: '#' },
-															'Fruits'
+															'Biscuits and Cookies'
 														),
 														React.createElement(
 															'div',
-															{ className: 'sub-category collapse', id: 'fruits', 'aria-expanded': 'true', role: 'main' },
+															{ className: 'sub-category collapse', id: 'biscuits', 'aria-expanded': 'true', role: 'main' },
 															React.createElement(
 																'div',
 																{ className: 'item' },
 																React.createElement(
 																	Link,
 																	{ to: '#' },
-																	'Orange'
+																	'Dry Fruit Biscuit'
 																)
 															),
 															React.createElement(
@@ -55601,7 +55780,7 @@ var ProductsList = function (_React$Component) {
 																React.createElement(
 																	Link,
 																	{ to: '#' },
-																	'Apple'
+																	'Coconut Biscuit'
 																)
 															),
 															React.createElement(
@@ -55610,16 +55789,7 @@ var ProductsList = function (_React$Component) {
 																React.createElement(
 																	Link,
 																	{ to: '#' },
-																	'Banana'
-																)
-															),
-															React.createElement(
-																'div',
-																{ className: 'item' },
-																React.createElement(
-																	Link,
-																	{ to: '#' },
-																	'Strawberry'
+																	'Tooty Fruity Biscuit'
 																)
 															)
 														)
@@ -55629,52 +55799,25 @@ var ProductsList = function (_React$Component) {
 														{ className: 'item' },
 														React.createElement(
 															'span',
-															{ className: 'arrow collapsed', 'data-toggle': 'collapse', 'data-target': '#juices', 'aria-expanded': 'false', role: 'button' },
+															{ className: 'arrow collapsed', 'data-toggle': 'collapse', 'data-target': '#namkeens', 'aria-expanded': 'false', role: 'button' },
 															React.createElement('i', { className: 'zmdi zmdi-minus' }),
 															React.createElement('i', { className: 'zmdi zmdi-plus' })
 														),
 														React.createElement(
 															Link,
 															{ className: 'category-title', to: '#' },
-															'Juices'
+															'Namkeens'
 														),
 														React.createElement(
 															'div',
-															{ className: 'sub-category collapse', id: 'juices', 'aria-expanded': 'true', role: 'main' },
+															{ className: 'sub-category collapse', id: 'namkeens', 'aria-expanded': 'true', role: 'main' },
 															React.createElement(
 																'div',
 																{ className: 'item' },
 																React.createElement(
 																	Link,
 																	{ to: '#' },
-																	'Orange Juices'
-																)
-															),
-															React.createElement(
-																'div',
-																{ className: 'item' },
-																React.createElement(
-																	Link,
-																	{ to: '#' },
-																	'Tomato Juices'
-																)
-															),
-															React.createElement(
-																'div',
-																{ className: 'item' },
-																React.createElement(
-																	Link,
-																	{ to: '#' },
-																	'Apple Juices'
-																)
-															),
-															React.createElement(
-																'div',
-																{ className: 'item' },
-																React.createElement(
-																	Link,
-																	{ to: '#' },
-																	'Peaches Juices'
+																	'Chivda'
 																)
 															)
 														)
@@ -55683,36 +55826,83 @@ var ProductsList = function (_React$Component) {
 														'div',
 														{ className: 'item' },
 														React.createElement(
+															'span',
+															{ className: 'arrow collapsed', 'data-toggle': 'collapse', 'data-target': '#snacks', 'aria-expanded': 'false', role: 'button' },
+															React.createElement('i', { className: 'zmdi zmdi-minus' }),
+															React.createElement('i', { className: 'zmdi zmdi-plus' })
+														),
+														React.createElement(
 															Link,
 															{ className: 'category-title', to: '#' },
-															'Tea and Coffee'
+															'Snacks'
+														),
+														React.createElement(
+															'div',
+															{ className: 'sub-category collapse', id: 'snacks', 'aria-expanded': 'true', role: 'main' },
+															React.createElement(
+																'div',
+																{ className: 'item' },
+																React.createElement(
+																	Link,
+																	{ to: '#' },
+																	'Papad'
+																)
+															),
+															React.createElement(
+																'div',
+																{ className: 'item' },
+																React.createElement(
+																	Link,
+																	{ to: '#' },
+																	'Noodles'
+																)
+															),
+															React.createElement(
+																'div',
+																{ className: 'item' },
+																React.createElement(
+																	Link,
+																	{ to: '#' },
+																	'Golgappa'
+																)
+															)
 														)
 													),
 													React.createElement(
 														'div',
 														{ className: 'item' },
 														React.createElement(
-															Link,
-															{ className: 'category-title', to: '#' },
-															'Jam'
-														)
-													),
-													React.createElement(
-														'div',
-														{ className: 'item' },
+															'span',
+															{ className: 'arrow collapsed', 'data-toggle': 'collapse', 'data-target': '#desserts', 'aria-expanded': 'false', role: 'button' },
+															React.createElement('i', { className: 'zmdi zmdi-minus' }),
+															React.createElement('i', { className: 'zmdi zmdi-plus' })
+														),
 														React.createElement(
 															Link,
 															{ className: 'category-title', to: '#' },
-															'SeaFood'
-														)
-													),
-													React.createElement(
-														'div',
-														{ className: 'item' },
+															'Desserts and Confectionaries'
+														),
 														React.createElement(
-															Link,
-															{ className: 'category-title', to: '#' },
-															'Fresh Meats'
+															'div',
+															{ className: 'sub-category collapse', id: 'desserts', 'aria-expanded': 'true', role: 'main' },
+															React.createElement(
+																'div',
+																{ className: 'item' },
+																React.createElement(
+																	Link,
+																	{ to: '#' },
+																	'Awla Sweet'
+																)
+															),
+															React.createElement(
+																'div',
+																{ className: 'item' },
+																React.createElement(
+																	Link,
+																	{ to: '#' },
+																	'Awla Chatpata'
+																)
+															)
 														)
 													)
 												)
@@ -55734,207 +55924,20 @@ var ProductsList = function (_React$Component) {
 														React.createElement(
 															'h3',
 															{ className: 'filter-title' },
-															'Categories'
+															'Flavors'
 														),
 														React.createElement(
-															'div',
-															{ className: 'filter-content' },
-															React.createElement(
-																'ul',
-																null,
-																React.createElement(
-																	'li',
-																	null,
-																	React.createElement(
-																		'label',
-																		{ className: 'check' },
-																		React.createElement(
-																			'span',
-																			{ className: 'custom-checkbox' },
-																			React.createElement('input', { type: 'checkbox' }),
-																			React.createElement('span', { className: 'checkmark' })
-																		),
-																		React.createElement(
-																			Link,
-																			{ to: '#' },
-																			'Tomato ',
-																			React.createElement(
-																				'span',
-																				{ className: 'quantity' },
-																				'(20)'
-																			)
-																		)
-																	)
-																),
-																React.createElement(
-																	'li',
-																	null,
-																	React.createElement(
-																		'label',
-																		{ className: 'check' },
-																		React.createElement(
-																			'span',
-																			{ className: 'custom-checkbox' },
-																			React.createElement('input', { type: 'checkbox' }),
-																			React.createElement('span', { className: 'checkmark' })
-																		),
-																		React.createElement(
-																			Link,
-																			{ to: '#' },
-																			'Broccoli ',
-																			React.createElement(
-																				'span',
-																				{ className: 'quantity' },
-																				'(14)'
-																			)
-																		)
-																	)
-																),
-																React.createElement(
-																	'li',
-																	null,
-																	React.createElement(
-																		'label',
-																		{ className: 'check' },
-																		React.createElement(
-																			'span',
-																			{ className: 'custom-checkbox' },
-																			React.createElement('input', { type: 'checkbox' }),
-																			React.createElement('span', { className: 'checkmark' })
-																		),
-																		React.createElement(
-																			Link,
-																			{ to: '#' },
-																			'Cabbage ',
-																			React.createElement(
-																				'span',
-																				{ className: 'quantity' },
-																				'(8)'
-																			)
-																		)
-																	)
-																),
-																React.createElement(
-																	'li',
-																	null,
-																	React.createElement(
-																		'label',
-																		{ className: 'check' },
-																		React.createElement(
-																			'span',
-																			{ className: 'custom-checkbox' },
-																			React.createElement('input', { type: 'checkbox' }),
-																			React.createElement('span', { className: 'checkmark' })
-																		),
-																		React.createElement(
-																			Link,
-																			{ to: '#' },
-																			'Cucumber ',
-																			React.createElement(
-																				'span',
-																				{ className: 'quantity' },
-																				'(12)'
-																			)
-																		)
-																	)
-																),
-																React.createElement(
-																	'li',
-																	null,
-																	React.createElement(
-																		'label',
-																		{ className: 'check' },
-																		React.createElement(
-																			'span',
-																			{ className: 'custom-checkbox' },
-																			React.createElement('input', { type: 'checkbox' }),
-																			React.createElement('span', { className: 'checkmark' })
-																		),
-																		React.createElement(
-																			Link,
-																			{ to: '#' },
-																			'Eggplant ',
-																			React.createElement(
-																				'span',
-																				{ className: 'quantity' },
-																				'(15)'
-																			)
-																		)
-																	)
-																),
-																React.createElement(
-																	'li',
-																	null,
-																	React.createElement(
-																		'label',
-																		{ className: 'check' },
-																		React.createElement(
-																			'span',
-																			{ className: 'custom-checkbox' },
-																			React.createElement('input', { type: 'checkbox' }),
-																			React.createElement('span', { className: 'checkmark' })
-																		),
-																		React.createElement(
-																			Link,
-																			{ to: '#' },
-																			'Pea ',
-																			React.createElement(
-																				'span',
-																				{ className: 'quantity' },
-																				'(22)'
-																			)
-																		)
-																	)
-																),
-																React.createElement(
-																	'li',
-																	null,
-																	React.createElement(
-																		'label',
-																		{ className: 'check' },
-																		React.createElement(
-																			'span',
-																			{ className: 'custom-checkbox' },
-																			React.createElement('input', { type: 'checkbox' }),
-																			React.createElement('span', { className: 'checkmark' })
-																		),
-																		React.createElement(
-																			Link,
-																			{ to: '#' },
-																			'Pineapple ',
-																			React.createElement(
-																				'span',
-																				{ className: 'quantity' },
-																				'(20)'
-																			)
-																		)
-																	)
-																),
-																React.createElement(
-																	'li',
-																	null,
-																	React.createElement(
-																		'label',
-																		{ className: 'check' },
-																		React.createElement(
-																			'span',
-																			{ className: 'custom-checkbox' },
-																			React.createElement('input', { type: 'checkbox' }),
-																			React.createElement('span', { className: 'checkmark' })
-																		),
-																		React.createElement(
-																			Link,
-																			{ to: '#' },
-																			'Lettuce ',
-																			React.createElement(
-																				'span',
-																				{ className: 'quantity' },
-																				'(10)'
-																			)
-																		)
-																	)
-																)
-															)
+															'ul',
+															null,
+															this.state.flavorFilter.map(function (item) {
+																var i = 0;
+																_this2.state.products.map(function (prod) {
+																	if (prod.flavor == item.value) {
+																		i++;
+																	}
+																});
+																return React.createElement(CheckBox, _extends({ key: item.id, stock: i, handleCheckChildElement: _this2.handleChangeFilterCheckbox }, item));
+															})
 														)
 													),
 													React.createElement(
@@ -56398,7 +56401,7 @@ var ProductsList = function (_React$Component) {
 																		{ className: 'select' },
 																		React.createElement(
 																			'select',
-																			{ className: 'form-control' },
+																			{ className: 'form-control', id: 'sortProducts', onChange: this.sortProducts },
 																			React.createElement(
 																				'option',
 																				{ value: '' },
@@ -56407,12 +56410,12 @@ var ProductsList = function (_React$Component) {
 																			React.createElement(
 																				'option',
 																				{ value: '1' },
-																				'Price: Lowest first'
+																				'Price: Low to High'
 																			),
 																			React.createElement(
 																				'option',
 																				{ value: '2' },
-																				'Price: Highest first'
+																				'Price: High to Low'
 																			),
 																			React.createElement(
 																				'option',
@@ -56427,49 +56430,7 @@ var ProductsList = function (_React$Component) {
 																			React.createElement(
 																				'option',
 																				{ value: '5' },
-																				'In stock'
-																			)
-																		)
-																	)
-																),
-																React.createElement(
-																	'form',
-																	{ action: '#', className: 'pull-right' },
-																	React.createElement(
-																		'div',
-																		{ className: 'select' },
-																		React.createElement(
-																			'select',
-																			{ className: 'form-control' },
-																			React.createElement(
-																				'option',
-																				{ value: '' },
 																				'Relevance'
-																			),
-																			React.createElement(
-																				'option',
-																				{ value: '1' },
-																				'Price: Lowest first'
-																			),
-																			React.createElement(
-																				'option',
-																				{ value: '2' },
-																				'Price: Highest first'
-																			),
-																			React.createElement(
-																				'option',
-																				{ value: '3' },
-																				'Product Name: A to Z'
-																			),
-																			React.createElement(
-																				'option',
-																				{ value: '4' },
-																				'Product Name: Z to A'
-																			),
-																			React.createElement(
-																				'option',
-																				{ value: '5' },
-																				'In stock'
 																			)
 																		)
 																	)
@@ -56532,7 +56493,7 @@ var ProductsList = function (_React$Component) {
 														React.createElement(
 															'div',
 															{ className: 'col-md-8 col-sm-8 col-xs-12' },
-															products.length != 0 ? React.createElement(Pagination, { onPageChange: this.handleCurrentPage, itemPerPage: prodPerPage, items: products }) : 'No Products'
+															products.length != 0 ? React.createElement(Pagination, { onPageChange: this.handleCurrentPage, itemPerPage: prodPerPage, items: products, currentPage: currentPage }) : 'No Products'
 														)
 													)
 												)
@@ -56582,13 +56543,14 @@ var ProductItem = function (_React$Component) {
 	_createClass(ProductItem, [{
 		key: 'render',
 		value: function render() {
-			// Rounding rating to nearest 0.5 step
-			var rating = Math.round(this.props.rating * 2) / 2;
-			var fullStar = Math.trunc(rating);
-			console.log(fullStar, 'fullStar');
-			if (rating / 1 == 0.5) {
-				console.log('halfStar');
-			}
+
+			/* Rounding rating to nearest 0.5 step - 
+   	Loop value of fullstar to render full stars and use halfStar to render half star */
+			// var rating = Math.round(this.props.rating*2)/2;
+			// var fullStar = Math.trunc(rating);
+			// if((rating / 1) == 0.5) {
+			// 	console.log('halfStar');
+			// }
 
 			return React.createElement(
 				'div',
@@ -56611,7 +56573,7 @@ var ProductItem = function (_React$Component) {
 						React.createElement(
 							Link,
 							{ to: '/productDetails/1', target: '_blank' },
-							this.props.name
+							this.props.name.charAt(0).toUpperCase() + this.props.name.slice(1)
 						)
 					),
 					React.createElement(
@@ -56824,254 +56786,268 @@ var Link = __webpack_require__(1).Link;
 var baseURL = 'http://localhost:8000/';
 
 var Pagination = function (_React$Component) {
-    _inherits(Pagination, _React$Component);
+				_inherits(Pagination, _React$Component);
 
-    function Pagination(props) {
-        _classCallCheck(this, Pagination);
+				function Pagination(props) {
+								_classCallCheck(this, Pagination);
 
-        var _this = _possibleConstructorReturn(this, (Pagination.__proto__ || Object.getPrototypeOf(Pagination)).call(this, props));
+								var _this = _possibleConstructorReturn(this, (Pagination.__proto__ || Object.getPrototypeOf(Pagination)).call(this, props));
 
-        _this.state = {
-            items: props.items,
-            currentPage: 1,
-            itemsPerPage: props.itemPerPage,
-            upperPageBound: 3,
-            lowerPageBound: 0,
-            isPrevBtnActive: 'disabled',
-            isNextBtnActive: '',
-            pageBound: 3
-        };
-        _this.handleClick = _this.handleClick.bind(_this);
-        _this.btnDecrementClick = _this.btnDecrementClick.bind(_this);
-        _this.btnIncrementClick = _this.btnIncrementClick.bind(_this);
-        _this.btnNextClick = _this.btnNextClick.bind(_this);
-        _this.btnPrevClick = _this.btnPrevClick.bind(_this);
-        _this.setPrevAndNextBtnClass = _this.setPrevAndNextBtnClass.bind(_this);
-        return _this;
-    }
+								_this.state = {
+												items: props.items,
+												currentPage: props.currentPage,
+												itemsPerPage: props.itemPerPage,
+												upperPageBound: 3,
+												lowerPageBound: 0,
+												isPrevBtnActive: 'disabled',
+												isNextBtnActive: '',
+												pageBound: 3
+								};
+								_this.handleClick = _this.handleClick.bind(_this);
+								_this.btnDecrementClick = _this.btnDecrementClick.bind(_this);
+								_this.btnIncrementClick = _this.btnIncrementClick.bind(_this);
+								_this.btnNextClick = _this.btnNextClick.bind(_this);
+								_this.btnPrevClick = _this.btnPrevClick.bind(_this);
+								_this.setPrevAndNextBtnClass = _this.setPrevAndNextBtnClass.bind(_this);
+								return _this;
+				}
 
-    _createClass(Pagination, [{
-        key: 'componentWillReceiveProps',
-        value: function componentWillReceiveProps(nextProps) {
-            this.setState({ itemsPerPage: nextProps.itemPerPage });
-        }
-    }, {
-        key: 'componentDidUpdate',
-        value: function componentDidUpdate() {
-            $(".pagination ul li a").removeClass('current');
-            $('.pagination ul li #' + this.state.currentPage).addClass('current');
-        }
-    }, {
-        key: 'handleClick',
-        value: function handleClick(event) {
-            $(".pagination ul li a").removeClass('current');
-            $('.pagination ul li #' + this.state.currentPage).addClass('current');
-            this.setState({
-                currentPage: Number(event.target.id)
-            });
-            this.props.onPageChange(Number(event.target.id));
-            this.setPrevAndNextBtnClass(Number(event.target.id));
-        }
-    }, {
-        key: 'setPrevAndNextBtnClass',
-        value: function setPrevAndNextBtnClass(listid) {
-            var totalPage = Math.ceil(this.state.items.length / this.state.itemsPerPage);
-            console.log(this.state.items.length, this.state.itemsPerPage, 'Plugin');
-            this.setState({ isNextBtnActive: 'disabled' });
-            this.setState({ isPrevBtnActive: 'disabled' });
-            if (totalPage === listid && totalPage > 1) {
-                this.setState({ isPrevBtnActive: '' });
-            } else if (listid === 1 && totalPage > 1) {
-                this.setState({ isNextBtnActive: '' });
-            } else if (totalPage > 1) {
-                this.setState({ isNextBtnActive: '' });
-                this.setState({ isPrevBtnActive: '' });
-            }
-        }
-    }, {
-        key: 'btnIncrementClick',
-        value: function btnIncrementClick() {
-            // Increment ellipses - sets current page (upper + pagebound) and upper/lower pagebound values 
-            this.setState({ upperPageBound: this.state.upperPageBound + this.state.pageBound });
-            this.setState({ lowerPageBound: this.state.lowerPageBound + this.state.pageBound });
-            var currentPage = this.state.upperPageBound + 1;
-            this.setState({ currentPage: currentPage });
-            this.props.onPageChange(currentPage);
-            // check prev and next disable/enable
-            this.setPrevAndNextBtnClass(currentPage);
-        }
-    }, {
-        key: 'btnDecrementClick',
-        value: function btnDecrementClick() {
-            // Decrement ellipses - sets current page (upper - pagebound) and upper/lower pagebound values 
-            this.setState({ upperPageBound: this.state.upperPageBound - this.state.pageBound });
-            this.setState({ lowerPageBound: this.state.lowerPageBound - this.state.pageBound });
-            var currentPage = this.state.upperPageBound - this.state.pageBound;
-            this.setState({ currentPage: currentPage });
-            this.props.onPageChange(currentPage);
-            // check prev and next disable/enable
-            this.setPrevAndNextBtnClass(currentPage);
-        }
-    }, {
-        key: 'btnPrevClick',
-        value: function btnPrevClick() {
-            if (this.state.currentPage - 1 == this.state.lowerPageBound) {
-                this.setState({ upperPageBound: this.state.upperPageBound - this.state.pageBound });
-                this.setState({ lowerPageBound: this.state.lowerPageBound - this.state.pageBound });
-            }
-            var listid = this.state.currentPage - 1;
-            this.setState({ currentPage: listid });
-            this.props.onPageChange(listid);
-            this.setPrevAndNextBtnClass(listid);
-        }
-    }, {
-        key: 'btnNextClick',
-        value: function btnNextClick() {
-            if (this.state.currentPage + 1 > this.state.upperPageBound) {
-                this.setState({ upperPageBound: this.state.upperPageBound + this.state.pageBound });
-                this.setState({ lowerPageBound: this.state.lowerPageBound + this.state.pageBound });
-            }
-            var listid = this.state.currentPage + 1;
-            this.setState({ currentPage: listid });
-            this.props.onPageChange(listid);
-            this.setPrevAndNextBtnClass(listid);
-        }
-    }, {
-        key: 'render',
-        value: function render() {
-            var _this2 = this;
+				_createClass(Pagination, [{
+								key: 'componentDidMount',
+								value: function componentDidMount() {
+												this.setPrevAndNextBtnClass(this.state.currentPage);
+								}
+				}, {
+								key: 'componentWillReceiveProps',
+								value: function componentWillReceiveProps(nextProps) {
+												this.setState({
+																itemsPerPage: nextProps.itemPerPage,
+																items: nextProps.items,
+																currentPage: nextProps.currentPage
+												});
+								}
+				}, {
+								key: 'componentDidUpdate',
+								value: function componentDidUpdate(prevProps, prevState) {
+												$(".pagination ul li a").removeClass('current');
+												$('.pagination ul li #pg' + this.state.currentPage).addClass('current');
+												if (this.state.items.length != prevState.items.length) {
+																this.setPrevAndNextBtnClass(this.state.currentPage);
+												}
+								}
+				}, {
+								key: 'handleClick',
+								value: function handleClick(event) {
+												$(".pagination ul li a").removeClass('current');
+												$('.pagination ul li #pg' + this.state.currentPage).addClass('current');
+												var curPg = Number(event.target.id.replace('pg', ''));
+												this.setState({
+																currentPage: curPg
+												});
+												this.props.onPageChange(curPg);
+												this.setPrevAndNextBtnClass(curPg);
+								}
+				}, {
+								key: 'setPrevAndNextBtnClass',
+								value: function setPrevAndNextBtnClass(listid) {
+												var totalPage = Math.ceil(this.state.items.length / this.state.itemsPerPage);
+												this.setState({
+																isNextBtnActive: 'disabled',
+																isPrevBtnActive: 'disabled'
+												});
+												if (totalPage === listid && totalPage > 1) {
+																this.setState({ isPrevBtnActive: '' });
+												} else if (listid === 1 && totalPage > 1) {
+																this.setState({ isNextBtnActive: '' });
+												} else if (totalPage > 1) {
+																this.setState({
+																				isNextBtnActive: '',
+																				isPrevBtnActive: ''
+																});
+												}
+								}
+				}, {
+								key: 'btnIncrementClick',
+								value: function btnIncrementClick() {
+												// Increment ellipses - sets current page (upper + pagebound) and upper/lower pagebound values 
+												this.setState({ upperPageBound: this.state.upperPageBound + this.state.pageBound });
+												this.setState({ lowerPageBound: this.state.lowerPageBound + this.state.pageBound });
+												var currentPage = this.state.upperPageBound + 1;
+												this.setState({ currentPage: currentPage });
+												this.props.onPageChange(currentPage);
+												// check prev and next disable/enable
+												this.setPrevAndNextBtnClass(currentPage);
+								}
+				}, {
+								key: 'btnDecrementClick',
+								value: function btnDecrementClick() {
+												// Decrement ellipses - sets current page (upper - pagebound) and upper/lower pagebound values 
+												this.setState({ upperPageBound: this.state.upperPageBound - this.state.pageBound });
+												this.setState({ lowerPageBound: this.state.lowerPageBound - this.state.pageBound });
+												var currentPage = this.state.upperPageBound - this.state.pageBound;
+												this.setState({ currentPage: currentPage });
+												this.props.onPageChange(currentPage);
+												// check prev and next disable/enable
+												this.setPrevAndNextBtnClass(currentPage);
+								}
+				}, {
+								key: 'btnPrevClick',
+								value: function btnPrevClick() {
+												if (this.state.currentPage - 1 == this.state.lowerPageBound) {
+																this.setState({ upperPageBound: this.state.upperPageBound - this.state.pageBound });
+																this.setState({ lowerPageBound: this.state.lowerPageBound - this.state.pageBound });
+												}
+												var listid = this.state.currentPage - 1;
+												this.setState({ currentPage: listid });
+												this.props.onPageChange(listid);
+												this.setPrevAndNextBtnClass(listid);
+								}
+				}, {
+								key: 'btnNextClick',
+								value: function btnNextClick() {
+												if (this.state.currentPage + 1 > this.state.upperPageBound) {
+																this.setState({ upperPageBound: this.state.upperPageBound + this.state.pageBound });
+																this.setState({ lowerPageBound: this.state.lowerPageBound + this.state.pageBound });
+												}
+												var listid = this.state.currentPage + 1;
+												this.setState({ currentPage: listid });
+												this.props.onPageChange(listid);
+												this.setPrevAndNextBtnClass(listid);
+								}
+				}, {
+								key: 'render',
+								value: function render() {
+												var _this2 = this;
 
-            var _state = this.state,
-                items = _state.items,
-                currentPage = _state.currentPage,
-                itemsPerPage = _state.itemsPerPage,
-                upperPageBound = _state.upperPageBound,
-                lowerPageBound = _state.lowerPageBound,
-                isPrevBtnActive = _state.isPrevBtnActive,
-                isNextBtnActive = _state.isNextBtnActive;
+												var _state = this.state,
+												    items = _state.items,
+												    currentPage = _state.currentPage,
+												    itemsPerPage = _state.itemsPerPage,
+												    upperPageBound = _state.upperPageBound,
+												    lowerPageBound = _state.lowerPageBound,
+												    isPrevBtnActive = _state.isPrevBtnActive,
+												    isNextBtnActive = _state.isNextBtnActive;
 
-            // Logic for displaying items
+												// Logic for displaying items
 
-            var indexOfLastProd = currentPage * itemsPerPage;
-            var indexOfFirstProd = indexOfLastProd - itemsPerPage;
-            var currentProducts = items.slice(indexOfFirstProd, indexOfLastProd);
+												var indexOfLastProd = currentPage * itemsPerPage;
+												var indexOfFirstProd = indexOfLastProd - itemsPerPage;
+												var currentProducts = items.slice(indexOfFirstProd, indexOfLastProd);
 
-            // Logic for displaying page numbers
-            var pageNumbers = [];
-            for (var i = 1; i <= Math.ceil(items.length / itemsPerPage); i++) {
-                pageNumbers.push(i);
-            }
+												// Logic for displaying page numbers
+												var pageNumbers = [];
+												for (var i = 1; i <= Math.ceil(items.length / itemsPerPage); i++) {
+																pageNumbers.push(i);
+												}
+												var renderPageNumbers = pageNumbers.map(function (number) {
+																if (number === 1 && currentPage === 1) {
+																				return React.createElement(
+																								'li',
+																								{ key: number },
+																								React.createElement(
+																												Link,
+																												{ className: 'current', onClick: _this2.handleClick, id: "pg" + number, to: '#' },
+																												number
+																								)
+																				);
+																} else if (number < upperPageBound + 1 && number > lowerPageBound) {
+																				return React.createElement(
+																								'li',
+																								{ key: number },
+																								React.createElement(
+																												Link,
+																												{ onClick: _this2.handleClick, id: "pg" + number, to: '#' },
+																												number
+																								)
+																				);
+																}
+												});
+												var pageIncrementBtn = null;
+												if (pageNumbers.length > upperPageBound) {
+																pageIncrementBtn = React.createElement(
+																				'li',
+																				null,
+																				React.createElement(
+																								Link,
+																								{ to: '#', onClick: this.btnIncrementClick },
+																								' \u2026 '
+																				)
+																);
+												}
+												var pageDecrementBtn = null;
+												if (lowerPageBound >= 1) {
+																pageDecrementBtn = React.createElement(
+																				'li',
+																				null,
+																				React.createElement(
+																								Link,
+																								{ to: '#', onClick: this.btnDecrementClick },
+																								' \u2026 '
+																				)
+																);
+												}
+												var renderPrevBtn = null;
+												if (isPrevBtnActive === 'disabled') {
+																renderPrevBtn = React.createElement(
+																				'li',
+																				{ className: '' },
+																				React.createElement(
+																								Link,
+																								{ to: '#', className: 'prev disable-anchor' },
+																								'Previous'
+																				)
+																);
+												} else {
+																renderPrevBtn = React.createElement(
+																				'li',
+																				{ className: '' },
+																				React.createElement(
+																								Link,
+																								{ to: '#', onClick: this.btnPrevClick, className: 'prev' },
+																								'Previous'
+																				)
+																);
+												}
+												var renderNextBtn = null;
+												if (isNextBtnActive === 'disabled') {
+																renderNextBtn = React.createElement(
+																				'li',
+																				null,
+																				React.createElement(
+																								Link,
+																								{ to: '#', className: 'next disable-anchor' },
+																								'Next'
+																				)
+																);
+												} else {
+																renderNextBtn = React.createElement(
+																				'li',
+																				null,
+																				React.createElement(
+																								Link,
+																								{ to: '#', onClick: this.btnNextClick, className: 'next' },
+																								'Next'
+																				)
+																);
+												}
 
-            var renderPageNumbers = pageNumbers.map(function (number) {
-                if (number === 1 && currentPage === 1) {
-                    return React.createElement(
-                        'li',
-                        { key: number },
-                        React.createElement(
-                            Link,
-                            { className: 'current', onClick: _this2.handleClick, id: number, to: '#' },
-                            number
-                        )
-                    );
-                } else if (number < upperPageBound + 1 && number > lowerPageBound) {
-                    return React.createElement(
-                        'li',
-                        { key: number },
-                        React.createElement(
-                            Link,
-                            { onClick: _this2.handleClick, id: number, to: '#' },
-                            number
-                        )
-                    );
-                }
-            });
+												return React.createElement(
+																'div',
+																{ className: 'pagination' },
+																React.createElement(
+																				'ul',
+																				{ className: 'page-list' },
+																				renderPrevBtn,
+																				pageDecrementBtn,
+																				renderPageNumbers,
+																				pageIncrementBtn,
+																				renderNextBtn
+																)
+												);
+								}
+				}]);
 
-            var pageIncrementBtn = null;
-            if (pageNumbers.length > upperPageBound) {
-                pageIncrementBtn = React.createElement(
-                    'li',
-                    null,
-                    React.createElement(
-                        Link,
-                        { to: '#', onClick: this.btnIncrementClick },
-                        ' \u2026 '
-                    )
-                );
-            }
-            var pageDecrementBtn = null;
-            if (lowerPageBound >= 1) {
-                pageDecrementBtn = React.createElement(
-                    'li',
-                    null,
-                    React.createElement(
-                        Link,
-                        { to: '#', onClick: this.btnDecrementClick },
-                        ' \u2026 '
-                    )
-                );
-            }
-            var renderPrevBtn = null;
-            if (isPrevBtnActive === 'disabled') {
-                renderPrevBtn = React.createElement(
-                    'li',
-                    { className: '' },
-                    React.createElement(
-                        Link,
-                        { to: '#', className: 'prev disable-anchor' },
-                        'Previous'
-                    )
-                );
-            } else {
-                renderPrevBtn = React.createElement(
-                    'li',
-                    { className: '' },
-                    React.createElement(
-                        Link,
-                        { to: '#', onClick: this.btnPrevClick, className: 'prev' },
-                        'Previous'
-                    )
-                );
-            }
-            var renderNextBtn = null;
-            if (isNextBtnActive === 'disabled') {
-                renderNextBtn = React.createElement(
-                    'li',
-                    null,
-                    React.createElement(
-                        Link,
-                        { to: '#', className: 'next disable-anchor' },
-                        'Next'
-                    )
-                );
-            } else {
-                renderNextBtn = React.createElement(
-                    'li',
-                    null,
-                    React.createElement(
-                        Link,
-                        { to: '#', onClick: this.btnNextClick, className: 'next' },
-                        'Next'
-                    )
-                );
-            }
-
-            return React.createElement(
-                'div',
-                { className: 'pagination' },
-                React.createElement(
-                    'ul',
-                    { className: 'page-list' },
-                    renderPrevBtn,
-                    pageDecrementBtn,
-                    renderPageNumbers,
-                    pageIncrementBtn,
-                    renderNextBtn
-                )
-            );
-        }
-    }]);
-
-    return Pagination;
+				return Pagination;
 }(React.Component);
 
 module.exports = Pagination;

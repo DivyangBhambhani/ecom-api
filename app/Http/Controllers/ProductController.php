@@ -21,8 +21,12 @@ class ProductController extends Controller
      *
      * @return \Illuminate\Http\Response
      */
-    public function index(Category $category)
+    public function index(Category $category, Request $request)
     {
+        if ($request->has('flavor')) {
+            $flavor = explode(",", str_replace('"', '', substr($request->input('flavor'),1,-1)));
+            return new ProductCollection($category->products->whereIn('flavor', $flavor));
+        }
         return new ProductCollection($category->products);
     }
 
