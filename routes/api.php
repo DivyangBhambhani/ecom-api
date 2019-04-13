@@ -1,9 +1,7 @@
 <?php
 
 use Illuminate\Http\Request;
-use App\Http\Resources\Product\ProductCollection;
-use App\Model\Product;
-// use App\Model\Category;
+
 /*
 |--------------------------------------------------------------------------
 | API Routes
@@ -21,3 +19,4 @@ Route::middleware('auth:api')->get('/user', function (Request $request) {
 
 Route::apiResource('/category/{category}/products','ProductController');
 Route::apiResource('/category/{category}/products/{product}/reviews','ReviewController');
+Route::resource('/category/{category}/products/{product}/images','ImageController');

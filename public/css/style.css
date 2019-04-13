@@ -12933,6 +12933,7 @@ input {
 }
 
 .reviews .comments-list .item {
+    width: 100%;
     margin-right: 0;
 }
 
@@ -15693,4 +15694,8 @@ input {
 .inactiveFilterOption {
     color: #d2d0d0 !important;
     text-decoration: line-through !important;
+}
+
+.txtDanger {
+    color: #a94442 !important;
 }

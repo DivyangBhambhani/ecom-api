@@ -1,14 +1,35 @@
 var React = require('react');
 var Link = require('react-router-dom').Link;
 var baseURL = 'http://localhost:8000/';
+const api = require("../utils/api");
 
 class ProductItem extends React.Component {
 	constructor(props) {
 		super(props);
+		this.state ={
+			product: [],
+			productImages: ''
+		}
 	}
 	
+	componentDidMount() {
+		// Block of code
+		api.getImagesByProduct(this.props.imgPath)
+			.then(function (productImages) {
+				console.log('count');
+				// $('.product-item .product-image img').attr('src',"data:image/png;base64," + productImages[0].image)
+				// img = "data:image/png;base64," + productImages[0].image;
+				if(typeof productImages[0] != "undefined") {
+					this.setState({
+						productImage: "data:image/png;base64," + productImages[0].image
+					});
+				}
+			}.bind(this));
+	}
+
 	render() {
 		
+		// var imgSrc =  ?  : "";
 		/* Rounding rating to nearest 0.5 step - 
 			Loop value of fullstar to render full stars and use halfStar to render half star */		
 		// var rating = Math.round(this.props.rating*2)/2;
@@ -21,13 +42,13 @@ class ProductItem extends React.Component {
 			<div className="col-lg-4 col-md-4 col-sm-6 col-xs-12">				
 				<div className="product-item">
 					<div className="product-image">
-						<Link to="/productDetails/1" target="_blank">
-							<img className="img-responsive" src="http://localhost:8000/img/product/8.jpg" alt="Product Image" />
+						<Link to={this.props.url + "/" + this.props.id}>
+							<img className="img-responsive" src={this.state.productImage} alt="Product Image" />
 						</Link>
 					</div>
 					
 					<div className="product-title">
-						<Link to="/productDetails/1" target="_blank">
+						<Link to={this.props.url + "/" + this.props.id}>
 							{this.props.name.charAt(0).toUpperCase() + this.props.name.slice(1)}
 						</Link>
 					</div>

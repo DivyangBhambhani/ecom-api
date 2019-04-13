@@ -64,22 +64,22 @@
         </div>
         
         <!-- App JS -->
-        <script src="{{URL::asset('js/app.js')}}" ></script>
+        <script type="text/javascript" src="{{URL::asset('js/app.js')}}" ></script>
         
         <!-- Vendor JS -->
-        <script src="{{URL::asset('/libs/jquery/jquery.js')}}"></script>
-        <script src="{{URL::asset('/libs/bootstrap/js/bootstrap.js')}}"></script>
-        <script src="{{URL::asset('/libs/jquery.countdown/jquery.countdown.js')}}"></script>
-        <script src="{{URL::asset('/libs/nivo-slider/js/jquery.nivo.slider.js')}}"></script>
-        <script src="{{URL::asset('/libs/owl.carousel/owl.carousel.min.js')}}"></script>
-        <script src="{{URL::asset('/libs/slider-range/js/tmpl.js')}}"></script>
-        <script src="{{URL::asset('/libs/slider-range/js/jquery.dependClass-0.1.js')}}"></script>
-        <script src="{{URL::asset('/libs/slider-range/js/draggable-0.1.js')}}"></script>
-        <script src="{{URL::asset('/libs/slider-range/js/jquery.slider.js')}}"></script>
-        <script src="{{URL::asset('/libs/elevatezoom/jquery.elevatezoom.js')}}"></script>
+        <script type="text/javascript" src="{{URL::asset('/libs/jquery/jquery.js')}}"></script>
+        <script type="text/javascript" src="{{URL::asset('/libs/bootstrap/js/bootstrap.js')}}"></script>
+        <script type="text/javascript" src="{{URL::asset('/libs/jquery.countdown/jquery.countdown.js')}}"></script>
+        <script type="text/javascript" src="{{URL::asset('/libs/nivo-slider/js/jquery.nivo.slider.js')}}"></script>
+        <script type="text/javascript" src="{{URL::asset('/libs/owl.carousel/owl.carousel.min.js')}}"></script>
+        <script type="text/javascript" src="{{URL::asset('/libs/slider-range/js/tmpl.js')}}"></script>
+        <script type="text/javascript" src="{{URL::asset('/libs/slider-range/js/jquery.dependClass-0.1.js')}}"></script>
+        <script type="text/javascript" src="{{URL::asset('/libs/slider-range/js/draggable-0.1.js')}}"></script>
+        <script type="text/javascript" src="{{URL::asset('/libs/slider-range/js/jquery.slider.js')}}"></script>
+        <script type="text/javascript" src="{{URL::asset('/libs/elevatezoom/jquery.elevatezoom.js')}}"></script>
         
         <!-- Template JS -->
-        <script src="{{URL::asset('js/main.js')}}"></script>
+        <script type="text/javascript" src="{{URL::asset('js/main.js')}}"></script>
 
     </body>
 </html>

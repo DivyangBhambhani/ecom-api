@@ -1,10 +1,10 @@
 <?php
 
-namespace App\Http\Resources\Review;
+namespace App\Http\Resources\Image;
 
 use Illuminate\Http\Resources\Json\ResourceCollection;
 
-class ReviewCollection extends ResourceCollection
+class ImageCollection extends ResourceCollection
 {
     /**
      * Transform the resource collection into an array.
@@ -14,18 +14,18 @@ class ReviewCollection extends ResourceCollection
      */
     public function toArray($request)
     {
-        $reviews = [];
-        foreach ($this->collection as $review) {
-            array_push($reviews, [
-                'customer' => $review->customer,
-                'title' => $review->title,
-                'description' => $review->review,
-                'rating' => $review->star,
-                'reviewDate' => date('d F Y', strtotime($review->created_at))
+        $images = [];
+        foreach ($this->collection as $image) {
+            array_push($images, [
+                'id' => $image->id,
+                'image' => $image->image,
+                'status' => $image->status,
+                'modifyDate' => date('d F Y', strtotime($image->updated_at))
             ]);
         }
-        return $reviews;
+        return $images;
     }
+
 
     /**
      * Get additional data that should be returned with the resource array.
